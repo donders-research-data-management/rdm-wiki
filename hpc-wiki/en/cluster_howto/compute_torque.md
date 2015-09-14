@@ -34,7 +34,7 @@ In the Torque cluster at DCCN, throttle policies are applied to limit the amount
 
 ##### __Queue-wise policies__
 
-For every job queue, the total number of __runnable__ (i.e. the jobs occupying resources to perform computations) and __queue-able__ (i.e. the jobs waiting in the queue for resources to be available) jobs per user are throttled.  The table below summarises the settings for different job queues.
+For every job queue, the total number of __runnable__ and __queue-able__ jobs per user are throttled.  In the table below, the `max. runnable jobs` specifies the maximum number of running jobs a user is allowed to have in a queue at a given time; while the `max. queueable jobs` restricts the total number of jobs (including idle, running and blocked jobs) a user is allowed to have.
 
 | queue name | max. runnable jobs | max. queue-able jobs |
 |:-----------|-------------------:|---------------------:|
@@ -45,9 +45,9 @@ For every job queue, the total number of __runnable__ (i.e. the jobs occupying r
 | batch      | 220                | 2000                 |
 | verylong   | 220                | 2000                 |
 | vgl        |   2                |    5                 |
-| interactive|   2                |    2                 |
+| interactive|   2                |    4                 |
 
-For most of queues, the number of runnable and queue-able jobs are set to 220 and 2000, respectively. However, they are more restricted for the _vgl_ and _interactive_ queues.  For jobs in the _vgl_ queue, the maximum runnable and queue-able jobs are set to 2 and 5, respectively; while they are 2 and 2 for jobs in the _interactive_ queue.  This is to compensate for the facts that _vgl_ jobs consume lots of the network bandwidth; and _interactive_ jobs always have the highest priority to start.
+For most of queues, the number of runnable and queue-able jobs are set to 220 and 2000, respectively. However, more restricted policies are applied to jobs in the _vgl_ and _interactive_ queues. For jobs in the _vgl_ queue, the maximum runnable and queue-able jobs are set to 2 and 5, respectively; while they are 2 and 4 for jobs in the _interactive_ queue.  This is to compensate for the facts that _vgl_ jobs consume lots of the network bandwidth; and _interactive_ jobs always have the highest priority to start.
 
 ##### __Cluster-wise policies__
 
