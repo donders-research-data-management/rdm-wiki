@@ -15,16 +15,16 @@ For optimising the utilisation of the resources of the Torque cluster, certain r
 
 In the cluster, several job queues are made available in order to arrange jobs by resource requirements.  Those queues are summarised in the table below. Queues are mainly distinguished by the wall time and memory limitations.  Some queues, such as _matlab_, _vgl_ and _interactive_, have their own special purpose for jobs with additional resource requirements. 
 
-| queue name | routing queue | walltime limit | memory limit | special requirement | job priority |
-|:-----------|:--------------|---------------:|-------------:|:--------------------|:-------------|
-| matlab     | N/A           | 24 hours       | 256 GB       | matlab license      | normal       | 
-| vgl        | N/A           |  8 hours       |  10 GB       | VirtualGL capability| normal       | 
-| short      | N/A           |  2 hours       |   8 GB       |                     | normal       | 
-| veryshort  | N/A           | 20 minutes     |   8 GB       |                     | normal       | 
-| long       | automatic     | 24 hours       |  64 GB       |                     | normal       | 
-| batch      | automatic     | 48 hours       | 256 GB       |                     | normal       | 
-| verylong   | automatic     | 72 hours       |  64 GB       |                     | normal       | 
-| interactive| automatic     | 72 hours       |  64 GB       | user interaction    | high         | 
+| queue name | routing queue | max. walltime per job | max. memory per job | special feature     | job priority |
+|:-----------|:--------------|----------------------:|--------------------:|:--------------------|:-------------|
+| matlab     | N/A           | 24 hours              | 256 GB              | matlab license      | normal       | 
+| vgl        | N/A           |  8 hours              |  10 GB              | VirtualGL capability| normal       | 
+| short      | N/A           |  2 hours              |   8 GB              |                     | normal       | 
+| veryshort  | N/A           | 20 minutes            |   8 GB              |                     | normal       | 
+| long       | automatic     | 24 hours              |   8 GB              |                     | normal       | 
+| batch      | automatic     | 48 hours              | 256 GB              |                     | normal       | 
+| verylong   | automatic     | 72 hours              |  64 GB              |                     | normal       | 
+| interactive| automatic     | 72 hours              |  64 GB              | user interaction    | high         | 
 
 At the job submission time, user can specify to which queue the job should be placed in the system. Alternatively, one could simply specify the wall time and memory required by the job and let the system pick up a most proper queue automatically for the job.  The second approach is implemented by the _automatic_ queue behaving as a router to a destination queue.
 
