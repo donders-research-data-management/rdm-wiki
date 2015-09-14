@@ -215,6 +215,7 @@ A set of auxiliary scripts is developed to ease the job management works on the 
 
 | Command               | Functionality                |
 |:----------------------|:-----------------------------|
+| `checkjob`            | shows job status in scheduler's perspective. It is useful for knowing why a job is not started. | 
 | `pbsnode`             | lists the execute hosts in the cluster. It is one of the Torque client tools. |
 | `cluster-qstat`       | lists recently submitted jobs from all system users. |
 | `cluster-info`        | lists system utilisation metrics of the access nodes and the mentat compute nodes. |
