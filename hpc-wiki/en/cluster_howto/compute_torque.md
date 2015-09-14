@@ -32,7 +32,7 @@ At the job submission time, user can specify to which queue the job should be pl
 
 In the Torque cluster at DCCN, throttle policies are applied to limit the amount of resources an user can allocate at the same time.  It is to avoid resources of the entire cluster being occupied by a single user.  The policies are defined in two scopes:
 
-##### Queue-wise policies
+##### __Queue-wise policies__
 
 For every job queue, the total number of __runnable__ (i.e. the jobs occupying resources to perform computations) and __queue-able__ (i.e. the jobs waiting in the queue for resources to be available) jobs per user are throttled.  The table below summarises the settings for different job queues.
 
@@ -49,7 +49,7 @@ For every job queue, the total number of __runnable__ (i.e. the jobs occupying r
 
 For most of queues, the number of runnable and queue-able jobs are set to 220 and 2000, respectively. However, they are more restricted for the _vgl_ and _interactive_ queues.  For jobs in the _vgl_ queue, the maximum runnable and queue-able jobs are set to 2 and 5, respectively; while they are 2 and 2 for jobs in the _interactive_ queue.  This is to compensate for the facts that _vgl_ jobs consume lots of the network bandwidth; and _interactive_ jobs always have the highest priority to start.
 
-##### Cluster-wise policy
+##### __Cluster-wise policies__
 
 The cluster-wise throttling is on the total amount of resources a single user is currently using in the cluster.  The limitation is 660 walltime days or 1 TB memory.  It implies that, for example, if your job requests 32 GB of memory, the total number of such type of jobs to run concurrently in the cluster will be limited to 32 (i.e. 1024/32) instead of 220.
 
