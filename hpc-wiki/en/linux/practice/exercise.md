@@ -1,5 +1,7 @@
 # Exercise: Linux practise
 
+## Preparation
+
 Download [this data file](../exercise/cluster-qstat.dat) using the following command:
 
 ```
