@@ -106,7 +106,7 @@ Following the steps below to run the same `randn_aft_t` function using `qsubfeva
     jobs{i} = qsubfeval(@randn_aft_t,  n_array{i},  t_array{i},  'memreq',  req_mem,  'timreq',  req_etime);
     end
     >>
-    >> save jobs.mat jobs
+    >> save 'jobs.mat' jobs
     ```
 
     Each call of `qsubfeval` submits a job to run on a pair of `n` (array dimention) and `t` (duration). For this reason, we should make iteration ourselves using the `for` loop.  This is different to using the `qsubcellfun`.
