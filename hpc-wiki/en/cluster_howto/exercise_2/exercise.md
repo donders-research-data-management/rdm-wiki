@@ -19,7 +19,7 @@ Although the result looks trivial, the program internally generates certain usag
 
 1. Try to submit a job to the cluster using the following command.
 
-    Note: remember to replace `<your_email>` with your actual email address.
+    Attention: Remember to replace `<your_email>` with your actual email address.
 
     ```bash
     $ echo "$PWD/fake_app 3" | qsub -N fake_app -M <your_email> -l walltime=600,mem=128mb
@@ -42,4 +42,4 @@ Although the result looks trivial, the program internally generates certain usag
 
 5. Try to submit the job again with the memory requirement increased sufficiently for the actual usage.
 
-    Remark: always specify the requirement as close as possible to the actual usage.  Insufficient high requirement results in inefficient usage of resources, and consequently blocking other users (including yourself) from using the resource.
+    Note: Specify the requirement higher, but as close as possible to the actual usage.  Unnecessary high requirement results in inefficient usage of resources, and consequently blocks other jobs (including yours) from having sufficient resources to start.
