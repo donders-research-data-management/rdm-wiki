@@ -1,6 +1,6 @@
 # Exercise: distributed data analysis with resource requirements
 
-In this exercise, you will be confronted with an issue that the computer resource (CPU and Mmeory) allocated for your job is not sufficient to complete the computation.
+In this exercise, you will be confronted with an issue that the computer resource (in this case, the memory) allocated for your job is not sufficient to complete the computation. With few trials, you will find out a sufficient (but not overestimated) memory requirement to finish the job. 
 
 To create such a situation, you are given a program which calculate the cube number of a given integer (i.e. `n^3`). Follow the commands below to download the program and run it locally:
 
@@ -17,15 +17,17 @@ Although the result looks trivial, the program internally generates certain usag
 
 ## Tasks
 
-1. Now submit the job to the cluster using the following command.  Please replace `<your_email>` with your actual email address.
+1. Try to submit a job to the cluster using the following command.
+
+    Note: remember to replace `<your_email>` with your actual email address.
 
     ```bash
     $ echo "$PWD/fake_app 3" | qsub -N fake_app -M <your_email> -l walltime=600,mem=128mb
     ```
 
-2. Wait for the job to finish, and check the `STDOUT` and `STDERR` files of the job. Do you get the result in the `STDOUT` file?
+2. Wait for the job to finish, and check the `STDOUT` and `STDERR` files of the job. Do you get the expected result in the `STDOUT` file?
 
-3. Check in your e-mail box for a notification about your job.  The content of it should looks similar to the following snippet.
+3. Check your e-mail box for a notification about the job.  The content of it should looks similar to the following snippet.
 
     ```bash
     PBS Job Id: 10086535.dccn-l029.dccn.nl
@@ -36,6 +38,8 @@ Although the result looks trivial, the program internally generates certain usag
     job 10086535 exceeded MEM usage hard limit (516 > 140)
     ```
 
-4. Now check the job's STDOUT file again and find out the actual memory usage of the computation.
+4. Now check the job's `STDOUT` file again and find out the actual memory usage of the computation.
 
 5. Try to submit the job again with the memory requirement increased sufficiently for the actual usage.
+
+    Remark: always specify the requirement as close as possible to the actual usage.  Insufficient high requirement results in inefficient usage of resources, and consequently blocking other users (including yourself) from using the resource.
