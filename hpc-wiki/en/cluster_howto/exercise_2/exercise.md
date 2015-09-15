@@ -1,4 +1,4 @@
-# Exercise: distributed data analysis with resource requirements
+# Exercise: obtaining resource requirements of jobs
 
 In this exercise, you will be confronted with an issue that the computer resource (in this case, the memory) allocated for your job is not sufficient to complete the computation. With few trials, you will find out a sufficient (but not overestimated) memory requirement to finish the job. 
 
