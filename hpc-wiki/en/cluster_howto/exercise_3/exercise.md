@@ -69,9 +69,9 @@ matlab_sub  qsub_toolbox
 
 ## Task 3: qsubfeval
 
-An alternative way of running MATLAB functions in batch is to use the `qsubfeval` function.  In fact, `qsubfeval` is the underlying function called by the `qsubcellfun` function we have exercised.
+An alternative way of running MATLAB functions in batch is to use the `qsubfeval` function.  In fact, `qsubfeval` is the underlying function called by the `qsubcellfun` for creating and submitting each individual job.
 
-The following steps will show you how to run the same `randn_aft_t` function using `qsubfeval`.  
+Following the steps below to run the same `randn_aft_t` function using `qsubfeval`.
 
 1. Start matlab interactive session with the command
 
@@ -111,11 +111,13 @@ The following steps will show you how to run the same `randn_aft_t` function usi
 
     Each call of `qsubfeval` submits a job to run on a pair of `n` (array dimention) and `t` (duration). For this reason, we should make iteration ourselves using the `for` loop.  This is different to using the `qsubcellfun`.
 
-    Another difference is that the MATLAB prompt is returned after job submission, and thus, we can continue with other MATLAB commands without the need to wait for jobs to finish.  Due to this reason, we need to save references to the submitted jobs in order to retrieve the results later.  In the example above, references of jobs are stored in the array of `jobs` and saved to the file `jobs.mat`.
+    Another difference is that the MATLAB prompt is not blocked after job submission. One benefit here is that we can continue with other MATLAB commands without the need to wait for jobs to finish. However, we need to save references to the submitted jobs in order to retrieve the results later.  In the example above, references of jobs are stored in the array of `jobs`. You may also save to the reference to a file and leave MATLAB completely.
 
 5. You probably noticed that the job reference returned from `qsubfeval` is not the torque job id. The `qsublist` function is provided to map the job reference to the torque job id. We could combine this function to query the job status, using a system call to the `qstat` command.  For example:
 
     ```matlab
+    >> load 'jobs.mat'
+    >>
     >> for j = jobs
     jid = qsublist('getpbsid', j);
     cmd = sprintf('qstat %s', jid);
@@ -123,14 +125,16 @@ The following steps will show you how to run the same `randn_aft_t` function usi
     end
     ```
 
-6. When all jobs are finished, one could retrive the output using the `qsubget` 
+6. When all jobs are finished, one could retrive the output using `qsubget`. For example, 
 
-   ```matlab
-   >> out = {};
-   >>
-   >> for j = jobs
-   out = [out, qsubget(j{:})];
-   end
-   >>
-   >> out
-   ```
+    ```matlab
+    >> load 'jobs.mat'
+    >>
+    >> out = {};
+    >>
+    >> for j = jobs
+    out = [out, qsubget(j{:})];
+    end
+    >>
+    >> out
+    ```
