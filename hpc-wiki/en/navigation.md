@@ -32,6 +32,7 @@
 
 [Tutorials in the past]()
 
+  * [Linux & HPC tutorial Sep. 2015](https://pl-squid.dccn.nl/indico/event/11/)
   * [Linux & HPC tutorial Nov. 2014](https://pl-squid.dccn.nl/indico/event/0/)
 
 [gimmick:theme (inverse: false)](simplex)
