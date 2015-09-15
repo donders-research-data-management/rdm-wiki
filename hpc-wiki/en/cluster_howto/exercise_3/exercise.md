@@ -16,9 +16,9 @@ $ ls
 matlab_sub  qsub_toolbox
 ```
 
-## Task 1
+## Task 1: matlab_sub
 
-## Task 2
+## Task 2: qsubcellfun
 
 1. Start matlab interactive session with the command
 
