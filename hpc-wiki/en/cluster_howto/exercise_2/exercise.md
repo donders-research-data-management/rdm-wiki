@@ -17,7 +17,7 @@ result: 27
 
 Although the result looks trivial, the program internally generates certain usage of CPU time and Memory.  Therefore, the result is not returned right away.
 
-## Tasks
+## Task
 
 1. Try to submit a job to the cluster using the following command.
 
