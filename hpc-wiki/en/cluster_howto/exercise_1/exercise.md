@@ -5,7 +5,7 @@ This exercise mimics a distributed data analysis assuming that we have to apply 
 Using the commands below to download the exercise package from [this link](torque_exercise.tgz) and check its content.
 
 ```bash
-$ wget http://torquemon.dccn.nl/hpc_wiki/cluster_howto/exercise/torque_exercise.tgz
+$ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_1/torque_exercise.tgz
 $ tar xvzf torque_exercise.tgz
 $ cd torque_exercise
 $ ls
