@@ -25,7 +25,6 @@ Although the result looks trivial, the program internally generates certain usag
 
 2. Wait for the job to finish, and check the `STDOUT` and `STDERR` files of the job. Do you get the result in the `STDOUT` file?
 
-
 3. Check in your e-mail box for a notification about your job.  The content of it should looks similar to the following snippet.
 
     ```bash
