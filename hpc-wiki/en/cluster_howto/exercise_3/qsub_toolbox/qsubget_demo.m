@@ -1,13 +1,10 @@
 % load job id list created by qsubfeval_demo.m 
-load jids.mat
+load 'jobs.mat'
 
 out = {};
 % retrieve output from each job
-for i = 1:5
-    out{i} = qsubget( jids{i} )
+for j = jobs 
+    out = [out, qsubget( j{:} )];
 end
 
-% print output from each job
-for i = 1:5
-    out{i}
-end
+out
