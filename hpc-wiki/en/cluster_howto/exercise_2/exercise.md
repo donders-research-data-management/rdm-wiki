@@ -2,6 +2,8 @@
 
 In this exercise, you will be confronted with an issue that the computer resource (in this case, the memory) allocated for your job is not sufficient to complete the computation. With few trials, you will find out a sufficient (but not overestimated) memory requirement to finish the job. 
 
+## Preparation
+
 To create such a situation, you are given a program which calculate the cube number of a given integer (i.e. `n^3`). Follow the commands below to download the program and run it locally:
 
 ```bash

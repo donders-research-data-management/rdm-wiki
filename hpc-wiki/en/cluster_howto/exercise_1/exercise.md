@@ -2,6 +2,8 @@
 
 This exercise mimics a distributed data analysis assuming that we have to apply the same data analysis algorithm independently on the datasets collected from 5 subjects.  We will use the torque cluster to run the analysis in parallel.
 
+## Preparation
+
 Using the commands below to download the exercise package from [this link](torque_exercise.tgz) and check its content.
 
 ```bash
