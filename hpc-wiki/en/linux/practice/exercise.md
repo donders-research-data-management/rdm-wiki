@@ -20,27 +20,29 @@ In the data file you will find an output of the `cluster-qstat`, an utility comm
 
 ## Solution
 
-```bash
-$ cat cluster-qstat.dat | grep ' R '
+1. for task 1
+ 
+    ```bash
+    $ cat cluster-qstat.dat | grep ' R '
 
-10052631.dccn-l029.dcc  yulber      matlab   yulber_dccn_c013  34919   --       1   51gb  11:09:40 R  05:09:55   dccn-c021
-10066959.dccn-l029.dcc  matfra      matlab   matfra_dccn_c017  48708   --       1   65gb  03:03:00 R  05:25:43   dccn-c019
-10066960.dccn-l029.dcc  matfra      matlab   matfra_dccn_c017  48724   --       1   65gb  03:03:00 R  05:25:43   dccn-c019
-10069566.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22391   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
-10069567.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22412   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
-10069568.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22448   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
-10069569.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22500   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
-10069570.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22559   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
+    10052631.dccn-l029.dcc  yulber      matlab   yulber_dccn_c013  34919   --       1   51gb  11:09:40 R  05:09:55   dccn-c021
+    10066959.dccn-l029.dcc  matfra      matlab   matfra_dccn_c017  48708   --       1   65gb  03:03:00 R  05:25:43   dccn-c019
+    10066960.dccn-l029.dcc  matfra      matlab   matfra_dccn_c017  48724   --       1   65gb  03:03:00 R  05:25:43   dccn-c019
+    10069566.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22391   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
+    10069567.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22412   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
+    10069568.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22448   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
+    10069569.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22500   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
+    10069570.dccn-l029.dcc  yulber      matlab   yulber_dccn_c012  22559   --       1   16gb  11:09:40 R  03:46:59   dccn-c020
 
-... skipped ...
+    ```
 
-```
+2. for task 2
 
-```bash
-$ grep 'matlab' cluster-qstat.dat  | grep -i ' [R,Q] ' | awk '{print $10}' | sort | uniq -c
+    ```bash
+    $ grep 'matlab' cluster-qstat.dat  | grep -i ' [R,Q] ' | awk '{print $10}' | sort | uniq -c
 
-  30 Q
- 117 R
-```
+      30 Q
+     117 R
+    ```
 
-Here we employ the regular expression in the `grep` command to select jobs either in state `R` or `Q`.  More about the regular expression syntax of `grep` can be found [here](https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html).
+    Here we employ the regular expression in the `grep` command to select jobs either in state `R` or `Q`.  More about the regular expression syntax of `grep` can be found [here](https://www.gnu.org/software/findutils/manual/html_node/find_html/grep-regular-expression-syntax.html).
