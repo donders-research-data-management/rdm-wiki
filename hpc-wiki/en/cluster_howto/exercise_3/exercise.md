@@ -18,6 +18,44 @@ matlab_sub  qsub_toolbox
 
 ## Task 1: matlab_sub
 
+When you have a MATLAB script file (i.e. the M-file) which __takes no input argument__, you can simply submit a job to run on the script using the `matlab_sub` command.
+
+In this task, you are given a M-file which generates a 8x8 magic matrix, makes a sum of the diagonal elements, and finally saves the sum to a file. Follow the steps below for the exercise:
+
+1. Switch the working directory in which the M-file is provided
+
+    ```bash
+    $ cd matlab_sub
+    $ ls 
+    magic_cal.m
+    ```
+
+2. Read and understand the `magic_cal.m` script
+
+3. (Optional) Choose a desired MATLAB version, e.g. `R2014b`
+
+    ```bash
+    $ module unload matlab
+    $ module load matlab/R2014b
+    ```
+
+    As long as you are fine with the default version of MATLAB, you can leave this step out.  The default version of MATLAB can be checked with
+
+   ```bash
+   $ module avail matlab
+   ```
+
+4. Submit a job to run the script
+
+    ```bash
+    $ matlab_sub magic_cal.m
+    ```
+
+    You will be asked to provide the walltime and memory requirements of the job.
+
+5. Monitor the job until it is finished. You will see the output file `magic_cal_output.mat` containing the result.
+
+
 ## Task 2: qsubcellfun
 
 1. Start matlab interactive session with the command
