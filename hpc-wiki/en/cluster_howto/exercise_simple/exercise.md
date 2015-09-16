@@ -65,7 +65,7 @@ The aim of this exercise is to get you familiar with the torque client tools for
     6928946.dccn-l029.dccn.nl
     ```
 
-    Note: Try to compare the command in step 3.  As we expect the job to run longer, the requirement of job walltime is also extended to 1 hour 10 minutes.
+    Note: Try to compare the command in step 3.  As we expect the job to run longer, the requirement on the job walltime is also extended to 1 hour 10 minutes.
 
 8. Ok, we don't want to wait for the 1-hour job to finish. Let's cancel the job.  For example,
 
