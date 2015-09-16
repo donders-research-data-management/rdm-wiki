@@ -11,7 +11,7 @@ Attention: In this exercise, we will use commands in MATLAB and in Linux shell. 
 Follow the steps below to download the prepared MATLAB scripts and functions.
 
 ```bash
-$ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_3/matlab_exercise.tgz
+$ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_matlab/matlab_exercise.tgz
 $ tar xvzf matlab_exercise.tgz
 $ cd matlab_exercise
 $ ls

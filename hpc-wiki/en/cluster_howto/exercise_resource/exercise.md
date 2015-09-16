@@ -7,7 +7,7 @@ In this exercise, you will be confronted with an issue that the computer resourc
 To create such a situation, you are given a program which calculate the cube number of a given integer (i.e. `n^3`). Follow the commands below to download the program and run it locally:
 
 ```bash
-$ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_2/fake_app
+$ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_resource/fake_app
 $ chmod +x fake_app
 $ ./fake_app 3
 
