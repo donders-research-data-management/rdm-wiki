@@ -4,6 +4,8 @@ In this exercise, you will learn how to submit MATLAB jobs in the cluster using 
 
 The first approach is to use a wrapper script called `matlab_sub`; while the second is to submit batch jobs right within the graphical interface of MATLAB.
 
+Attention: In this exercise, we will use commands in MATLAB and in Linux shell. When you see the commands started with a prompt `$`, it means a command in Linux shell.  If you see `>>`, it implies a command to be typed in a MATLAB console.
+
 ## Preparation
 
 Follow the steps below to download the prepared MATLAB scripts and functions.
