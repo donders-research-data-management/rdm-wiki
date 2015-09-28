@@ -5,7 +5,7 @@
 Download [this data file](../exercise/cluster-qstat.dat) using the following command:
 
 ```
-$ wget http://donders-institute.github.io/hpc_wiki/en/linux/exercise/cluster-qstat.dat
+$ wget http://donders-institute.github.io/hpc-wiki/en/linux/exercise/cluster-qstat.dat
 ```
 
 In the data file you will find an output of the `cluster-qstat`, an utility command you may eventually use to manage computational jobs in the cluster.  Each line in the file shows attributes of a job currently presented in the cluster's job registry. Names of job attributes are given in the 4th line.
