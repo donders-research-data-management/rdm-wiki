@@ -7,7 +7,7 @@
 1. Download the [example script](language.md#The_example_script) using the following command, make it executable and run it.
 
    ```
-   $ wget https://gist.githubusercontent.com/hurngchunlee/78ae286f079e4a68ed63/raw/check_login.sh
+   $ wget --no-check-certificate https://gist.githubusercontent.com/hurngchunlee/78ae286f079e4a68ed63/raw/check_login.sh
    ``` 
 
    Hint: use [this wiki](language.md) to understand the script. 
