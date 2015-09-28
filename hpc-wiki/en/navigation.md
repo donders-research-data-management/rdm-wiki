@@ -14,7 +14,8 @@
   * # Scripting in Bash
   * [Getting start](linux/bash/start.md)
   * [The bash language](linux/bash/language.md)
-  * [Exercise](linux/bash/exercise.md)
+  * [Exercise 1](linux/bash/BASHexercise.md)
+  * [Exercise 2](linux/bash/exercise.md)
 
 [Cluster Guide]()
 
