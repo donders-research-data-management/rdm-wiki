@@ -11,12 +11,12 @@ The aim of this exercise is to get you familiar with the torque client tools for
     
     my_host=$( /bin/hostname )
     
-    time=$( date +%s )
-    echo "$time: $my_host falls to sleep ..."
+    time=$( date )
+    echo "$time: $my_host falls asleep ..."
     
     sleep $1
     
-    time=$( date +%s )
+    time=$( date )
     echo "$time: $my_host wakes up."
     ``` 
 
@@ -25,8 +25,8 @@ The aim of this exercise is to get you familiar with the torque client tools for
     ```bash
     $ chmod +x run_sleep.sh
     $ ./run_sleep.sh 1
-    1412674030: mentat001.dccn.nl falls to sleep ...
-    1412674031: mentat001.dccn.nl wakes up.
+    Mon Sep 28 16:36:28 CEST 2015: dccn-c007.dccn.nl falls asleep ...
+    Mon Sep 28 16:36:29 CEST 2015: dccn-c007.dccn.nl wakes up.
     ```
 
 3. submit a job to run the script
