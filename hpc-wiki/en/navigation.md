@@ -23,10 +23,11 @@
   * [Using Mentat Compute Nodes](cluster_howto/compute_mentat.md)
   * [Using Torque Cluster](cluster_howto/compute_torque.md)
   * [Using Supported Software](cluster_howto/software.md)
-  * [Exercise 1: simple batch](cluster_howto/exercise_simple/exercise.md)
-  * [Exercise 2: resource requirement](cluster_howto/exercise_resource/exercise.md)
-  * [Exercise 3: data analysis](cluster_howto/exercise_da/exercise.md)
-  * [Exercise 4: MATLAB jobs](cluster_howto/exercise_matlab/exercise.md)
+  * [Exercise 1: interactive job](cluster_howto/exercise_interactive/exercise.md)
+  * [Exercise 2: simple batch](cluster_howto/exercise_simple/exercise.md)
+  * [Exercise 3: resource requirement](cluster_howto/exercise_resource/exercise.md)
+  * [Exercise 4: data analysis](cluster_howto/exercise_da/exercise.md)
+  * [Exercise 5: MATLAB jobs](cluster_howto/exercise_matlab/exercise.md)
   - - - -
   * # Cluster Monitor
   * [Ganglia](http://ganglia.dccn.nl)
