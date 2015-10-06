@@ -47,7 +47,7 @@ The script support few optional arguments. Some usefule ones are listed in the f
 | `-h`         | print the help message with a full list of the command-line options  |
 | `-l LOGLEVEL`| set the verbosity of the log message in a level between `0` and `3`  |
 | `-p SUBDIR`  | retrieve the access right on a `SUBDIR` within the project directory |
-| `-b`         | run the ACL setting process in batch mode, as a Torque cluster job   |
+| `-b`         | run the access-right setting in batch mode, as a Torque cluster job  |
 
 ### Administrator's tool for permission control
 
