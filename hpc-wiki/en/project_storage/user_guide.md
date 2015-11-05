@@ -75,6 +75,8 @@ For removing an user from accessing a project, another tool called `prj_delacl` 
 $ prj_delacl rendbru 3010000.01
 ```
 
+Note: Changing and deleting user role are always applied recursively.
+
 #### Controlling user role on sub-directories
 Although it's still experimental, it is possible to set/delete user role on sub-directory within a project directory, using the `-p` option of the `prj_setacl` and `prj_delacl` scripts. For example, granting user `edwger` with the `Contributor` role in the subdirectory `subject_001` within project `3010000.01` can be done as follows:
 
@@ -82,7 +84,7 @@ Although it's still experimental, it is possible to set/delete user role on sub-
 $ prj_setacl -p subject_001 -c edwger 3010000.01
 ```
 
-Note: One should note that changing and deleting user role is always applied recursively.
+Note: This feature is locked by default.  If you want to use this feature for your project, please contact TG.
 
 #### The "Traverse" role
 When granting user a role in a sub-directory, a minimum permission in upper-level directories should also be given to the user to "pass through" the directory tree.  This minimum permission is given by assiging the user to the `Traverse` role.
