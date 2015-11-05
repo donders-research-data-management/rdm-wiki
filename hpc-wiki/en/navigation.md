@@ -33,6 +33,9 @@
   * [Ganglia](http://ganglia.dccn.nl)
   * [TorqueMon](http://torquemon.dccn.nl)
 
+[Project Storage]()
+  * [Managing the project storage](project_storage/user_guide.md)
+
 [Tutorials in the past]()
 
   * [Linux & HPC tutorial Sep. 2015](https://pl-squid.dccn.nl/indico/event/11/)
