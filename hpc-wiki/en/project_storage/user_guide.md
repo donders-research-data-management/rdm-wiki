@@ -16,12 +16,12 @@ Users should be aware of the following four __roles__ defined for the access con
 
 | Role              | Access right                                      |
 | ------------------|---------------------------------------------------|
-| __User__          | users in this role has read-only permission.      |
+| __Viewer__        | users in this role has read-only permission.      |
 | __Contributor__   | users in this role has read and write permission. |
-| __Administrator__ | users in this role has read, write permission and rights to grant/revoke roles of other users.|
+| __Manager__       | users in this role has read, write permission and rights to grant/revoke roles of other users.|
 | __Traverse__      | This role is only relevent for a directory. Users in this role has permission to "pass through" a directory. It is similar to the `x`-bit of the linux filesystem permission. |
 
-Any user who wants to access data in a project directory must acquire one of the roles on the project. Users in the __Administrator__ role have rights to grant/revoke additional user roles. The project owner is the initial and the _de facto_ administrator of the project. 
+Any user who wants to access data in a project directory must acquire one of the roles on the project. Users in the __Manager__ role have rights to grant/revoke additional user roles. 
 
 ## Tools
 
@@ -33,11 +33,11 @@ For general end-users, a tool called `prj_getacl` is used to show user roles of 
 
 ```bash
 $ prj_getacl 3010000.01
-+------------+---------------------+--------+-------------+--------+----------+
-|  project   |         path        | admin  | contributor |  user  | traverse |
-+------------+---------------------+--------+-------------+--------+----------+
-| 3010000.01 | /project/3010000.01 | honlee |    martyc   | edwger | rendbru  |
-+------------+---------------------+--------+-------------+--------+----------+
++------------+---------------------+---------+-------------+---------+----------+
+|  project   |         path        | manager | contributor |  viewer | traverse |
++------------+---------------------+---------+-------------+---------+----------+
+| 3010000.01 | /project/3010000.01 | honlee  |    martyc   | edwger  | rendbru  |
++------------+---------------------+---------+-------------+---------+----------+
 ```
 
 The script support few optional arguments. Some usefule ones are listed in the following table. 
@@ -63,10 +63,10 @@ Similarly, setting `rendbru` back to the `Contributor` role, one does the follow
 $ prj_setacl -c rendbru 3010000.01
 ``` 
 
-To promote `rendbru` to the `Administrator` role, one uses the `-a` option then, e.g.
+To promote `rendbru` to the `Manager` role, one uses the `-m` option then, e.g.
 
 ```bash
-$ prj_setacl -a rendbru 3010000.01
+$ prj_setacl -m rendbru 3010000.01
 ```
 
 For removing an user from accessing a project, another tool called `prj_delacl` is used.  For example, if we want to remove the access right of `rendbru` from project `3010000.01`, one does
