@@ -32,6 +32,8 @@
   * # Cluster Monitor
   * [Ganglia](http://ganglia.dccn.nl)
   * [TorqueMon](http://torquemon.dccn.nl)
+  - - - -
+  * [Best practices](cluster_howto/best_practices.md)
 
 [Project Storage]()
 
