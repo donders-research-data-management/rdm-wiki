@@ -8,7 +8,7 @@ The scheduler in the HPC cluster is in favor of less-longer jobs over massive-sh
 
 With the longer job, your whole computation task will also be done faster given the fact that whenever a resource is allocated for you, you can utilise it longer to make more computations.
 
-A trade-off of this approach is that if a job fails, more computational time is wasted. Nevertheless, this can be overcome with a good bookeeping in such that results from the finished computations in a job is preserved, and the finished computations do not need to be re-run.
+A trade-off of this approach is that if a job fails, more computing time is wasted. Nevertheless, this can be overcome with a good bookeeping in such that results from the finished computations in a job is preserved, and the finished computations do not need to be re-run.
 
 ## Utilise local drive on compute node
 
