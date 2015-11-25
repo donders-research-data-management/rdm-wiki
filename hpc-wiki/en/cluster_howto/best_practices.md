@@ -12,6 +12,6 @@ A trade-off of this approach is that if a job fails, more computational time is 
 
 ## Utilise local drive on compute node
 
-## Avoid large printing to `STDOUT`
+## Avoid massive output to STDOUT
 
 ## Spread jobs over time
