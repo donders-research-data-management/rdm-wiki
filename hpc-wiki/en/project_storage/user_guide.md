@@ -75,7 +75,7 @@ For removing an user from accessing a project, another tool called `prj_delacl` 
 $ prj_delacl rendbru 3010000.01
 ```
 
-WARNING: When managing the access right, one important feature to keep in mind is that the new setting will always be propagated from the root of the project directory to all the files/sub-directories iteratively.  This feature ensures the consistency for managing the access control, but can eventually result in an undesired setting if it is not taken into account.
+WARNING: When managing the access permission, one important feature to keep in mind is that the new setting will always be propagated from the root of the project directory to all the files/sub-directories iteratively.  This feature ensures the consistency for managing the access, but can eventually result in an undesired setting if it is not taken into account.
 
 #### Controlling user role on sub-directories
 Although it's still experimental, it is possible to set/delete user role on sub-directory within a project directory, using the `-p` option of the `prj_setacl` and `prj_delacl` scripts. For example, granting user `edwger` with the `Contributor` role in the subdirectory `subject_001` within project `3010000.01` can be done as follows:
