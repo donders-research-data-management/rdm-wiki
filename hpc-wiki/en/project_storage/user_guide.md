@@ -16,12 +16,12 @@ Users should be aware of the following four __roles__ defined for the access con
 
 | Role              | Access right                                      |
 | ------------------|---------------------------------------------------|
-| __User__          | users in this role has read-only permission.      |
+| __Viewer__        | users in this role has read-only permission.      |
 | __Contributor__   | users in this role has read and write permission. |
-| __Administrator__ | users in this role has read, write permission and rights to grant/revoke roles of other users.|
+| __Manager__       | users in this role has read, write permission and rights to grant/revoke roles of other users.|
 | __Traverse__      | This role is only relevent for a directory. Users in this role has permission to "pass through" a directory. It is similar to the `x`-bit of the linux filesystem permission. |
 
-Any user who wants to access data in a project directory must acquire one of the roles on the project. Users in the __Administrator__ role have rights to grant/revoke additional user roles. The project owner is the initial and the _de facto_ administrator of the project. 
+Any user who wants to access data in a project directory must acquire one of the roles on the project. Users in the __Manager__ role have rights to grant/revoke additional user roles. 
 
 ## Tools
 
@@ -33,11 +33,11 @@ For general end-users, a tool called `prj_getacl` is used to show user roles of 
 
 ```bash
 $ prj_getacl 3010000.01
-+------------+---------------------+--------+-------------+--------+----------+
-|  project   |         path        | admin  | contributor |  user  | traverse |
-+------------+---------------------+--------+-------------+--------+----------+
-| 3010000.01 | /project/3010000.01 | honlee |    martyc   | edwger | rendbru  |
-+------------+---------------------+--------+-------------+--------+----------+
++------------+---------------------+---------+-------------+---------+----------+
+|  project   |         path        | manager | contributor |  viewer | traverse |
++------------+---------------------+---------+-------------+---------+----------+
+| 3010000.01 | /project/3010000.01 | honlee  |    martyc   | edwger  | rendbru  |
++------------+---------------------+---------+-------------+---------+----------+
 ```
 
 The script support few optional arguments. Some usefule ones are listed in the following table. 
@@ -47,6 +47,7 @@ The script support few optional arguments. Some usefule ones are listed in the f
 | `-h`         | print the help message with a full list of the command-line options  |
 | `-l LOGLEVEL`| set the verbosity of the log message in a level between `0` and `3`  |
 | `-p SUBDIR`  | retrieve the access right on a `SUBDIR` within the project directory |
+| `-b`         | run the access-right setting in batch mode, as a Torque cluster job  |
 
 ### Administrator's tool for permission control
 
@@ -62,10 +63,10 @@ Similarly, setting `rendbru` back to the `Contributor` role, one does the follow
 $ prj_setacl -c rendbru 3010000.01
 ``` 
 
-To promote `rendbru` to the `Administrator` role, one uses the `-a` option then, e.g.
+To promote `rendbru` to the `Manager` role, one uses the `-m` option then, e.g.
 
 ```bash
-$ prj_setacl -a rendbru 3010000.01
+$ prj_setacl -m rendbru 3010000.01
 ```
 
 For removing an user from accessing a project, another tool called `prj_delacl` is used.  For example, if we want to remove the access right of `rendbru` from project `3010000.01`, one does
@@ -74,6 +75,8 @@ For removing an user from accessing a project, another tool called `prj_delacl` 
 $ prj_delacl rendbru 3010000.01
 ```
 
+WARNING: When managing the access permission, one important feature to keep in mind is that the new setting will always be propagated from the root of the project directory to all the files/sub-directories iteratively.  This feature ensures the consistency for managing the access, but can eventually result in an undesired setting if it is not taken into account.
+
 #### Controlling user role on sub-directories
 Although it's still experimental, it is possible to set/delete user role on sub-directory within a project directory, using the `-p` option of the `prj_setacl` and `prj_delacl` scripts. For example, granting user `edwger` with the `Contributor` role in the subdirectory `subject_001` within project `3010000.01` can be done as follows:
 
@@ -81,7 +84,7 @@ Although it's still experimental, it is possible to set/delete user role on sub-
 $ prj_setacl -p subject_001 -c edwger 3010000.01
 ```
 
-Note: One should note that changing and deleting user role is always applied recursively.
+Note: This feature is locked by default.  If you want to use this feature for your project, please contact TG.
 
 #### The "Traverse" role
 When granting user a role in a sub-directory, a minimum permission in upper-level directories should also be given to the user to "pass through" the directory tree.  This minimum permission is given by assiging the user to the `Traverse` role.
