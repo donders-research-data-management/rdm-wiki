@@ -1,5 +1,6 @@
 {
     "useSideMenu": true,
     "lineBreaks": "gfm",
-    "title": "DI-RDM wiki"
+    "title": "DI-RDM wiki",
+    "additionalFooterText": "Donders Institute, Radboud University &copy; 2015-2016"
 }
