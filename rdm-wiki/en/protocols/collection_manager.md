@@ -1,1 +1,1 @@
-# Protocol of collection manager
+# Protocol for collection manager
