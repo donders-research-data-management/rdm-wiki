@@ -1,7 +1,5 @@
 # DI-RDM wiki
 
-[Introduction]()
-
 [Protocols]()
 
   * [For research administrator](protocols/research_admin.md) 

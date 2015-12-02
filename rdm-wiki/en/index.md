@@ -1,3 +1,4 @@
 # Donders Institute Research Data Management 
 
-## About the wiki
+## About the project
+
