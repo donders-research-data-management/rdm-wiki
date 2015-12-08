@@ -4,7 +4,7 @@
 
   * [For researchers](protocols/researcher.md) 
   * [For reviewers](protocols/reviewer.md) 
-  * [For research administrators](protocols/administrator.md) 
+  * [For administrators](protocols/administrator.md) 
 
 [User Guide]()
 
