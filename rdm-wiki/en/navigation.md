@@ -2,10 +2,9 @@
 
 [Protocols]()
 
-  * [For research administrator](protocols/research_admin.md) 
-  * [For collection manager](protocols/collection_manager.md) 
-  * [For collection contributor](protocols/collection_contributor.md) 
-  * [For collection viewer](protocols/collection_viewer.md) 
+  * [For research administrators](protocols/administrator.md) 
+  * [For reviewers](protocols/reviewer.md) 
+  * [For researchers](protocols/researcher.md) 
 
 [User Guide]()
 
