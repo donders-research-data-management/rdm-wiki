@@ -2,9 +2,9 @@
 
 [Protocols]()
 
-  * [For research administrators](protocols/administrator.md) 
-  * [For reviewers](protocols/reviewer.md) 
   * [For researchers](protocols/researcher.md) 
+  * [For reviewers](protocols/reviewer.md) 
+  * [For research administrators](protocols/administrator.md) 
 
 [User Guide]()
 
