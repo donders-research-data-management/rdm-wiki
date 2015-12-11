@@ -3,9 +3,10 @@
 
 To share data, analysis pipelines and/or software in a "data sharing collection", the collection manager needs to select a Data Use Agreement and close the collection. Only closed collections can be accessed by external users.
 
-The following data use agreements can be selected upon closure:
-  * [RU-DI-HD-1.0-draft](../agreements/RU-DI-HD-1.0-draft.md)  for collections that include data from human subjects
-  * [RU-DI-NH-1.0-draft](../agreements/RU-DI-NH-1.0-draft.md)  for collections that do not include data from human subjects
+The following data use agreements can be selected upon closure of collections that include potentially identifiable data from human subjects:
+  * [RU-DI-HD-1.0-draft](../agreements/RU-DI-HD-1.0-draft.md)  
+The following data use agreements can be selected upon closure of collections that only include data that cannot be identified in any way (e.g. only group results):
+  * [RU-DI-NH-1.0-draft](../agreements/RU-DI-NH-1.0-draft.md)  
   * [CC-BY-4.0](../agreements/CC-BY-4.0.md)
   * [CC-BY-NC-4.0](../agreements/CC-BY-NC-4.0.md)
   * [CC-BY-NC-ND-4.0](../agreements/CC-BY-NC-ND-4.0.md)
