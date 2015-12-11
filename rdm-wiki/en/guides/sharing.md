@@ -5,6 +5,7 @@ To share data, analysis pipelines and/or software in a "data sharing collection"
 
 The following data use agreements can be selected upon closure of collections that include potentially identifiable data from human subjects:
   * [RU-DI-HD-1.0-draft](../agreements/RU-DI-HD-1.0-draft.md)  
+
 The following data use agreements can be selected upon closure of collections that only include data that cannot be identified in any way (e.g. only group results):
   * [RU-DI-NH-1.0-draft](../agreements/RU-DI-NH-1.0-draft.md)  
   * [CC-BY-4.0](../agreements/CC-BY-4.0.md)
