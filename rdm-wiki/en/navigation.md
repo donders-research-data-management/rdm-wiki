@@ -13,6 +13,7 @@
   - - - -
   * # Data access 
   * [WebDav interface](guides/webdav.md)
+  * [Data sharing](guides/sharing.md)
 
 [gimmick:theme (inverse: false)](simplex)
 
