@@ -17,9 +17,10 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 1. Open the CyberDuck application, and create a new connection as a bookmark:
   ![](screenshots/cyberduck_new_bookmark.png)
 
-2. Configure the connection using the following parameters:
+2. Configure the connection:
   ![](screenshots/cyberduck_webdav_config.png)
 
+  Set the connection parameters as below:
   * Connection protocol: choose __WebDAV (HTTP/SSL)__
   * Server: __rdmappacc.uci.ru.nl__
   * Port: __8443__
