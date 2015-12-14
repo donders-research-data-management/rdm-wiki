@@ -21,6 +21,7 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 2. Configure the connection:
 
   ![](screenshots/cyberduck_webdav_config.png)
+  
   Set the connection parameters as below:
   * __WebDAV (HTTP/SSL)__
   * Server: __rdmappacc.uci.ru.nl__
