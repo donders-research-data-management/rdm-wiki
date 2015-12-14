@@ -14,6 +14,11 @@ For Linux users, CyberDuck is provided as a command-line tools called [duck.sh](
 
 Note: This instruction convers only the graphical user interface of CyberDuck. For duck.sh user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
+![](screenshots/cyberduck_new_bookmark.png)
+![](screenshots/cyberduck_webdav_config.png)
+![](screenshots/cyberduck_connect_via_bookmark.png)
+![](screenshots/cyberduck_file_browser.png)
+
 ## Verified alternative clients
 
 The table below provides a list of tested WebDAV clients that work smoothly with the RDM WebDAV service.  You may use them as alternatives to the CyberDuck.
