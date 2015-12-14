@@ -15,22 +15,27 @@ For Linux users, CyberDuck is provided as a command-line tools called [duck.sh](
 Note: This instruction convers only the graphical user interface of CyberDuck. For duck.sh user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
 1. Open the CyberDuck application, and create a new connection as a bookmark:
-![](screenshots/cyberduck_new_bookmark.png)
+  ![](screenshots/cyberduck_new_bookmark.png)
 
 2. Configure the connection parameters following the table below:
-![](screenshots/cyberduck_webdav_config.png)
+  ![](screenshots/cyberduck_webdav_config.png)
 
-| parameter           | value |
-| ------------------- | ----- |
-| Connection protocol | WebDAV (HTTP/SSL) |
-| Nickname            | RDM WebDAV (you may call it differently) |
-| Server              | rdmappacc.uci.ru.nl |
-| Port                | 8443 |
-| Username            | the data access user name retrieved from the RDM CMS |
-| Path                | rdm-webdav |
+  | parameter           | value |
+  | ------------------- | ----- |
+  | Connection protocol | WebDAV (HTTP/SSL) |
+  | Nickname            | RDM WebDAV (you may call it differently) |
+  | Server              | rdmappacc.uci.ru.nl |
+  | Port                | 8443 |
+  | Username            | the data access user name retrieved from the RDM CMS |
+  | Path                | rdm-webdav |
 
-![](screenshots/cyberduck_connect_via_bookmark.png)
-![](screenshots/cyberduck_file_browser.png)
+3. Click on the saved bookmark to make connection.  You will be asked for a login password.  The data access password can also be retrieved from the CMS portal. 
+  ![](screenshots/cyberduck_connect_via_bookmark.png)
+
+4. Once you loggin to the WebDAV service, you will see a filesystem-like structure with four directories, each represents a centre of the Donders Institute. You may click into a directory and consequently see sub-directories representing the RDM collections belong to a centre. Within the RDM collection, you will see the data content as files and directories.
+  ![](screenshots/cyberduck_file_browser.png)
+
+5. As a viewer of the collection, you are only allowed to download data content (files/directories) from a collection.  As a contributor or manager, you are also allowed to upload and modify data via the WebDAV client. 
 
 ## Verified alternative clients
 
