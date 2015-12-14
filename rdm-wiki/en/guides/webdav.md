@@ -18,16 +18,15 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
   ![](screenshots/cyberduck_new_bookmark.png)
 
-2. Configure the connection:
+2. Configure the connection with the following parameters:
 
-  ![](screenshots/cyberduck_webdav_config.png)
-  
-  Set the connection parameters as below:
   * __WebDAV (HTTP/SSL)__
   * Server: __rdmappacc.uci.ru.nl__
   * Port: __8443__
   * Username: _the data access username retrieved from the [CMS portal](user_signup.md)_
   * Path: __rdm-webdav__
+
+  ![](screenshots/cyberduck_webdav_config.png)
 
 3. Click on the saved bookmark to make connection.  You will be asked for a login password.  The data access password can also be retrieved from the CMS portal. 
 
