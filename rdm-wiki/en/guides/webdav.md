@@ -14,7 +14,18 @@ For Linux users, CyberDuck is provided as a command-line tools called [duck.sh](
 
 Note: This instruction convers only the graphical user interface of CyberDuck. For duck.sh user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
+1. Open the CyberDuck application, and create a new connection as a bookmark:
 ![](screenshots/cyberduck_new_bookmark.png)
+
+2. Configure the connection parameters accordingly with the following values:
+| parameter           | value |
+| ------------------- | ----- |
+| Connection protocol | WebDAV (HTTP/SSL) |
+| Nickname            | RDM WebDAV (you may call it differently) |
+| Server              | rdmappacc.uci.ru.nl |
+| Port                | 8443 |
+| Username            | the data access user name retrieved from the RDM CMS |
+| Path                | rdm-webdav |
 ![](screenshots/cyberduck_webdav_config.png)
 ![](screenshots/cyberduck_connect_via_bookmark.png)
 ![](screenshots/cyberduck_file_browser.png)
