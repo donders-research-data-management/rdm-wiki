@@ -19,14 +19,15 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 2. Configure the connection parameters following the table below:
   ![](screenshots/cyberduck_webdav_config.png)
-  | parameter           | value |
-  | ------------------- | ----- |
-  | Connection protocol | WebDAV (HTTP/SSL) |
-  | Nickname            | RDM WebDAV (you may call it differently) |
-  | Server              | rdmappacc.uci.ru.nl |
-  | Port                | 8443 |
-  | Username            | the data access user name retrieved from the RDM CMS |
-  | Path                | rdm-webdav |
+
+| parameter           | value |
+| ------------------- | ----- |
+| Connection protocol | WebDAV (HTTP/SSL) |
+| Nickname            | RDM WebDAV (you may call it differently) |
+| Server              | rdmappacc.uci.ru.nl |
+| Port                | 8443 |
+| Username            | the data access user name retrieved from the RDM CMS |
+| Path                | rdm-webdav |
 
 3. Click on the saved bookmark to make connection.  You will be asked for a login password.  The data access password can also be retrieved from the CMS portal. 
   ![](screenshots/cyberduck_connect_via_bookmark.png)
