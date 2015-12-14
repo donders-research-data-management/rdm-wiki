@@ -10,9 +10,9 @@
 
   * # CMS 
   * [User sign up](guides/user_signup.md)
-  * [Data access account](guides/data_access_account.md)
   - - - -
   * # Data access 
+  * [Data access account](guides/data_access_account.md)
   * [WebDav interface](guides/webdav.md)
   * [Data sharing](guides/sharing.md)
 
