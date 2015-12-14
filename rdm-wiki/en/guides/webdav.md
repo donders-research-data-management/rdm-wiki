@@ -17,7 +17,9 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 1. Open the CyberDuck application, and create a new connection as a bookmark:
 ![](screenshots/cyberduck_new_bookmark.png)
 
-2. Configure the connection parameters accordingly with the following values:
+2. Configure the connection parameters following the table below:
+![](screenshots/cyberduck_webdav_config.png)
+
 | parameter           | value |
 | ------------------- | ----- |
 | Connection protocol | WebDAV (HTTP/SSL) |
@@ -26,7 +28,7 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 | Port                | 8443 |
 | Username            | the data access user name retrieved from the RDM CMS |
 | Path                | rdm-webdav |
-![](screenshots/cyberduck_webdav_config.png)
+
 ![](screenshots/cyberduck_connect_via_bookmark.png)
 ![](screenshots/cyberduck_file_browser.png)
 
