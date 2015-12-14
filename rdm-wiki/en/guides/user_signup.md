@@ -14,7 +14,7 @@ As long as you have a valid account issued by a SURFConext trusted identity prov
 
   ![](screenshots/cms_homepage.png)
 
-2. At the right-top corner, you will find a `login` button.  Click it to sign-up/in with your SURFConext IdP account.
+2. At the top-right corner, you will find a `LOG IN` button.  Click it to sign-up/in with your SURFConext IdP account.
 
   ![](screenshots/cms_login.png)
 
