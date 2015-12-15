@@ -1,17 +1,27 @@
 # RDM user attributes
 
-The RDM user attributes are implemented as key-value pairs associated with the iRODS user object.  The table below summarises availabel attributes:
+The RDM user attributes are implemented as key-value pairs associated with the iRODS user object.  The table below summarises availabel attributes.
 
+Meaning of the table columns:
 
-| key                          | value / format          | multiple | IdP | RA | U |
-| ---------------------------- | ----------------------- | -------- | --- | -- | - |
-| givenName                    | string w/ UTF-8 support |     N    |  Y  | N  | N |
-| surName                      | string w/ UTF-8 support |     N    |  Y  | N  | N |
-| displayName                  | string w/ UTF-8 support |     N    |  Y  | N  | N |
-| homeOrganisation             | domain (i.e. ru.nl      |     N    |  Y  | N  | N |
-| uid                          | IdP-specific user id    |     N    |  Y  | N  | N |
-| email                        | email address           |     N    |  Y  | N  | N |
-| researcherId                 | string                  |     N    |  N  | N  | Y |
-| openResearchAndContributorId | string                  |     N    |  N  | N  | Y |
-| personalWebsiteUrl           | HTTP URL                |     N    |  N  | N  | Y |
-| attributeLastUpdatedDateTime | YYYY-MM-DDTHH:MM:SS     |     N    |  N  | N  | N |
+* __key__: the attribute key
+* __value / format__: the value and/or format of the value
+* __multiple__: whether the attribute can have multiple values
+* __IdP__: whether the attribute value is copied from IdP
+* __RA__: whether the attribute is editable by research administrator 
+* __U__: whether the attribute is editable by the user
+
+| key                          | value / format          | multiple | IdP  | RA   | U    |
+| ---------------------------- | ----------------------- | -------- | ---- | ---- | ---- |
+| givenName                    | string w/ UTF-8 support |          |   Y  |      |      |
+| surName                      | string w/ UTF-8 support |          |   Y  |      |      |
+| displayName                  | string w/ UTF-8 support |          |   Y  |      |      |
+| homeOrganisation             | domain (i.e. ru.nl)     |          |   Y  |      |      |
+| uid                          | IdP-specific user id    |          |   Y  |      |      |
+| email                        | email address           |          |   Y  |      |      |
+| organisationalUnit           | DCCN, DCC, DCN_M/S      |          |      |   Y  |      |
+| researcherId                 | string                  |          |      |      |  Y   |
+| openResearchAndContributorId | string                  |          |      |      |  Y   |
+| personalWebsiteUrl           | HTTP URL                |          |      |      |  Y   |
+| attributeLastUpdatedDateTime | YYYY-MM-DDTHH:MM:SS     |          |      |      |      |
+
