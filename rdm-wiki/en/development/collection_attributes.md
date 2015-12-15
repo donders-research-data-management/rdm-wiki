@@ -18,10 +18,10 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | ---------------------------- | ---------------------------- | -------- | ---- | ---- | ---- | ---- | ------- | ---- | ---- | ---- |
 | identifierEPIC               | valid EPIC identifier        |          |  Y   |      |      |      |  Y      |      |      |      |
 | identifierDOI                | valid DOI identifier         |          |  Y   |      |      |      |  Y      |      |      |      |
-| collectionIdentifier         | <o>.<ou>.<coll_name>         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| collectionIdentifier         | [o].[ou].[coll_name]         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | organisation                 | `DI`                         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | organisationalUnit           | `DCCN`,`DCC`,`DCN_S/M`       |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
-| projectIdentifier            | <type>_<number>              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| projectIdentifier            | [type]_[number]              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | collectionType               | `DAC`,`RDC`,`DSC`            |          |      |  Y   |  Y   |  Y   |  C      |      |      |      |
 | title                        | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |  Y   |
 | subject                      | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
@@ -40,7 +40,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | associatedDAC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
 | associatedRDC                | internal iRODS coll. id      |    Y     |      |  Y   |      |  Y   |  C      |      |  Y   |  Y   |
 | associatedDSC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
-| associatedPublication        | <type>:<identifier>          |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| associatedPublication        | [type]:[identifier]          |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | quotaInMegaByte              | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaByte               | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | dataUseAgreement             | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
