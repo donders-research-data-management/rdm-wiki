@@ -16,7 +16,7 @@
   * [WebDav interface](guides/webdav.md)
   * [Data sharing](guides/sharing.md)
  
-[Developers]()
+[Developer Guide]()
 
   * [RDM user attributes](development/user_attributes.md)
   * [RDM collection attributes](development/collection_attributes.md)
