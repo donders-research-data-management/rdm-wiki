@@ -43,6 +43,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | associatedPublication        | [type]:[identifier]          |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | quotaInMegaByte              | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaByte               | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| ethicalApprovalIdentifier    | [review_board]:[identifier]  |    Y     |      |  Y   |      |      |  C      |  Y   |  Y   |      |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
 | [keyword_MeSH2013](vocabularies.md)| word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | [keyword_SFN2015](vocabularies.md)| word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
