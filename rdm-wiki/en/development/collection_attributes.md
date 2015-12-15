@@ -44,8 +44,8 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | quotaInMegaByte              | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaByte               | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
-| keyword_MeSH2013             | word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
-| keyword_SFN2015              | word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_MeSH2013](vocabularies.md)| word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_SFN2015](vocabularies.md)| word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | versionNumber                | numerical number             |          |  Y   |      |      |      |  C      |      |      |      |
 | latestVersionId              | internal iRODS coll. id      |          |  Y   |  Y   |  Y   |  Y   |         |      |      |      |
 | originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
