@@ -40,7 +40,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | associatedDAC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
 | associatedRDC                | internal iRODS coll. id      |    Y     |      |  Y   |      |  Y   |  C      |      |  Y   |  Y   |
 | associatedDSC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
-| associatedPublication        | [type]:[identifier]          |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| associatedPublication        | [journal_name]:[identifier]  |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | quotaInMegaByte              | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaByte               | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | ethicalApprovalIdentifier    | [review_board]:[identifier]  |    Y     |      |  Y   |      |      |  C      |  Y   |  Y   |      |
