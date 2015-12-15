@@ -6,7 +6,7 @@
   * [For reviewers](protocols/reviewer.md) 
   * [For administrators](protocols/administrator.md) 
 
-[User Guide]()
+[Users' Guide]()
 
   * # CMS 
   * [User sign up](guides/user_signup.md)
@@ -16,7 +16,7 @@
   * [WebDav interface](guides/webdav.md)
   * [Data sharing](guides/sharing.md)
  
-[Developer Guide]()
+[Developers' Guide]()
 
   * [RDM user attributes](development/user_attributes.md)
   * [RDM collection attributes: full list](development/collection_attributes.md)
