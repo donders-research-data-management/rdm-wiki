@@ -63,4 +63,5 @@ A list of combinatory collection attributes is listed below:
 
 |   key of attribute           |  example value of attribute                                            | JSON representation |
 | ---------------------------- | ---------------------------------------------------------------------- | ------------------- |
+| associatedPublication        |    |    |
 | ethicalApprovalIdentifier    |  reviewBoard=METC Regio Arnhem-Nijmegen%approvalIdentifier=CMO2014/288 | `{ "reviewBoard": "METC Regio Arnhem-Nijmegen", "approvalIdentifier" : "CMO2014/288" }` |
