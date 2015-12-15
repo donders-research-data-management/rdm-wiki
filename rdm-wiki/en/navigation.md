@@ -20,6 +20,7 @@
 
   * [RDM user attributes](development/user_attributes.md)
   * [RDM collection attributes](development/collection_attributes.md)
+  * [Controlled vocabularies](development/vocabularies.md)
   
 
 [gimmick:theme (inverse: false)](simplex)
