@@ -61,6 +61,6 @@ Combinatory attributes are those with values to be presented as key-value pairs.
 
 A list of combinatory collection attributes is listed below:
 
-|   key of attribute           |  example value of attribute                                            |
-| ---------------------------- | ---------------------------------------------------------------------- |
-| ethicalApprovalIdentifier    |  reviewBoard=METC Regio Arnhem-Nijmegen%approvalIdentifier=CMO2014/288 |
+|   key of attribute           |  example value of attribute                                            | JSON representation |
+| ---------------------------- | ---------------------------------------------------------------------- | ------------------- |
+| ethicalApprovalIdentifier    |  reviewBoard=METC Regio Arnhem-Nijmegen%approvalIdentifier=CMO2014/288 | `{ "reviewBoard": "METC Regio Arnhem-Nijmegen", "approvalIdentifier" : "CMO2014/288" }` |
