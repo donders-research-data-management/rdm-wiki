@@ -1,9 +1,11 @@
 # The RDM data-access account
 
-The data access account consists of a _username_ and a _tempoaray password_.
+The data-access account consists of a _username_ and a _password_. This pair of information enables user to access the data content of a RDM collection via a supported data-access interface, such as the [WebDav interface](webdav.md).
 
-With this pair of information, user can access data content of a RDM collection via a data access interface, such as the [WebDav interface](webdav.md).
+For a registered RDM user, the _username_ part of the data-access account is a fixed value.  It is a string combining the user's id and home organisation provided by the identity provider (IdP) through which the user signed in/up to the CMS portal.
 
-# Retrieve the data-access account
+The _password_ part is the so-called [One-time password]().  It is generated dynamically on the fly, and can only be used once for user authentication in initialising a data-access session.  
 
-After user sign-in/up, one can retrieve from the CMS portal a so-called data access account.  
+## Retrieve the data-access account
+
+After user sign-in/up, one can retrieve from the CMS portal a so-called data access account.  The instruction below shows 
