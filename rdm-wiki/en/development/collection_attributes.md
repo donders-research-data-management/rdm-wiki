@@ -40,10 +40,10 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | associatedDAC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
 | associatedRDC                | internal iRODS coll. id      |    Y     |      |  Y   |      |  Y   |  C      |      |  Y   |  Y   |
 | associatedDSC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
-| associatedPublication        | [journal_name]::[identifier] |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| associatedPublication        | _see combinatory attributes_ |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | quotaInMegaByte              | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaByte               | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
-| ethicalApprovalIdentifier    | [review_board]::[identifier] |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
+| ethicalApprovalIdentifier    | _see combinatory attributes_ |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
 | [keyword_MeSH2013](vocabularies.md)| word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | [keyword_SFN2015](vocabularies.md)| word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
@@ -52,3 +52,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
 | perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
+
+## Combinatory attributes
+
+Combinatory attributes are those with values to be presented as key-value pairs.  Values of combinatory attributes are stored in iRODS using the string representation of key-value pairs (i.e. `key1=val1%key2=val2...`).  When the value is returned to client in JSON format, the string representation is converted into a JSON object.
