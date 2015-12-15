@@ -27,7 +27,8 @@ The table below summarise the mapping between the "visible" collection attribute
 | associatedDAC        | Associated collections (DAC's) |  show collectionIdentifier, link to the collection |
 | associatedRDC        | Associated collections (RDC's) |  show collectionIdentifier, link to the collection |
 | associatedDSC        | Associated collections (DSC's) |  show collectionIdentifier, link to the collection |
-| associatedPublication| Journal-publication references |  link to the journal publication |
+| associatedPublication| References to journal publications |  link to the journal publications |
+| ethicalApprovalIdentifier | Ethical Approval       | show both identifier and the name of the review board |
 | quotaInMegaByte      | Storage quota (GB)          |                               |
 | sizeInMegaByte       | Data size (GB)              |                               |
 | dataUseAgreement     | Data Use Agreement          | link to display context of the DUA |
