@@ -9,7 +9,45 @@ The RDM collection attributes are implemented as key-value pairs associated with
 * __DAC__: whether the attribute is presented with a Data Acquisition Collection
 * __RDC__: whether the attribute is presented with a Research Documentation Collection
 * __DSC__: whether the attribute is presented with a Data Sharing Collection
-* __snapshot__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection.
+* __SS__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection.
 * __RA__: whether the attribute is editable by a research administrator
 * __M__: whether the attribute is editable by a collection manager
 * __C__: whether the attribute is editable by a collection contributor
+
+| key                          | value / format               | multiple | sys  | DAC  | RDC  | DSC  | SS      | RA   | M    | C    |
+| ---------------------------- | ---------------------------- | -------- | ---- | ---- | ---- | ---- | ------- | ---- | ---- | ---- |
+| identifierEPIC               | valid EPIC identifier        |          |  Y   |      |      |      |  Y      |      |      |      |
+| identifierDOI                | valid DOI identifier         |          |  Y   |      |      |      |  Y      |      |      |      |
+| collectionIdentifier         | <o>.<ou>.<coll_name>         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| organisation                 | `DI`                         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| organisationalUnit           | `DCCN`,`DCC`,`DCN_S/M`       |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| projectIdentifier            | <type>_<number>              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| collectionType               | `DAC`,`RDC`,`DSC`            |          |      |  Y   |  Y   |  Y   |  C      |      |      |      |
+| title                        | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |  Y   |
+| subject                      | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| descriptionAbstract          | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| status                       | `open`,`closed`,`tobeclosed` |          |  Y   |  Y   |  Y   |  Y   | `closed`|      |      |      |
+| publisher                    | `RU, Donders Institute`      |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| manager                      | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |      |
+| contributor                  | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
+| viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
+| creatorList                  | ordered(manager+contributors)|          |      |      |      |      |  Y      |      |  Y   |      |
+| creationDateTime             | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
+| publicationDateTime          | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |      |      |      |  Y      |      |      |      |
+| lastClosedDateTime           | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
+| attributeLastUpdateDateTime  | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
+| embargoUntilDateTime         | YYYY-MM-DDTHH:MM:SS (UTC)    |          |      |      |      |  Y   |  C      |  Y   |      |      |
+| associatedDAC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
+| associatedRDC                | internal iRODS coll. id      |    Y     |      |  Y   |      |  Y   |  C      |      |  Y   |  Y   |
+| associatedDSC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
+| associatedPublication        | <type>:<identifier>          |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| quotaInMegaByte              | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| sizeInMegaByte               | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| dataUseAgreement             | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
+| keyword_MeSH2013             | word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| keyword_SFN2015              | word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| versionNumber                | numerical number             |          |  Y   |      |      |      |  C      |      |      |      |
+| latestVersionId              | internal iRODS coll. id      |          |  Y   |  Y   |  Y   |  Y   |         |      |      |      |
+| originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
+| perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
+| nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
