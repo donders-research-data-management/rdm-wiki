@@ -35,7 +35,7 @@ Thus, the iRODS namespace of `RDM_Collection_I` is given as `/Zone/Organisation_
 
 ### Collection identifiers
 
-An RDM collection has at-least one identifier.  The obviouse one is the internal identifier, which is given very similar to the collectio namespace discussed before. For example, the collection with namespace `/Zone/Organisation_1/Organisational_Unit_A/RDM_Collection_I` also acquires an internal identifier `Organisation_1.Organisational_Unit_A.RDM_Collection I`.
+An RDM collection has at-least one identifier.  The obviouse one is the internal identifier, which is given very similar to the collection namespace discussed before. For example, the collection with namespace `/Zone/Organisation_1/Organisational_Unit_A/RDM_Collection_I` also acquires an internal identifier `Organisation_1.Organisational_Unit_A.RDM_Collection I`.
 
 When a collection gets closed (see _collection state and versioning_ below), a frozen copy of it is created.  At the same time, the frozen copy also acquires a global identifier from the [European Persistent Identifier Consortium (ePIC)](http://www.pidconsortium.eu/).
 
