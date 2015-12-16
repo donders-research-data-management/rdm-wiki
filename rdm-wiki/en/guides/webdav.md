@@ -10,7 +10,7 @@ For Windows and MacOSX systems, the CyberDuck installation is graphical and self
 
 For Linux users, CyberDuck is provided as a command-line tools called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
 
-## Connecting the RDM WebDAV service
+## CyberDuck setup
 
 Note: This instruction convers only the graphical user interface of CyberDuck. For [duck.sh](https://duck.sh) user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
