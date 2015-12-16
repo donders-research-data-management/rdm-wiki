@@ -27,7 +27,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | subject                      | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | descriptionAbstract          | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | status                       | `open`,`closed`,`tobeclosed` |          |  Y   |  Y   |  Y   |  Y   | `closed`|      |      |      |
-| publisher                    | `RU, Donders Institute`      |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| publisher                    | `Radboud University, Donders Institute for Brain, Cognition and Behaviour`|          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | manager                      | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |      |
 | contributor                  | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
