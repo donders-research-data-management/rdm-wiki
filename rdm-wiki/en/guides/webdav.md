@@ -40,6 +40,10 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 5. As a viewer of the collection, you are only allowed to download data content (files/directories) from a collection.  As a contributor or manager, you are also allowed to upload and modify data via the WebDAV client. 
 
-## Verified alternative clients
+## Alternative clients
 
 The table below provides a list of tested WebDAV clients that work smoothly with the RDM WebDAV service.  You may use them as alternatives to the CyberDuck.
+
+|   Platform    |     Software     |  GUI suppor   |
+| ------------- | ---------------- | ------------- |
+|   Liunx       |      Cadaver     |      N        |
