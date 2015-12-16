@@ -49,9 +49,9 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | [keyword_SFN2015](vocabularies.md)| word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | versionNumber                | numerical number             |          |  Y   |      |      |      |  C      |      |      |      |
 | latestVersionId              | internal iRODS coll. id      |          |  Y   |  Y   |  Y   |  Y   |         |      |      |      |
-| originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
-| perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
-| nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  C      |      |      |      |
+| originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
+| perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
+| nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 
 ## Combinatory attributes
 
