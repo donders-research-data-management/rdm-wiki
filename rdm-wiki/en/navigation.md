@@ -24,6 +24,6 @@
   * [Controlled vocabularies](development/vocabularies.md)
   
 
-[gimmick:theme (inverse: false)](simplex)
+[gimmick:theme (inverse: false)](cerulean)
 
 [gimmick:ThemeChooser](Change theme)
