@@ -6,15 +6,15 @@ There are existing client tools for the WebDAV protocol.  However, concerning th
 
 ## CyberDuck installation
 
-For Windows and MacOSX systems, the CyberDuck installation is graphical and very straight forward.  Simply download the installer from [the software's website](https://cyberduck.io).
+For Windows and MacOSX systems, the CyberDuck installation is graphical and self-explanatory. Simply download the installer from [the software's website](https://cyberduck.io) and follow instructions step-by-step while executing the installer. You will need the administrator's right to install CyberDuck software on your computer.
 
 For Linux users, CyberDuck is provided as a command-line tools called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
 
 ## Connecting the RDM WebDAV service
 
-Note: This instruction convers only the graphical user interface of CyberDuck. For duck.sh user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
+Note: This instruction convers only the graphical user interface of CyberDuck. For [duck.sh](https://duck.sh) user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
-1. Open the CyberDuck application, and create a new connection as a bookmark:
+1. Open the CyberDuck application, and create a new connection bookmark:
 
   ![](screenshots/cyberduck_new_bookmark.png)
 
@@ -25,14 +25,16 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
   * Port: __8443__
   * Username: _the username of the [data-access account](data_access_account.md)_
   * Path: __rdm-webdav__
+  
+  The configurations are saved to the bookmark on-the-fly.  Just close the configuration window when you are done with the configuration.
 
   ![](screenshots/cyberduck_webdav_config.png)
 
-3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of the [data-access account](data_access_account.md). 
+3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of your [data-access account](data_access_account.md) retrieved from the CMS portal.
 
   ![](screenshots/cyberduck_connect_via_bookmark.png)
 
-4. Once you loggin to the WebDAV service, you will see a filesystem-like structure with four directories, each represents a centre of the Donders Institute. You may click into a directory and consequently see sub-directories representing the RDM collections belong to a centre. Within the RDM collection, you will see the data content as files and directories.
+4. Once you loggin to the WebDAV service, you will see a filesystem-like structure with four directories, each pertains to a centre (or organisational-unit in case of DCN) of the Donders Institute. You may click into a directory and consequently see sub-directories referring to the RDM collections belong to a centre/organisational-unit. Within the directory of a RDM collection, you will see the data content in terms of files and directories.
 
   ![](screenshots/cyberduck_file_browser.png)
 
