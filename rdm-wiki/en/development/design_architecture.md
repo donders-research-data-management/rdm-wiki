@@ -31,7 +31,7 @@ In iRODS, the following directory-tree structure is defined to reflect the hiera
   |- ...
 ```
 
-Thus, the iRODS namespace of `RDM_Collection_I` is given as `/Zone/Organisation_1/Organisational_Unit_A/RDM_Collection_I`.  Within the collection namespace, users (with `contributor` or `manager` role) have freedom to organise data belongs to the collection.
+Thus, the iRODS namespace of `RDM_Collection_I` is given as `/Zone/Organisation_1/Organisational_Unit_A/RDM_Collection_I`.  Within the collection namespace, users (with `contributor` or `manager` role) have freedom to organise data belonging to the collection.
 
 ### Collection identifiers
 
