@@ -16,8 +16,8 @@ After [signing-in/up to the CMS portal](user_signup.md), the data-access account
   
 2. Informaton (the _username_ and the _one-time password_) is shown on the overlay page.  You may copy the information and use it in the [data-access client](webdav.md).
 
-  ![](screenshots/cms_show_hotp.png)
-  
   Warning: for security reason, close the overlay page as soon as you have copied the account information.
+
+  ![](screenshots/cms_show_hotp.png)
   
 3. You can always retrieve a valid account information (with a new _one-time password_ if the previous one has been used) by Step 1.
