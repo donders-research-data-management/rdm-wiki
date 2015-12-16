@@ -30,8 +30,8 @@ The table below summarise the mapping between the "visible" collection attribute
 | associatedPublication| References to journal publications |  link to the journal publications |
 | ethicalApprovalIdentifier.reviewBoard | Ethics review board | [_see combinatory attributes_](collection_attributes.md#combinatory-attributes) |
 | ethicalApprovalIdentifier.approvalIdentifier | Ethical Approval Identifier | [_see combinatory attributes_](collection_attributes.md#combinatory-attributes) |
-| quotaInMegaByte      | Storage quota (GB)          |                               |
-| sizeInMegaByte       | Data size (GB)              |                               |
+| quotaInMegaBytes     | Storage quota (GB)          |                               |
+| sizeInMegaBytes      | Data size (GB)              |                               |
 | dataUseAgreement     | Data Use Agreement          | link to display context of the DUA |
 | subject              | Free-text keywords          |                                |
 | keyword_MeSH2013     | MeSH2013 keywords           | link to the context referred by the keyword |
