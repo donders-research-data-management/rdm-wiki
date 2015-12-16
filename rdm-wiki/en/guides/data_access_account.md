@@ -8,7 +8,7 @@ The _password_ part is the so-called [One-time password](https://en.wikipedia.or
 
 ## Retrieve the data-access account
 
-After [signing-in/up to the CMS portal](user_signup.md), the data-access account may be retrieved following the instructions below:
+After [logging to the CMS portal](user_login.md), the data-access account may be retrieved following the instructions below:
 
 1. Click on your display name at the top-right corner of the CMS portal to toggle a pull-down manual, and select the item `Data Access Password`:
 
