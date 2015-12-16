@@ -10,11 +10,11 @@ A list of SURFConext-supported IdP's can be looked up [here](https://www.surf.nl
 
 As long as you have a valid account issued by a SURFConext trusted identity provider (i.e. SURFConext IdP account), you can follow the instructions below to sign-up/in to the RDM CMS portal.
 
-1. Open the URL (https://rdmappacc.uci.ru.nl:8443/rdm-web-client) in your web browser.  You will see the homepage of the web porta.
+1. Open the URL (https://rdmappacc.uci.ru.nl:8443/rdm-web-client) in your web browser.  You will see the homepage of the CMS portal.
 
   ![](screenshots/cms_homepage.png)
 
-2. At the top-right corner, you will find a `LOG IN` button.  Click it to sign-up/in with your SURFConext IdP account.
+2. At the top-right corner, you will find a `LOG IN` button.  Click it to login with your SURFConext IdP account.
 
   ![](screenshots/cms_login.png)
 
@@ -22,10 +22,10 @@ As long as you have a valid account issued by a SURFConext trusted identity prov
 
   ![](screenshots/cms_signup_surfconext.png)
 
-4. You will be again redirected to the `login` page of your home organisation.  Fill in your username/password received from your home organisation to login.
+4. You will be again redirected to the `login` page of your home organisation.  Fill in the credential (e.g. username and password) of the user account issued by your home organisation.
 
   ![](screenshots/cms_RU_login.png)
 
-5. Right after the successful authentication through your home organisation, you are successfully sign-up/in to the RDM CMS portal.  You will be re-directed back to the RDM CMS portal, and to a page on which the RDM collections available for you are listed.
+5. Following a successful authentication checked by your home organisation, you are logged in to the CMS portal as a registered RDM user. You will be re-directed back to the RDM CMS portal, and to a so-called `Collections` page. The list of RDM collections displayed on this page depends on your authorisation in the RDM system.
 
   ![](screenshots/cms_collections.png)
