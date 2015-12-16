@@ -12,7 +12,7 @@ The table below summarise the mapping between the "visible" collection attribute
 | organisation         | Organisation                |                              |
 | organisationalUnit   | Organisational Unit         |                              |
 | projectIdentifier    | Associated research project |                              |
-| collectionType       | Type of collection          |                              |
+| type                 | Type of collection          |                              |
 | title                | Title                       |                              |
 | status               | Status                      |                              |
 | publisher            | Publisher                   |                              |
