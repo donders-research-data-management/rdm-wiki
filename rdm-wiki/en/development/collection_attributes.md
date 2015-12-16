@@ -41,8 +41,8 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | associatedRDC                | internal iRODS coll. id      |    Y     |      |  Y   |      |  Y   |  C      |      |  Y   |  Y   |
 | associatedDSC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
 | associatedPublication        | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
-| quotaInMegaByte              | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
-| sizeInMegaByte               | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| quotaInMegaBytes             | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| sizeInMegaBytes              | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | ethicalApprovalIdentifier    | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
 | [keyword_MeSH2013](vocabularies.md)| word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
