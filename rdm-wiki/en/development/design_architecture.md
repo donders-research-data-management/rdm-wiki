@@ -24,9 +24,9 @@ In iRODS, the following directory-tree structure is defined to reflect a hierach
   |   |- /Organisational_Unit_A
   |   |   |- RDM_Collection_I
   |   |   |- RDM_Collection_II
-  |   |   |- ...
+  |   |   
   |   |- /Organisational_Unit_B
-  |   |- ...
+  |   
   |- /Organisation_2
   |- ...
 ```
