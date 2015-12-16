@@ -1,8 +1,8 @@
-# Sign-in/up to the RDM CMS portal
+# Login to the RDM CMS portal
 
 ## Requirement
 
-To sign-in/up the RDM CMS portal, you are required to have a valid user account issued by one of the identity providers (IdP's) supported by SURFConext.  Generally speaking, identity providers from universities and research institutions within Netherlands are well covered by SURFConext. 
+To login to the RDM CMS portal, you are required to have a valid user account issued by one of the identity providers (IdP's) supported by SURFConext.  Generally speaking, identity providers from universities and research institutions within Netherlands are well covered by SURFConext. 
 
 A list of SURFConext-supported IdP's can be looked up [here](https://www.surf.nl/over-surf/werkmaatschappijen/surfnet/over-surfnet/aansluiten-op-surfnet/aangesloten-instellingen/index.html). 
 
