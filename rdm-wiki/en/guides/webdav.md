@@ -44,6 +44,6 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 The table below provides a list of tested WebDAV clients that work smoothly with the RDM WebDAV service.  You may use them as alternatives to the CyberDuck.
 
-|   Platform    |     Software     |  GUI suppor   |
-| ------------- | ---------------- | ------------- |
-|   Liunx       |      Cadaver     |      N        |
+|   Platform    |     Software                                  |  GUI suppor   |
+| ------------- | --------------------------------------------- | ------------- |
+|   Liunx       | [Cadaver](http://www.webdav.org/cadaver/)     |      N        |
