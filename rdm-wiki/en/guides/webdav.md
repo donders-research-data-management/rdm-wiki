@@ -23,7 +23,7 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
   * __WebDAV (HTTP/SSL)__
   * Server: __rdmappacc.uci.ru.nl__
   * Port: __8443__
-  * Username: untick the `Anonymous Login` and set it to the _username_ of the [data-access account](data_access_account.md)
+  * Username: __untick the `Anonymous Login` and set it to the _username_ of the [data-access account](data_access_account.md)__
   * Path: __rdm-webdav__
   
   The configurations are saved to the bookmark on-the-fly.  Just close the configuration window when you are done with the configuration.
