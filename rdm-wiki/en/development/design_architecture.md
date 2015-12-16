@@ -16,7 +16,7 @@ The RDM data management system is based on [iRODS](http://irods.org).  iRODS rul
 
 ### Collection namespace
 
-In iRODS, the following directory-tree structure is defined to reflect a hierachy of __a `Collection` belongs to a `Organisational Unit` belongs to a `Organisation` in a iRODS `Zone`__:
+In iRODS, the following directory-tree structure is defined to reflect the hierachy of __a `Collection` belongs to a `Organisational Unit` belongs to a `Organisation` in a iRODS `Zone`__:
 
 ```bash
 /Zone
