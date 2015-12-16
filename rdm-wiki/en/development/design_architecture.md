@@ -20,22 +20,22 @@ In iRODS, the following directory-tree structure is defined to reflect a hierach
 
 ```bash
 /Zone
-  |- /Organisation 1
-  |   |- /Organisational Unit A
-  |   |   |- RDM Collection I
-  |   |   |- RDM Collection II
+  |- /Organisation_1
+  |   |- /Organisational_Unit_A
+  |   |   |- RDM_Collection_I
+  |   |   |- RDM_Collection_II
   |   |   |- ...
-  |   |- /Organisational Unit B
+  |   |- /Organisational_Unit_B
   |   |- ...
-  |- /Organisation 2
+  |- /Organisation_2
   |- ...
 ```
 
-Thus, the iRODS namespace of `RDM Collection I` is given as `/Zone/Organisation 1/Organisational Unit A/RDM Collection I`.  Within the collection namespace, users (with `contributor` or `manager` role) have freedom to organise data belongs to the collection.
+Thus, the iRODS namespace of `RDM_Collection_I` is given as `/Zone/Organisation_1/Organisational_Unit_A/RDM_Collection_I`.  Within the collection namespace, users (with `contributor` or `manager` role) have freedom to organise data belongs to the collection.
 
 ### Collection identifiers
 
-An RDM collection has at-least one identifier.  The obviouse one is the internal identifier, which is given very similar to the collectio namespace discussed before. For example, the collection with namespace `/Zone/Organisation 1/Organisational Unit A/RDM Collection I` also acquires an internal identifier `Organisation 1.Organisational Unit A.RDM Collection I`.
+An RDM collection has at-least one identifier.  The obviouse one is the internal identifier, which is given very similar to the collectio namespace discussed before. For example, the collection with namespace `/Zone/Organisation_1/Organisational_Unit_A/RDM_Collection_I` also acquires an internal identifier `Organisation_1.Organisational_Unit_A.RDM_Collection I`.
 
 When a collection gets closed (see _collection state and versioning_ below), a frozen copy of it is created.  At the same time, the frozen copy also acquires a global identifier from the [European Persistent Identifier Consortium (ePIC)](http://www.pidconsortium.eu/).
 
