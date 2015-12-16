@@ -23,12 +23,12 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
   * __WebDAV (HTTP/SSL)__
   * Server: __rdmappacc.uci.ru.nl__
   * Port: __8443__
-  * Username: _the data access username retrieved from the [CMS portal](user_signup.md)_
+  * Username: _the username of the [data-access account](data_access_account.md)_
   * Path: __rdm-webdav__
 
   ![](screenshots/cyberduck_webdav_config.png)
 
-3. Click on the saved bookmark to make connection.  You will be asked for a login password.  The data access password can also be retrieved from the CMS portal. 
+3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of the [data-access account](data_access_account.md). 
 
   ![](screenshots/cyberduck_connect_via_bookmark.png)
 
