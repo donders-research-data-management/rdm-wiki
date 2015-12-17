@@ -51,7 +51,7 @@ At the state of `tobeclosed`, the collection is set to read-only.  When the stat
 
 Every collection snapshot acquires a version number.  The numver is reflected on the snapshot's collection namespace as a suffrix, e.g. __:v1__, __:v2__, etc.
 
-Every collection snapshot also acquires an attribute for a global persistent identifier, for example `identifierEPIC`.  However, same identifier is shared amongst the snapshots originated from the same head collection.
+Every collection snapshot also acquires an attribute for a global persistent identifier, for example `identifierEPIC`.  However, the same identifier is shared amongst the snapshots originated from the same head collection.
 
 ### iRODS storage resources
 
