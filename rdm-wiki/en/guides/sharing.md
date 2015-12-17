@@ -16,3 +16,19 @@ The following data use agreements can apply to collections that only include dat
   * [CC-BY-NC-SA-4.0](../agreements/CC-BY-NC-SA-4.0.md)
   * [CC-BY-ND-4.0](../agreements/CC-BY-ND-4.0.md)
   * [CC-BY-SA-4.0](../agreements/CC-BY-SA-4.0.md)
+  * [ODC-BY-1.0](../agreements/ODC-BY-1.0.md)
+  * [ODC-ODbL-1.0](../agreements/ODC-ODbL-1.0.md)
+  * [ODC-PDDL-1.0](../agreements/ODC-PDDL-1.0.md)
+
+The following agreements can apply to collections that only include source code of software, simulations or data analysis scripts:
+
+  * [APACHE-2.0](../agreements/APACHE-2.0.md)
+  * [ARTISTIC-2.0](../agreements/ARTISTIC-2.0.md)
+  * [BSD](../agreements/BSD.md)
+  * [EPL-1.0](../agreements/EPL-1.0.md)
+  * [GPL-2.0](../agreements/GPL-2.0.md)
+  * [GPL-3.0](../agreements/GPL-3.0.md)
+  * [LGPL-3.0](../agreements/LGPL-3.0.md)
+  * [MIT](../agreements/MIT.md)
+  * [MPL-2.0](../agreements/MPL-2.0.md)
+
