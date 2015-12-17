@@ -1,4 +1,4 @@
-Copyright (c) 2016, Radboud University, Nijmegem, The Netherlands
+Copyright (c) 2016, Radboud University, Nijmegen, The Netherlands
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
