@@ -43,6 +43,7 @@ When a collection gets closed (see _collection state and versioning_ below), a f
 
 Initially, a collection is in state `open`.  When a versioning is needed, e.g. for publishing a collection, one triggers the state transition from `open` to `tobeclosed` then to `closed`.  Possible state transitions are illustrated in the picture below:
 
+![](figures/collection_state_transitions.png)
 
 At the state of `tobeclosed`, the collection is set to read-only.  When the state is moved to state `closed`, the collection is cloned into a frozen copy.  The frozen copy is strictly read-only, and has data content and collection attributes identical to its original collection.
 
