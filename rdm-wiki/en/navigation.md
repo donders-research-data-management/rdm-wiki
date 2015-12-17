@@ -15,6 +15,7 @@
   * [Data-access account](guides/data_access_account.md)
   * [WebDav interface](guides/webdav.md)
   * [Data sharing](guides/sharing.md)
+  * [Ethics for data acquisition](guides/ethics.md)
  
 [Developers' Guide]()
 

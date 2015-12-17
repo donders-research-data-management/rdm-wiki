@@ -1,15 +1,19 @@
 # Protocol for Researchers
 
 ##	1 Version
+
 Draft, last update by Eric on 30 August 2015
 
 ##	2 Scope
+
 This protocol is in effect as of DD-MM-YYYY and replaces all previous versions of the DI-RDM protocol for researchers
 
 ## 3 Audience
+
 The audience for this protocol consists of all people conducting research at the Donders Institute (DI). This includes research assistants, internship students, PhD students, guest/visiting researchers, postdocs, senior researchers, and principal investigators. These people will be collectively denoted as researchers in the subsequent text. This group is to be distinguished from the research administrators and the reviewers, who have their own protocol.
 
 ##	4 Context
+
 The context of this protocol is the Research Data Management (RDM) at the Donders Institute (DI), which involves interaction with a digital data repository. This protocol describes how researchers must interact with this repository. Future changes to the organization and user interface of the repository may have consequences for this protocol, and these changes will be integrated in future versions of this protocol. The researcher should therefore always ensure to use the latest version of this protocol. This latest version is part of the Donders RDM Information Package, which contains not only the three protocols but also other documents to which will be referred in the protocols. The administration of your center knows where this information package can be found. 
 This protocol serves three purposes: 
 1.	Data preservation for the purpose of internal reuse 
@@ -53,46 +57,71 @@ To be done:
 •	How to obtain the one-time password after authentication in the web client?
 
 ##	8. Preservation – Data Acquisition Collection
-8.1	Objectives
+
+### 8.1	Objectives
+
 1.	Preserving the (digital) research data in their original form.
 2.	Documenting conformity with the relevant laws and regulations pertaining to data acquisition.
 3.	Annotating the data to increase its scientific usefulness.
 This protocol involves both required (5.2) and recommended (5.3) operating procedures.
-8.2	Required
-8.2.1	Initiation
+
+### 8.2	Required
+
+#### 8.2.1	Initiation
+
 A data acquisition collection (DAC) is initiated by the research administrator upon request by a researcher, typically following formal approval by the center director, or on the basis of criteria put forward by the center director (e.g., the Project Proposal Meeting at the DCCN; see Center Specific). The protocol for initiating a DAC is described in the DI RDM Protocol for Research Administrators.
-8.2.2	General
+
+#### 8.2.2	General
+
 Data must be archived in their original form. Here, original means the following: without any manipulations that limit future analyses of these data.
 The DAC must be annotated in two ways: (1) by providing metadata (see further), and (2) by adding one or more human-readable documents in which the data are annotated. 
-8.2.3	Location
+
+#### 8.2.3	Location
+
 The researcher should specify where the data were collected. Typically, this is the location of a research institute. In case this is the DI, the center (DCC, DCCN, DCN_s, DCN_m) has to be specified. The location may also be geographically distributed, as when data are collected using mobile phones or computers connected to the internet.
-8.2.4	Conformity with laws and regulations
+
+#### 8.2.4	Conformity with laws and regulations
+
 In a DAC, information will be collected that demonstrates conformity with valid local, national and international laws and regulations, as evaluated by an ethical review board (see further). This protocol does not detail these laws and regulations, nor does it include measures to enforce conformity with them. The way to demonstrate conformity with the valid laws and regulations depends on whether the DAC contains human or animal data. 
-8.2.4.1	Human data
+
+##### 8.2.4.1	Human data
+
 1.	Indicate whether approval was obtained from an accredited Medical ethical Reviewing Committee (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethics review board can be found in a separate document in the Donders RDM Information Package.
 2.	Indicate where the signed informed consent forms  (i.e., the paper forms) are archived. 
 3.	Indicate where the approved participant information brochures are archived. There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethics review board. 
-8.2.4.2	Animal data
+
+##### 8.2.4.2	Animal data
+
 The researcher must specify whether approval was obtained from an accredited Animal Care and Use Committee. If this is the case, then the researcher must specify the name of this committee (e.g., Dier-experimentencommissie Radboud Universiteit Nijmegen) and the registered identifier of the approved application.
-8.2.5	Digital data
+
+#### 8.2.5	Digital data
+
 Whenever possible, digital datasets must be added to the DAC immediately after acquisition. 
 The digital datasets must contain all the scientifically relevant data that were obtained from the subjects or samples under investigation. These datasets must also include any auxiliary and behavioral data, e.g., log files, questionnaires, etc. Technical data that do not provide information about the correctness of the results, such as those related to some calibrations of the measurement device, should not be part of the DAC. 
 In case of human data, the name of the files/folders in which a participant’s data are stored may not contain information that allows this participant to be identified in a direct way (e.g., by including the participant’s name as a part of the file/folder name).  Instead, this file or folder name should contain a code that uniquely identifies the participant in the project. The naming scheme for file/folder names is described further down.
 The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept on the data repository. Instead, this key must be kept in a locked room on a medium that cannot be accessed via the intra- or the internet (e.g., on paper). The DI centers determine where and on which medium the key is kept.
 Digital datasets can be uploaded in two ways:  (1) by an automatic upload procedure that is controlled by the lab manager or ICT group, or (2) manually by the researcher. The DI centers determine which upload process is to be followed for which lab and for which study type.
-8.2.6	Non-digital data
+
+#### 8.2.6	Non-digital data
+
 Non-digital data cannot be stored in the repository. Their location has to be specified in the appropriate metadata field, either by selection from a menu or by entering it as free text. The menu may contain labels (e.g., DCC Questionnaire and Psychological Test Archive) that do not specify a particular physical location but instead refer to a location that is commonly known in the respective center. 
 Typically, within a room, the non-digital data of multiple DACs are stored at a location that can be further specified by referring to a cabinet (e.g., nr. 2), a shelf (e.g., shelf A), a freezer (e.g., freezer B, rack 2), etc. If available, these additional location indicators must be entered in a free text metadata field. In case the non-digital data are relocated, this metadata field must be updated.
 Typically, parameters of non-digital data will be converted to digital format. For some non-digital data (e.g., questionnaires, psychological tests, handwritten text) the conversion to digital format involves little or no loss of scientific value. For other non-digital data (e.g., blood and other tissue samples), by performing an analysis (e.g., biochemical), some parameters (e.g., hormone levels) can be converted to digital format. This process can be selective, in the sense that not all parameters are extracted that are possibly of scientific value. All digital data obtained as a part of the data acquisition project must be added to the DAC. 
 Storing non-digital data in the archive after it has been converted to digital format does not automatically imply that the original non-digital data can be discarded. The researcher should observe the relevant laws and regulations on non-digital data. In cases where the center director decides that the non-digital data (e.g., tissue samples) do not have to be archived, then it suffices that the converted digital data is archived. 
-8.2.7	Data reduction
+
+#### 8.2.7	Data reduction
+
 For some data, the scientific usefulness is not substantially affected if the data are first reduced prior to archiving. Different fields use different types of data reduction. For instance, spatial and/or temporal downsampling is common for high-density broadband biological signals, and compression (e.g., jpeg) is common for images and video.
 For this type of data, the reduced data may be stored on the repository. In this case, the data reduction algorithm must be described in the DAC Annotation document that is stored along with the data.
-8.2.8	Pilot data
+
+#### 8.2.8	Pilot data
+
 In pilot studies, it is not the intention to collect data systematically, or to provide evidence for generalizable conclusions (i.e., generalizable beyond the sample investigated), as is typical for the conclusions that appear in a scientific publication. Pilot studies may differ from the main part of the study in several ways. For example, the pilot data were collected prior to obtaining formal approval for the data acquisition, or the data were collected using a preliminary protocol. All these different pilot types will be treated in the same way in the repository.
 1.	In case the center regulations and the ethical approval allow for pilot data being added to the DAC, then the pilot data must be added as soon as possible after initiation of the DAC. 
 2.	It must be specified in the DAC annotation (see further) which part of the data are pilot data.
-8.2.9	DAC annotation
+
+#### 8.2.9	DAC annotation
+
 The DAC annotation is a document that is uploaded to the collection. It contains information that is necessary to (re-)analyze the data. This information involves two parts: (1) the organization of the files and the folders and its relation to the design of the study/experiment, and (2) descriptive information that is written into the datasets by the data acquisition system. The first type of information is essential for a study in which participants participate in multiple recording sessions, as well as for an experiment in which different types of data are acquired. The DAC annotation must include a description of the different sessions and data types, and how these are mapped onto the experimental conditions.
 The second type of information (descriptive information written into the datasets by the data acquisition system) often pertains to stimulus events that are relevant for the analysis of the data, or to behaviour (e.g., button presses, eye movements) that are part of the data. As a part of the DAC annotation, researchers should include a description of these stimulus and behavioral events (i.e., a table associating the events to their meaning).
 The DAC annotation should be provided in a format that is easily accessible to present and future colleagues, for example, .docx, .txt, .pdf, .xlsx. The annotations should be written such that someone with domain specific skills can reuse the data. It is required to specify details that vary between studies, such as the mapping of trigger codes on experimental parameters. It is not required to explain details that can be considered commonly shared knowledge.
@@ -112,68 +141,116 @@ The researcher should specify the DCC project number.
 The researcher should organize the data files and directories according to the DCC standard: 
 <projectnumber>_<userID>_<subjectnumber>_<sessionnumber>.
 For example, DCC_2015_0978_piemed_004_001. The userID should be one of the collection managers. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
-8.3	Recommended
-8.3.1	General
-8.3.2	Metadata
+
+### 8.3	Recommended
+
+
+#### 8.3.1	General
+
+
+#### 8.3.2	Metadata
+
 It is useful if metadata are provided via which the DAC can be found. These metadata can be selected from controlled vocabularies pertaining to following domains: Technique, Topic, Species, Disorder, and Brain Area.
-8.3.3	Linking DACs
+
+#### 8.3.3	Linking DACs
+
 Some DACs are linked to existing DACs, for example, because they all belong to the same longitudinal study. Links between DACs are documented by adding the names of the linked DACs in the appropriate metadata fields.
-8.3.4	DAC annotation
+
+#### 8.3.4	DAC annotation
+
 It is recommended to include stimulus presentation scripts, including software version number in the DAC.
-8.3.5	Checking contributions 
+
+#### 8.3.5	Checking contributions 
+
 As a part of his/her final responsibility for a collection, it is recommended that a collection manager checks the contributions of all persons that have write access to this collection. For that purpose, a collection manager can make use of a monitoring tool (available to all users) that produces a log of all the changes in the collection, specifying who uploaded/modified which file at what time (source verification). 
-8.3.6	Data/study type specific
+
+#### 8.3.6	Data/study type specific
+
 To be provided.
-8.3.7	Centre specific DCN_S
+
+#### 8.3.7	Centre specific DCN_S
+
 The following scheme is recommended for the names of the files/folders that contain a participant’s data: 
 XXXX.
 If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
 
+
 ## 9	Scientific Integrity Collection
-9.1	Objectives
+
+### 9.1	Objectives
+
 1.	Document the process via which data are converted into published results.
 2.	Provide a digital platform for collaborators to contribute to and review good scientific practices.
 In a scientific integrity collection (SIC), information will be collected that may be relevant for evaluating good scientific practice. However, this protocol does not specify any scientific integrity rules, nor does it include measures to enforce conformity with such rules.
 This protocol involves both required (6.2) and recommended (6.3) operating procedures.
-9.2	Required
-9.2.1	Initiation
+
+### 9.2	Required
+
+
+#### 9.2.1	Initiation
+
 A SIC is initiated by the research administrator upon request by a researcher on the basis of criteria put forward by the center director. The protocol for initiating a SIC is described in the DI RDM Protocol for Research Administrators.
-9.2.2	General
+
+#### 9.2.2	General
+
 A SIC pertains to the process that has led to a scientific publication. It contains the documents that may be relevant for evaluating good scientific practice. The core content of a SIC are files that document the scientific process in which data are converted into results (statistical tests, summary measures, figures, tables, etc.). For simplicity, in the following, this part of the scientific process will be denoted as the scientific process, without any qualification as to the specific result it contributes to the publication.
-9.2.3	Metadata 
+
+#### 9.2.3	Metadata 
+
 The researcher must add the following information as metadata:
 1.	Title of the manuscript
 2.	List of all co-authors
 Following publication, the researcher must add the following additional information as metadata:
 1.	Persistent identifier (PID) of the published manuscript, typically, a digital object identifier (DOI).
 2.	Pubmed identifier (PMID) of the published manuscript
-9.2.4	Contributors to the publication
+
+#### 9.2.4	Contributors to the publication
+
 All coauthors to a publication share responsibility for good scientific practices and therefore must be contributor to the SIC. Consequently, all coauthors must be registered users in the repository. It is the responsibility of the SIC manager to invite co-authors external to the DI to create an account. Following registration of the user account, the SIC manager must add the co-author as contributor, thereby giving her or him access to the files in the SIC.
-9.2.5	Documenting the origin of the data
+
+#### 9.2.5	Documenting the origin of the data
+
 When the published results depend on data, the SIC must refer to them. These data may be in a DAC on the repository, and that DAC may be used in multiple SICs, with collaborators that overlap completely, partially, or not at all. There are two ways to document the data on which the published results depend:
 1.	If the data is represented in the repository as one or more DACs, the SIC must be linked to the corresponding DACs by specifying the DAC identification numbers as metadata fields.
 2.	If the data is not represented as one or more DACs, the researcher must add the data to the SIC or document the source of the data via a PID in the appropriate metadata field. This situation applies, for instance, for data collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), for which it does not make much sense to preserve them in a DAC. 
 If the data is represented in the archive then the collaborators on the SIC must obtain the right to access the relevant data in the DACs. If collaborators on the SIC do not have this right, there are two ways for these collaborators to get access:
 1.	The DAC manager adds the SIC collaborators to the collection in the role of viewer.
 2.	In agreement with the DAC managers, the SIC manager copies the relevant parts of the DACs to the SIC. The selection of the data from the DACs must be documented (in free text format) in the SIC collection.
-9.2.6	Reproducing the results of the publication
+
+#### 9.2.6	Reproducing the results of the publication
+
 By the time the scientific paper is accepted for publication, the SIC must contain all the information that a knowledgeable colleague requires to reproduce the results in this publication. This information could be used by an independent audit committee that investigates how the results of a publication were obtained. Very related information must be provided as a part of a Data Sharing Collection (DSC; see further), which is intended for external researchers that re-use the data. 
 Publications may differ substantially in the amount and detail of the information that is required for reproducing the results. Collaborators on a collection are expected to demonstrate scholarship in providing the required information. 
-9.2.7	SIC closure
+
+#### 9.2.7	SIC closure
+
 See 8.2.10. 
 If the SIC is linked to one or more DACs, then it can only be closed if these DACs are also closed. If, for some reason, it is not possible to close these DACs then, in agreement with the DAC managers, the SIC manager must copy the relevant parts of the DACs to the SIC (see 9.2.5).
-9.2.8	Data/study type specific
-9.3	Recommended
-9.3.1	Analysis scripts
+
+#### 9.2.8	Data/study type specific
+
+
+### 9.3	Recommended
+
+
+#### 9.3.1	Analysis scripts
+
 Often, the process via which data are converted into published results is partially or fully specified by analysis scripts that can be executed by software packages such as MATLAB, R, Python, SPSS, Bash+FSL, etc. The recommended way of documenting the scientific process is by providing these analysis scripts.
-9.3.2	The editorial and peer-review process
+
+#### 9.3.2	The editorial and peer-review process
+
 It is recommended that the complete scientific publication process is documented in the SIC. The following files are part of this process: the files that are initially uploaded to a journal’s manuscript submission system, the reviews, the reply to the reviewers, the proofs, etc.
-9.3.3	Checking contributions 
+
+#### 9.3.3	Checking contributions 
+
 As part of his/her final responsibility for a collection, it is recommended that a collection manager verify the contributions of all persons that have write access to this collection. For that purpose, a collection manager can make use of a reporting tool that produces a log of all the changes in the collection, specifying file uploads and modifications by the different collection contributors.
-9.3.4	Registered reports
+
+#### 9.3.4	Registered reports
+
 A registered report is a publication for which the experimental methods are pre-registered and reviewed before data are collected. The objective of registered reports is to neutralize a variety of inappropriate research practices, such as selective reporting of results, undisclosed analytic flexibility, and publication bias.
 If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website for collaboration such as the OSF) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
+
 
 ##10	Data Sharing collection
 10.1	Objectives
