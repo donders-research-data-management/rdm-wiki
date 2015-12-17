@@ -41,11 +41,17 @@ When a collection gets closed (see _collection state and versioning_ below), a f
 
 ### Collection state and versioning
 
-Initially, a collection is in state `open`.  When a versioning is needed, e.g. for publishing a collection, one triggers the state transition from `open` to `tobeclosed` then to `closed`.  Possible state transitions are illustrated in the picture below:
+Initially, a collection is in state `open`.  When a read-only snaphsot is needed, e.g. for publishing a collection, one triggers the state transition from `open` to `tobeclosed` then to `closed`.  Possible state transitions are illustrated in the picture below:
 
 ![](figures/collection_state_transitions.png)
 
-At the state of `tobeclosed`, the collection is set to read-only.  When the state is moved to state `closed`, the collection is cloned into a frozen copy.  The frozen copy is strictly read-only, and has data content and collection attributes identical to its original collection.
+At the state of `tobeclosed`, the collection is set to read-only.  When the state is moved to state `closed`, the collection is cloned into a frozen copy (or a _snapshot_).  The collection snapshot is strictly read-only, and has data content and collection attributes identical to its original collection (or the _head_).  The figure below shows the state evolvement of a collection and the creation of two snapshots along the time line.
+
+![](figures/collection_versioning.png)
+
+Every collection snapshot acquires a version number.  The numver is reflected on the snapshot's collection namespace as a suffrix, e.g. __:v1__, __:v2__, etc.
+
+Every collection snapshot also acquires an attribute for a global persistent identifier, for example `identifierEPIC`.  However, same identifier is shared amongst the snapshots originated from the same head collection.
 
 ### iRODS storage resources
 
