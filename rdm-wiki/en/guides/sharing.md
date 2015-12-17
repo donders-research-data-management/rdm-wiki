@@ -37,6 +37,7 @@ Please follow the data sharing flowchart to guide your decisions with regards to
   ![](figures/dsc_flowchart.png)
 
 Related links
+
   * http://www.ru.nl/publish/pages/721701/universitair_beleid_opslag_en_management_onderzoeksdata_cvb_besluit_25-11-2013.pdf
   * http://creativecommons.org
   * http://opendatacommons.org
