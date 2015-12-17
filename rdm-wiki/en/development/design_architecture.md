@@ -1,7 +1,5 @@
 # System design and architecture
 
-![](figures/architecture_around_irods.png)
-
 ## Authentication
 
 The RDM system makes use of SURFConext (and eventually the EduGAIN) service for user authentication.  It implies that users already have valid account from collaborating institutues world-wide will have immediate access to the system.  
