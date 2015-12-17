@@ -32,3 +32,7 @@ The following agreements can apply to collections that only include source code 
   * [MIT](../agreements/MIT.md)
   * [MPL-2.0](../agreements/MPL-2.0.md)
 
+Please follow the data sharing flowchart to guide your decisions with regards to data sharing.
+
+  ![](figures/dsc_flowchart.png)
+
