@@ -57,7 +57,7 @@ In principle, the same physical person can be represented as multiple users in t
 ## 7	Up- and Downloading Files
 A web interface (or, more precisely, the HTTP protocol) does not allow for a convenient up- and download of large files and a large number of files. For that reason, the up- and download of files to and from the repository has to be performed by means of a so-called WebDAV client (called after the protocol that is used to transfer files over the internet). A very good WebDAV client is Cyberduck, which you can download for free. 
 
-Up- and downloading files is only possible if you have authenticated yourself at the website of the repository. 
+Up- and downloading files is only possible if you have authenticated yourself at the website of the repository. After authentication, you can obtain a _data access password_ with which you  
 
 To be done:
 •	How to create a bookmark for authentication against the internal iRODS account?
