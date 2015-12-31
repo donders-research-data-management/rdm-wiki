@@ -57,11 +57,7 @@ In principle, the same physical person can be represented as multiple users in t
 ## 7	Up- and Downloading Files
 A web interface (or, more precisely, the HTTP protocol) does not allow for a convenient up- and download of large files and a large number of files. For that reason, the up- and download of files to and from the repository has to be performed by means of a so-called WebDAV client (called after the protocol that is used to transfer files over the internet). A very good WebDAV client is Cyberduck, which you can download for free. 
 
-Up- and downloading files is only possible if you have authenticated yourself at the website of the repository. After authentication, you can obtain a _data access password_ with which you  
-
-To be done:
-•	How to create a bookmark for authentication against the internal iRODS account?
-•	How to obtain the one-time password after authentication in the web client?
+Up- and downloading files is only possible after you have authenticated yourself at the website of the repository. Via the website, you can then obtain a _data access password_ that you can use in combination with your _data access username_ to up- and download files. This data access username is _not_ the username with which you authenticate yourself at the website of the repository (for RU and RUMCN employees, their U- or Z-number). The data access username and password are used in combination with the WebDAV client.  
 
 ##	8. Preservation – Data Acquisition Collection
 
@@ -70,22 +66,27 @@ To be done:
 1.	Preserving the (digital) research data in their original form.
 2.	Documenting conformity with the relevant laws and regulations pertaining to data acquisition.
 3.	Annotating the data to increase its scientific usefulness.
-This protocol involves both required (5.2) and recommended (5.3) operating procedures.
+This protocol involves both required (8.2) and recommended (8.3) operating procedures.
 
 ### 8.2	Required
 
 #### 8.2.1	Initiation
 
-A data acquisition collection (DAC) is initiated by the research administrator upon request by a researcher, typically following formal approval by the center director, or on the basis of criteria put forward by the center director (e.g., the Project Proposal Meeting at the DCCN; see Center Specific). The protocol for initiating a DAC is described in the DI RDM Protocol for Research Administrators.
+A _data acquisition collection_ (DAC) is initiated by the research administrator upon request by a researcher, typically following formal approval by the center director, or on the basis of criteria put forward by the center director (e.g., the Project Proposal Meeting at the DCCN; see Center Specific). The protocol for initiating a DAC is described in the _DI RDM Protocol for Research Administrators_.
 
 #### 8.2.2	General
 
 Data must be archived in their original form. Here, original means the following: without any manipulations that limit future analyses of these data.
+
 The DAC must be annotated in two ways: (1) by providing metadata (see further), and (2) by adding one or more human-readable documents in which the data are annotated. 
 
 #### 8.2.3	Location
 
 The researcher should specify where the data were collected. Typically, this is the location of a research institute. In case this is the DI, the center (DCC, DCCN, DCN_s, DCN_m) has to be specified. The location may also be geographically distributed, as when data are collected using mobile phones or computers connected to the internet.
+
+
+TBD: I propose to drop the location metadata field because the relevant information for most collections is already provided by the Research Administrator. Moreover, for the exception cases (data collected outside of the DI), the information provided by this metadata field does not seem to be important from the perspective of findability.
+
 
 #### 8.2.4	Conformity with laws and regulations
 
@@ -93,13 +94,17 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 
 ##### 8.2.4.1	Human data
 
-1.	Indicate whether approval was obtained from an accredited Medical ethical Reviewing Committee (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethics review board can be found in a separate document in the Donders RDM Information Package.
-2.	Indicate where the signed informed consent forms  (i.e., the paper forms) are archived. 
+1.	Indicate whether approval was obtained from an accredited Medical ethical Reviewing Committee (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethical Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
+2.	Indicate where the signed informed consent forms (i.e., the paper forms) are archived. 
 3.	Indicate where the approved participant information brochures are archived. There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethics review board. 
+
+TBD in TG2: How must the information brochures be documented?
+
 
 ##### 8.2.4.2	Animal data
 
 The researcher must specify whether approval was obtained from an accredited Animal Care and Use Committee. If this is the case, then the researcher must specify the name of this committee (e.g., Dier-experimentencommissie Radboud Universiteit Nijmegen) and the registered identifier of the approved application.
+
 
 #### 8.2.5	Digital data
 
