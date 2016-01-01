@@ -31,6 +31,7 @@ The following agreements can apply to collections that only include source code 
   * [LGPL-3.0](../agreements/LGPL-3.0.md)
   * [MIT](../agreements/MIT.md)
   * [MPL-2.0](../agreements/MPL-2.0.md)
+  * [ISC](../agreements/ISC.md)
 
 Please follow the data sharing flowchart to guide your decisions with regards to data sharing.
 
