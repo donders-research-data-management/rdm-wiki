@@ -2,7 +2,7 @@
 
 ##	1 Version
 
-Draft, last update by Eric on 30 August 2015
+Draft, last update by Eric on 18 December 2015
 
 ##	2 Scope
 
@@ -10,51 +10,54 @@ This protocol is in effect as of DD-MM-YYYY and replaces all previous versions o
 
 ## 3 Audience
 
-The audience for this protocol consists of all people conducting research at the Donders Institute (DI). This includes research assistants, internship students, PhD students, guest/visiting researchers, postdocs, senior researchers, and principal investigators. These people will be collectively denoted as researchers in the subsequent text. This group is to be distinguished from the research administrators and the reviewers, who have their own protocol.
+The audience for this protocol consists of all people conducting research at the Donders Institute (DI). This includes research assistants, internship students, PhD students, guest/visiting researchers, postdocs, senior researchers, and principal investigators. These people will be collectively denoted as _researchers_ in the subsequent text. This group is to be distinguished from the _research administrators_, who have their own protocol.
 
 ##	4 Context
 
-The context of this protocol is the Research Data Management (RDM) at the Donders Institute (DI), which involves interaction with a digital data repository. This protocol describes how researchers must interact with this repository. Future changes to the organization and user interface of the repository may have consequences for this protocol, and these changes will be integrated in future versions of this protocol. The researcher should therefore always ensure to use the latest version of this protocol. This latest version is part of the Donders RDM Information Package, which contains not only the three protocols but also other documents to which will be referred in the protocols. The administration of your center knows where this information package can be found. 
+The context of this protocol is the _Research Data Management_ (RDM) at the Donders Institute (DI), which involves interaction with a digital data repository. This protocol describes how researchers must interact with this repository. Future changes to the organization and user interface of the repository may have consequences for this protocol, and these changes will be integrated in future versions of this protocol. The researcher should therefore always ensure to use the latest version of this protocol. This latest version is part of the Donders RDM Information Package, which contains not only the two protocols but also other documents to which will be referred in the protocols. The administration of your center knows where this information package can be found. 
 This protocol serves three purposes: 
-1.	Data preservation for the purpose of internal reuse 
-2.	Archiving and documenting for the purpose of scientific integrity
-3.	Data sharing with the external scientific community
-The data repository allows a researcher to archive digital data into collections. The repository contains separate collections for preservation, for scientific integrity and for sharing. Repository users can have different predefined roles in a collection. These roles differ in their rights with respect to the collection.
-1.	A manager can add and remove users to the collection, and can change the role of other users. A manager automatically also has the rights of a contributor. A manager cannot add or remove users in the role of reviewer (see further).
-2.	A contributor can add, modify and delete files. A contributor also has the rights of a viewer.
-3.	A viewer can view the content of files.
-4.	A reviewer can view the content of files and can close the collection, making it read-only. Different from a viewer, a reviewer cannot be added or removed by the manager. A collection reviewer is a researcher that is also a reviewer, and therefore his role is also described in DI RDM Protocol for Reviewers.
-When a collection is initiated, a research administrator assigns both a manager and a reviewer to the collection (see the DI RDM Protocol for Research Administrators). Prior to collection closure, the reviewer must evaluate whether the collection is built in accordance with this protocol. Typically, he/she is also the supervisor of the research project to which this collection belongs. A user can be both manager and reviewer of the same collection.
+1.	_Data preservation_ for the purpose of internal reuse 
+2.	_Research documentation_ for the purpose of reproducibility
+3.	_Data sharing_ with the external scientific community
+
+The data repository allows a researcher to archive digital data into collections. The repository contains separate collections for preservation, for research documentation and for sharing. Repository users can have different predefined roles in a collection. These roles differ in their rights with respect to the collection.
+1.	A _manager_ can add and remove users to the collection, and can change the role of other users. A manager automatically also has the rights of a contributor. 
+2.	A _contributor_ can add, modify and delete files. A contributor also has the rights of a viewer.
+3.	A _viewer_ can view the content of files.
+
+When a collection is initiated, a research administrator assigns a manager to the collection (see the DI RDM Protocol for Research Administrators). Typically, the collection manager is also the supervisor of the research project to which this collection belongs. A collection manager can add other users to the collection in the role of manager, and these then obtain the same rights as he/she has.
 
 ##	5 Data and Metadata
 There exist several definitions of data. For the purpose of this protocol, we focus on research data, which we define as follows:
-All information that is (1) generated as a part of the research process and (2) on which a scientific report is/will be based.
-It is important to note that this definition does not only include empirical data, but also simulated data, computer scripts for analysis and simulations, stimuli presented in experiments and the computer scripts for presenting them, etc. A good way to determine what is the research data on which your study is based, is asking yourself what information has contributed to the results of your study, but is not in your report/publication. And a good way to delineate the empirical from the other research data, is by asking yourself whether you have used some device for obtaining these data: empirical data are always collected using a device (a button box, a keyboard, an MRI scanner, an EEG or MEG system, a video camera, a touch screen, a microscope, …).
-Not all studies and publications depend on research data, as defined above. This holds for theoretical, perspective and opinion papers, as well as for reviews. This protocol is only relevant for those studies and publications that do depend on research data.
+
+>All information that is (1) generated as a part of the research process and (2) on which a scientific report is/will be based.
+
+It is important to note that this definition does not only include empirical data, but also simulated data, computer scripts for analysis and simulations, stimuli presented in experiments and the computer scripts for presenting them, etc. A good way to determine what is the research data on which your study is based, is asking yourself what information has contributed to the results of your study, but is not in your report/publication. And a good way to delineate the empirical from the other research data, is by asking yourself whether you have used some device for obtaining these data: empirical data are always collected using a device (a button box, a keyboard, an MRI scanner, an EEG or MEG system, a video camera, a touch screen, a microscope, …). Not all studies and publications depend on research data, as defined above. This holds for theoretical, perspective and opinion papers, as well as for reviews. This protocol is only relevant for those studies and publications that do depend on research data.
+
 Empirical research data can be acquired in digital or non-digital form. This distinction is relevant because only digital data are to be archived on the data repository. However, this protocol addresses both digital and non-digital data. Specifically, this protocol also describes how non-digital data have to be preserved and documented. Common non-digital data are psychometric and performance data on paper or film (e.g., questionnaires, psychological tests, handwritten text, photos), and samples or biochemical assessment of biological tissue (e.g., brain tissue, blood, saliva).
+
 Metadata is data about data. Most familiar are the metadata at the level of individual files: the filename, its type (.docx, .pdf, .dcm, .mat, .xlsx, …), its creation date, the date it was last modified, etc. In this protocol, we will mainly consider metadata at the collection level, because this allows for metadata that are very useful for research data management. Some examples of such collection-level metadata are the following: the type of data collected (behavior, fMRI, EEG, MEG, genomics, transcriptomics, video, …), species (human, non-human primate, rat, mouse, …), topic of the study, disorder investigated (if any), persons that have contributed to the study, and the name of the file in which the study design is described.  
 
 ##	6 Accessing the Repository
-When visiting the website of the data repository, one can see the metadata of all Data Sharing Collections (DSCs; see further). However, one cannot see any files, nor the metadata of the other collections. To access the files in the repository, and to see the metadata of the other collections, one must first log in. This is also called authentication. There are three ways to authenticate :
+When visiting the website of the data repository, one can see the metadata of all _Data Sharing Collections_ (DSCs; see further). However, one cannot see any files, nor the metadata of the other collections. To access the files in the repository, and to see the metadata of the other (non-DSC) collections, one must first log in. This is also called _authentication_. There are three ways to authenticate :
 1.	Using a local identity provider (RU or RUMCN) and logging in with your RU or RUMCN credentials (for RU and RUMCN employees, for RU students, and for persons with a so-called E-number).
 2.	Using a trusted federated authentication infrastructure (e.g., the Dutch SURFconext and the international eduGAIN) and logging in with the credentials provided by the researcher’s employer. This authentication option can be used by employees of the organizations that participate in the federated authentication infrastructure – so not necessarily RU or RUMCN.
 3.	Using a non-trusted authentication service such as Google, Facebook, or Twitter. 
-One can only authenticate (log in) after signing up. By signing up, an internal account is generated, via which one can access files on the repository (after being authorized for access; see further). One needs this internal account to up- and download files using a client for file transfer (see further).
 
-After a successful authentication, a repository user still cannot read or write a collection’s files. To do this, a user must first be added to that collection in a particular role. The research administrator and collection manager can add a user to a collection. The collections to which a user is added in a particular role determines what that user can do in the repository. This is also called the user’s authorizations. Not every user can be added to an arbitrary collection in an arbitrary role. In fact, a user’s possible authorizations are determined by the way he/she has authenticated. To describe a user’s possible authorizations, we distinguish between four different user types that are ordered according to their authorizations (every next user type has the authorizations of the previous type plus some more):
-1.	An anonymous user (also called, non-registered user or visitor) visits the website of the repository without authenticating him/herself. An anonymous user can view the metadata of all DSCs. However, he can be added to none of the collections, and therefore cannot read a single file.
-2.	A non-trusted registered user authenticates him/herself against a non-trusted authentication service (e.g., Google, Facebook). This user type can be added as a viewer to a DSC.
-3.	 A trusted registered user authenticates him/herself against a trusted authentication service (e.g., SURFconext, EDUgain). This user type can be added as a contributor or viewer to all collection types (which also includes Data Acquisition and Scientific Integrity Collections, DACs and SICs; see further).
-4.	A DCX employee authenticates him/herself against the RU or RUMCN authentication service and is registered by a center’s research administrator as an employee of that center. In the Donders Institute, we distinguish between four centers: DCC, DCCN, DCN_s (DCN Science Faculty), and DCN_m (DCN Medical Faculty), jointly denoted as DCX. This user type can be added as a manager and/or reviewer to all collections of his center.
+One can only authenticate (log in) after _signing up_. By signing up, an internal account is generated, via which one can access files on the repository (after being authorized for access; see further). One needs this internal account to up- and download files using a client for file transfer (see further).
+
+After a successful authentication, a repository user still cannot read or write a collection’s files. To do this, a user must first be added to that collection in a particular role. The research administrator and collection manager can add a user to a collection. The collections to which a user is added in a particular role determines what that user can do in the repository. This is also called the user’s _authorizations_. Not every user can be added to an arbitrary collection in an arbitrary role. In fact, a user’s possible authorizations are determined by the way he/she has authenticated. To describe a user’s possible authorizations, we distinguish between four different user types that are ordered according to their authorizations (every next user type has the authorizations of the previous type plus some more):
+1.	An _anonymous user_ (also called, non-registered user or visitor) visits the website of the repository without authenticating him/herself. An anonymous user can view the metadata of all DSCs. However, he can be added to none of the collections, and therefore cannot read a single file.
+2.	A _non-trusted registered user_ authenticates him/herself against a non-trusted authentication service (e.g., Google, Facebook). This user type can be added as a viewer to a DSC.
+3.	 A _trusted registered user_ authenticates him/herself against a trusted authentication service (e.g., SURFconext, EDUgain). This user type can be added as a contributor or viewer to all collection types (which also includes Data Acquisition and Scientific Integrity Collections, DACs and SICs; see further).
+4.	A _DCX employee_ authenticates him/herself against the RU or RUMCN authentication service and is registered by a center’s research administrator as an employee of that center. In the Donders Institute, we distinguish between four centers: DCC, DCCN, DCN_s (DCN Science Faculty), and DCN_m (DCN Medical Faculty), jointly denoted as DCX. This user type can be added as a manager to all collections of his center.
 
 In principle, the same physical person can be represented as multiple users in the repository. This can happen if that person has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. If a user authenticates him/herself using multiple digital identities, then he/she will also be represented in the repository with multiple internal accounts, each of which is likely to have different authorizations. In some situations, it is highly desirable to migrate an internal account, and a center’s research administrator can do this for its members as well as external collaborators (see the DI RDM Protocol for Research Administrators). For example, when a user leaves the RU (and thus loses his access to the RU identity provider) and becomes an employee of another University that participates in a trusted federated authentication infrastructure, that user may want to keep his authorizations for the collections in the Donders repository. Under certain constraints (see the DI RDM Protocol for Research Administrators), this is also possible.
 
 ## 7	Up- and Downloading Files
 A web interface (or, more precisely, the HTTP protocol) does not allow for a convenient up- and download of large files and a large number of files. For that reason, the up- and download of files to and from the repository has to be performed by means of a so-called WebDAV client (called after the protocol that is used to transfer files over the internet). A very good WebDAV client is Cyberduck, which you can download for free. 
 
-To be done:
-•	How to create a bookmark for authentication against the internal iRODS account?
-•	How to obtain the one-time password after authentication in the web client?
+Up- and downloading files is only possible after you have authenticated yourself at the website of the repository. Via the website, you can then obtain a _data access password_ that you can use in combination with your _data access username_ to up- and download files. This data access username is _not_ the username with which you authenticate yourself at the website of the repository (for RU and RUMCN employees, their U- or Z-number). The data access username and password are used in combination with the WebDAV client.  
 
 ##	8. Preservation – Data Acquisition Collection
 
@@ -63,22 +66,27 @@ To be done:
 1.	Preserving the (digital) research data in their original form.
 2.	Documenting conformity with the relevant laws and regulations pertaining to data acquisition.
 3.	Annotating the data to increase its scientific usefulness.
-This protocol involves both required (5.2) and recommended (5.3) operating procedures.
+This protocol involves both required (8.2) and recommended (8.3) operating procedures.
 
 ### 8.2	Required
 
 #### 8.2.1	Initiation
 
-A data acquisition collection (DAC) is initiated by the research administrator upon request by a researcher, typically following formal approval by the center director, or on the basis of criteria put forward by the center director (e.g., the Project Proposal Meeting at the DCCN; see Center Specific). The protocol for initiating a DAC is described in the DI RDM Protocol for Research Administrators.
+A _data acquisition collection_ (DAC) is initiated by the research administrator upon request by a researcher, typically following formal approval by the center director, or on the basis of criteria put forward by the center director (e.g., the Project Proposal Meeting at the DCCN; see Center Specific). The protocol for initiating a DAC is described in the _DI RDM Protocol for Research Administrators_.
 
 #### 8.2.2	General
 
 Data must be archived in their original form. Here, original means the following: without any manipulations that limit future analyses of these data.
+
 The DAC must be annotated in two ways: (1) by providing metadata (see further), and (2) by adding one or more human-readable documents in which the data are annotated. 
 
 #### 8.2.3	Location
 
 The researcher should specify where the data were collected. Typically, this is the location of a research institute. In case this is the DI, the center (DCC, DCCN, DCN_s, DCN_m) has to be specified. The location may also be geographically distributed, as when data are collected using mobile phones or computers connected to the internet.
+
+
+TBD: I propose to drop the location metadata field because the relevant information for most collections is already provided by the Research Administrator. Moreover, for the exception cases (data collected outside of the DI), the information provided by this metadata field does not seem to be important from the perspective of findability.
+
 
 #### 8.2.4	Conformity with laws and regulations
 
@@ -86,13 +94,17 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 
 ##### 8.2.4.1	Human data
 
-1.	Indicate whether approval was obtained from an accredited Medical ethical Reviewing Committee (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethics review board can be found in a separate document in the Donders RDM Information Package.
-2.	Indicate where the signed informed consent forms  (i.e., the paper forms) are archived. 
+1.	Indicate whether approval was obtained from an accredited Medical ethical Reviewing Committee (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethical Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
+2.	Indicate where the signed informed consent forms (i.e., the paper forms) are archived. 
 3.	Indicate where the approved participant information brochures are archived. There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethics review board. 
+
+TBD in TG2: How must the information brochures be documented?
+
 
 ##### 8.2.4.2	Animal data
 
 The researcher must specify whether approval was obtained from an accredited Animal Care and Use Committee. If this is the case, then the researcher must specify the name of this committee (e.g., Dier-experimentencommissie Radboud Universiteit Nijmegen) and the registered identifier of the approved application.
+
 
 #### 8.2.5	Digital data
 
