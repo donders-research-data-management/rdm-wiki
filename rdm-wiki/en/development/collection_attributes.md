@@ -11,8 +11,13 @@ The RDM collection attributes are implemented as key-value pairs associated with
 * __DSC__: whether the attribute is presented with a Data Sharing Collection
 * __SS__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection.
 * __RA__: whether the attribute is editable by a research administrator
-* __M__: whether the attribute is editable by a collection manager
+* __M__: whether the attribute is editable by a collection manager 
 * __C__: whether the attribute is editable by a collection contributor
+
+Erimar: 
+* the flag __C__ is used in two meanings
+* the M and the C attributes (with the C used in the second meaning) are not used in the table
+* 
 
 | key                          | value / format               | multiple | sys  | DAC  | RDC  | DSC  | SS      | RA   | M    | C    |
 | ---------------------------- | ---------------------------- | -------- | ---- | ---- | ---- | ---- | ------- | ---- | ---- | ---- |
