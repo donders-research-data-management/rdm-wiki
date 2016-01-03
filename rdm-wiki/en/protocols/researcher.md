@@ -15,6 +15,9 @@ The audience for this protocol consists of all people conducting research at the
 ##	4 Context
 
 The context of this protocol is the _Research Data Management_ (RDM) at the Donders Institute (DI), which involves interaction with a digital data repository. This protocol describes how researchers must interact with this repository. Future changes to the organization and user interface of the repository may have consequences for this protocol, and these changes will be integrated in future versions of this protocol. The researcher should therefore always ensure to use the latest version of this protocol. This latest version is part of the Donders RDM Information Package, which contains not only the two protocols but also other documents to which will be referred in the protocols. The administration of your center knows where this information package can be found. 
+
+TBD: The previous paragraph mentions an Information Package. I propose we drop this and make all information available via links from within the CMS. The CMS then obtains the most recent information from the Github-hosted wiki.
+
 This protocol serves three purposes: 
 1.	_Data preservation_ for the purpose of internal reuse 
 2.	_Research documentation_ for the purpose of reproducibility
@@ -164,47 +167,54 @@ TBD: Prescribe a folder name for the DAC annotation?
 
 #### 8.2.10	 DAC closure
 
-A collection may only be closed when its content is in accordance with this protocol. Only a collection manager can close a collection, and therefore he/she is also responsible for this decision (whether or not the collection is in accordance with this protocol). Importantly, when a collection is closed, it is also _published_. , and this implies that a permanent read-only copy has been created to which can be referred by a _persistent identifier_ (PID). A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed. Once a collection has a PID, it cannot be changed anymore ().
+A collection may only be closed when its content is in accordance with this protocol. Only a collection manager can close a collection, and he/she is thus responsible for the decision whether or not the collection is in accordance with this protocol. 
 
+When a collection is closed, a permanent read-only copy of this collection is created and a unique identifier is assigned to it. A collection manager can re-open a closed collection, but may only do so with a good reason, for example if the closed collection contains incorrect and/or insufficient information. Carefulness is required because closing a collection twice also requires twice the amount of storage (and thus costs twice the amount of money). In fact, when a re-opened collection is modified and thereafter closed again, then a second permanent read-only copy of the collection created, again with unique identifier. All the read-only copies that are created at collection closure are thus snapshots of the collection at different time points.
 
-A DAC is closed in two steps: 
-1. A collection manager changes the status of a collection from _open_ to _tobeclosed_. In the _tobeclosed_ status, the collection has become read-only. 
-2. 
-3. makes a request for collection closure, and (2) the collection reviewer replies to this request by approving it or not. 
+A collection is closed in _two_ steps: 
+1. The status of the collection is changed from _open_ to _tobeclosed_. In the _tobeclosed_ status, the collection has become read-only. 
+2. At a time determined by the file system, a permanently read-only copy of the collection is made and a unique identifier is assigned to it. If the collection would be re-opened, this read-only copy would not be modified.
 
- After the request by the manager, the collection already becomes read-only, although this will only be temporary if the request is not approved. However, if the reviewer approves the request, the collection becomes read-only permanently. 
- 
- If the reviewer does not approve the request, he/she re-installs the pre-request authorizations (specifying which users may modify and delete files).
+There can be situations in which it is useful to make collection snapshots that are permanently read-only. For instance, this may be the case when the DAC belongs to an ongoing study, and one wants to write a paper using the data collected until present. The identifier that is assigned to this collection then serves as a reference in other collections that make use of this DAC snapshot. This workflow is a form of versioning.
 
-
-In case an approved collection contains incorrect and/or insufficient information, the collection reviewer may re-open it, allowing for changes to be made. Importantly, it is not the read-only collection with the PID that is reopened, but an identical collection without a PID. Collection reviewers must keep in mind that this re-opened collection at some point will have to be closed again, and a new PID will then be assigned to it. This requires disk space (and thus costs money) because every collection with a PID is a copy of an existing collection.    
-There can be situations in which it is useful to make collection snapshots that are permanently read-only. For instance, this may happen when the DAC belongs to an ongoing study, and one wants to write a paper using the data collected until present. In that case, collection manager (requesting) and collection reviewer (approving) can make a permanently read-only copy of the current collection. The PID that is assigned to this collection then serves as a reference in other collections that make use of this DAC snapshot. This workflow is a form of versioning, and it is the responsibility of the collection reviewer to decide on a particular versioning scheme (see the DI RDM Protocol for Reviewers).
-8.2.11	Data/study type specific
+### 8.2.11	Data/study type specific
 To be provided.
-8.2.12	 Centre specific - DCCN
-The researcher should specify the PPM number.
-The researcher should organize the data files and directories according to the DCCN standard: 
-<projectnumber>_<userID>_<subjectnumber>_<sessionnumber>.
+
+### 8.2.12	 Centre specific - DCCN
+The researcher must specify the PPM number.
+
+TBD: I think the sentence above can be removed, because the research admin already specifies this number.
+
+The researcher must organize the data files and directories according to the DCCN standard: 
+
+> projectnumber_userID_subjectnumber_sessionnumber
+
 For example, 30123456.01_pethag_003_002. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
-8.2.13	 Centre specific – DCC
+
+### 8.2.13	 Centre specific – DCC
 The researcher should specify the DCC project number.
-The researcher should organize the data files and directories according to the DCC standard: 
-<projectnumber>_<userID>_<subjectnumber>_<sessionnumber>.
+
+TBD: Remove above sentence?
+
+The researcher must organize the data files and directories according to the DCC standard: 
+
+> projectnumber_userID_subjectnumber_sessionnumber
+
 For example, DCC_2015_0978_piemed_004_001. The userID should be one of the collection managers. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
+
 
 ### 8.3	Recommended
 
 
 #### 8.3.1	General
 
+#### 8.3.2	Neuroscience-specific attributes
 
-#### 8.3.2	Metadata
+Neuroscience-specific attributes are useful to find DACs via a search query. Neuroscience terms can be selected from two controlled vocabularies: the topic list of the Society for Neuroscience (SFN), and the Medical Subject Headings (MESH; used by PubMed for indexing articles). When selecting terms from these controlled vocabularies, the following domains may guide the collection managers and contributors: technique, topic, species, disorder, and brain area.
 
-It is useful if metadata are provided via which the DAC can be found. These metadata can be selected from controlled vocabularies pertaining to following domains: Technique, Topic, Species, Disorder, and Brain Area.
+#### 8.3.3	Associating DACs
 
-#### 8.3.3	Linking DACs
-
-Some DACs are linked to existing DACs, for example, because they all belong to the same longitudinal study. Links between DACs are documented by adding the names of the linked DACs in the appropriate metadata fields.
+Some DACs are associated with existing DACs, for example, because they all belong to the same longitudinal study. Associations between DACs are documented by specifying the identifiers of the associated DACs.
 
 #### 8.3.4	DAC annotation
 
@@ -218,42 +228,47 @@ As a part of his/her final responsibility for a collection, it is recommended th
 
 To be provided.
 
+
 #### 8.3.7	Centre specific DCN_S
 
 The following scheme is recommended for the names of the files/folders that contain a participant’s data: 
-XXXX.
+
+>XXXX.
+
 If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
 
-
-## 9	Scientific Integrity Collection
+## 9	Research Documentation Collection
 
 ### 9.1	Objectives
 
 1.	Document the process via which data are converted into published results.
 2.	Provide a digital platform for collaborators to contribute to and review good scientific practices.
-In a scientific integrity collection (SIC), information will be collected that may be relevant for evaluating good scientific practice. However, this protocol does not specify any scientific integrity rules, nor does it include measures to enforce conformity with such rules.
-This protocol involves both required (6.2) and recommended (6.3) operating procedures.
+In a _research documentation collection_ (RDC), information will be collected that may be relevant for evaluating good scientific practice. However, this protocol does not specify any scientific integrity rules, nor does it include measures to enforce conformity with such rules.
+
+This protocol involves both required (9.2) and recommended (9.3) operating procedures.
 
 ### 9.2	Required
 
-
 #### 9.2.1	Initiation
 
-A SIC is initiated by the research administrator upon request by a researcher on the basis of criteria put forward by the center director. The protocol for initiating a SIC is described in the DI RDM Protocol for Research Administrators.
+A RDC is initiated by the research administrator upon request by a researcher on the basis of criteria put forward by the center director. The protocol for initiating a RDC is described in the _DI RDM Protocol for Research Administrators-.
 
 #### 9.2.2	General
 
-A SIC pertains to the process that has led to a scientific publication. It contains the documents that may be relevant for evaluating good scientific practice. The core content of a SIC are files that document the scientific process in which data are converted into results (statistical tests, summary measures, figures, tables, etc.). For simplicity, in the following, this part of the scientific process will be denoted as the scientific process, without any qualification as to the specific result it contributes to the publication.
+A RDC pertains to the process that has led to a scientific publication. It contains the documents that may be relevant for evaluating good scientific practice. The core content of a RDC are files that document the scientific process in which data are converted into results (statistical tests, summary measures, figures, tables, etc.). For simplicity, in the following, this part of the scientific process will be denoted as the _scientific process_, without any qualification as to the specific result it contributes to the publication.
 
-#### 9.2.3	Metadata 
+#### 9.2.3	Attributes 
 
-The researcher must add the following information as metadata:
+The researcher must add the following information:
 1.	Title of the manuscript
 2.	List of all co-authors
-Following publication, the researcher must add the following additional information as metadata:
-1.	Persistent identifier (PID) of the published manuscript, typically, a digital object identifier (DOI).
+3.	
+Following publication, the researcher must add the following additional information:
+1.	A persistent identifier (PID) of the published manuscript (typically, a digital object identifier; DOI). (A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed.
 2.	Pubmed identifier (PMID) of the published manuscript
+
+TBD: Does the PMID add sufficient information if we also have a PID?
 
 #### 9.2.4	Contributors to the publication
 
@@ -351,6 +366,13 @@ Following a request from an external researcher to download data from a DSC, a u
 The contact person for a DSC is a collection manager to whom the signed DUA must be sent and who can grant access. If the DUA includes limitations on the reuse of the data, then the contact person (possibly after informing with his/her colleagues) decides on whether the intended reuse is within these limitations. 
 The contact person’s email address must be in the appropriate metadata field.
 10.2.11	 DSC closure
+
+
+When a collection is closed, it is also _published_. This implies that a permanent read-only copy has been created to which can be referred by a _persistent identifier_ (PID). A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed. Once a collection has a PID, it cannot be changed anymore ().
+
+In case an approved collection contains incorrect and/or insufficient information, the collection reviewer may re-open it, allowing for changes to be made. Importantly, it is not the read-only collection with the PID that is reopened, but an identical collection without a PID. Collection reviewers must keep in mind that this re-opened collection at some point will have to be closed again, and a new PID will then be assigned to it. 
+
+
 See 8.2.10. 
 A DSC can only closed if the SIC to which it is linked is also closed.
 10.2.12	 Data/study type specific
