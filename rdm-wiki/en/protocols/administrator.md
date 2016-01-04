@@ -1,21 +1,24 @@
-# Protocol for Administrators
+# Protocol for Research Administrators
 
 ## 1.	Version
-Draft version, last update by Eric, August 30, 2015.
+Draft version, last update by Eric, January 5, 2016.
 
 ## 2.	Scope
 This protocol is in effect as of DD-MM-YYYY and replaces all previous versions of the DI-RDM protocol for research administrators .
 
 ## 3.	Audience
-The audience for this protocol consists of all research administrators. This group is to be distinguished from the researchers and the reviewers, who have their own protocol. The research administrators include the center administrative directors and the persons that act on their behalf (e.g., secretaries). This protocol only describes the administrative actions that are part of Research Data Management (RDM) and therefore is additional to the existing management workflows of the Donders Institute.  
+The audience for this protocol consists of all research administrators. This group is to be distinguished from the researchers, who have their own protocol. The research administrators include the center administrative directors and the persons that act on their behalf (e.g., secretaries). This protocol only describes the administrative actions that are part of Research Data Management (RDM) and therefore is additional to the existing management workflows of the Donders Institute (DI).  
 
 ## 4.	Context
 
 The context of this protocol is Research Data Management (RDM) involving a digital repository. It assumes that the research administrator has access to the repository. Changes to the organization and user interface of the repository may have consequences for this protocol, and these will be integrated in future versions of this protocol. The research administrator should therefore always ensure that she or he is using the latest version of this protocol. 
+
 This protocol deals with 
+
 1.	Data preservation for the purpose of internal reuse 
 2.	Archiving and documenting for the purpose of scientific integrity
 3.	Data sharing with the external scientific community
+
 The research administrator should create and manage the permissions of collections on the digital repository to allow the researcher to archive data. These data are represented in binary form in files and/or directories into collections. The repository implements separate collections for preservation, for integrity and for sharing. 
 
 ## 5.	The Research Administrator Role
