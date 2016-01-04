@@ -20,8 +20,8 @@ TBD: The previous paragraph mentions an Information Package. I propose we drop t
 
 This protocol serves three purposes:
 
-1. _Data preservation_ for the purpose of internal reuse 
-2. _Research documentation_ for the purpose of reproducibility
+1. _Data preservation_ for internal reuse 
+2. _Research documentation_ for increasing reproducibility
 3. _Data sharing_ with the external scientific community
 
 The data repository allows a researcher to archive digital data into collections. The repository contains separate collections for preservation, for research documentation and for sharing. Repository users can have different predefined roles in a collection. These roles differ in their rights with respect to the collection.
