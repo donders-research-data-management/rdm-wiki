@@ -75,7 +75,12 @@ If the contract of the collection manager ends, a new collection manager must be
 
 ##### 6.2.1.1. General
 
-##### 6.2.1.2. Center specific - DCC
+
+##### 6.2.1.2. Center specific - DCCN
+
+The DCCN manages the initiation of new DACs in the Project Proposal Meetings (PPMs). Preparation of a PPM as well as the procedure itself, are described on the following intranet page: https://intranet.donders.ru.nl/index.php?id=442.
+
+##### 6.2.1.3. Center specific - DCC
 
 The DCC manages the initiation of new DACs via a form that has to be completed by the researcher and which must be approved by the center director.
 
@@ -85,69 +90,69 @@ The DAC collection name is constructed according to the following standard:
 
 in which YYYY is the year, MM the month, and DD the day at which the collection is initiated. The component <freename> should be an acronym for the study to which this collection belongs. For example: DAC_20150623_AttSelConMon.
 
-DCCN
+##### 6.2.1.4. Center specific - DCN_s
 
-The DCCN manages the initiation of new DACs in the Project Proposal Meetings (PPMs). Preparation of a PPM as well as the procedure itself, are described on the following intranet page: https://intranet.donders.ru.nl/index.php?id=442.
-
-DCN_s
-
-DCN_m
-
+##### 6.2.1.5. Center specific - DCN_m
 
 
 #### 6.2.2.	Recommended
 
-General 
+##### 6.2.2.1. General
 
-Center specific
+##### 6.2.2.2. Center specific
 
-### 6.3.	Protocol Specific for Scientific Integrity Collections
+
+### 6.3.	Protocol Specific for Research Documentation Collections
 
 #### 6.3.1.	Required
 
-General
+##### 6.3.1.1. General
 
-Center specific
+##### 6.3.1.2. Center specific
 
 #### 6.3.2.	Recommended
 
-General
+##### 6.3.2.1. General
 
-Center specific
+##### 6.3.2.2. Center specific
 
 ### 6.4.	Protocol Specific for Data Sharing Collections
 
 #### 6.4.1.	Required
 
-General
+##### 6.4.1.1. General
 
-Center specific
+An embargo period of maximally 2 years can be granted provided the center director has approved in writing.
 
-TODO
--	rules for the embargo period (if applicable)
+##### 6.4.1.2. Center specific
 
 #### 6.4.2.	Recommended
 
-General
+##### 6.4.2.1. General
 
-Center specific
+##### 6.4.2.2. Center specific
+
 
 ## 7.	Authorizing Users at the Center Level 
 
 Besides administrative actions that pertain to individual collections, the research administrator must also perform two authorizations that pertain to all of a center’s collections: 
-1.	Authorizing a user in the role of DCX employee (with DCX representing  DCC, DCCN, DCN_s, or DCN_m). Only DCX employees can be added as a manager or reviewer to their center’s collections. Also, DCX employees can view the metadata of all of a center’s collections. A user is added in the role of DCX employee by setting the value of the appropriate field in the user’s profile. This profile must be linked to the user’s entry in the RU or RUMCN identity provider (IdP; see further).
-2.	Authorizing a user in the role of DCX reviewer. Only DCX reviewers can  view the data of all of a center’s collections. At least the center’s scientific integrity officer must have this role, but this role may also be given to members of an audit committee (see the DI RDM Protocol for Reviewers).
+
+1.	Authorizing a user in the role of DCX employee (with DCX representing  DCC, DCCN, DCN_s, or DCN_m). Only DCX employees can be added as a manager to their center’s collections. Also, DCX employees can view the metadata of all of a center’s collections. A user is added in the role of DCX employee by setting a value in the appropriate field in the user’s profile.
+2.	Authorizing a user in the role of DCX reviewer. Only DCX reviewers can  view the data of all of a center’s collections. This role may be give to the center’s scientific integrity officer, as well as to the members of an audit committee.
 
 ## 8.	Creating, Managing and Linking User Accounts
 
 ### 8.1.	Creating and Managing User Accounts
 
-In the most likely scenario, the research administrator will not be involved in the creation of user accounts. However, there can be situations in which he has to act, and therefore we briefly describe the mechanism via which user accounts are created (see the DI RDM Protocol for Researchers, for a more extensive description). User accounts are created automatically when a user signs up . During sign up, a user must authenticate against an identity provider (IdP). The user account that is created during sign up typically is not visible to the user (it is an internal account), but he needs it to access files on the repository (after being authorized for access). Importantly, for most collections, the files can only be accessed if the user has signed up against the IdP service of the RU/RUMCN or a so-called trusted federated authentication infrastructure. Potential users that are not (anymore) RU/RUMCN employees, may not have access to such a trusted federated authentication structure. To help these potential users, they can be given an account in the RU’s Relation Management System (Relatie Beheer Systeem). A so-called E-account can be created with little administrative work, but another type of account may also work. The essential requirement is that the account should allow the owner to make use of the IdP service of the RU. 
-The requests for giving a potential user an account in the RU’s Relation Management System, will come from collection managers and collection reviewers.
+In the most likely scenario, the research administrator will not be involved in the creation of user accounts, because they are created automatically in a sign-up procedure (see the _DI RDM Protocol for Researchers_). However, in the future, it may become necessary for the research administrator to create user accounts (as an alternative for the automatic generation). 
+
+To provide some context for this issue, one must know that DACs and RDCs can only be accessed if the user has signed up against the RU or RUMCN Identity Providers (IdP) or a so-called trusted federated authentication infrastructure (SurfConext, EduGain). Potential users may not (anymore) have access to one of these identity providers. To help these potential users, they can be given an account in the RU’s Relation Management System (Relatie Beheer Systeem). A so-called E-account can be created with limited administrative work, and seems the most useful account type for this purpose. The essential requirement is that the account should allow the owner to make use of the IdP service of the RU. The collection manager will ask the research administrator to give a potential user an account in the RU’s Relation Management System.
+
 At this moment, it is not possible to give access to potential users that do not have access to a trusted federated authentication infrastructure, neither via their employer nor via the RU’s Relation Management System. If this turns out to be a serious problem, it is in principle possible to allow the research administrator to create an internal account, involving a login ID and an initial password, thus bypassing IdP-based authentication. These self-created accounts have to be managed, and the requirements for this management are identical to the ones for the management of the E-accounts created by the RU’s Relation Management System. When this becomes necessary, this protocol will be updated with these requirements.
+
 
 ### 8.2.	Migrating User Accounts
 
-Many users change organization and thereby also IdP. When a user signs up using the credentials (ID plus password) provided by this new organization, a new internal account is created specifically for his new organization. Importantly, when subsequently authenticating (logging in) using the credentials of his new organization, he cannot access the collections for which he is authorized if he authenticates against the IdP of his old organization. However, the research administrator can change his new internal account such that the user keeps his access to those collections also when authenticating against the IdP of his new organization. This change involves a migration of the old internal account such that it can be accessed by authenticating against the IdP of his new organization. For performing this migration, the research administrator has access to a portal in which he must change the value of the appropriate field.
-To prevent misunderstanding, migrating the old internal account of a former RU employee such that it can be accessed by authenticating against the IdP of his new organization, does not imply that this user can still be manager or reviewer in any of his old collections: these authorizations have to be modified by the collection reviewer (in case the user was a manager) and the research administrator (in case the user was a reviewer). 
+Many users change organization and thereby also IdP. When a user signs up using the credentials (ID plus password) provided by this new organization, a new internal account is created specifically for his new organization. Importantly, when subsequently authenticating (logging in) using the credentials of his new organization, he cannot access the collections for which he is authorized if he authenticates against the IdP of his old organization. However, the research administrator can change his new internal account such that the user keeps his access to those collections also when authenticating against the IdP of his new organization. This change involves a migration of the old internal account such that it can be accessed via authenticating against the IdP of his new organization. For performing this migration, the research administrator has access to a portal in which he must change the value of the appropriate field.
+To prevent misunderstanding, migrating the old internal account of a former RU employee such that it can be accessed by authenticating against the IdP of his new organization, does not imply that this user can still be manager in any of his old collections: these authorizations have to be modified by another collection manager or the research administrator. 
 
