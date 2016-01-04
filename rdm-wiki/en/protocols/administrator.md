@@ -73,15 +73,16 @@ If the contract of the collection manager ends, a new collection manager must be
 
 #### 6.2.1.	Required
 
-General
+##### 6.2.1.1. General
 
-Center specific
-
-DCC
+##### 6.2.1.2. Center specific - DCC
 
 The DCC manages the initiation of new DACs via a form that has to be completed by the researcher and which must be approved by the center director.
+
 The DAC collection name is constructed according to the following standard: 
+
 “DAC” _<YYYYMMDD>_<freename>  ,
+
 in which YYYY is the year, MM the month, and DD the day at which the collection is initiated. The component <freename> should be an acronym for the study to which this collection belongs. For example: DAC_20150623_AttSelConMon.
 
 DCCN
@@ -91,6 +92,8 @@ The DCCN manages the initiation of new DACs in the Project Proposal Meetings (PP
 DCN_s
 
 DCN_m
+
+
 
 #### 6.2.2.	Recommended
 
