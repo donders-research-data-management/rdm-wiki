@@ -15,24 +15,30 @@ The context of this protocol is Research Data Management (RDM) involving a digit
 
 This protocol deals with 
 
-1.	Data preservation for the purpose of internal reuse 
-2.	Archiving and documenting for the purpose of scientific integrity
-3.	Data sharing with the external scientific community
+1. _Data preservation_ for internal reuse 
+2. _Research documentation_ for increasing reproducibility
+3. _Data sharing_ with the external scientific community
 
-The research administrator should create and manage the permissions of collections on the digital repository to allow the researcher to archive data. These data are represented in binary form in files and/or directories into collections. The repository implements separate collections for preservation, for integrity and for sharing. 
+The research administrator should initiate collection and manage their permissions. These data are represented in binary form in files and/or directories that are organized in collections. The repository implements separate collections for preservation, for research documentation and for sharing. 
 
 ## 5.	The Research Administrator Role
 
-Researchers and research administrators have different roles. The difference between the different researcher roles and that of a research administrator is in the way of interacting with the digital repository: 
-1.	Researchers interact with the repository by creating, modifying, and viewing files and by providing metadata (see the DI RDM Protocol for Researchers).
-2.	Research administrators mainly interact with the repository by initiating and initializing collections, as described in this protocol. (Besides this main task, research administrators also have a task in user administration; see further.)
-Within the digital repository, the research administrator role is mainly defined in terms of rights with respect to particular collections of files. There are three types of collections: data acquisition collections (DACs), scientific integrity collections (SICs), and data sharing collections (DSCs). Building these collections involves uploading files and providing metadata, as described in the DI RDM Protocol for Researchers.
-The collections are aggregated by Donders center: the set of DCC collections, the set of DCCN collections, the set of DCN_s collections, and the set of DCN_m collections. A collection is assigned to one of the centers if it is initiated by that center’s research administrator. With respect to the technical implementation, this way of organizing the collections in no way limits the access to these collections by members of other Donders centers or RU-external institutes. The protocol may of course limit the access to certain users, depending on their membership of some center/institute, and in practice this will also be the case (e.g., collection managers and reviewers must be RU employees; see further).
+Researchers and research administrators have different roles. The difference between the different researcher roles and that of a research administrator is in the way of interacting with the digital repository:
+
+1.	Researchers interact with the repository by creating, modifying, and viewing files and by providing collection attributes (see the DI RDM Protocol for Researchers).
+2.	Research administrators mainly interact with the repository by initiating and initializing collections, as described in this protocol. And besides this main task, research administrators also have a task in user administration.
+
+Within the digital repository, the research administrator role is mainly defined in terms of rights with respect to particular collections of files. There are three types of collections: data acquisition collections (DACs), research documentation collections (RDCs), and data sharing collections (DSCs). Building these collections involves uploading files and providing collection attributes, as described in the _DI RDM Protocol for Researchers_.
+
+The collections are aggregated by Donders center (DCC, DCCN, DCN_s, and DCN_m). A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This way of organizing the collections does limits the access to these collections by members of other Donders centers or RU-external institutes, as the authorization for collection access is at the level of the collections (rather than at the center level). Authorization for the collection manager role, however, is at the center level.
+
 The rights and responsibilities of research administrators involve the following:
+
 1.	Initiating, initializing and managing collections
 2.	Authorizing users at the center level. 
 3.	Creating, managing and linking user accounts
-These three tasks will now be described in more detail. For the description of the first task (initiating, initializing and managing collections), we have to make some distinctions between DACs, SICs and DSCs. 
+
+These three tasks are now described in more detail. For the description of the first task (initiating, initializing and managing collections), we have to make some distinctions between DACs, RDCs and DSCs. 
 
 ## 6.	Initiating, Initializing and Managing Collections
 
@@ -41,24 +47,27 @@ These three tasks will now be described in more detail. For the description of t
 #### 6.1.1.	Collection Initiation
 
 A collection is initiated by the research administrator following a request by a researcher that is formally approved by the center director (or that conforms to the criteria put forward by the center director).
-The research administrator configures the collection on the digital repository and specifies the disk space and the time period in which data can be added. The initial disk space and time period are based on center policies (see Center Specific). Increasing the disk space and/or changing the time period can only be performed by the research administrator.
+
+The research administrator configures the collection on the digital repository and specifies the disk space and the time period in which data can be added. The initial disk space and time period are based on center policies (see _Center Specific_). Increasing the disk space and/or changing the time period can only be performed by the research administrator.
 
 #### 6.1.2.	Naming Convention
 
 The name of a collection can be chosen freely, subject to the following constraints:
 1.	All DACs have a name that starts with “DAC”.
-2.	All SICs have a name that starts with “SIC”.
+2.	All RDCs have a name that starts with “RDC”.
 3.	All DACs have a name that starts with “DSC”.
 4.	The name does not involve the following characters: /, >, <, |, :, and &.
 
-#### 6.1.3.	Assigning a Collection Manager and a Collection Reviewer
+#### 6.1.3.	Assigning a Collection Manager
 
-The research administrator assigns to the collection at least one person in the role of collection manager and one person in the role of collection reviewer. This can be the same person. These roles are described in the DI RDM Protocol for Researchers and that for Reviewers.
-The collection manager must be an employee of the university, also if the collection is a part of contract or collaborative research in which the research question was put forward by the client/collaborator. In the latter case, the client/collaborator can (and is likely to be) a collection contributor. Collection contributors and viewers are added to the collection by the collection manager.
-If the contract of the collection manager ends, a new collection manager must be added to the collection. The original collection manager can remain contributor or viewer if the involvement in the collection is continued. The collection reviewer decides on both the assignment of a new collection manager, and on the new role of the former collection manager (see, the DI RDM Protocol for Reviewers). If the research administrator notices that a collection has a manager who’s contract has ended, then he must do the following:
+The research administrator assigns to the collection at least one person in the role of collection manager. This role is described in the _DI RDM Protocol for Researchers_.
+
+The collection manager must be an employee of the university. This also holds if the collection is a part of contract or collaborative research in which the research question was put forward by the client/collaborator. In the latter case, the client/collaborator can (and is likely to be) a collection contributor. Collection contributors and viewers are added to the collection by the collection manager.
+If the contract of the collection manager ends, a new collection manager must be added to the collection. The original collection manager can remain contributor or viewer if the involvement in the collection is continued. If the research administrator notices that a collection manager's contract has ended, then he must do the following:
+
 1.	Give the old collection manager the role of collection viewer.
-2.	In case the old collection manager was the only one, add the collection reviewer as collection manager.
-The collection reviewer also must be an employee of the university. If the contract of the collection reviewer ends, a new collection reviewer must be assigned. The center director decides on this and instructs the research administrator to assign a new collection reviewer to the collection. 
+2.	In case the old collection manager was the only one with this role, in agreement with the center director, add a new collection manager to the collection.
+
 
 ### 6.2.	Protocol Specific for Data Acquisition Collections
 
