@@ -203,7 +203,7 @@ The researcher must organize the data files and directories according to the DCC
 
 For example, 30123456.01_pethag_003_002. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
-#### 8.2.13	 Centre specific – DCC
+#### 8.2.13	 Centre specific - DCC
 The researcher should specify the DCC project number.
 
 TBD: Remove above sentence (same reason as for the DCCN)?
