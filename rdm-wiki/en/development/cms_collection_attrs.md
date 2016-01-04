@@ -4,6 +4,9 @@ This page summarises the RDM collection attributes that are "visible" on the CMS
 
 The table below summarise the mapping between the "visible" collection attributes and their display names on the CMS portal.
 
+erimar : descriptionAbstract is missing
+
+
 | attribute key        | CMS display name            |  Remark on CMS display value |
 | -------------------- | --------------------------- | ---------------------------- |
 | identifierEPIC       | EPIC Identifier             |    link to EPIC catalogue    |
