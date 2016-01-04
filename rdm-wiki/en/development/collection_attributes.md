@@ -43,8 +43,8 @@ Erimar:
 | attributeLastUpdateDateTime  | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
 | embargoUntilDateTime         | YYYY-MM-DDTHH:MM:SS (UTC)    |          |      |      |      |  Y   |  C      |  Y   |      |      |
 | associatedDAC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
-| associatedRDC                | internal iRODS coll. id      |    Y     |      |  Y   |      |  Y   |  C      |      |  Y   |  Y   |
-| associatedDSC                | internal iRODS coll. id erimar: shouldn't this be "PID"?   |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
+| associatedRDC                | internal iRODS coll. id      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| associatedDSC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
 | associatedPublication        | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | quotaInMegaBytes             | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaBytes              | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
