@@ -10,7 +10,8 @@ The RDM collection attributes are implemented as key-value pairs associated with
 * __RDC__: whether the attribute is presented with a Research Documentation Collection
 * __DSC__: whether the attribute is presented with a Data Sharing Collection
 * __SS__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection.
-.. erimar : I don't like the label "snapshot" for two reasons: (1) we want researchers to think of their closed collection as its final version, and (2) some attributes can still be changed after closure, and therefore it is not really a snapshot. What about using the column label "after collection closure", and having the entries one of the following three values: Y and C (both proposed by you) and an M that indicates that the attribute can be modified after collection closure? (We have to think a bit about the labels. Maybe we can use Man and Con for the column labels, to avoid confusion with the M and C that are used in the entries.) 
+
+.. erimar : We must keep in mind that some attributes can still be changed after closure. What about having the entries of the SS column being one of the following three values: Y and C (both proposed by you) and an M that indicates that the attribute can be modified after collection closure? (We have to think a bit about the labels. Maybe we can use "Man" and "Con" for the column labels, to avoid confusion with the M and C that are used in the entries.) 
 
 
 
