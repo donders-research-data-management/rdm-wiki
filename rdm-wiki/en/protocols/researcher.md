@@ -189,10 +189,10 @@ A collection is closed in _two_ steps:
 
 There can be situations in which it is useful to make multiple collection snapshots. For instance, this may be the case when the DAC belongs to an ongoing study, and one wants to write a paper using the data collected until present. The identifier that is assigned to this collection then serves as a reference in other collections that make use of this DAC snapshot. This workflow is a form of versioning.
 
-### 8.2.11	Data/study type specific
+#### 8.2.11	Data/study type specific
 To be provided.
 
-### 8.2.12	 Centre specific - DCCN
+#### 8.2.12	 Centre specific - DCCN
 The researcher must specify the PPM number.
 
 TBD: I think the sentence above can be removed, because the research admin already specifies this number.
@@ -203,7 +203,7 @@ The researcher must organize the data files and directories according to the DCC
 
 For example, 30123456.01_pethag_003_002. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
-### 8.2.13	 Centre specific – DCC
+#### 8.2.13	 Centre specific – DCC
 The researcher should specify the DCC project number.
 
 TBD: Remove above sentence (same reason as for the DCCN)?
@@ -349,11 +349,11 @@ TBD: I propose to remove 9.3.4. The pre-registration already is documented by th
 This protocol involves both required (10.2) and recommended (10.3) operating procedures.
 
 ### 10.2	Required
-## 10.2.1	Initiation
+#### 10.2.1	Initiation
 
 A _Data Sharing Collection_ (DSC) is initiated by the research administrator upon request by a researcher on the basis of criteria put forward by the center director. Typically, a DSC is initiated after a paper has been accepted for publication. The protocol for initiating a DSC is described in the _DI RDM Protocol for Research Administrators_.
 
-## 10.2.2	General
+#### 10.2.2	General
 
 A DSC pertains to the reuse of the data that was used for a scientific publication. Every publication of which the results are based on data must have an associated DSC that contains all these data. Note that all these publications are also represented in the repository as a RDC, and therefore every DSC is associated with a RDC.
 
@@ -366,12 +366,12 @@ Finding a DSC on the web must be easy. Therefore it must contain so-called _disc
 Sharing data of human participants requires that their privacy must be guaranteed. Therefore these data can only be shared in a way that conforms to the relevant laws and regulations.
 
 
-## 10.2.3	Associating to a RDC
+#### 10.2.3	Associating to a RDC
 
 The DSC corresponds to a RDC in the repository, and it must be associated with it by specifying the RDC identification number.
 
 
-## 10.2.4	Discovery attributes
+#### 10.2.4	Discovery attributes
 
 The researcher must add both general and neuroscience-specific attributes that allow the DSC to be found on the web. The neuroscience-specific attributes allow the DSC to be found independently from the original publication. The general attributes, which all pertain to the publication, are the following:
 
@@ -388,7 +388,7 @@ There are two types of neuroscience-specific discovery attributes:
   2.	Description, like the abstract of a journal article.  
 2.	Neuroscience terms that are selected from two controlled vocabularies: the topic list of the Society for Neuroscience (SFN), and the Medical Subject Headings (MESH; used by PubMed for indexing articles). When selecting terms from these controlled vocabularies, the following domains may serve as a guide: technique, topic, species, disorder, and brain area.
 
-## 10.2.5	Conformity with laws and regulations
+#### 10.2.5	Conformity with laws and regulations
 
 Sharing human data requires that the participants have signed an informed consent form that allows the data to be shared. In case the data were acquired at the DI, this must be documented as a part of the relevant DACs (i.e., the DACs that contain the data on which the results are based, as specified in the RDC).
 
@@ -397,7 +397,7 @@ Personal background information pertains to the subject’s past and present sta
 
 It is sometimes possible to identify human participants on the basis of research-related information such as anatomical MRIs, video-, and audio data. These are so-called identifiable human data. Tools are available that remove the information that allow for this identification, such as software for removing facial characteristics and ears from anatomical MRI, and transcriptions of audio data. If these tools are available, researchers must use them to de-identify their participants’ data. 
 
-## 10.2.6	Preparing the data for sharing
+#### 10.2.6	Preparing the data for sharing
 
 One must distinguish between the situation in which all data in the DAC can be shared, and the situation in which some data of the DAC must not be shared (see 10.2.5). In the former situation, the data are prepared for sharing by copying them from the DAC(s). In the latter situation, the researcher must do the following:
 
@@ -405,16 +405,16 @@ One must distinguish between the situation in which all data in the DAC can be s
 2.	Perform all the operations that are required in order for the data to be shared (see 10.2.5).
 3.	Upload the result of the previous step to the DSC.
 
-## 10.2.7	DSC annotation
+#### 10.2.7	DSC annotation
 See 8.2.9.
 
-## 10.2.8	Extending on the published results
+#### 10.2.8	Extending on the published results
 
 The DSC must contain all the information that a knowledgeable colleague needs to extend on the published results. In a first step, this typically involves that the published results are reproduced. Publications may differ substantially in the amount and detail of the information that is required for reproducing the results. Collaborators on a collection are expected to demonstrate scholarship in providing the required information.
 
 It is highly unlikely that an external colleague would only want to reproduce the published results using exactly the same computer scripts that were also used by the authors. Instead, it is much more likely that such a colleague would want to investigate related effects, or modulations of the published effects by variables that are present in the data. Collaborators on a collection are expected to provide the information that allows external colleagues to perform such analyses, amongst others by providing inline comments in their analysis scripts.
 
-## 10.2.9	Specifying the data use agreement
+#### 10.2.9	Specifying the data use agreement
 
 Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. If a The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
 
@@ -424,7 +424,7 @@ TBD: I propose to replace the information package by a part of the Github-hosted
 
 When an authenticated external researcher agrees to the DUA corresponding to the DSC, he/she is automatically added as a viewer to the DSC, which gives him/her read access.
 
-## 10.2.10	 Specifying the contact person
+#### 10.2.10	 Specifying the contact person
 
 The contact person for a DSC is a collection manager to whom the signed DUA must be sent and who can grant access. 
 
@@ -433,7 +433,7 @@ The contact person’s email address must be in the appropriate metadata field.
 TBD: Now that we have decided that external researchers, after agreeing with the DUA, are automatically added to a collection as a viewer, I think we do not need the contact person anymore. If external researchers have questions about the data, they may contact the corresponding author of the publication.
 
 
-## 10.2.11	 DSC closure
+#### 10.2.11	 DSC closure
 
 See 8.2.10. 
 
@@ -444,17 +444,17 @@ As prerequisite for publication, several journals now request a PID of the share
 If a closed DSC contains incorrect and/or insufficient information, a collection manager may re-open it, allowing for changes to be made. If this re-opened DSC is modified and thereafter closed again, then a second snapshot of the DSC is generated, with a unique PID. 
 
 
-## 10.2.12	 Data/study type specific
-### 10.2.12.1	Photo-, video-, and audio data
+#### 10.2.12	 Data/study type specific
+##### 10.2.12.1	Photo-, video-, and audio data
 
 It is technically impossible to de-identify photo-, video-, and audio data without compromising their scientific value. At the same time, it is unrealistic to expect that most candidate-participants for these studies would agree with their data being shared without de-identification. For these reasons, the DSC for a published study that involves photo-, video-, or audio data must not contain the identifiable data of those participants that have indicated on their informed consent form that they did not agreed with sharing. However, the DSC that corresponds to this study must contain the data of all participants in this study. In addition, if the published study also contained non-identifiable data (e.g., response times, electrophysiological data), then all those data must be shared (i.e., the non-identifiable data of all participants). 
 
 ### 10.3	Recommended
-## 10.3.1	Analysis scripts
+#### 10.3.1	Analysis scripts
 
 Often, the process via which data are converted into published results is fully specified by analysis scripts that can be executed by software packages such as MATLAB, R, Python, SPSS, Bash+FSL, etc. Sharing analysis scripts is the recommended way of providing information to colleague allowing him/her to reproduce the results in the publication.
 
-## 10.3.2	Checking contributions 
+#### 10.3.2	Checking contributions 
 
 As a part of his/her final responsibility for a collection, it is recommended that a collection manager check the contributions of all persons that contribute to this collection. For that purpose, a collection manager can make use of a reporting tool that produces a log of all the changes in the collection, specifying who uploaded/modified which file at what time.
 
