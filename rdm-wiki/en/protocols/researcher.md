@@ -2,7 +2,7 @@
 
 ##	1 Version
 
-Draft, last update by Eric on 18 December 2015
+Draft, last update by Eric on 5 January 2016
 
 ##	2 Scope
 
@@ -42,11 +42,11 @@ This definition does not only include empirical data, but also simulated data, c
 
 Empirical research data can be acquired in digital or non-digital form. This distinction is relevant because only digital data are to be archived on the data repository. However, this protocol addresses both digital and non-digital data. Specifically, this protocol also describes how non-digital data have to be preserved and documented. Common non-digital data are psychometric and performance data on paper or film (e.g., questionnaires, psychological tests, handwritten text, photos), and samples or biochemical assessment of biological tissue (e.g., brain tissue, blood, saliva).
 
-Metadata is data about data. Most familiar are the metadata at the level of individual files: the filename, its type (.docx, .pdf, .dcm, .mat, .xlsx, …), its creation date, the date it was last modified, etc. In this protocol, we will mainly consider metadata at the collection level, because this allows for metadata that are very useful for research data management. Some examples of such collection-level metadata are the persons that have contributed to the study, the budget from which it is financed, the date it was created and closed, the type of data collected (behavior, fMRI, EEG, MEG, genomics, transcriptomics, video, …), the species (human, non-human primate, rat, mouse, …), and the topic of the study.  
+Metadata is data about data. Most familiar are the metadata at the level of individual files: the filename, its type (.docx, .pdf, .dcm, .mat, .xlsx, …), its creation date, the date it was last modified, etc. In this protocol, we will mainly consider metadata at the collection level, because this allows for metadata that are very useful for research data management. Some examples of such collection-level metadata are the persons that have contributed to the study, the budget from which it is financed, the date and time it was created and closed, the type of data that was collected (behavior, fMRI, EEG, MEG, genomics, transcriptomics, video, …), the species (human, non-human primate, rat, mouse, …), and the topic of the study.  
 
-The function of metadata is to describe data in a way that increases their value for potential users ("Are these data interesting for me?","With which software can I process them?", ...). For that reason, the concept of metadata is closely linked to _data publication_. Importantly, because published data should not change (just like a published paper should not change), the current view is that also metadata should not change. However, there are a few situations in which it is very useful to have attributes that could change while the data themselves do not. For example, over time, a given published data set may be used in an increasing number of publications. All these publications are highly relevant attributes of that data set, even though they cannot be called "metadata". 
+The function of metadata is to describe the data in a way that increases their value for potential users ("Are these data interesting for me?","With which software can I process them?", ...). For that reason, the concept of metadata is closely linked to _data publication_. Importantly, published data should not change (just like a published paper), the current view is that also metadata should not change. However, there are a few situations in which it is very useful to have attributes that could change while the data themselves do not. For example, over time, a given published data set may be used in an increasing number of publications. All these publications are highly relevant attributes of that data set, even though technically they cannot be called "metadata". 
 
-In this protocol, a distinction is made between _metadata_ and _attributes_: metadata are a special class of attributes with the distinguishing feature that they are communicated to potential users of published data. Because the current view is that metadata should not change if the data don't change, the metadata of a closed collection (see further down, for a description of "collection closure") cannot be modified. However, this collection can have other attributes (not metadata) that _can_ be modified after closure. 
+In this protocol, a distinction is made between _metadata_ and _attributes_: metadata are a special class of attributes with the distinguishing feature that they are communicated to potential users of published data. Because the current view is that metadata should not change if the published data don't change, the metadata of a closed collection (see further down, for a description of "collection closure") cannot be modified. However, this collection can have other attributes (technically, not metadata) that _can_ be modified after closure. 
 
 
 ##	6 Accessing the Repository
@@ -355,7 +355,7 @@ A _Data Sharing Collection_ (DSC) is initiated by the research administrator upo
 
 ## 10.2.2	General
 
-A DSC pertains to the reuse of the data that was used for a scientific publication. Every publication of which the results are based on data must be represented in the repository as a RDC, and therefore every DSC is associated with a RDC.
+A DSC pertains to the reuse of the data that was used for a scientific publication. Every publication of which the results are based on data must have an associated DSC that contains all these data. Note that all these publications are also represented in the repository as a RDC, and therefore every DSC is associated with a RDC.
 
 A DSC contains (part of) the data of one or more DACs as well as additional files. These additional files contain relevant information, both for external researchers that want to reanalyze the data to extend the published results and those that only want to reproduce these results.
 
@@ -373,7 +373,7 @@ The DSC corresponds to a RDC in the repository, and it must be associated with i
 
 ## 10.2.4	Discovery attributes
 
-The researcher must add both general and neuroscience-specific attributes that allow the DSC to be found on the web. The neuroscience-specific attributes allow the DSC to be found independently from the original publication. The general metadata, which all pertain to the publication, are the following:
+The researcher must add both general and neuroscience-specific attributes that allow the DSC to be found on the web. The neuroscience-specific attributes allow the DSC to be found independently from the original publication. The general attributes, which all pertain to the publication, are the following:
 
 1.	Title of the publication
 2.	List of all co-authors
@@ -399,7 +399,7 @@ It is sometimes possible to identify human participants on the basis of research
 
 ## 10.2.6	Preparing the data for sharing
 
-Here, one must distinguish between the situation in which all data in the DAC can be shared, and the situation in which some data of the DAC must not be shared (see 10.2.5). In the former situation, the data are prepared for sharing by copying them from the DAC(s). In the latter situation, the researcher must do the following:
+One must distinguish between the situation in which all data in the DAC can be shared, and the situation in which some data of the DAC must not be shared (see 10.2.5). In the former situation, the data are prepared for sharing by copying them from the DAC(s). In the latter situation, the researcher must do the following:
 
 1.	Download the relevant data from the DAC(s).
 2.	Perform all the operations that are required in order for the data to be shared (see 10.2.5).
@@ -416,7 +416,7 @@ It is highly unlikely that an external colleague would only want to reproduce th
 
 ## 10.2.9	Specifying the data use agreement
 
-Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. There are multiple types of standard DUAs, both for human and for non-human data. The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
+Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. If a The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
 
 The choice for a particular DUA must be based on the decision tree that part of the Donders RDM Information Package.
 
@@ -435,20 +435,19 @@ TBD: Now that we have decided that external researchers, after agreeing with the
 
 ## 10.2.11	 DSC closure
 
-When a collection is closed, it is also _published_. This implies that a permanent read-only copy has been created to which can be referred by a _persistent identifier_ (PID). A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed. Once a collection has a PID, it cannot be changed anymore ().
-
-In case an approved collection contains incorrect and/or insufficient information, the collection reviewer may re-open it, allowing for changes to be made. Importantly, it is not the read-only collection with the PID that is reopened, but an identical collection without a PID. Collection reviewers must keep in mind that this re-opened collection at some point will have to be closed again, and a new PID will then be assigned to it. 
-
 See 8.2.10. 
-A DSC can only closed if the RDC to which it is linked is also closed.
 
+There is one important difference between the closure of, on the one hand, DACs and RDCs, and on the other hand, DSCs: after closure, the DAC and RDC snapshots are only assigned a unique _internal_ identifier, whereas a DSC snapshot is also assigned a unique _external_ identifier  that is exported to the web. This unique external identifier is a so-called _persistent identifier_ (PID), and is of the same type as the _digital object identifiers_ (DOIs) that are typically used to refer to published journal articles. A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed. 
 
+As prerequisite for publication, several journals now request a PID of the shared data, which they publish in the footnote of the article. DI researchers can use the PID of the closed DSC for that purpose.  
+
+If a closed DSC contains incorrect and/or insufficient information, a collection manager may re-open it, allowing for changes to be made. If this re-opened DSC is modified and thereafter closed again, then a second snapshot of the DSC is generated, with a unique PID. 
 
 
 ## 10.2.12	 Data/study type specific
 ### 10.2.12.1	Photo-, video-, and audio data
 
-It is technically impossible to de-identify photo-, video-, and audio data without compromising their scientific value. At the same time, it is unrealistic to expect that most candidate-participants for these studies would agree with their data being shared without de-identification. For these reasons, the DSC for a published study that involves photo-, video-, or audio data must not contain the identifiable data of those participants that have indicated on their informed consent form that they did not agreed with sharing. However, the SIC that corresponds to this study must contain the data of all participants in this study. In addition, if the published study also contained non-identifiable data (e.g., response times, electrophysiological data), then all those data must be shared (i.e., the non-identifiable data of all participants). 
+It is technically impossible to de-identify photo-, video-, and audio data without compromising their scientific value. At the same time, it is unrealistic to expect that most candidate-participants for these studies would agree with their data being shared without de-identification. For these reasons, the DSC for a published study that involves photo-, video-, or audio data must not contain the identifiable data of those participants that have indicated on their informed consent form that they did not agreed with sharing. However, the DSC that corresponds to this study must contain the data of all participants in this study. In addition, if the published study also contained non-identifiable data (e.g., response times, electrophysiological data), then all those data must be shared (i.e., the non-identifiable data of all participants). 
 
 ### 10.3	Recommended
 ## 10.3.1	Analysis scripts
