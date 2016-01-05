@@ -32,7 +32,7 @@ The data repository allows a researcher to archive digital data into collections
 
 When a collection is initiated, a research administrator assigns a manager to the collection (see the _DI RDM Protocol for Research Administrators_). Typically, the collection manager is also the supervisor of the research project to which this collection belongs. A collection manager can add other users to the collection in the role of manager, and these then obtain the same rights.
 
-##	5 Data, metadata, and attributes
+##	5 Data, Metadata, and Attributes
 
 There exist several definitions of data. For the purpose of this protocol, we focus on _research data_, which we define as follows:
 
@@ -44,9 +44,9 @@ Empirical research data can be acquired in digital or non-digital form. This dis
 
 Metadata is data about data. Most familiar are the metadata at the level of individual files: the filename, its type (.docx, .pdf, .dcm, .mat, .xlsx, …), its creation date, the date it was last modified, etc. In this protocol, we will mainly consider metadata at the collection level, because this allows for metadata that are very useful for research data management. Some examples of such collection-level metadata are the persons that have contributed to the study, the budget from which it is financed, the date and time it was created and closed, the type of data that was collected (behavior, fMRI, EEG, MEG, genomics, transcriptomics, video, …), the species (human, non-human primate, rat, mouse, …), and the topic of the study.  
 
-The function of metadata is to describe the data in a way that increases their value for potential users ("Are these data interesting for me?","With which software can I process them?", ...). For that reason, the concept of metadata is closely linked to _data publication_. Importantly, published data should not change (just like a published paper), the current view is that also metadata should not change. However, there are a few situations in which it is very useful to have attributes that could change while the data themselves do not. For example, over time, a given published data set may be used in an increasing number of publications. All these publications are highly relevant attributes of that data set, even though technically they cannot be called "metadata". 
+The function of metadata is to describe the data in a way that increases their value for potential users ("Are these data interesting for me?","With which software can I process them?", ...). For that reason, the concept of metadata is closely linked to _data publication_. Importantly, published data should not change (just like a published paper also should not change), the current view is that also metadata should not change. However, there are a few situations in which it is very useful to have attributes that could change while the data themselves do not. For example, over time, a given published data set may be used in an increasing number of publications. All these publications are highly relevant attributes of that data set, even though technically they cannot be called "metadata". 
 
-In this protocol, a distinction is made between _metadata_ and _attributes_: metadata are a special class of attributes with the distinguishing feature that they are communicated to potential users of published data. Because the current view is that metadata should not change if the published data don't change, the metadata of a closed collection (see further down, for a description of "collection closure") cannot be modified. However, this collection can have other attributes (technically, not metadata) that _can_ be modified after closure. 
+In this protocol, a distinction is made between _metadata_ and _attributes_: metadata are a special class of attributes that have the distinguishing that feature they are communicated to potential users of published data. Because the current view is that metadata should not change if the published data don't change, the metadata of a closed collection (see further down, for a description of "collection closure") cannot be modified. However, this collection can have other attributes (technically, not metadata) that _can_ be modified after closure. 
 
 
 ##	6 Accessing the Repository
@@ -73,6 +73,8 @@ In principle, the same physical person can be represented as multiple users in t
 A web interface (more precisely, the HTTP protocol) does not allow for a convenient up- and download of large files and a large number of files. For that reason, the up- and download of files to and from the repository has to be performed by means of a so-called _WebDAV_ client (called after the protocol that is used to transfer files over the internet). A very good WebDAV client is Cyberduck, which can be downloaded for free. 
 
 Up- and downloading files is only possible after authenticating oneself at the website of the repository. Via the website, one can then obtain a _data access password_ that can be used in combination with one's _data access username_ to up- and download files. This data access username is _not_ the username with which one authenticates oneself at the website of the repository (for RU and RUMCN employees, their U- or Z-number). The data access username and password are used in combination with the WebDAV client.  
+
+It is also possible to up- and download files using a command-line interface. However, this file transfer is only possible to and from a few dedicated computers, which are typically located in the labs. This file transfer is intended for large volumes, and the dedicated computers will only be operated by support staff and a limited number of experienced users.    
 
 ##	8. Preservation – Data Acquisition Collection
 
@@ -293,13 +295,14 @@ All coauthors to a publication share responsibility for good scientific practice
 
 When the published results depend on data, the RDC must refer to them. There are two ways to document the data on which the published results depend:
 
-1.	If the data is represented in the repository as one or more DACs, the RDC must be associated with the corresponding DACs by specifying the DAC identification numbers. A single DAC may be used in multiple RDCs. 
-2.	If the data is not represented in the repository as one or more DACs, the researcher must add the data to the RDC or document the source of the data by means of a PID. This situation applies, for instance, when the data are collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added tot the RDC. 
+1.	If the data is represented in the repository as one or more DACs, the RDC must be associated with the corresponding DACs by specifying the DAC identification numbers. Only closed DACs can be associated with the RDC. A single closed DAC may be associated to  multiple RDCs. 
+2.	If the data is not represented in the repository as one or more closed DACs, the researcher must add the data to the RDC or document the source of the data by means of a PID. This situation applies, for instance, when the DAC is not yet closed, or when the data were collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added tot the RDC. 
 
 If the data is represented in the repository, then the collaborators on the RDC must obtain the right to access the relevant data in the DACs. If collaborators on the RDC do not have this right, there are two ways for these collaborators to get access:
 
 1.	The DAC manager adds the RDC collaborators to the collection in the role of viewer.
 2.	In agreement with the DAC managers, the RDC manager copies the relevant parts of the DACs to the RDC. The selection of the data from the DACs must be documented (in free text format) in the RDC.
+
 
 #### 9.2.6	Reproducing the results of the publication
 
@@ -307,11 +310,16 @@ By the time the scientific paper is accepted for publication, the RDC must conta
 
 Publications may differ substantially in the amount and detail of the information that is required for reproducing the results. Collaborators on a collection are expected to demonstrate scholarship in providing the required information. 
 
-#### 9.2.7	RDC closure
+#### 9.2.7	Associating to the shared data
+
+For all publications of which the results depend on data, the data must be shared. These data can be shared as a Data Sharing Collection (DSC) in this DI repository, or as a collection in a DI-external repository. In both cases, after collection closure, the shared data can be identified by a PID. The RDC must be associated to the shared data by adding its PID as an attribute.
+
+
+#### 9.2.8	RDC closure
 
 See 8.2.10. 
 
-If the RDC is associated with one or more DACs, then it can only be closed if these DACs are also closed. If, for some reason, it is not possible to close these DACs then, in agreement with the DAC managers, the RDC manager must copy the relevant parts of the DACs to the RDC (see 9.2.5).
+
 
 #### 9.2.8	Data/study type specific
 
@@ -355,23 +363,19 @@ A _Data Sharing Collection_ (DSC) is initiated by the research administrator upo
 
 #### 10.2.2	General
 
-A DSC pertains to the reuse of the data that was used for a scientific publication. Every publication of which the results are based on data must have an associated DSC that contains all these data. Note that all these publications are also represented in the repository as a RDC, and therefore every DSC is associated with a RDC.
+A DSC pertains to the reuse of the data that was used for a scientific publication. Every publication of which the results are based on data must have an associated DSC that contains all these data. 
 
 A DSC contains (part of) the data of one or more DACs as well as additional files. These additional files contain relevant information, both for external researchers that want to reanalyze the data to extend the published results and those that only want to reproduce these results.
 
-Contrary to DACs and RDCs, which are only for DI-internal use, DSCs are made available to the whole international scientific community. This does not imply that everyone can read and download the DSCs; access to a DSC requires authorization, and this can only be granted by the DSC manager. 
+Contrary to DACs and RDCs, which are only for DI-internal use, DSCs are made available to the international scientific community. This does not imply that everyone can read and download the DSCs; access to a DSC requires authorization, and this can only be granted by the DSC manager. 
 
 Finding a DSC on the web must be easy. Therefore it must contain so-called _discovery attributes_.
 
 Sharing data of human participants requires that their privacy must be guaranteed. Therefore these data can only be shared in a way that conforms to the relevant laws and regulations.
 
+The results of some publications do not depend on newly collected data, but on published (shared) data. The DSC for such a publication must not contain a copy of these published data. Instead, this DSC must only contain the data that is unique for the publication. This may involve computer scripts that implement novel analysis methods, or novel empirical data that is compared to the published data.
 
-#### 10.2.3	Associating to a RDC
-
-The DSC corresponds to a RDC in the repository, and it must be associated with it by specifying the RDC identification number.
-
-
-#### 10.2.4	Discovery attributes
+#### 10.2.3	Discovery attributes
 
 The researcher must add both general and neuroscience-specific attributes that allow the DSC to be found on the web. The neuroscience-specific attributes allow the DSC to be found independently from the original publication. The general attributes, which all pertain to the publication, are the following:
 
@@ -388,16 +392,15 @@ There are two types of neuroscience-specific discovery attributes:
   2.	Description, like the abstract of a journal article.  
 2.	Neuroscience terms that are selected from two controlled vocabularies: the topic list of the Society for Neuroscience (SFN), and the Medical Subject Headings (MESH; used by PubMed for indexing articles). When selecting terms from these controlled vocabularies, the following domains may serve as a guide: technique, topic, species, disorder, and brain area.
 
-#### 10.2.5	Conformity with laws and regulations
+#### 10.2.4	Conformity with laws and regulations
 
 Sharing human data requires that the participants have signed an informed consent form that allows the data to be shared. In case the data were acquired at the DI, this must be documented as a part of the relevant DACs (i.e., the DACs that contain the data on which the results are based, as specified in the RDC).
 
-Sharing human data also requires that these data do not contain elements on the basis of which the human participants can be identified in a direct or indirect way. Two types of information are especially relevant: personal background information and research-related information. (In the Dutch Data Protection Act, these are denoted as, respectively, "communicatie gegevens" and "onderzoeksgegevens".)
-Personal background information pertains to the subject’s past and present status with respect to health, education, occupation, activities, etc. Personal background information on the basis of which a subject could be uniquely identified (e.g., name, bank account number, Burger Service Nummer) can never be shared. Some personal background information may be essential in order to reproduce the results on which the publication is based. Only under this condition, this personal background information may be shared. This requires however that the Data Use Agreement (DUA, see further) specifies that the collection contains sensitive data and that the agreement specifies how this sensitive data may or may not be used. 
+Sharing human data also requires that these data do not contain elements on the basis of which the human participants can be identified in a direct or indirect way. Two types of information are especially relevant: personal background information and research-related information. (In the Dutch Data Protection Act, these are denoted as, respectively, "communicatie gegevens" and "onderzoeksgegevens".) Personal background information pertains to the subject’s past and present status with respect to health, education, occupation, activities, etc. Personal background information on the basis of which a subject could be uniquely identified (e.g., name, bank account number, Burger Service Nummer) can never be shared. Some personal background information may be essential in order to reproduce the results on which the publication is based. Only under this condition, this personal background information may be shared. This requires however that the Data Use Agreement (DUA, see further) specifies that the collection contains sensitive data and that the agreement specifies how this sensitive data may or may not be used. 
 
 It is sometimes possible to identify human participants on the basis of research-related information such as anatomical MRIs, video-, and audio data. These are so-called identifiable human data. Tools are available that remove the information that allow for this identification, such as software for removing facial characteristics and ears from anatomical MRI, and transcriptions of audio data. If these tools are available, researchers must use them to de-identify their participants’ data. 
 
-#### 10.2.6	Preparing the data for sharing
+#### 10.2.5	Preparing the data for sharing
 
 One must distinguish between the situation in which all data in the DAC can be shared, and the situation in which some data of the DAC must not be shared (see 10.2.5). In the former situation, the data are prepared for sharing by copying them from the DAC(s). In the latter situation, the researcher must do the following:
 
@@ -405,16 +408,17 @@ One must distinguish between the situation in which all data in the DAC can be s
 2.	Perform all the operations that are required in order for the data to be shared (see 10.2.5).
 3.	Upload the result of the previous step to the DSC.
 
-#### 10.2.7	DSC annotation
+#### 10.2.6	DSC annotation
+
 See 8.2.9.
 
-#### 10.2.8	Extending on the published results
+#### 10.2.7	Extending on the published results
 
 The DSC must contain all the information that a knowledgeable colleague needs to extend on the published results. In a first step, this typically involves that the published results are reproduced. Publications may differ substantially in the amount and detail of the information that is required for reproducing the results. Collaborators on a collection are expected to demonstrate scholarship in providing the required information.
 
 It is highly unlikely that an external colleague would only want to reproduce the published results using exactly the same computer scripts that were also used by the authors. Instead, it is much more likely that such a colleague would want to investigate related effects, or modulations of the published effects by variables that are present in the data. Collaborators on a collection are expected to provide the information that allows external colleagues to perform such analyses, amongst others by providing inline comments in their analysis scripts.
 
-#### 10.2.9	Specifying the data use agreement
+#### 10.2.8	Specifying the data use agreement
 
 Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. If a The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
 
@@ -424,13 +428,20 @@ TBD: I propose to replace the information package by a part of the Github-hosted
 
 When an authenticated external researcher agrees to the DUA corresponding to the DSC, he/she is automatically added as a viewer to the DSC, which gives him/her read access.
 
-#### 10.2.10	 Specifying the contact person
+#### 10.2.9	 Specifying the contact person
 
 The contact person for a DSC is a collection manager to whom the signed DUA must be sent and who can grant access. 
 
 The contact person’s email address must be in the appropriate metadata field.
 
 TBD: Now that we have decided that external researchers, after agreeing with the DUA, are automatically added to a collection as a viewer, I think we do not need the contact person anymore. If external researchers have questions about the data, they may contact the corresponding author of the publication.
+
+
+#### 10.2.10	Associating to the RDC
+
+All publications of which the results depend on data are also represented in the repository as a RDC, and therefore every DSC is associated with a RDC. The DSC must be associated with this RDC by adding the RDC identification number as an attribute.
+
+TBD: Do we require that the RDC identification number to corresponds to a closed collection?
 
 
 #### 10.2.11	 DSC closure
