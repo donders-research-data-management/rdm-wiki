@@ -274,7 +274,7 @@ Following publication, the researcher must add the following additional informat
 1.	A persistent identifier (PID) of the published manuscript (typically, a digital object identifier; DOI). (A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed.)
 2.	PubMed identifier (PMID) of the published manuscript
 
-TBD: Does the PMID add sufficient information if we also have a PID?
+TBD: Does the PMID add sufficient information if we also have a PID? See https://github.com/Donders-Institute/donders-institute.github.io/issues/11
 
 #### 9.2.4	Contributors to the publication
 
@@ -335,7 +335,7 @@ A registered report is a publication for which the experimental methods are pre-
 If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website for collaboration such as the OSF) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
 
 TBD: I propose to remove 9.3.4. The pre-registration already is documented by the journal.
-
+https://github.com/Donders-Institute/donders-institute.github.io/issues/14
 
 ## 10	Data Sharing Collection
 ### 10.1	Objectives
@@ -427,8 +427,6 @@ TBD: Now that we have decided that external researchers, after agreeing with the
 #### 10.2.10	Associating to the RDC
 
 All publications of which the results depend on data are also represented in the repository as a RDC, and therefore every DSC is associated with a RDC. The DSC must be associated with this RDC by adding the RDC identification number as an attribute.
-
-TBD: Do we require that the RDC identification number to corresponds to a closed collection?
 
 
 #### 10.2.11	 DSC closure
