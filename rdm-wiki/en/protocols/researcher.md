@@ -411,9 +411,7 @@ It is highly unlikely that an external colleague would only want to reproduce th
 
 Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. If a The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
 
-The choice for a particular DUA must be based on the decision tree that part of the Donders RDM Information Package.
-
-TBD: I propose to replace the information package by a part of the Github-hosted wiki.
+The RDM documentation includes a decision tree to guide the choice for a particular DUA.
 
 When an authenticated external researcher agrees to the DUA corresponding to the DSC, he/she is automatically added as a viewer to the DSC, which gives him/her read access.
 
