@@ -55,8 +55,8 @@ Erimar:
 | sizeInMegaBytes              | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | ethicalApprovalIdentifier    | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
-| [keyword_MeSH2013](vocabularies.md)| word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
-| [keyword_SFN2015](vocabularies.md)| word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_MeSH2015](vocabularies.md)| word in MeSH 2015 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_SFN2013](vocabularies.md)| word in SFN 2013 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | versionNumber                | numerical number             |          |  Y   |      |      |      |  C      |      |      |      |
 | latestVersionId              | internal iRODS coll. id      |          |  Y   |  Y   |  Y   |  Y   |         |      |      |      |
 | originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
