@@ -96,12 +96,22 @@ Data must be archived in their original form. Here, original means the following
 
 The DAC must be annotated in two ways: (1) by providing collection attributes (see further), and (2) by adding one or more human-readable documents in which the data are annotated.
 
-#### 8.2.3	Location
+#### 8.2.3	DAC annotation
 
-The researcher should specify where the data were collected. Typically, this is the location of a research institute. In case this is the DI, the center (DCC, DCCN, DCN_S, DCN_M) has to be specified. The location may also be geographically distributed, as when data are collected using mobile phones or computers connected to the internet.
+The DAC annotation is a set of one or more documents that is uploaded to the collection. It contains information that is necessary to properly interpret and (re-)analyze the data. This information involves three parts: (1) a description of the type of data that was acquired,
+(2) the organization of the files and the folders and its relation to the design of the study/experiment, and (3) experimental information that is written into the datasets by the data acquisition system.
 
+Describing the type of data can usually be short, but might include details on the equipment used and the location where the data was recorded.
 
-TBD: I propose to drop the location attribute because the relevant information for most collections is already provided by the Research Administrator in the OrganizationalUnit attribute. Moreover, for the exception cases (data collected outside of the DI), the information provided by this attribute does not seem to be important from the perspective of findability.
+The description of the organization of the data is essential for a study in which participants participate in multiple recording sessions, as well as for an experiment in which different types of data are acquired. The DAC annotation must include a description of the different sessions and data types, and how these are mapped onto the experimental conditions.
+
+The  experimental information written by the data acquisition system refers for example to stimulus events that are relevant for the analysis of the data, or to behaviour (e.g., button presses, eye movements). This information is often present in the form of experimental log files or as trigger or annotation channels. As a part of the DAC annotation, researchers should include a description of the codes that are used for these stimulus and behavioral events (i.e., a table associating the events to their meaning).
+
+The DAC annotation should be provided in a format that is easily accessible to present and future colleagues, for example, .docx, .txt, .pdf, .xlsx. The annotation should be written such that someone with domain specific skills can reuse the data. It is required to specify details that vary between studies, such as the mapping of trigger codes on experimental parameters. It is not required to explain details that can be considered commonly shared knowledge.
+
+For findability, the researcher should use the folder name "Annotation" for organizing the DAC annotation.
+
+TBD: Prescribe a folder name for the DAC annotation?
 
 
 #### 8.2.4	Conformity with laws and regulations
@@ -165,16 +175,7 @@ Pilot studies differ from regular studies in that it is not their intention to c
 2.	It must be specified in the DAC annotation (see further down) which part of the data are pilot data.
 
 
-#### 8.2.9	DAC annotation
-
-The DAC annotation is a set of one or more documents that is uploaded to the collection. It contains information that is necessary to (re-)analyze the data. This information involves two parts: (1) the organization of the files and the folders and its relation to the design of the study/experiment, and (2) descriptive information that is written into the datasets by the data acquisition system. The first type of information is essential for a study in which participants participate in multiple recording sessions, as well as for an experiment in which different types of data are acquired. The DAC annotation must include a description of the different sessions and data types, and how these are mapped onto the experimental conditions. The second type of information (descriptive information written into the datasets by the data acquisition system) often pertains to stimulus events that are relevant for the analysis of the data, or to behaviour (e.g., button presses, eye movements) that are part of the data. As a part of the DAC annotation, researchers should include a description of these stimulus and behavioral events (i.e., a table associating the events to their meaning).
-
-The DAC annotation should be provided in a format that is easily accessible to present and future colleagues, for example, .docx, .txt, .pdf, .xlsx. The annotation should be written such that someone with domain specific skills can reuse the data. It is required to specify details that vary between studies, such as the mapping of trigger codes on experimental parameters. It is not required to explain details that can be considered commonly shared knowledge.
-
-For findability, the researcher should use the folder name "Annotation" for organizing the DAC annotation.
-
-TBD: Prescribe a folder name for the DAC annotation?
-
+#### 8.2.9	REMOVED
 
 #### 8.2.10	 DAC closure
 
