@@ -116,14 +116,12 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 ##### 8.2.4.1	Human data
 
 1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethical Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
-2.	The researcher must archive the signed informed consent forms (i.e., the paper forms). These forms must allow for the de-identified data to be shared via a data sharing collection (DSC). If the researcher plans to share the data of this DAC together with data of the same participants in other DACs, then the signed informed consent forms must mention this linked sharing.
+2.	The researcher must archive the signed informed consent forms (i.e., the paper forms) outside the digital RDM archive. These forms must allow for the de-identified data to be shared via a data sharing collection (DSC). If the researcher plans to share the data of this DAC together with data of the same participants in other DACs, then the signed informed consent forms must mention this linked sharing.
 ... The precise archiving protocol for the signed informed consent forms (where to hand in the forms, where they will be archived, ...) differs according to DI center, and the center management is responsible for communicating this protocol.
-3.	The researcher must upload to the DAC the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants. For findability, the researcher should use the folder name "PIB" for organizing the PIBs.
+3.	The researcher must upload a copy of the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants.
 ... There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethical review board.
 
 TBD1: I propose to also add the following documents to this Github-hosted wiki: guidelines for deciding about the appropriate ethical review board, the template informed consent forms, the template information brochures. When realized, we can refer to these documements from inside the wiki. This must also be discussed with Sabine K and Miriam K, because they must be comfortable working with it.  
-
-TBD2: As you can read, I propose to document the PIBs by uploading them to the DAC. Agree?
 
 
 ##### 8.2.4.2	Animal data
@@ -426,7 +424,7 @@ TBD: Now that we have decided that external researchers, after agreeing with the
 
 #### 10.2.10	Associating to the RDC
 
-All publications of which the results depend on data are also represented in the repository as a RDC, and therefore every DSC is associated with a RDC. The DSC must be associated with this RDC by adding the RDC identification number as an attribute.
+All publications of which the results depend on data are also represented in the repository as a RDC, and therefore a DSC can be associated with one or multiple RDC. The DSC must be associated with the corresponding RDCs.
 
 
 #### 10.2.11	 DSC closure
