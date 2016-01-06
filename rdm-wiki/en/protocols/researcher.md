@@ -121,9 +121,6 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 3.	The researcher must upload a copy of the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants.
 ... There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethical review board.
 
-TBD1: I propose to also add the following documents to this Github-hosted wiki: guidelines for deciding about the appropriate ethical review board, the template informed consent forms, the template information brochures. When realized, we can refer to these documements from inside the wiki. This must also be discussed with Sabine K and Miriam K, because they must be comfortable working with it.  
-
-
 ##### 8.2.4.2	Animal data
 
 The researcher must specify whether approval was obtained from an accredited Animal Care and Use Committee. If this is the case, then the researcher must specify the name of this committee (e.g., Dier-experimentencommissie Radboud Universiteit Nijmegen) and the registered identifier of the approved application.
