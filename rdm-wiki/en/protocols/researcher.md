@@ -109,11 +109,6 @@ The  experimental information written by the data acquisition system refers for 
 
 The DAC annotation should be provided in a format that is easily accessible to present and future colleagues, for example, .docx, .txt, .pdf, .xlsx. The annotation should be written such that someone with domain specific skills can reuse the data. It is required to specify details that vary between studies, such as the mapping of trigger codes on experimental parameters. It is not required to explain details that can be considered commonly shared knowledge.
 
-For findability, the researcher should use the folder name "Annotation" for organizing the DAC annotation.
-
-TBD: Prescribe a folder name for the DAC annotation?
-
-
 #### 8.2.4	Conformity with laws and regulations
 
 In a DAC, information will be collected that demonstrates conformity with valid local, national and international laws and regulations, as evaluated by an ethical review board (see further). As outlined below, the way to demonstrate this conformity is different for human and animal data. This protocol does not detail the relevant laws and regulations, nor does it include measures to enforce conformity with them.
