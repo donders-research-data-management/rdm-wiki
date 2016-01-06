@@ -186,12 +186,10 @@ A collection is closed in _two_ steps:
 There can be situations in which it is useful to make multiple collection snapshots. For instance, this may be the case when the DAC belongs to an ongoing study, and one wants to write a paper using the data collected until present. The identifier that is assigned to this collection then serves as a reference in other collections that make use of this DAC snapshot. This workflow is a form of versioning.
 
 #### 8.2.11	Data/study type specific
-To be provided.
+
+TBD: requirements that are data/study type specific should be provided here.
 
 #### 8.2.12	 Centre specific - DCCN
-The researcher must specify the PPM number.
-
-TBD: I think the sentence above can be removed, because the research admin already specifies this number.
 
 The researcher must organize the data files and directories according to the DCCN standard:
 
@@ -200,9 +198,6 @@ The researcher must organize the data files and directories according to the DCC
 For example, 30123456.01_pethag_003_002. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
 #### 8.2.13	 Centre specific - DCC
-The researcher should specify the DCC project number.
-
-TBD: Remove above sentence (same reason as for the DCCN)?
 
 The researcher must organize the data files and directories according to the DCC standard:
 
