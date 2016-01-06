@@ -264,12 +264,7 @@ The researcher must add the following information:
 1.	Title of the manuscript
 2.	List of all co-authors
 
-Following publication, the researcher must add the following additional information:
-
-1.	A persistent identifier (PID) of the published manuscript (typically, a digital object identifier; DOI). (A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed.)
-2.	PubMed identifier (PMID) of the published manuscript
-
-TBD: Does the PMID add sufficient information if we also have a PID? See https://github.com/Donders-Institute/donders-institute.github.io/issues/11
+Following publication, the researcher is required to add the DOI as the persistent identifier (PID) of the published manuscript. Besides the DOI, the researcher can also provide the Pubmed ID (PMID) or arXiv identifier.
 
 #### 9.2.4	Contributors to the publication
 
