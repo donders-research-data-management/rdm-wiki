@@ -37,6 +37,6 @@ erimar : descriptionAbstract is missing
 | sizeInMegaBytes      | Data size (GB)              |                               |
 | dataUseAgreement     | Data Use Agreement          | link to display context of the DUA |
 | subject              | Free-text keywords          |                                |
-| keyword_MeSH2013     | MeSH2013 keywords           | link to the context referred by the keyword |
-| keyword_SFN2015      | SFN2015 keywords            | link to the context referred by the keyword |
+| keyword_MeSH2015     | MeSH2015 keywords           | link to the context referred by the keyword |
+| keyword_SFN2013      | SFN2013 keywords            | link to the context referred by the keyword |
 | versionNumber        | Version                     |                                |

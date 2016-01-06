@@ -9,22 +9,13 @@ The RDM collection attributes are implemented as key-value pairs associated with
 * __DAC__: whether the attribute is presented with a Data Acquisition Collection
 * __RDC__: whether the attribute is presented with a Research Documentation Collection
 * __DSC__: whether the attribute is presented with a Data Sharing Collection
-* __SS__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection.
-
-.. erimar : We must keep in mind that some attributes can still be changed after closure. What about having the entries of the SS column being one of the following three values: Y and C (both proposed by you) and an M that indicates that the attribute can be modified after collection closure? (We have to think a bit about the labels. Maybe we can use "Man" and "Con" for the column labels, to avoid confusion with the M and C that are used in the entries.) 
-
-
-
+* __SS__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection. If the flag is followed by `M`, it implies that the attribute is editable (_with authorisation to be clarified_) after the snapshot is created.
 * __RA__: whether the attribute is editable by a research administrator
-* __M__: whether the attribute is editable by a collection manager 
-* __C__: whether the attribute is editable by a collection contributor
-
-Erimar: 
-* the flag __C__ is used in two meanings
-* the M and the C attributes (with the C used in the second meaning) are not used in the table --> I now see that the table has two columns that do not fit on my scree (-;. Thus, forget about it.
+* __MNG__: whether the attribute is editable by a collection manager 
+* __CNT__: whether the attribute is editable by a collection contributor
 
 
-| key                          | value / format               | multiple | sys  | DAC  | RDC  | DSC  | SS      | RA   | M    | C    |
+| key                          | value / format               | multiple | sys  | DAC  | RDC  | DSC  | SS      | RA   | MNG    | CNT    |
 | ---------------------------- | ---------------------------- | -------- | ---- | ---- | ---- | ---- | ------- | ---- | ---- | ---- |
 | identifierEPIC               | valid EPIC identifier        |          |  Y   |      |      |      |  Y      |      |      |      |
 | identifierDOI                | valid DOI identifier         |          |  Y   |      |      |      |  Y      |      |      |      |
@@ -55,8 +46,8 @@ Erimar:
 | sizeInMegaBytes              | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | ethicalApprovalIdentifier    | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
-| [keyword_MeSH2013](vocabularies.md)| word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
-| [keyword_SFN2015](vocabularies.md)| word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_MeSH2015](vocabularies.md)| word in MeSH 2015 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_SFN2013](vocabularies.md)| word in SFN 2013 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | versionNumber                | numerical number             |          |  Y   |      |      |      |  C      |      |      |      |
 | latestVersionId              | internal iRODS coll. id      |          |  Y   |  Y   |  Y   |  Y   |         |      |      |      |
 | originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
