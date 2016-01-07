@@ -8,12 +8,9 @@
 
 [Users' Guide]()
 
-  * # CMS 
-  * [User login](guides/user_login.md)
-  - - - -
-  * # Data access 
-  * [Data-access account](guides/data_access_account.md)
+  * [Portal interface](guides/user_login.md)
   * [WebDav interface](guides/webdav.md)
+  * [Data-access account](guides/data_access_account.md)
   * [Data sharing](guides/sharing.md)
   * [Ethics for data acquisition](guides/ethics.md)
  
@@ -25,7 +22,6 @@
   * [RDM collection attributes: CMS display](development/cms_collection_attrs.md)
   * [Controlled vocabularies](development/vocabularies.md)
  
-
 [gimmick:theme (inverse: false)](cerulean)
 
 [gimmick:ThemeChooser](Change theme)
