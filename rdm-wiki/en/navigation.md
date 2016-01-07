@@ -29,10 +29,10 @@
 
 [FAQ]()
 
-    * [Data acquisition](faq/dac.md)
-    * [Research documentation](faq/rdc.md)
-    * [Data sharing](faq/dsc.md)
-    * [Other](faq/other.md)
+  * [Data acquisition](faq/dac.md)
+  * [Research documentation](faq/rdc.md)
+  * [Data sharing](faq/dsc.md)
+  * [Other](faq/other.md)
 
 
 [gimmick:theme (inverse: false)](cerulean)
