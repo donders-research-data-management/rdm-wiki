@@ -321,10 +321,7 @@ As part of his/her final responsibility for a collection, it is recommended that
 
 A registered report is a publication for which the experimental methods are pre-registered and reviewed before data are collected. The objective of registered reports is to neutralize a variety of inappropriate research practices, such as selective reporting of results, undisclosed analytic flexibility, and publication bias.
 
-If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website for collaboration such as the OSF) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
-
-TBD: I propose to remove 9.3.4. The pre-registration already is documented by the journal.
-https://github.com/Donders-Institute/donders-institute.github.io/issues/14
+If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website such as https://osf.io, https://clinicaltrials.gov, or https://aspredicted.org) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
 
 ## 10	Data Sharing Collection
 ### 10.1	Objectives
