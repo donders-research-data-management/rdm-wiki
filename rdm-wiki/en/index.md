@@ -1,4 +1,3 @@
-# Donders Institute Research Data Management 
+# Donders Institute - Research Data Management
 
-## About the project
-
+Welcome to the documentation site that accompanies the data repository of the Donders Institute for Brain, Cognition and Behaviour.
