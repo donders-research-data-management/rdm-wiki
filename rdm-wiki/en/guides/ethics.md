@@ -4,7 +4,7 @@
 
 ## 2. Ethics approval for research involving human subjects
 
-A lot of the research at the DI is covered by existing approvals. For the DCC you can find those [http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/](here) and for the DCCN [https://intranet.donders.ru.nl/index.php?id=4519](here). 
+A lot of the research at the DI is covered by existing approvals. For the DCC you can find those [here](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/) and for the DCCN [here](https://intranet.donders.ru.nl/index.php?id=4519). 
 
 In case you need to apply for approval, please use the template informed consent forms and brochures below. These include the appropriate text for how we manage and share data.
 
