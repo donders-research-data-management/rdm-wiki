@@ -1,6 +1,8 @@
 
 # Data Sharing
 
+## 1. Data use agreements
+
 To share data, analysis pipelines and/or software in a "data sharing collection", the collection manager needs to select a Data Use Agreement and close the collection. Only closed collections can be accessed by external users.
 
 The following data use agreements can apply to collections that include potentially identifiable data from human subjects:
@@ -33,11 +35,13 @@ The following agreements can apply to collections that only include source code 
   * [MPL-2.0](../agreements/MPL-2.0.md)
   * [ISC](../agreements/ISC.md)
 
+## 2. Decision tree for deciding on a DUA
+
 Please follow the data sharing flowchart to guide your decisions with regards to data sharing.
 
   ![](figures/dsc_flowchart.png)
 
-Related links
+## 3. External links
 
   * http://www.ru.nl/publish/pages/721701/universitair_beleid_opslag_en_management_onderzoeksdata_cvb_besluit_25-11-2013.pdf
   * http://creativecommons.org
