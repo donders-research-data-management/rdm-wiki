@@ -2,17 +2,15 @@
 
 ## 1. Guidelines for deciding about the ethical review board
 
-## 2. Template informed consent forms
+## 2. Ethics approval for research involving human subjects
 
-## 3. Template information brochures
+## 2.1. Template informed consent forms
 
-## 4. Decision tree for Data Use Agreements
+## 2.2. Template information brochures
 
-## 5. Data Use Agreements
+## 3. Ethics approval for research involving animals
 
-## 6. Ethics approval for research involving human subjects
-
-## 7. Appendix - overview of ethics review boards
+## 4. Appendix - overview of ethics review boards
 
 ### Ethics Committee Faculty of Social Sciences (ECSS) 
 
@@ -22,7 +20,7 @@ The Faculty of Social Sciences at the Radboud University has its own [Ethics Com
 
 There are 23 accredited METCs in the Netherlands that review medical/scientific research proposals. The majority are linked to an institution such as an academic medical centre or a hospital.
 
-  |    | Naam Instelling/commissie                                                        | Korte naam           | Code |
+|    | Naam Instelling/commissie                                                        | Korte naam           | Code |
 |----|----------------------------------------------------------------------------------|----------------------|------|
 | 1  | Centrale Commissie Mensgebonden Onderzoek                                        | CCMO                 | 0    |
 | 2  | CME Leids Universitair Medisch Centrum                                           | CME LUMC             | 58   |
