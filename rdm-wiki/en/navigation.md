@@ -27,7 +27,7 @@
   * [RDM collection attributes: CMS display](development/cms_collection_attrs.md)
   * [Controlled vocabularies](development/vocabularies.md)
 
-  [FAQ]()
+[FAQ]()
 
     * [Data acquisition](faq/dac.md)
     * [Research documentation](faq/rdc.md)
