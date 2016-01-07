@@ -1,5 +1,22 @@
+#. Ethics and regulations
 
-## Ethics approval for research involving human subjects
+## 1. Guidelines for deciding about the ethical review board
+
+## 2. Template informed consent forms
+
+## 3. Template information brochures
+
+## 4. Decision tree for Data Use Agreements
+
+## 5. Data Use Agreements
+
+## 6. Ethics approval for research involving human subjects
+
+## 7. Appendix - overview of ethics review boards
+
+The Social Science faculty of the  has the 
+
+The Faculty of Social Sciences at the Radboud University has its own [Ethics Committee](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/).
 
 There are 23 accredited METCs in the Netherlands that review medical/scientific research proposals. The majority are linked to an institution such as an academic medical centre or a hospital.
 
