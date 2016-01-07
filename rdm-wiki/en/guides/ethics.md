@@ -87,7 +87,7 @@ There are 21 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Ne
 | 30 | DEC Wageningen Universiteit                                                                                    |            |
 | 31 | DEC WIL Research (tot 2012 Notox)                                                                              |            |
 
-## External links
+### External links
   * http://www.ccmo.nl Centrale Commissie Mensgebonden Onderzoek
   * http://www.nvdec.nl Nederlandse Vereniging van Dierexperimentencommissies
   * http://dierproefinfo.nl/dec/dec.htm
