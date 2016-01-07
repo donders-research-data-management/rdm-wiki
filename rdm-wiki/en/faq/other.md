@@ -1,1 +1,1 @@
-# Frequently asked questions about data sharing
+# Frequently asked questions
