@@ -10,7 +10,7 @@ There might be reasons why you don't want to share your data with everyone, e.g.
 
 There might be reasons related to the privacy of your subjects and where the data cannot be de-identified. In that case you still might be able to share processed results at the **group level** that allow other researchers to validate the claims in your paper.
 
-## What data should I share?
+## Which data should I share?
 
 In principle any data that you are able to share and that is of potential value to other researchers. So not only the final data points that you use in the scatter-plot in your paper, but everything from the raw data onwards.
 
