@@ -1,4 +1,4 @@
-#. Ethics and regulations
+# Ethics and regulations
 
 ## 1. Guidelines for deciding about the ethical review board
 
@@ -14,9 +14,11 @@
 
 ## 7. Appendix - overview of ethics review boards
 
-The Social Science faculty of the  has the 
+### Ethics Committee Faculty of Social Sciences (ECSS) 
 
 The Faculty of Social Sciences at the Radboud University has its own [Ethics Committee](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/).
+
+### Review boards for research involving human subjects (METC) 
 
 There are 23 accredited METCs in the Netherlands that review medical/scientific research proposals. The majority are linked to an institution such as an academic medical centre or a hospital.
 
@@ -47,7 +49,7 @@ There are 23 accredited METCs in the Netherlands that review medical/scientific 
 | 23 | Toetsingscommissie Wetenschappelijk Onderzoek Rotterdam eo                       | TWOR                 | 101  |
 | 24 | Medical Research Ethics Committees United                                        | MEC-U                | 100  |
 
-## Ethics approval for research involving animals
+### Review boards for research involving animals (DEC) 
 
 There are 21 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Netherlands that review the applications for animal research. Historically there have been more, hence the list below is longer than 21 DECs.
 
