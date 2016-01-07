@@ -98,8 +98,7 @@ The DAC must be annotated in two ways: (1) by providing collection attributes (s
 
 #### 8.2.3	DAC annotation
 
-The DAC annotation is a set of one or more documents that is uploaded to the collection. It contains information that is necessary to properly interpret and (re-)analyze the data. This information involves three parts: (1) a description of the type of data that was acquired,
-(2) the organization of the files and the folders and its relation to the design of the study/experiment, and (3) experimental information that is written into the datasets by the data acquisition system.
+The DAC annotation is a set of one or more documents that is uploaded to the collection. It contains information that is necessary to properly interpret and (re-)analyze the data. This information involves three parts: (1) a description of the type of data that was acquired, (2) the organization of the files and the folders and its relation to the design of the study/experiment, and (3) experimental information that is written into the datasets by the data acquisition system.
 
 Describing the type of data can usually be short, but might include details on the equipment used and the location where the data was recorded.
 
@@ -132,7 +131,7 @@ Whenever possible, digital datasets must be added to the DAC immediately after a
 
 In case of human data, the name of the files/folders in which a participant’s data are stored may not contain information that allows this participant to be identified in a direct way (e.g., by including the participant’s name as a part of the file/folder name).  Instead, this file or folder name should contain a code that uniquely identifies the participant in the project. The naming scheme for file/folder names is described further down.
 
-The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept in the DAC. Instead, this key must be kept in a locked room on a medium that cannot be accessed via the intra- or the internet (e.g., on paper). The DI centers determine where and on which medium the key is kept.
+The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept in the DAC. The DI centers determine where and on which medium the key is kept.
 
 TBD: This last paragraph is subject to change following discussions involving TG1 and the Security Officer.
 
@@ -322,10 +321,7 @@ As part of his/her final responsibility for a collection, it is recommended that
 
 A registered report is a publication for which the experimental methods are pre-registered and reviewed before data are collected. The objective of registered reports is to neutralize a variety of inappropriate research practices, such as selective reporting of results, undisclosed analytic flexibility, and publication bias.
 
-If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website for collaboration such as the OSF) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
-
-TBD: I propose to remove 9.3.4. The pre-registration already is documented by the journal.
-https://github.com/Donders-Institute/donders-institute.github.io/issues/14
+If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website such as https://osf.io, https://clinicaltrials.gov, or https://aspredicted.org) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
 
 ## 10	Data Sharing Collection
 ### 10.1	Objectives
