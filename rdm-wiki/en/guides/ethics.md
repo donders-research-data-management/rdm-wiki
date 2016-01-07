@@ -91,3 +91,4 @@ There are 21 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Ne
   * http://www.ccmo.nl Centrale Commissie Mensgebonden Onderzoek
   * http://www.nvdec.nl Nederlandse Vereniging van Dierexperimentencommissies
   * http://dierproefinfo.nl/dec/dec.htm
+  * http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/
