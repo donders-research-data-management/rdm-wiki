@@ -12,8 +12,8 @@
   * [Ethics for data acquisition](guides/ethics.md)
   - - - -
   * # Acquisition and analysis
-  * [Portal interface](guides/user_login.md)
-  * [WebDav interface](guides/webdav.md)
+  * [Portal login](guides/user_login.md)
+  * [WebDav login](guides/webdav.md)
   * [Data-access account](guides/data_access_account.md)
   - - - -
   * # After publication
