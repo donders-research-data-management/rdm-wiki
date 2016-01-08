@@ -44,6 +44,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | associatedPublication        | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | quotaInMegaBytes             | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaBytes              | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| preservationTimeYears        | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | ethicalApprovalIdentifier    | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
 | [keyword_MeSH2015](vocabularies.md)| word in MeSH 2015 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
