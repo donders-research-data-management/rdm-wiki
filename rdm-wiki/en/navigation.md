@@ -3,7 +3,6 @@
 [Protocols]()
 
   * [For researchers](protocols/researcher.md)
-  * [For reviewers](protocols/reviewer.md)
   * [For administrators](protocols/administrator.md)
 
 [Users' Guide]()
