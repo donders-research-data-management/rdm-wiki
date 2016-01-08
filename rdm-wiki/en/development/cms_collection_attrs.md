@@ -35,6 +35,7 @@ erimar : descriptionAbstract is missing
 | ethicalApprovalIdentifier.approvalIdentifier | Ethical Approval Identifier | [_see combinatory attributes_](collection_attributes.md#combinatory-attributes) |
 | quotaInMegaBytes     | Storage quota (GB)          |                               |
 | sizeInMegaBytes      | Data size (GB)              |                               |
+| preservationTimeYear | Preservation Time (Year)    |                               |
 | dataUseAgreement     | Data Use Agreement          | link to display context of the DUA |
 | subject              | Free-text keywords          |                                |
 | keyword_MeSH2015     | MeSH2015 keywords           | link to the context referred by the keyword |
