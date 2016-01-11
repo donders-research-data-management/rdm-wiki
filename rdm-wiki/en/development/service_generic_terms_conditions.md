@@ -17,4 +17,4 @@ We reserve the right, at our sole discretion, to modify or replace these Terms a
 
 ## Contact us
 
-If you have any questions about these Terms, please [contact us](dirdm.helpdesk@gmail.com).
+If you have any questions about these Terms, please [contact us](mailto:dirdm.helpdesk@gmail.com).
