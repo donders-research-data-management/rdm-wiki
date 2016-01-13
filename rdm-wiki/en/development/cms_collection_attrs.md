@@ -14,7 +14,7 @@ erimar : descriptionAbstract is missing
 | collecitonIdentifier | RDM Identifier              |                              |
 | organisation         | Organisation                |                              |
 | organisationalUnit   | Organisational Unit         |                              |
-| projectIdentifier    | Associated research project |                              |
+| projectId            | Associated research project |                              |
 | type                 | Type of collection          |                              |
 | title                | Title                       |                              |
 | status               | Status                      |                              |
