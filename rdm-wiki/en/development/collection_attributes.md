@@ -22,7 +22,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | collectionIdentifier         | [o].[ou].[coll_name]         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | organisation                 | `DI`                         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | organisationalUnit           | `DCCN`,`DCC`,`DCN_S/M`       |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
-| projectIdentifier            | [type]_[number]              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| projectId                    | [type]_[number]              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | type                         | `DATA_ACQUISITION`, `RESEARCH_DOCUMENTATION`, `DATA_SHARING` |          |      |  Y   |  Y   |  Y   |  C      |      |      |      |
 | title                        | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |  Y   |
 | subject                      | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
