@@ -87,3 +87,26 @@ Metadata only becomes relevant when there is an recipient involved. Given a meta
 ## Data storage
 
 ## Auditing and reporting
+
+In several policy-enforcement points of iRODS, audit events are triggered by certain client actions.  An audit event is a piece of JSON document describing the client action in terms of _client identifier_, _scope_, _scope object_, _scope action_, _action time_, _action context_, and _action description_.  
+
+Hereafter is an example audit event triggered by a user modifies the attribute `descriptionAbstract` of a collection with internal id `24477`.  
+
+```javascript
+{
+	"scope": "collection",
+	"scope_obj_name": "24477",
+	"scope_obj_action": "modified",
+	"when": "2016-01-14T12:56:36",
+	"who": {
+		"client_name": "irods",
+		"client_ipaddress": "131.174.75.104"
+	},
+	"what": {
+		"ctx_obj_name": "descriptionAbstract:cache-all repository for DICOM raw data collected at DCCN:",
+		"ctx_obj_type": "AVU triplet",
+		"ctx_obj_action": "add"
+	},
+	"why": ""
+}
+```
