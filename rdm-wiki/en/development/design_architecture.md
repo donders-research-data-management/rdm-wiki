@@ -100,11 +100,11 @@ The figure below shows the auditing architecture.  In this picture, both CMS and
 
 In several policy-enforcement points of iRODS, audit information are sent out to the elastic search engine as events (the audit events).
 
-Generally speaking, an audit event is a piece of data describing the client action in terms of _source_, _scope_, _scope action_ and _action context_.  The figure below summarises possible values of these terms.
+Generally speaking, an audit event is a piece of data describing the client action in terms of __source__, __scope__, __scope object name__, __scope object action__ and _action context_.  The figure below summarises possible values of these terms.
 
 ![](figures/audit_event.png)
 
-In reality, the audit event is represented in a JSON document. Hereafter is an example audit event triggered by a user modifies the attribute `descriptionAbstract` of a collection with internal id `24477`.  Note that the _source_ is not presented in the JSON document as it is, technically speaking, implemented as an `index` in elasticsearch.
+In reality, the audit event is represented in a JSON document. Hereafter is an example audit event triggered by a user (`U505173-ru.nl`) modifies (`add`) the attribute `descriptionAbstract` of a `collection` with internal id `24477`.  Note that the _source_ is not presented in the JSON document as it is, technically speaking, implemented as an `index` in elasticsearch.
 
 ```javascript
 {
@@ -113,7 +113,7 @@ In reality, the audit event is represented in a JSON document. Hereafter is an e
 	"scope_obj_action": "modified",
 	"when": "2016-01-14T12:56:36",
 	"who": {
-		"client_name": "irods",
+		"client_name": "U505173-ru.nl",
 		"client_ipaddress": "131.174.75.104"
 	},
 	"what": {
