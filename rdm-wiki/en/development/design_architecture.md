@@ -92,17 +92,17 @@ WARNING: the design of auditing described below is a proposal and still to be di
 
 ### Architecture
 
-The figure below shows the auditing architecture. 
+The figure below shows the auditing architecture.  In this picture, both CMS and iRODS ingest audit information into an [elastic search engine](https://www.elastic.co/), upon certain user actions.  The search engine is then provided as the data source for reporting and generating digest emails.  Interaction with the elastic search engine is based on the RESTful APIs.
 
 ![](figures/auditing_architecture.png)
 
-### Audit event
+### iRODS audit event
 
-In several policy-enforcement points of iRODS, audit events are triggered by certain client actions.  An audit event is a piece of data describing the client action in terms of _source_, _scope_, _scope action_ and _action context_.  The figure below summarises possible values of these terms.
+In several policy-enforcement points of iRODS, audit information are sent out to the elastic search engine as events (the audit events).  An audit event is a piece of data describing the client action in terms of _source_, _scope_, _scope action_ and _action context_.  The figure below summarises possible values of these terms.
 
 ![](figures/audit_event.png)
 
-In reality, the audit event is represented in a JSON document stored in a [elasticsearch](https://www.elastic.co/) database. Hereafter is an example audit event triggered by a user modifies the attribute `descriptionAbstract` of a collection with internal id `24477`.  
+In reality, the audit event is represented in a JSON document. Hereafter is an example audit event triggered by a user modifies the attribute `descriptionAbstract` of a collection with internal id `24477`.  Note that the _source_ is not presented in the JSON document as it is, technically speaking, implemented as an `index` in elasticsearch.
 
 ```javascript
 {
