@@ -100,7 +100,7 @@ The figure below shows the auditing architecture.  In this picture, both CMS and
 
 In several policy-enforcement points of iRODS, audit information are sent out to the elastic search engine as events (the audit events).
 
-Generally speaking, an audit event is a piece of data describing the client action in terms of __source__, __scope__, __scope object name__, __scope object action__ and __action context__.  The figure below summarises possible values of these terms.
+Generally speaking, an audit event is a piece of data describing the client action in terms of __source__, __scope__, __scope object name__, __scope object action__ and __action context__.  The figure below summarises the definition and possible settings of those terms.
 
 ![](figures/audit_event.png)
 
