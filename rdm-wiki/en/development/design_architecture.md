@@ -98,7 +98,9 @@ The figure below shows the auditing architecture.  In this picture, both CMS and
 
 ### iRODS audit event
 
-In several policy-enforcement points of iRODS, audit information are sent out to the elastic search engine as events (the audit events).  An audit event is a piece of data describing the client action in terms of _source_, _scope_, _scope action_ and _action context_.  The figure below summarises possible values of these terms.
+In several policy-enforcement points of iRODS, audit information are sent out to the elastic search engine as events (the audit events).
+
+Generally speaking, an audit event is a piece of data describing the client action in terms of _source_, _scope_, _scope action_ and _action context_.  The figure below summarises possible values of these terms.
 
 ![](figures/audit_event.png)
 
