@@ -2,7 +2,7 @@
 
 ##	1 Version
 
-Draft, last update by Eric on 5 January 2016
+Draft, last update by Eric on 12 January 2016
 
 ##	2 Scope
 
@@ -132,7 +132,7 @@ In case of human data, the name of the files/folders in which a participant’s 
 
 The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept in the DAC. The DI centers determine where and on which medium the key is kept.
 
-TBD: This last paragraph is subject to change following discussions involving TG1 and the Security Officer.
+**To-Be-Discussed: The previous paragraph is subject to change following discussions involving TG1 and the Security Officer.**
 
 Digital datasets can be uploaded in two ways: (1) manually by the researcher (as described in 7), and (2) by an automatic upload procedure that is controlled by the lab manager or ICT group. The DI centers decide which upload process is to be followed for which lab and for which study type.
 
@@ -143,7 +143,7 @@ Non-digital data cannot be stored in the repository. Their location has to be sp
 
 Typically, within a room, the non-digital data of multiple DACs are stored at a location that can be further specified by referring to a cabinet (e.g., nr. 2), a shelf (e.g., shelf A), a freezer (e.g., freezer B, rack 2), etc. These location indicators must be provided in one or more files that are organized in a folder named “DataLocation”. The format of these files must be easily accessible, for example, .docx, .txt, .pdf, .xlsx. In case the non-digital data are relocated, these files must be updated.
 
-TBD: We still need an attributes for the location of the non-digital data. I propose to add a repeatable free-text attribute: locationNonDigitalRoom.
+**To-Be-Discussed: We still need an attributes for the location of the non-digital data. I propose to add a repeatable free-text attribute: locationNonDigitalRoom.**
 
 Typically, parameters of non-digital data will be converted to digital format. All digital data that are obtained in this way must be added to the DAC. Storing non-digital data in the archive after conversion to digital format does not automatically imply that the original non-digital data can be discarded.  This is because the conversion process can be selective, in the sense that not all parameters are extracted that are possibly of scientific value. For some non-digital data (e.g., questionnaires, psychological tests, handwritten text) the conversion to digital format involves little or no loss of scientific value. For other non-digital data (e.g., blood and other tissue samples), by performing an analysis (e.g., biochemical), only a few parameters (e.g., hormone levels) are converted to digital format.
 
@@ -162,10 +162,7 @@ Pilot studies differ from regular studies in that it is not their intention to c
 1.	In case the center regulations and the ethical approval allow for pilot data being added to the DAC, then the pilot data must be added as soon as possible after initiation of the DAC.
 2.	It must be specified in the DAC annotation (see further down) which part of the data are pilot data.
 
-
-#### 8.2.9	REMOVED
-
-#### 8.2.10	 DAC closure
+#### 8.2.9	 DAC closure
 
 A collection may only be closed when its content is in accordance with this protocol. Only a collection manager can close a collection, and he/she is thus responsible for the decision whether or not the collection is in accordance with this protocol.
 
@@ -178,11 +175,11 @@ A collection is closed in _two_ steps:
 
 There can be situations in which it is useful to make multiple collection snapshots. For instance, this may be the case when the DAC belongs to an ongoing study, and one wants to write a paper using the data collected until present. The identifier that is assigned to this collection then serves as a reference in other collections that make use of this DAC snapshot. This workflow is a form of versioning.
 
-#### 8.2.11	Data/study type specific
+#### 8.2.10	Data/study type specific
 
-TBD: requirements that are data/study type specific should be provided here.
+To be provided.
 
-#### 8.2.12	 Centre specific - DCCN
+#### 8.2.11	 Centre specific - DCCN
 
 The researcher must organize the data files and directories according to the DCCN standard:
 
@@ -190,7 +187,7 @@ The researcher must organize the data files and directories according to the DCC
 
 For example, 30123456.01_pethag_003_002. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
-#### 8.2.13	 Centre specific - DCC
+#### 8.2.12	 Centre specific - DCC
 
 The researcher must organize the data files and directories according to the DCC standard:
 
@@ -298,7 +295,7 @@ See 8.2.10.
 
 
 
-#### 9.2.8	Data/study type specific
+#### 9.2.9	Data/study type specific
 
 
 ### 9.3	Recommended
