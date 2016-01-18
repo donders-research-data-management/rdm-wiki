@@ -20,29 +20,29 @@ The study you are asked to participate only uses measurement techniques that are
 The study results aim to a better understanding of brain, behavior and their relation. However, you will not directly benefit from participation. Disadvantages of your participation are time investment, study-related restrictions prior to participation or possible discomforts during the measurements (e.g., as result of sitting or lying still for some time).  
 
 
-### 3. Ethics check
+## 3. Ethics check
 
 Before the start of any research in humans our studies have been reviewed and approved by an independent accredited ethics committee (see http://www.cmoregio-a-n.nl) or by the local Ethics Committee of the Faculty of Social Sciences (ECSS). 
 
-### 4. Incidental findings
+## 4. Incidental findings
 
 In general, researchers the Donders Institute do not examine the measurements with the objective of screening your health or making a clinical diagnosis. Depending on the method used, in rare situations, the measurements may give indications concerning your health. Additional information how we deal with these so-called incidental findings can be found in the method-specific brochure that you received.
 
-### 5. Exclusion criteria
+## 5. Exclusion criteria
 
 Depending on the conditions of the study concerned it may be that you are not qualified to participate. If applicable, the exclusion criteria are given in the method-specific information brochure and in the study-specific information.
 
-### 6. Informed consent
+## 6. Informed consent
 
 If you agree to participate, you have to sign an informed consent form in which you confirm that you have been informed satisfactory, that you are willing and able to participate, and that your participation is voluntary. The researcher will also sign the form to ensure that all necessary measures are taken to protect your well-being and privacy. 
 
 To inform you about the study, at least 24 hours prior to participation, you will receive written information. This will give you time to reflect on the potential benefits, risks and possible discomforts. You will also be given an oral explanation of the research procedures and you will have the opportunity to ask any questions. 
 
-### 7. Right to withdraw
+## 7. Right to withdraw
 
 You have the right to withdraw from participation in the study at any time prior or during the study without giving a reason. In addition, you have the right to request for withdrawal of your collected scientific data up to one month after your participation. 
 
-### 8. Privacy
+## 8. Privacy
 
 With respect to your privacy, it is important to distinguish between _personal_ and _scientific_ data. Examples of personal data are your name, address, and telephone number. Personal data provide information about an identifiable natural person. Scientific data do not provide this type of information, except in specific studies (e.g., involving audio- and video-recordings, DNA typing) in which the scientific data will be handled according to a special protocol. This special protocol will be described in the method-specific information brochure.
 
@@ -52,43 +52,43 @@ All data collected during the study are treated confidentially. The researcher s
  
 In all cases, the data will only be used for scientific purposes and will be handled in accordance with the Dutch Data Protection Act (“Wet Bescherming Persoonsgegevens”).
 
-### 9. Use of your data
+## 9. Use of your data
 
 The data are processed and analyzed by the researchers involved in the specific study in which you participate. In addition, your scientific data can be shared for scientific purposes with other researchers to confirm the research findings or to address new research questions. 
 
 For some data types, it is technically impossible to process the scientific data such that you can no longer be identified. Our protocol for these data types is described in the relevant method-specific information brochures, and there it is also described whether and how these data are shared.
 
-### 10. Preservation of your data
+## 10. Preservation of your data
 
 Your scientific data will be preserved for at least ten years. 
 
-### 11. Follow up
+## 11. Follow up
 
 You will always be asked whether you are willing to be approached for participation in future or follow up studies. 
 
-### 12. Insurance
+## 12. Insurance
 
 The Donders Institute has a liability insurance for all subjects participating in all of its studies. Depending on the experimental procedures used, additional insurances might apply for you as described in the method-specific information brochure.
 
-### 13. Right for inspection
+## 13. Right for inspection
 
 Besides the members of the research team that collect and process the data in the study, a few other people have the right to inspect the data in order to investigate proper scientific and ethical conduct. This includes the accredited Audit Team, the Ethics Board, the assigned Safety Board, and the Inspectorate of the Ministry of Health.
 
-### 14. Preparation for the study
+## 14. Preparation for the study
 
 In general, no special preparation is required before participation. It is important that you are fit, alert and that the night before you did not consume more than a moderate amount of alcohol or any recreational drugs.
 
 Some studies require a more specific preparation, in which case you will be informed about this in the method-specific information brochure or as a part of the researcher’s description of the study’s research question. In all cases, the researcher will answer any question you may have about the study and how you should prepare for it.
 
-### 15. Independent physician or expert
+## 15. Independent physician or expert
 
 For most of the studies, an independent physician or expert has been assigned. The independent physician or expert is not involved in the study and you may ask him/her any questions related to the study. The contact information of the assigned physician or expert can be found in the method-specific information brochure.
 
-### 16. Compensation for study participation
+## 16. Compensation for study participation
 
 You may receive a financial compensation for your participation in the study. You are asked to provide your bank account details to receive the payment. If you are enrolled as a student at the Radboud University, you may receive course credits for participation. 
 
-### 17. Additional information
+## 17. Additional information
 
 The Ministry of Health has published a general brochure: “Medisch Wetenschappelijk onderzoek / general information for the subject”. This brochure can downloaded from http://www.ccmo-online.nl and a printed copy of this brocure is available on request. 
 
