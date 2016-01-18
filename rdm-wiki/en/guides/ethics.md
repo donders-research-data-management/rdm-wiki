@@ -12,7 +12,7 @@ In case you need to apply for approval, please use the template informed consent
 
 ## 2.2. Template general information brochure
 
-[You can find the template general information brochure here.](http://donders-institute.github.io/rdm-wiki/en/guides/#!templGenInfoBroch.md)
+[You can find the template general information brochure here.](guides/templGenInfoBroch.md)
 
 
 ### 2.2.1. How to use this template brochure?
