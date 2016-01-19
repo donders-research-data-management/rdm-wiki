@@ -44,6 +44,6 @@
   * [Linux & HPC tutorial Sep. 2015](https://pl-squid.dccn.nl/indico/event/11/)
   * [Linux & HPC tutorial Nov. 2014](https://pl-squid.dccn.nl/indico/event/0/)
 
-[gimmick:theme (inverse: false)](simplex)
+[gimmick:theme (inverse: false)](cosmo)
 
 [gimmick:ThemeChooser](Change theme)
