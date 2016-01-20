@@ -59,7 +59,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 
 The following table summarise a list of attributes to be set before closing a collection, with respect to different collection types.  Collection closure is forbidden if the collection does not have all mandatory attributes set properly.
 
-The list does not include system-generated attributes (see the `sys` column in the table above). 
+The list does not include system-generated attributes (see the `sys` column in the table above) which are assumed to be always set properly before (or at the time of) closing a collection.
 
 |  Key of attribute         |  DAC  |  RDC  |  DSC  |
 | ------------------------- | ----- | ----- | ----- |
