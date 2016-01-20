@@ -55,6 +55,31 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 
+## Mandatory attributes for collection closure
+
+The following table summarise a list of attributes to be set before closing a collection, with respect to different collection types.  Collection closure is forbidden if the collection does not have all mandatory attributes set properly.
+
+The list does not include system-generated attributes (see the `sys` column in the table above). 
+
+|  Key of attribute         |  DAC  |  RDC  |  DSC  |
+| ------------------------- | ----- | ----- | ----- |
+| title                     |   Y   |   Y   |   Y   |
+| type                      |   Y   |   Y   |   Y   |
+| projectId                 |   Y   |   Y   |   Y   |
+| creatorList               |   Y   |   Y   |   Y   |
+| descriptionAbstract       |       |       |   Y   |
+| subject                   |       |       |   Y   |
+| keyword_MeSH2015          |       |       |   Y   |
+| keyword_SFN2013           |       |       |   Y   |
+| associatedDAC             |       |   Y   |       |
+| associatedRDC             |       |       |   Y   |
+| associatedDSC             |       |   Y   |       |
+| associatedPublication     |       |       |   Y   |
+| ethicalApprovalIdentifier |   Y   |       |       |
+| dataUseAgreement          |       |       |   Y   |
+| embargoUntilDateTime      |       |       |   Y   |
+| preservationTimeYear      |   Y   |   Y   |   Y   |
+
 ## Combinatory attributes
 
 Warning: this section is still under development.  How the value of a combinatory attribute is stored in iCAT is not well defined.  It requires further attention/design in iRODS rules to overcome potential issues on parsing the input/output arguments.  
