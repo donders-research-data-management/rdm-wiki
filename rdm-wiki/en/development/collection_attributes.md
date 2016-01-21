@@ -25,7 +25,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | projectId                    | [type]_[number]              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | type                         | `DATA_ACQUISITION`, `RESEARCH_DOCUMENTATION`, `DATA_SHARING` |          |      |  Y   |  Y   |  Y   |  C      |      |      |      |
 | title                        | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |  Y   |
-| subject                      | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| ~~subject~~ keyword_freetext | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | descriptionAbstract          | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | status                       | `open`,`closed`,`tobeclosed` |          |  Y   |  Y   |  Y   |  Y   | `closed`|      |      |      |
 | publisher                    | `Radboud University, Donders Institute for Brain, Cognition and Behaviour`|          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
@@ -68,17 +68,13 @@ The list does not include system-generated attributes (see the `sys` column in t
 | projectId                 |   Y   |   Y   |   Y   |
 | creatorList               |   Y   |   Y   |   Y   |
 | descriptionAbstract       |       |       |   Y   |
-| subject                   |       |       |   Y   |
-| keyword_MeSH2015          |       |       |   Y   |
-| keyword_SFN2013           |       |       |   Y   |
-| associatedDAC             |       |   Y   |       |
-| associatedRDC             |       |       |   Y   |
-| associatedDSC             |       |   Y   |       |
-| associatedPublication     |       |       |   Y   |
+| keyword_*<sup>[1]</sup>   |       |       |   Y   |
 | ethicalApprovalIdentifier |   Y   |       |       |
 | dataUseAgreement          |       |       |   Y   |
 | embargoUntilDateTime      |       |       |   Y   |
 | preservationTimeYear      |   Y   |   Y   |   Y   |
+
+Note [1]: For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH2015` and `keyword_SFN2013`).
 
 ## Combinatory attributes
 
