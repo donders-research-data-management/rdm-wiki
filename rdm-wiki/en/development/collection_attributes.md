@@ -75,7 +75,7 @@ The list does not include system-generated attributes (see the `sys` column in t
 | preservationTimeYear      |   Y   |   Y   |   Y   |
 
 Note:
-<sup>[1]</sup>For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH2015` and `keyword_SFN2013`).
+<sup>[1]</sup> For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH2015` and `keyword_SFN2013`).
 
 ## Combinatory attributes
 
