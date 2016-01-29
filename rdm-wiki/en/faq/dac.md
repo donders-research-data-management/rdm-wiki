@@ -1,18 +1,18 @@
 # Frequently asked questions about data acquisition
 
-## Where should I store personal information about the subjects?
+## Where should I store personal information about the participants?
 
 ### For all centers ...
 
-For **data acquisition** you have to know who your subjects are and you may need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the study-specific subject identifier is called the "pseudonimization key". The pseudonimization key should be stored in a password protected file, for which the password is only known to the PI and the researchers involved in data acquisition.
+For **data acquisition** you have to know who your participants are and you may need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the participant-specific subject identifier is called the "pseudonimization key". The pseudonimization key should be stored in a password protected file, for which the password is only known to the PI and the researchers involved in data acquisition. The final responsibility for the save storage of the pseudonimization key is with the PI. 
 
 For **data analysis** you should never have the need to access the personal information and you should only use the  study-specific subject ID.
 
-The pseudonimization key should never be stored in the RDM archive. Instead it should be stored on a save storage location to which only researchers involved in the study have access.
+The pseudonimization key should never be stored in the RDM reposity. Instead it should be stored on a save storage location to which only researchers involved in the study have access.
 
 ### ... additional for the DCCN
 
-If only **you** need access to the personal details, you should store the pseudonimization key on your m-drive (i.e. your home directory on central storage). If also project collaborators with access to the DCCN computer system need access to the personal details, you should store it on the project directory on central storage. If collaborators outside the DCCN need access, you should store it on a SURFdrive folder that you share with them. In all cases the file itself should be password protected, and the password should only be known to the people that need to know. After completion of your  project, you should give the pseudonimization key and the password to unlock it to Sabine Kooijman for long-term archival and you should remove the file from your m-drive, project directory or SURFdrive.
+If only **you** need access to the personal details, you should store the pseudonimization key on your m-drive (i.e. your home directory on central storage). If also project collaborators with access to the DCCN computer system need access to the personal details, you should store it on the project directory on central storage. If collaborators outside the DCCN need access, you should store it on a SURFdrive folder that you share with them. In all cases the file itself should be password protected, and the password should only be known to the people that need to know. After completion of your project, you should give the pseudonimization key and the password to unlock it to Sabine Kooijman for long-term archival and you should remove the file from your m-drive, project directory or SURFdrive.
 
 ## Which data should I upload to a DAC?
 
