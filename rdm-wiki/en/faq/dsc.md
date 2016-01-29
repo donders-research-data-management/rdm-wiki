@@ -1,6 +1,6 @@
 # Frequently asked questions about data sharing
 
-## Should I always share the data of my publication
+## Should I always share the data of my publication?
 
 Yes! Our funding agencies, such as NWO and EU, require it either explicitly in the grant on basis of which you carried out the work, or implicitly in their general regulations. The Radboud University has made open access science its policy. The Donders Institute requires it.
 
