@@ -3,7 +3,7 @@ Version RU-DI-HD-1.0 (draft)
 
 I request access to the data collected in the digital repository of the Donders Institute, part of the Radboud University Nijmegen, established at Nijmegen, the Netherlands (hereinafter referred to as the Donders Institute), and I agree to the following:
 
-1. I will comply with all relevant rules and regulations imposed by my institution and my governement.  This may mean that I need my research to be approved or declared exempt by a committee that oversees research on human subjects, e.g. my Institutional Review Board or Ethics Committee.
+1. I will comply with all relevant rules and regulations imposed by my institution and my government.  This may mean that I need my research to be approved or declared exempt by a committee that oversees research on human subjects, e.g. my Institutional Review Board or Ethics Committee.
 
 2. I will not attempt to establish the identity of or attempt to contact any of the included human subjects. I will not link this data to any other database in a way that could provide identifying information. I understand that under no circumstances will the code that would link these data to an individuals personal information be given to me, nor will any additional information about individual subjects be released to me under these Data Use Terms.
 
