@@ -2,7 +2,13 @@
 
 ## Authentication
 
-The RDM system makes use of SURFConext (and eventually the EduGAIN) service for user authentication.  It implies that users already have valid account from collaborating institutues world-wide will have immediate access to the system.  
+The RDM system makes use of SURFConext (and eventually the EduGAIN) service for user authentication.  It implies that users already have valid account from collaborating institutues world-wide will have immediate access to the system.
+
+### Temporary user credentail for data access
+
+While the CMS interface makes use of SURFConext for authentication, the data access interface RDM has difficulity to integrate SURFConext due to technical limitation.  A workaround in RDM is to employ a so-called [event-based one-time password mechanism](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm).
+
+Before accessing the data in the repository, user firstly signs in to the CMS via SURFConext (and therefore the user is authenticated via IdP).  From the CMS, the user retrieves a temporary user credential for data access. The user credential consists of a static account name (i.e. it is always the same for the same user) and a fresh one-time password.  The crendential can only be utilised once for the authentication process; however, on the server-side of the data access interface, the credential is cached for certain time span, allowing stateless data transfer protocols (e.g. WebDAV) to operate smoothly.
 
 ## Data management
 
