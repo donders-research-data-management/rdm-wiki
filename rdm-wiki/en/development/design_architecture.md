@@ -39,6 +39,10 @@ An RDM collection has at-least one identifier.  The obviouse one is the internal
 
 When a collection gets closed (see _collection state and versioning_ below), a frozen copy of it is created.  At the same time, the frozen copy also acquires a global identifier from the [European Persistent Identifier Consortium (ePIC)](http://www.pidconsortium.eu/).
 
+### Collection attributes
+
+A list of collection attributes as well as their descriptions is summarised [here](collection_attributes.md). Attributes are stored as iRODS AVU triplets, to be precise, the attribute (A)-value (V) pairs as we do not use the unit (U) part.
+
 ### Collection state and versioning
 
 Initially, a collection is in state `open`.  When a read-only snaphsot is needed, e.g. for publishing a collection, one triggers the state transition from `open` to `tobeclosed` then to `closed`.  Possible state transitions are illustrated in the picture below:
