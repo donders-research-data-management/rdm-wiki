@@ -86,6 +86,13 @@ Metadata only becomes relevant when there is an recipient involved. Given a meta
 
 ## Data storage
 
+The physical storage for data is relatively independent to the RDM application, thanks to the abstraction layer provided by iRODS.  Nevertheless, we do require the underlying data storage to provid the following features:
+
+* mountable filesystem as it is required by the _filesystem_ iRODS resource type
+* proactive data integrity check to prevent data corruption
+* efficient data de-duplication mechanism to save storage space for eventual duplication of same scientific data in the repository
+* quota on filesystem directory
+
 ## Auditing
 
 WARNING: the design of auditing described below is a proposal and still to be discussed.
