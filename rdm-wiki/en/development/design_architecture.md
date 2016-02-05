@@ -83,7 +83,7 @@ resc_dcn_m:random
 resc_dcn_s:random
 └── vault_dcn_s_1
 resc_nl:random
-└── rdmRes2Test
+└── vault_nl_1
 ```
 
 In the example, resource `resc_nl` is the _nearline_ resource; while `resc_dccn`, `resc_dcc`, `resc_dcn_s` and `resc_dcn_m` are _online_ resources, each for a centre/organisational unit of the Donders Institute.
