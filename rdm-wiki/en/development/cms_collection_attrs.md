@@ -23,6 +23,7 @@ erimar : descriptionAbstract is missing
 | contributor          | Collection contributors     |    show user's display name  |
 | viewer               | Collection viewers          |    show user's display name  |
 | creatorList          | Authors                     |    show user's display name  |
+| contactPerson        | Contact person              | show user's display name with link to the user's email |
 | creationDateTime     | created at                  |                              |
 | publicationDateTime  | published at                |                              |
 | lastClosedDateTime   | closed at                   |                              |
