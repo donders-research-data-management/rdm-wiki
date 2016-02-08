@@ -96,6 +96,8 @@ Data must be archived in their original form. Here, original means the following
 
 The DAC must be annotated in two ways: (1) by providing collection attributes (see further), and (2) by adding one or more human-readable documents in which the data are annotated.
 
+A DAC has one or more managers, and these can add other users to the DAC, thereby giving them access. During data collection, only members of the research team that performs the data acquisition can be added to the DAC. After DAC closure (see 8.2.9), other members of the DI may be added to the DAC, allowing them to re-use the  data. Users that are not a member of DI may not be added to a closed DAC. These non-DI users can only get access to the data via a closed _Data Sharing Collection_ (DSC, see further).
+
 #### 8.2.3	DAC annotation
 
 The DAC annotation is a set of one or more documents that is uploaded to the collection. It contains information that is necessary to properly interpret and (re-)analyze the data. This information involves three parts: (1) a description of the type of data that was acquired, (2) the organization of the files and the folders and its relation to the design of the study/experiment, and (3) experimental information that is written into the datasets by the data acquisition system.
@@ -114,7 +116,7 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 
 ##### 8.2.4.1	Human data
 
-1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethical Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
+1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Committee Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
 2.	The signed informed consent forms must allow for the de-identified data to be shared via a data sharing collection (DSC). If the researcher plans to share the data of this DAC together with data of the same participants in other DACs, then the signed informed consent forms must mention this linked sharing.
 3.	The researcher must upload a copy of the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants.
 ... There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethical review board.
@@ -130,9 +132,7 @@ Whenever possible, digital datasets must be added to the DAC immediately after a
 
 In case of human data, the name of the files/folders in which a participant’s data are stored may not contain information that allows this participant to be identified in a direct way (e.g., by including the participant’s name as a part of the file/folder name).  Instead, this file or folder name should contain a code that uniquely identifies the participant in the project. The naming scheme for file/folder names is described further down.
 
-The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept in the DAC. The DI centers determine where and on which medium the key is kept.
-
-**To-Be-Discussed: The previous paragraph is subject to change following discussions involving TG1 and the Security Officer.**
+The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept in the DAC. The DI centers determine where and on which medium this so-called _pseudonimization key_ is kept.
 
 Digital datasets can be uploaded in two ways: (1) manually by the researcher (as described in 7), and (2) by an automatic upload procedure that is controlled by the lab manager or ICT group. The DI centers decide which upload process is to be followed for which lab and for which study type.
 
@@ -311,7 +311,7 @@ It is recommended that the complete scientific publication process is documented
 
 #### 9.3.3	Checking contributions
 
-As part of his/her final responsibility for a collection, it is recommended that a collection manager verify the contributions of all persons that have write access to this collection. For that purpose, a collection manager can make use of a reporting tool that produces a log of all the changes in the collection, specifying file uploads and modifications by the different collection contributors.
+As part of his/her final responsibility for a collection, it is recommended that a collection manager verifies the contributions of all persons that have write access to this collection. For that purpose, a collection manager can make use of a reporting tool that produces a log of all the changes in the collection, specifying file uploads and modifications by the different collection contributors.
 
 #### 9.3.4	Registered reports
 
@@ -391,7 +391,7 @@ It is highly unlikely that an external colleague would only want to reproduce th
 
 #### 10.2.8	Specifying the data use agreement
 
-Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. If a The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
+Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
 
 The RDM documentation includes a decision tree to guide the choice for a particular DUA.
 
@@ -425,7 +425,7 @@ If a closed DSC contains incorrect and/or insufficient information, a collection
 #### 10.2.12	 Data/study type specific
 ##### 10.2.12.1	Photo-, video-, and audio data
 
-It is technically impossible to de-identify photo-, video-, and audio data without compromising their scientific value. At the same time, it is unrealistic to expect that most candidate-participants for these studies would agree with their data being shared without de-identification. For these reasons, the DSC for a published study that involves photo-, video-, or audio data must not contain the identifiable data of those participants that have indicated on their informed consent form that they did not agreed with sharing. However, the DSC that corresponds to this study must contain the data of all participants in this study. In addition, if the published study also contained non-identifiable data (e.g., response times, electrophysiological data), then all those data must be shared (i.e., the non-identifiable data of all participants).
+It is technically impossible to de-identify photo-, video-, and audio data without compromising their scientific value. At the same time, it is unrealistic to expect that most candidate-participants for these studies would agree with their data being shared without de-identification. For these reasons, the DSC for a published study that involves photo-, video-, or audio data must not contain the identifiable data of those participants that have indicated on their informed consent form that they did not agreed with sharing. However, the DSC that corresponds to this study must contain the identifiable data of all participants that _did_ agree with sharing. In addition, if the published study also contained non-identifiable data (e.g., response times, electrophysiological data), then all those data must be shared (i.e., the non-identifiable data of all participants).
 
 ### 10.3	Recommended
 #### 10.3.1	Analysis scripts
