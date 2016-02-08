@@ -65,6 +65,10 @@ In the RDM system, attributes are used to describe a user or a collection.  Thos
 
 Metadata only becomes relevant when there is an recipient involved. Given a metadata schema (e.g. DataCite), attributes are tramsformed into the metadata fields defined by the schema.
 
+## Data storage
+
+![](figures/resource_storage_mapping.png)
+
 ### iRODS storage resources
 
 With the target of maintaining two copies of data in the RDM system, we virtually distinguish the iRODS storage resources into the so-called _online_ and _nearline_ resources.  Generally speaking, the _online_ resource is the location where the first copy of data is created (e.g. when a file is just uploaded to the system).  Data arrived at the _online_ resource is replicated in the background do the _nearline_ resource.  Both _nearline_ and _online_ resources are used to serve data download.
@@ -90,9 +94,9 @@ In the example, resource `resc_nl` is the _nearline_ resource; while `resc_dccn`
 
 Moreover, both _online_ and _nearline_ resources are defined as a [composable resource](https://docs.irods.org/4.1.7/manual/architecture/#composable-resources) to be able to integrate distributed/heterogeneous data storages.
 
-## Data storage
+### Storage system
 
-The physical storage for data is relatively independent to the RDM application, thanks to the abstraction layer provided by iRODS.  Nevertheless, we do require the underlying data storage to provid the following features:
+The storage system refers to the system in which the RDM data are physically resides. Generally speaking, it is independent to the RDM application, thanks to the abstraction layer of the iRODS resources.  Nevertheless, we do require the underlying data storage to provid the following features:
 
 * mountable filesystem as it is required by the _filesystem_ iRODS resource type
 * proactive data integrity check to prevent data corruption

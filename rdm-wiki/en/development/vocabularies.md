@@ -1,3 +1,31 @@
 # Controlled vocabularies used by the RDM system
 
-The controlled vocabularies used by the RDM system is organised and distributed via [this package](https://github.com/donders-research-data-management/rdm-control-vocabularies).
+The controlled vocabularies refers to sets of well-defined words used in the RDM system to restrict arbitrary choices of terminology of describing "things". Those vocabularies are organised and distributed via [this package](https://github.com/donders-research-data-management/rdm-control-vocabularies). Hereafter we summarise these vocabularies with respect to their usages in the collection attributes.
+
+## Collection keywords
+
+Keywords provides a purpose of describing collection content.  Using well-defined vocabularies to specify keywords allows researchers to describe the collection in a more efficient (and less ambiguous) way. 
+
+In RDM, the first two vocabularies for keyword specification are `SFN2013` and `MeSH2015`.  They are referred to as `keyword_SFN2013` and `keyword_MeSH2015` as repeatable collection attributes. 
+
+## Identifier scheme for external content
+
+External contents are objects (e.g. data, publications) of which the contents are not stored in the RDM system.  Instead, they are referred by _identifiers_.
+
+An identifier is a string (or serial number) that is relevant to certain identifier organisation (i.e. scheme).  To make the identifier meaningful, the identifier scheme should also be provided as part of the identifier. It implies that the identifier is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) attribute.
+
+To avoid ambiguity, widely-used identifier schemes should be provided as a well-defined controlled vocabulary with certain features built around it, e.g. resolving identifiers to URL's to which the content can be obtained.
+
+### External publications
+
+External publications are linked to RDM collections via the `associatedPublication` attribute.  The table below summarise a list of identifier schemes to be supported for identifying an external publication.
+   
+|  scheme           |  name                         |           link to content                         |
+| ----------------- | ----------------------------- | ------------------------------------------------- |
+|  PMID             | PubMed                        | http://www.ncbi.nlm.nih.gov/pubmed/{identifier}   |
+|  arXiv            | arXiv.org: e-print archive    | http://arxiv.org/abs/{identifier}                 |
+|  DOI              | Digital object identifier     | https://doi.org/{identifier}                      |
+|  handle           | Handle persistent identifier  | http://hdl.handle.net/{identifier}                |
+|  ePIC             | European persistent identifier consortium | http://hdl.handle.net/{identifier}    |
+|  ISBN             | International standard book number |                                              |
+|  URI              | Uniform Resource Identifier        |   as the identifier                          |
