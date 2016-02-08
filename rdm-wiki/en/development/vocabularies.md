@@ -12,7 +12,7 @@ The first two controlled vocabularies for keywords are `SFN2013` and `MeSH2015`.
 
 External contents are objects (e.g. data, publications) of which the contents are not stored in the RDM system.  Instead, they are referred by _identifiers_.
 
-An identifier is a string (or serial number).  It is only relevant to certain identifier organisation (i.e. scheme).  To make the identifier meaningful, the identifier scheme should also be provided as part of the identifier. It implies that the identifier is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) attribute.
+An identifier is a string (or serial number).  It is only relevant to certain identifier organisation (i.e. scheme).  To make the identifier meaningful, the identifier scheme should also be provided as part of the identifier. It implies that the identifier is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes).
 
 To avoid ambiguity, widely-used identifier schemes are provided as a well-defined controlled vocabulary.  It allows certain features to be built around, e.g. resolving identifiers to URL's to which the content can be obtained, or employ a scheme-specific validation on the identifier.
 
@@ -29,3 +29,11 @@ External publications are linked to RDM collections via the `associatedPublicati
 |  ePIC             | European persistent identifier consortium | http://hdl.handle.net/{identifier}    |
 |  ISBN             | International standard book number |                                              |
 |  URI              | Uniform Resource Identifier        |   as the identifier                          |
+
+## Ethics review boards for ethical approval identifier
+
+Ethics review board should be provided as part of the `ethicalApprovalIdentifier`, a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) of a collection.
+
+A list of ethics review boards are given [here](../guides/ethics.md#4._Appendix_-_overview_of_ethics_review_boards).
+
+__TODO__: It is unclear whether the `code` and `short name` are important.
