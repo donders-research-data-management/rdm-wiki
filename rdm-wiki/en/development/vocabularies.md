@@ -12,9 +12,9 @@ The first two controlled vocabularies for keywords are `SFN2013` and `MeSH2015`.
 
 External contents are objects (e.g. data, publications) of which the contents are not stored in the RDM system.  Instead, they are referred by _identifiers_.
 
-An identifier is a string (or serial number).  It is only relevant to certain identifier organisation (i.e. scheme).  To make the identifier meaningful, the identifier scheme should also be provided as part of the identifier. It implies that the identifier is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) consisting of the `scheme` and the `identifier`.
+An identifier is a string (or serial number).  It is only relevant to certain identifier organisation (i.e. scheme).  To make the identifier meaningful, the identifier scheme should also be provided as part of the identifier. It implies that a full identifier to external content is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) consisting of the `scheme` and the `identifier`.
 
-To avoid ambiguity, widely-used identifier schemes are provided as a well-defined controlled vocabulary.  It allows certain features to be built around, e.g. resolving identifiers to URL's to which the content can be obtained, or applying scheme-specific validation on the identifier.
+To avoid ambiguity, widely-used identifier schemes are provided as a pre-defined list (controlled vocabulary).  It allows certain features to be built around, e.g. resolving identifiers to URL's to which the content can be obtained, or applying scheme-specific validation on the identifier.
 
 ### External publications
 
