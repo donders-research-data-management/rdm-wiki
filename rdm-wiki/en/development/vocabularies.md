@@ -1,6 +1,6 @@
 # Controlled vocabularies used by the RDM system
 
-The controlled vocabularies refers to sets of well-defined words used in the RDM system to restrict arbitrary choices of terminology of describing "things". Those vocabularies are organised and distributed via [this package](https://github.com/donders-research-data-management/rdm-control-vocabularies). Hereafter we summarise these vocabularies with respect to their usages in the collection attributes.
+The controlled vocabularies refer to sets of well-defined words (or terms) used in the RDM ICT system to provide a more structured way of naming or describing "things" by users. Those vocabularies are organised and distributed via [this package](https://github.com/donders-research-data-management/rdm-control-vocabularies). Hereafter we summarise these vocabularies with respect to their usages in the collection attributes.
 
 ## Collection keywords
 
