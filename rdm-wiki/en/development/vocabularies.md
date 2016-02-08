@@ -4,17 +4,17 @@ The controlled vocabularies refer to sets of well-defined words (or terms) used 
 
 ## Collection keywords
 
-Keywords provides a purpose of describing collection content.  Using well-defined vocabularies to specify keywords allows researchers to describe the collection in a more efficient (and less ambiguous) way. 
+Keywords provide a way of describing collection content.  Using controlled vocabularies for keywords ensures researchers a more efficient (and less ambiguous) way of sharing collection contents. 
 
-In RDM, the first two vocabularies for keyword specification are `SFN2013` and `MeSH2015`.  They are referred to as `keyword_SFN2013` and `keyword_MeSH2015` as repeatable collection attributes. 
+The first two controlled vocabularies for keywords are `SFN2013` and `MeSH2015`. They are referred to as `keyword_SFN2013` and `keyword_MeSH2015` as repeatable collection attributes. The demand of supporting more controlled vocabularies is foreseeable.
 
 ## Identifier scheme for external content
 
 External contents are objects (e.g. data, publications) of which the contents are not stored in the RDM system.  Instead, they are referred by _identifiers_.
 
-An identifier is a string (or serial number) that is relevant to certain identifier organisation (i.e. scheme).  To make the identifier meaningful, the identifier scheme should also be provided as part of the identifier. It implies that the identifier is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) attribute.
+An identifier is a string (or serial number).  It is only relevant to certain identifier organisation (i.e. scheme).  To make the identifier meaningful, the identifier scheme should also be provided as part of the identifier. It implies that the identifier is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) attribute.
 
-To avoid ambiguity, widely-used identifier schemes should be provided as a well-defined controlled vocabulary with certain features built around it, e.g. resolving identifiers to URL's to which the content can be obtained.
+To avoid ambiguity, widely-used identifier schemes are provided as a well-defined controlled vocabulary.  It allows certain features to be built around, e.g. resolving identifiers to URL's to which the content can be obtained, or employ a scheme-specific validation on the identifier.
 
 ### External publications
 
