@@ -4,11 +4,11 @@
 
 ### For all centers ...
 
-For **data acquisition** you have to know who your participants are and you may need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the participant-specific subject identifier is called the "pseudonimization key". The pseudonimization key should be stored in a password protected file, for which the password is only known to the PI and the researchers involved in data acquisition. The final responsibility for the save storage of the pseudonimization key is with the PI.
+For **data acquisition** you have to know who your participants are and you may need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the participant-specific subject identifier is called the "pseudonimization key". The pseudonimization key should be stored in an encrypted file of which the password is only known to the PI and the researchers involved in data acquisition. To be protected against brute-force attacks, the password should have a minimum length of 15 characters. The final responsibility for the safe storage of the pseudonimization key is with the PI.
 
 For **data analysis** you should never have the need to access the personal information and you should only use the  study-specific subject ID.
 
-The pseudonimization key should never be stored in the RDM repository. Instead it should be stored on a save storage location to which only researchers involved in the study have access.
+The pseudonimization key should never be stored in the RDM repository. Instead it should be stored on a save storage location to which only researchers involved in the study have access. If the pseudonimization key has to be shared with researchers from other institutions, then it should be stored in SURFdrive. In that case, it is _required_ that the password of the encrypted file has a length of at least 15 characters.
 
 ### ... additional for the DCCN
 
