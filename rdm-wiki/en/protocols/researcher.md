@@ -399,12 +399,7 @@ When an authenticated external researcher agrees to the DUA corresponding to the
 
 #### 10.2.9	 Specifying the contact person
 
-The contact person for a DSC is a collection manager to whom the signed DUA must be sent and who can grant access.
-
-The contact person’s email address must be in the appropriate metadata field.
-
-TBD: Now that we have decided that external researchers, after agreeing with the DUA, are automatically added to a collection as a viewer, I think we do not need the contact person anymore. If external researchers have questions about the data, they may contact the corresponding author of the publication.
-
+One of the DSC managers must be identified as the contact person for this DSC. Being the contact person for a DSC implies that users (even anonymous users) can send an email to this person.
 
 #### 10.2.10	Associating to the RDC
 
