@@ -4,7 +4,7 @@ The controlled vocabularies refer to sets of well-defined words (or terms) used 
 
 ## Collection keywords
 
-Keywords provide a way of describing collection content.  Using controlled vocabularies for keywords ensures researchers a more efficient (and less ambiguous) way of sharing collection contents. 
+Using controlled vocabularies for keywords provides an efficient (and less ambiguous) way of describing collections for data sharing. 
 
 The first two controlled vocabularies for keywords are `SFN2013` and `MeSH2015`. They are referred to as `keyword_SFN2013` and `keyword_MeSH2015` as repeatable collection attributes. The demand of supporting more controlled vocabularies is foreseeable.
 
