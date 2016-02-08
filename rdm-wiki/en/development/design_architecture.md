@@ -96,7 +96,7 @@ Moreover, both _online_ and _nearline_ resources are defined as a [composable re
 
 ### Storage system
 
-The storage system refers to the system in which the RDM data are physically resides. Generally speaking, it is independent to the RDM application, thanks to the abstraction layer of the iRODS resources.  Nevertheless, we do require the underlying data storage to provid the following features:
+The storage system refers to the system in which the RDM data physically reside. Generally speaking, it is independent to the RDM application, thanks to the abstraction layer of the iRODS resources.  Nevertheless, we do require the underlying data storage to provid the following features:
 
 * mountable filesystem as it is required by the _filesystem_ iRODS resource type
 * proactive data integrity check to prevent data corruption
