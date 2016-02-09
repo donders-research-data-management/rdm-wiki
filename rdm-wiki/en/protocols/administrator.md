@@ -53,6 +53,7 @@ The research administrator configures the collection on the digital repository a
 #### 6.1.2.	Naming Convention
 
 The name of a collection can be chosen freely, subject to the following constraints:
+
 1.	All DACs have a name that starts with “DAC”.
 2.	All RDCs have a name that starts with “RDC”.
 3.	All DACs have a name that starts with “DSC”.
@@ -86,7 +87,7 @@ The DCC manages the initiation of new DACs via a form that has to be completed b
 
 The DAC collection name is constructed according to the following standard:
 
-“DAC” _<YYYYMMDD>_<freename>  ,
+DAC\_\<YYYYMMDD\>\_\<freename\>  ,
 
 in which YYYY is the year, MM the month, and DD the day at which the collection is initiated. The component <freename> should be an acronym for the study to which this collection belongs. For example: DAC_20150623_AttSelConMon.
 
