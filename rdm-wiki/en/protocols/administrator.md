@@ -105,7 +105,9 @@ TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues
 
 TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/21
 
-Researchers that submit a manuscript for publication must inform the research administrator. The research administrator will initate the Research Documentation Collection and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the researcher.
+Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the RDC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
+
+Researchers must inform the research administrator before the proofs of the accepted journal article are sent back to the journal's editorial office. Researchers may also inform the research administrator in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).   
 
 ##### 6.3.2. Center specific
 
