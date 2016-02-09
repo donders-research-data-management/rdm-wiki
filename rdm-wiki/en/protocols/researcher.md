@@ -252,6 +252,8 @@ A RDC is initiated by the research administrator upon request by a researcher on
 
 A RDC pertains to the process that has led to a scientific publication. It contains the documents that may be relevant for evaluating good scientific practice. The core content of a RDC are files that document the scientific process in which data are converted into results (statistical tests, summary measures, figures, tables, etc.). For simplicity, in the following, this part of the scientific process will be denoted as the _scientific process_, without any qualification as to the specific result it contributes to the publication.
 
+An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing processed data. 
+
 #### 9.2.3	Attributes
 
 The researcher must add the following information:
