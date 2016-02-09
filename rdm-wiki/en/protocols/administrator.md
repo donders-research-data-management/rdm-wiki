@@ -141,7 +141,7 @@ TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues
 
 In the default scenario, the research administrator is not involved in the creation of user accounts, because they are created automatically in a sign-up procedure (see the _DI RDM Protocol for Researchers_). 
 
-In some cases it may be necessary for the research administrator to initiate accounts for new users that cannot use the IdP-based login procedure. This involves a procedure that lies largely outside the scope of this protocol and/or involves a procedure that is not yet part of it. This  is described in the Frequently Asked Questions (https://github.com/Donders-Institute/donders-institute.github.io/faq/other.md). 
+In some cases it may be necessary for the research administrator to initiate accounts for new users that cannot use the IdP-based login procedure. This involves a procedure that lies largely outside the scope of this protocol and/or involves a procedure that is not yet part of it. This  is described in the [Frequently Asked Questions](https://github.com/Donders-Institute/donders-institute.github.io/en/faq/other.md). 
 
 TBD: the following is correct, but not appropriate in the context of this protocol. See https://github.com/Donders-Institute/donders-institute.github.io/issues/24
 
