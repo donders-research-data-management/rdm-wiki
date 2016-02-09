@@ -107,7 +107,7 @@ TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues
 
 Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the RDC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
 
-Researchers must inform the research administrator before the proofs of the accepted journal article are sent back to the journal's editorial office. Researchers may also inform the research administrator in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).   
+An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing processed data. 
 
 ##### 6.3.2. Center specific
 
@@ -117,7 +117,9 @@ This section is intentionally empty.
 
 ##### 6.4.1. General
 
-Researchers that submit a manuscript for publication must inform the research administrator. The research administrator will initate a Data Sharing Collections and add the senior author (if he/she is a Donders Center employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the researcher.
+Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the DSC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
+
+A DSC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office.
 
 An embargo period of up to 2 years can be granted, provided the center director has approved in writing.
 
