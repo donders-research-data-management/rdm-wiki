@@ -1,7 +1,7 @@
 # Protocol for Research Administrators
 
 ## 1.	Version
-Draft version, last update by Robert, January 24, 2016.
+Draft version, last update by Eric, February 8, 2016.
 
 ## 2.	Scope
 This protocol is in effect as of DD-MM-YYYY and replaces all previous versions of the DI-RDM protocol for research administrators .
@@ -30,19 +30,13 @@ Researchers and research administrators have different roles. The difference bet
 
 Within the digital repository, the research administrator role is mainly defined in terms of rights with respect to particular collections of files. There are three types of collections: data acquisition collections (DACs), research documentation collections (RDCs), and data sharing collections (DSCs). Building these collections involves uploading files and providing collection attributes, as described in the _DI RDM Protocol for Researchers_.
 
-The collections are aggregated by Donders center (DCC, DCCN, DCN_s, and DCN_m). A collection is assigned to one of the centers if it is initiated by that center’s research administrator.
-
-TBD: the following section is not really clear to me. Access permissions per collection are not related to the centers.
-
-This organization of the collections limits the access to these collections by members of other Donders centers or RU-external institutes, as the authorization for collection access is at the level of the collections (rather than at the center level). Authorization for the collection manager role, however, is at the center level.
+The collections are aggregated by Donders center (DCC, DCCN, DCN_s, and DCN_m). A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This organization of the collections in no way limits the access to these collections by members of other Donders centers or RU-external institutes. This because authorization for collection access is at the level of the collections rather than at the center level. Only the initial authorization for the collection manager role (see 6.1.3) is performed by a center's research administrator.
 
 The rights and responsibilities of research administrators involve the following:
 
 1.	Initiating, initializing and managing collections.
 2.	Authorizing users at the center level.
-3.	Creating, managing and linking user accounts.
-
-TBD: in the previous section, it states "creating" user accounts. But the ou_admin cannot create user accounts in the RDM, only u- and e-number accounts.
+3.	Managing and linking user accounts.
 
 These three tasks are now described in more detail. For the description of the first task (initiating, initializing and managing collections), we have to make some distinctions between DACs, RDCs and DSCs.
 
@@ -141,11 +135,13 @@ Note that upon termination of a contract the user account should not be deleted 
 
 TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/19 and see https://github.com/Donders-Institute/donders-institute.github.io/issues/23
 
-## 8.	Creating, Managing and Linking User Accounts
+## 8.	Managing and Migrating User Accounts
 
-### 8.1.	Creating and Managing User Accounts
+### 8.1.	Managing User Accounts
 
-In the default scenario, the research administrator is not involved in the creation of user accounts, because they are created automatically in a sign-up procedure (see the _DI RDM Protocol for Researchers_). However, in some cases it may necessary for the research administrator to initiate accounts for new users that cannot use the IdP-based login procedure.
+In the default scenario, the research administrator is not involved in the creation of user accounts, because they are created automatically in a sign-up procedure (see the _DI RDM Protocol for Researchers_). 
+
+In some cases it may be necessary for the research administrator to initiate accounts for new users that cannot use the IdP-based login procedure. This involves a procedure that lies largely outside the scope of this protocol and/or involves a procedure that is not yet part of it. This  is described in the Frequently Asked Questions (/faq/other). 
 
 TBD: the following is correct, but not appropriate in the context of this protocol. See https://github.com/Donders-Institute/donders-institute.github.io/issues/24
 
@@ -160,3 +156,5 @@ TBD: the following is correct, but not appropriate in the context of this protoc
 
 Many users change organization and thereby also IdP. When a user signs up using the credentials (ID plus password) provided by this new organization, a new internal account is created specifically for his new organization. Importantly, when subsequently authenticating (logging in) using the credentials of his new organization, he cannot access the collections for which he is authorized if he authenticates against the IdP of his old organization. However, the research administrator can change his new internal account such that the user keeps his access to those collections also when authenticating against the IdP of his new organization. This change involves a migration of the old internal account such that it can be accessed via authenticating against the IdP of his new organization. For performing this migration, the research administrator has access to a portal in which he must change the value of the appropriate field.
 To prevent misunderstanding, migrating the old internal account of a former RU employee such that it can be accessed by authenticating against the IdP of his new organization, does not imply that this user can still be manager in any of his old collections: these authorizations have to be modified by another collection manager or the research administrator.
+
+
