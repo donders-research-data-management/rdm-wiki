@@ -17,6 +17,7 @@ erimar : descriptionAbstract is missing
 | projectId            | Associated research project |                              |
 | type                 | Type of collection          |                              |
 | title                | Title                       |                              |
+| descriptionAbstract  | Abstract                    |                              |
 | status               | Status                      |                              |
 | publisher            | Publisher                   |                              |
 | manager              | Collection managers         |    show user's display name  |
@@ -27,6 +28,7 @@ erimar : descriptionAbstract is missing
 | creationDateTime     | created at                  |                              |
 | publicationDateTime  | published at                |                              |
 | lastClosedDateTime   | closed at                   |                              |
+| embargoUntilDateTime | embargo until               |                              |
 | attributeLastUpdatedDateTime | attribute updated at |                               |
 | associatedDAC        | Associated collections (DAC's) |  show collectionIdentifier, link to the collection |
 | associatedRDC        | Associated collections (RDC's) |  show collectionIdentifier, link to the collection |
