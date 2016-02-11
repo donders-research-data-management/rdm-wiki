@@ -87,7 +87,7 @@ The DCC manages the initiation of new DACs via a form that has to be completed b
 
 The DAC collection name is constructed according to the following standard:
 
-DAC\_<YYYYMMDD>\_<freename>  ,
+DAC\_YYYYMMDD\_freename  ,
 
 in which YYYY is the year, MM the month, and DD the day at which the collection is initiated. The component <freename> should be an acronym for the study to which this collection belongs. For example: DAC_20150623_AttSelConMon.
 
