@@ -8,19 +8,19 @@ Using controlled vocabularies for keywords provides an efficient (and less ambig
 
 The first two controlled vocabularies for keywords are `SFN2013` and `MeSH2015`. They are referred to as `keyword_SFN2013` and `keyword_MeSH2015` as repeatable collection attributes. The demand of supporting more controlled vocabularies is foreseeable.
 
-## Identifier scheme for external content
+## Identifier systems for external content
 
 External contents are objects (e.g. data, publications) of which the contents are not stored in the RDM system.  Instead, they are referred by _identifiers_.
 
-An identifier is a string (or serial number).  It is only relevant to certain identifier arrangement (i.e. scheme).  To make the identifier meaningful, the identifier scheme should be considered as part of the identifier. Thus, a full identifier to external content is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) consisting of the `scheme` and the `identifier`.
+An identifier is a string (or serial number).  It is only relevant to certain identifier arrangement (i.e. the _identifier system_).  To make the identifier meaningful, the identifier system should be considered as part of the identifier. Thus, a full identifier to external content is in fact a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) consisting of the `systen` and the `identifier`.
 
-To avoid ambiguity, widely-used identifier schemes are provided as a pre-defined list (controlled vocabulary).  It allows certain features to be built around, e.g. resolving identifiers to URL's to which external content can be obtained via the web browser, or applying scheme-specific validation on the identifier.
+To avoid ambiguity, widely-used identifier systems are provided as a pre-defined list (controlled vocabulary).  It allows certain features to be built around, e.g. resolving identifiers to URL's to which external content can be obtained via the web browser, or applying system-specific validation on the identifier.
 
 ### External publications
 
-External publications are linked to RDM collections via the `associatedPublication` attribute.  The table below summarise a list of identifier schemes to be supported for identifying an external publication.
+External publications are linked to RDM collections via the `associatedPublication` attribute.  The table below summarise a list of identifier systems to be supported for identifying an external publication.
    
-|  scheme           |  name                         |           link to content                         |
+|  system           |  name of system               |           link to content                         |
 | ----------------- | ----------------------------- | ------------------------------------------------- |
 |  PMID             | PubMed                        | http://www.ncbi.nlm.nih.gov/pubmed/{identifier}   |
 |  arXiv            | arXiv.org: e-print archive    | http://arxiv.org/abs/{identifier}                 |
