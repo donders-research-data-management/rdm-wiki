@@ -99,8 +99,8 @@ Follow the steps below:
     [3,]   22   20   13    6    4
     [4,]   16   14    7    5   23
     [5,]   15    8    1   24   17
-    > q()
-    ````
+    > q(save="no")
+    ```
 
 2. read and understand the `magic_cal_2.R` script, especially the functions at the top of the script.
 
