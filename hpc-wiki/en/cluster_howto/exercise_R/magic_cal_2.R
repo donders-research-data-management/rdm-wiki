@@ -18,11 +18,11 @@ get_bookkeep_info <- function(default_jobname="") {
 
     ## resolve job/process identifier (process id $$ or PBS_JOBID
     jid <- system("echo $$", intern=TRUE)[1]
-    if ( Sys.getenv("PBS_JOBID") != "" ) jid <- strsplit(Sys.getenv("PBS_JOBID"), ".", fixed=TRUE)[1]
+    if ( Sys.getenv("PBS_JOBID") != "" ) jid <- unlist(strsplit(Sys.getenv("PBS_JOBID"), ".", fixed=TRUE))[1]
 
     ## resolve job name (caller function or PBS_JOBNAME)
     jname <- default_jobname 
-    if ( Sys.getenv("PBS_JOBNAME") != "" ) jname <- strsplit(Sys.getenv("PBS_JOBNAME"), ".", fixed=TRUE)[1]
+    if ( Sys.getenv("PBS_JOBNAME") != "" ) jname <- unlist(strsplit(Sys.getenv("PBS_JOBNAME"), ".", fixed=TRUE))[1]
 
     info <- list("workdir"=wdir, "jobid"=jid, "jobname"=jname)
 
@@ -60,7 +60,7 @@ parse_arguments <- function() {
 save_objects <- function(objects, path=NA, job_bookkeep_info=NA, append=FALSE) {
 
     if ( ! is.na(job_bookkeep_info)) {
-        outfile <- paste(paste(job_bookkeep_info$jobname, job_bookkeep_info$jobid, sep="_"), "RData", sep=".")
+        outfile <- paste(job_bookkeep_info$jobname, paste('r', job_bookkeep_info$jobid, sep=""), "RData", sep=".")
         path <- file.path(job_bookkeep_info$workdir, outfile)
     }
 
