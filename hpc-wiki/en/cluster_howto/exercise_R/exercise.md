@@ -2,7 +2,7 @@
 
 In this exercise, you will learn how to submit R jobs in the cluster using the `Rscript`, the scripting front-end of R.
 
-This exercise is divided into three tasks.  The first task is to get you familiar the flow of running a R script in batch jobs.   
+This exercise is divided into two tasks. The first task is to get you familiar with the flow of running R script as batch jobs in the HPC cluster. The second is more about bookkeeping outputs (R data files) produced by R jobs running concurrently in the cluster.
 
 ## Preparation
 
