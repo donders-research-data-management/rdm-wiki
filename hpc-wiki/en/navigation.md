@@ -28,6 +28,7 @@
   * [Exercise 3: resource requirement](cluster_howto/exercise_resource/exercise.md)
   * [Exercise 4: data analysis](cluster_howto/exercise_da/exercise.md)
   * [Exercise 5: MATLAB jobs](cluster_howto/exercise_matlab/exercise.md)
+  * [Exercise 6: R jobs](cluster_howto/exercise_R/exercise.md)
   - - - -
   * # Cluster Monitor
   * [Ganglia](http://ganglia.dccn.nl)
