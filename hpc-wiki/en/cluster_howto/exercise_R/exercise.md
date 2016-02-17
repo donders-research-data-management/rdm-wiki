@@ -70,8 +70,10 @@ Given that batch jobs in the cluster will be executed at the same time, writing 
 
 In this exercise, we are going to use the script `magic_cal_2.R` in which functions are provided to
 
-- save objects into data file, and
-- get job/process information that can be used for the bookkeeping purpose.
+* save objects into data file, and
+* get job/process information that can be used for the bookkeeping purpose.
+
+Follow the steps below:
 
 1. run the script interactively
  
