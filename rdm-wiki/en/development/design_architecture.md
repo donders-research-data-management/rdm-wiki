@@ -2,17 +2,23 @@
 
 ## Authentication
 
-The RDM system makes use of SURFConext (and eventually the EduGAIN) service for user authentication.  It implies that users already have valid account from collaborating institutues world-wide will have immediate access to the system.  
+The RDM system makes use of SURFConext (and eventually the EduGAIN) service for user authentication.  It implies that users already have valid account from collaborating institutues world-wide will have immediate access to the system.
 
-## Authorisation
+### Temporary user credentail for data access
 
-In the RDM system, authorisation is goverened by user roles that are defined in two aspects. In one aspect, there are three user roles associated with each individual RDM collection. The three roles are `manager`, `contributor` and `viewer`.  In the other aspect, there are roles closely related to user's function in an organisational unit, and they are `ou_user` and `ou_admin` roles.  Authorisation policy of those roles are defined in [the RDM protocols]().
+While the CMS interface makes use of SURFConext for authentication, the data access interface RDM has difficulity to integrate SURFConext due to technical limitation.  A workaround in RDM is to employ a so-called [event-based one-time password mechanism](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm).
 
-The iRODS user group is utilised to make technical implementation of the user roles.  Technically speaking, granting (revoking) a user with (from) an user role is done by adding (removing) the user to (from) a particular iRODS user group.  Those actions are triggered automatically at relevant policy-enforcement points in iRODS.  For example, when a collection's viewer/manager/contributor attributes are modified.  
+Before accessing the data in the repository, user firstly signs in to the CMS via SURFConext (and therefore the user is authenticated by IdP).  From the CMS, the user retrieves a temporary user credential for data access. The user credential consists of a static account name (i.e. it is always the same for the same user) and a fresh one-time password.  The crendential can only be utilised once for the authentication process; however, on the server-side of the data access interface, the credential is cached for certain time span, allowing stateless data transfer protocols (e.g. WebDAV) to operate smoothly.
 
 ## Data management
 
 The RDM data management system is based on [iRODS](http://irods.org).  iRODS rules are implemented to support the data management workflows specified in [the protocols]().
+
+### Authorisation
+
+In the RDM system, authorisation is goverened by user roles that are defined in two aspects. In one aspect, there are three user roles associated with each individual RDM collection. The three roles are `manager`, `contributor` and `viewer`.  In the other aspect, there are roles closely related to user's function in an organisational unit, and they are `ou_user` and `ou_admin` roles.  Authorisation policy of those roles are defined in [the RDM protocols]().
+
+The iRODS user group is utilised to make technical implementation of the user roles.  Technically speaking, granting (revoking) a user with (from) an user role is done by adding (removing) the user to (from) a particular iRODS user group.  Those actions are triggered automatically at relevant policy-enforcement points in iRODS.  For example, when a collection's viewer/manager/contributor attributes are modified.
 
 ### Collection namespace
 
@@ -53,6 +59,16 @@ Every collection snapshot acquires a version number.  The numver is reflected on
 
 Every collection snapshot also acquires an attribute for a global persistent identifier, for example `identifierEPIC`.  However, the same identifier is shared amongst the snapshots originated from the same head collection.
 
+### Attributes and metadata
+
+In the RDM system, attributes are used to describe a user or a collection.  Those attributes are stored in key-value pairs in the iCAT database, along with the user and collection in question.  The defined user attributes are found [here](user_attributes.md); and [this page](collection_attributes.md) lists all collection attributes. 
+
+Metadata only becomes relevant when there is an recipient involved. Given a metadata schema (e.g. DataCite), attributes are tramsformed into the metadata fields defined by the schema.
+
+## Data storage
+
+![](figures/resource_storage_mapping.png)
+
 ### iRODS storage resources
 
 With the target of maintaining two copies of data in the RDM system, we virtually distinguish the iRODS storage resources into the so-called _online_ and _nearline_ resources.  Generally speaking, the _online_ resource is the location where the first copy of data is created (e.g. when a file is just uploaded to the system).  Data arrived at the _online_ resource is replicated in the background do the _nearline_ resource.  Both _nearline_ and _online_ resources are used to serve data download.
@@ -71,19 +87,57 @@ resc_dcn_m:random
 resc_dcn_s:random
 └── vault_dcn_s_1
 resc_nl:random
-└── rdmRes2Test
+└── vault_nl_1
 ```
 
 In the example, resource `resc_nl` is the _nearline_ resource; while `resc_dccn`, `resc_dcc`, `resc_dcn_s` and `resc_dcn_m` are _online_ resources, each for a centre/organisational unit of the Donders Institute.
 
 Moreover, both _online_ and _nearline_ resources are defined as a [composable resource](https://docs.irods.org/4.1.7/manual/architecture/#composable-resources) to be able to integrate distributed/heterogeneous data storages.
 
-### Attributes and metadata
+### Storage system
 
-In the RDM system, attributes are used to describe a user or a collection.  Those attributes are stored in key-value pairs in the iCAT database, along with the user and collection in question.  The defined user attributes are found [here](user_attributes.md); and [this page](collection_attributes.md) lists all collection attributes. 
+The storage system refers to the system in which the RDM data physically reside. Generally speaking, it is independent to the RDM application, thanks to the abstraction layer of the iRODS resources.  Nevertheless, we do require the underlying data storage to provid the following features:
 
-Metadata only becomes relevant when there is an recipient involved. Given a metadata schema (e.g. DataCite), attributes are tramsformed into the metadata fields defined by the schema.
+* mountable filesystem as it is required by the _filesystem_ iRODS resource type
+* proactive data integrity check to prevent data corruption
+* efficient data de-duplication mechanism to save storage space for eventual duplication of same scientific data in the repository
+* quota on filesystem directory
 
-## Data storage
+## Auditing
 
-## Auditing and reporting
+WARNING: the design of auditing described below is a proposal and still to be discussed.
+
+### Architecture
+
+The figure below shows the auditing architecture.  In this picture, both CMS and iRODS ingest audit information into an [elastic search engine](https://www.elastic.co/), upon certain user actions.  The search engine is then provided as the data source for reporting and generating digest emails.  Interaction with the elastic search engine is based on the RESTful APIs.
+
+![](figures/auditing_architecture.png)
+
+### iRODS audit event
+
+In several policy-enforcement points of iRODS, audit information are sent out to the elastic search engine as events (the audit events).
+
+Generally speaking, an audit event is a piece of data describing the client action in terms of __source__, __scope__, __scope object name__, __scope object action__ and __action context__.  The figure below summarises the definition and possible settings of those terms.
+
+![](figures/audit_event.png)
+
+In reality, the audit event is represented in a JSON document. Hereafter is an example audit event triggered by a user (`U505173-ru.nl`) modifies (`add`) the attribute `descriptionAbstract` of a `collection` with internal id `24477`.  Note that the _source_ is not presented in the JSON document as it is, technically speaking, implemented as an `index` in elasticsearch.
+
+```javascript
+{
+	"scope": "collection",
+	"scope_obj_name": "24477",
+	"scope_obj_action": "modified",
+	"when": "2016-01-14T12:56:36",
+	"who": {
+		"client_name": "U505173-ru.nl",
+		"client_ipaddress": "131.174.75.104"
+	},
+	"what": {
+		"ctx_obj_name": "descriptionAbstract:cache-all repository for DICOM raw data collected at DCCN:",
+		"ctx_obj_type": "AVU triplet",
+		"ctx_obj_action": "add"
+	},
+	"why": ""
+}
+```

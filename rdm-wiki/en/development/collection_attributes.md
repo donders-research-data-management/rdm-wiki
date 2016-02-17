@@ -9,32 +9,24 @@ The RDM collection attributes are implemented as key-value pairs associated with
 * __DAC__: whether the attribute is presented with a Data Acquisition Collection
 * __RDC__: whether the attribute is presented with a Research Documentation Collection
 * __DSC__: whether the attribute is presented with a Data Sharing Collection
-* __SS__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection.
-
-.. erimar : We must keep in mind that some attributes can still be changed after closure. What about having the entries of the SS column being one of the following three values: Y and C (both proposed by you) and an M that indicates that the attribute can be modified after collection closure? (We have to think a bit about the labels. Maybe we can use "Man" and "Con" for the column labels, to avoid confusion with the M and C that are used in the entries.) 
-
-
-
+* __SS__: whether the attribute is presented with a collection snapshot.  A snapshot refers to either a closed DSC, or a version of DAC/RDC. The flag `Y` indicates the value is given at the time the snapshot is created; while the flag `C` indicates the value is copied over from the original (i.e. the head) collection. If the flag is followed by `M`, it implies that the attribute is editable (_with authorisation to be clarified_) after the snapshot is created.
 * __RA__: whether the attribute is editable by a research administrator
-* __M__: whether the attribute is editable by a collection manager 
-* __C__: whether the attribute is editable by a collection contributor
-
-Erimar: 
-* the flag __C__ is used in two meanings
-* the M and the C attributes (with the C used in the second meaning) are not used in the table --> I now see that the table has two columns that do not fit on my scree (-;. Thus, forget about it.
+* __MNG__: whether the attribute is editable by a collection manager 
+* __CNT__: whether the attribute is editable by a collection contributor
 
 
-| key                          | value / format               | multiple | sys  | DAC  | RDC  | DSC  | SS      | RA   | M    | C    |
+| key                          | value / format               | multiple | sys  | DAC  | RDC  | DSC  | SS      | RA   | MNG    | CNT    |
 | ---------------------------- | ---------------------------- | -------- | ---- | ---- | ---- | ---- | ------- | ---- | ---- | ---- |
 | identifierEPIC               | valid EPIC identifier        |          |  Y   |      |      |      |  Y      |      |      |      |
 | identifierDOI                | valid DOI identifier         |          |  Y   |      |      |      |  Y      |      |      |      |
 | collectionIdentifier         | [o].[ou].[coll_name]         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | organisation                 | `DI`                         |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | organisationalUnit           | `DCCN`,`DCC`,`DCN_S/M`       |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
-| projectIdentifier            | [type]_[number]              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| projectId                    | [type]_[number]              |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| alternativeProjectId         | [type]_[number]              |    Y     |      |  Y   |  Y   |  Y   |  C      |      |   Y  |      |
 | type                         | `DATA_ACQUISITION`, `RESEARCH_DOCUMENTATION`, `DATA_SHARING` |          |      |  Y   |  Y   |  Y   |  C      |      |      |      |
 | title                        | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |  Y   |
-| subject                      | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
+| ~~subject~~ keyword_freetext | string w/ UTF-8 support      |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | descriptionAbstract          | string w/ UTF-8 support      |          |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | status                       | `open`,`closed`,`tobeclosed` |          |  Y   |  Y   |  Y   |  Y   | `closed`|      |      |      |
 | publisher                    | `Radboud University, Donders Institute for Brain, Cognition and Behaviour`|          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
@@ -42,6 +34,7 @@ Erimar:
 | contributor                  | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | creatorList                  | ordered(manager+contributors)|          |      |      |      |      |  Y      |      |  Y   |      |
+| contactPerson                | one of the managers          |          |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | creationDateTime             | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
 | publicationDateTime          | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |      |      |      |  Y      |      |      |      |
 | lastClosedDateTime           | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
@@ -53,15 +46,39 @@ Erimar:
 | associatedPublication        | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
 | quotaInMegaBytes             | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | sizeInMegaBytes              | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| preservationTimeYear         | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | ethicalApprovalIdentifier    | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
-| [keyword_MeSH2013](vocabularies.md)| word in MeSH 2013 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
-| [keyword_SFN2015](vocabularies.md)| word in SFN 2015 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_MeSH2015](vocabularies.md)| word in MeSH 2015 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_SFN2013](vocabularies.md)| word in SFN 2013 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | versionNumber                | numerical number             |          |  Y   |      |      |      |  C      |      |      |      |
 | latestVersionId              | internal iRODS coll. id      |          |  Y   |  Y   |  Y   |  Y   |         |      |      |      |
 | originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 | perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
+
+## Mandatory attributes for collection closure
+
+The following table summarise a list of attributes to be set before closing a collection, with respect to different collection types.  Collection closure is forbidden if the collection does not have all mandatory attributes set properly.
+
+The list does not include system-generated attributes (see the `sys` column in the table above) which are assumed to be always set properly before (or at the time of) closing a collection.
+
+|  Key of attribute         |  DAC  |  RDC  |  DSC  |
+| ------------------------- | ----- | ----- | ----- |
+| title                     |   Y   |   Y   |   Y   |
+| type                      |   Y   |   Y   |   Y   |
+| projectId                 |   Y   |   Y   |   Y   |
+| creatorList               |   Y   |   Y   |   Y   |
+| contactPerson             |       |       |   Y   |
+| descriptionAbstract       |       |       |   Y   |
+| keyword_*<sup>[1]</sup>   |       |       |   Y   |
+| ethicalApprovalIdentifier |   Y   |       |       |
+| dataUseAgreement          |       |       |   Y   |
+| embargoUntilDateTime      |       |       |   Y   |
+| preservationTimeYear      |   Y   |   Y   |   Y   |
+
+Note:
+<sup>[1]</sup> For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH2015` and `keyword_SFN2013`).
 
 ## Combinatory attributes
 

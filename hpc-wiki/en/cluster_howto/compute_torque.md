@@ -38,20 +38,26 @@ For every job queue, the total number of __runnable__ and __queue-able__ jobs pe
 
 | queue name | max. runnable jobs | max. queue-able jobs |
 |:-----------|-------------------:|---------------------:|
-| matlab     | 220                | 2000                 |
-| short      | 220                | 2000                 |
-| veryshort  | 220                | 2000                 |
-| long       | 220                | 2000                 |
-| batch      | 220                | 2000                 |
-| verylong   | 220                | 2000                 |
+| matlab     | 300                | 2000                 |
+| short      | 300                | 2000                 |
+| veryshort  | 300                | 2000                 |
+| long       | 300                | 2000                 |
+| batch      | 300                | 2000                 |
+| verylong   | 300                | 2000                 |
 | vgl        |   2                |    5                 |
 | interactive|   2                |    4                 |
 
-For most of queues, the number of runnable and queue-able jobs are set to 220 and 2000, respectively. However, more restricted policies are applied to jobs in the _vgl_ and _interactive_ queues. For jobs in the _vgl_ queue, the maximum runnable and queue-able jobs are set to 2 and 5, respectively; while they are 2 and 4 for jobs in the _interactive_ queue.  This is to compensate for the facts that _vgl_ jobs consume lots of the network bandwidth; and _interactive_ jobs always have the highest priority to start.
+For most of queues, the number of runnable and queue-able jobs are set to 300 and 2000, respectively. However, more restricted policies are applied to jobs in the _vgl_ and _interactive_ queues. For jobs in the _vgl_ queue, the maximum runnable and queue-able jobs are set to 2 and 5, respectively; while they are 2 and 4 for jobs in the _interactive_ queue.  This is to compensate for the facts that _vgl_ jobs consume lots of the network bandwidth; and _interactive_ jobs always have the highest priority to start.
 
 ##### __Cluster-wise policies__
 
-The cluster-wise throttling is on the total amount of resources a single user is currently using in the cluster.  The limitation is 660 walltime days or 1 TB memory.  It implies that, for example, if your job requests 32 GB of memory, the total number of such type of jobs to run concurrently in the cluster will be limited to 32 (i.e. 1024/32) instead of 220.
+The cluster-wise throttling is to limit the total amount of resources a single user can occupy at the same time in the cluster. The three upper-bound (cluster-wise) limitations are:
+
+* 300 jobs
+* 660 days processing (wall)time
+* 1 TB memory
+
+It implies that if the resource utilisation of your current running jobs reaches one of the above limitations, your additional jobs have to wait in the queue regardless whether there are still available resources in the cluster.
 
 #### __Job prioritisation__
 
@@ -192,22 +198,27 @@ Note: Computing resources in the cluster are reserved for jobs in terms of size 
 
 If your analysis tool (or script) is commonly used in your research field, consulting with your colleagues might be just an efficient way to get a general idea about the resource requirement of the tool.
 
-#### __Use the job's epilogue message__ 
+#### __Monitor the resource consumption (with an interactive test job)__
 
-Proper estimation of the wall time and memory requirements can be determined with a trial procedure in which the user submits a test job to the cluster with a rough requirement.  If the rough requirement is not sufficient to allow the job to finish, the job will get killed with an e-mail notification.  In the job's `STDOUT` file (i.e. `<job_name>.o<job_id_digits>`), you will see an __Epilogue__ message stating the amount of resources being used by the job.  In the snippet below, this is shown on line 9.
+A good way of estimating the wall time and memory requirement is through monitoring the usage of them at run time. This approach is only feasible if you run the job interactively through a graphical interface. Nevertheless, it's encouraged to test your data analysis computation interactively once before submitting it to the cluster with a large amount of batch jobs. Through the interactive test, one could easily debug issues and measure the resource usage.
+
+Upon the start of an interactive job, a resource comsumption monitor is shown on the top-right corner of your VNC desktop.  An example is shown in the following screenshot:
+
+![interactive jobinfo](figures/torque_interactive_jobinfo.png)
+
+The resource monitor consists of three bars.  From top to bottom, they are:
+
+* Elapsed walltime: the bar indicates the elasped walltime consumed by the job.  It also shows the remaining walltime.  The walltime is adjusted accordingly to the CPU speed.
+* Memory usage: the bar indicates the current memory usage of the job.
+* Max memory usage: the bar indicates the peak memory usage of the job.
+
+#### __Use the job's epilogue message (a trial-and-error approach)__ 
+
+The wall time and memory requirements can also be determined with a trial procedure in which the user submits a test job to the cluster with a rough requirement.  If the rough requirement is not sufficient to allow the job to finish, the job will get killed with an e-mail notification.  In the job's `STDOUT` file (i.e. `<job_name>.o<job_id_digits>`), you will see an __Epilogue__ message stating the amount of resources being used by the job.  In the snippet below, this is shown on line 9.
 
 [gimmick:gist](16ad2dcc08eda51b1b4d)
 
 Adjust the rough requirement gradually based on the usage information and resubmit the test job with the new requirement.  In few iterations, you will be able to determine the actual usage of your analysis job.  A rule of thumb for specifying the resource requirement for the production jobs is to add on top of the actual usage a 10~20% buffer as a safety margin.
-
-#### __Monitor the resource consumption__
-
-Another way of estimating the wall time and memory requirement is to monitor the usage of them at run time.  This approach only feasible if you run the test job interactively through a graphical interface.  The monitor of the resource utilisation is provided by two graphical tools: `cluster-meminfo` and `cluster-walltimeinfo` for memory and wall time utilisation, respectively. Under the hood, these two tools use actually the `qstat -f` command to query the up-to-date resource usage from the `torque` system.  Use the following commands to launch the monitoring tools in your [interactive job](#Interactive_computation_in_text_mode):
-
-```bash
-$ cluster-meminfo
-$ cluster-walltimeinfo
-```
 
 ## Cluster tools
 

@@ -14,18 +14,21 @@ erimar : descriptionAbstract is missing
 | collecitonIdentifier | RDM Identifier              |                              |
 | organisation         | Organisation                |                              |
 | organisationalUnit   | Organisational Unit         |                              |
-| projectIdentifier    | Associated research project |                              |
+| projectId            | Associated research project |                              |
 | type                 | Type of collection          |                              |
 | title                | Title                       |                              |
+| descriptionAbstract  | Abstract                    |                              |
 | status               | Status                      |                              |
 | publisher            | Publisher                   |                              |
 | manager              | Collection managers         |    show user's display name  |
 | contributor          | Collection contributors     |    show user's display name  |
 | viewer               | Collection viewers          |    show user's display name  |
 | creatorList          | Authors                     |    show user's display name  |
+| contactPerson        | Contact person              | show user's display name with link to the user's email |
 | creationDateTime     | created at                  |                              |
 | publicationDateTime  | published at                |                              |
 | lastClosedDateTime   | closed at                   |                              |
+| embargoUntilDateTime | embargo until               |                              |
 | attributeLastUpdatedDateTime | attribute updated at |                               |
 | associatedDAC        | Associated collections (DAC's) |  show collectionIdentifier, link to the collection |
 | associatedRDC        | Associated collections (RDC's) |  show collectionIdentifier, link to the collection |
@@ -35,8 +38,9 @@ erimar : descriptionAbstract is missing
 | ethicalApprovalIdentifier.approvalIdentifier | Ethical Approval Identifier | [_see combinatory attributes_](collection_attributes.md#combinatory-attributes) |
 | quotaInMegaBytes     | Storage quota (GB)          |                               |
 | sizeInMegaBytes      | Data size (GB)              |                               |
+| preservationTimeYear | Preservation Time (Year)    |                               |
 | dataUseAgreement     | Data Use Agreement          | link to display context of the DUA |
-| subject              | Free-text keywords          |                                |
-| keyword_MeSH2013     | MeSH2013 keywords           | link to the context referred by the keyword |
-| keyword_SFN2015      | SFN2015 keywords            | link to the context referred by the keyword |
+| keyword_freetext     | Free-text keywords          |                                |
+| keyword_MeSH2015     | MeSH2015 keywords           | link to the context referred by the keyword |
+| keyword_SFN2013      | SFN2013 keywords            | link to the context referred by the keyword |
 | versionNumber        | Version                     |                                |

@@ -2,7 +2,7 @@
 
 ##	1 Version
 
-Draft, last update by Eric on 5 January 2016
+Draft, last update by Eric on 12 January 2016
 
 ##	2 Scope
 
@@ -24,7 +24,7 @@ This protocol serves three purposes:
 
 The data repository allows a researcher to archive digital data into collections. The repository contains separate collections for preservation, for research documentation and for sharing. Repository users can have different predefined roles in a collection. These roles differ in their rights with respect to the collection.
 
-1. A _manager_ can add and remove users to the collection, and can change the role of other users. A manager automatically also has the rights of a contributor.
+1. A _manager_ can add and remove users to the collection, and can change the role of other users. A manager also has the rights of a contributor.
 2. A _contributor_ can add, modify and delete files. A contributor also has the rights of a viewer.
 3. A _viewer_ can view the content of files.
 
@@ -42,9 +42,9 @@ Empirical research data can be acquired in digital or non-digital form. This dis
 
 Metadata is data about data. Most familiar are the metadata at the level of individual files: the filename, its type (.docx, .pdf, .dcm, .mat, .xlsx, …), its creation date, the date it was last modified, etc. In this protocol, we will mainly consider metadata at the collection level, because this allows for metadata that are very useful for research data management. Some examples of such collection-level metadata are the persons that have contributed to the study, the budget from which it is financed, the date and time it was created and closed, the type of data that was collected (behavior, fMRI, EEG, MEG, genomics, transcriptomics, video, …), the species (human, non-human primate, rat, mouse, …), and the topic of the study.  
 
-The function of metadata is to describe the data in a way that increases their value for potential users ("Are these data interesting for me?","With which software can I process them?", ...). For that reason, the concept of metadata is closely linked to _data publication_. Importantly, published data should not change (just like a published paper also should not change), the current view is that also metadata should not change. However, there are a few situations in which it is very useful to have attributes that could change while the data themselves do not. For example, over time, a given published data set may be used in an increasing number of publications. All these publications are highly relevant attributes of that data set, even though technically they cannot be called "metadata".
+The function of metadata is to describe the data in a way that increases their value for potential users ("Are these data interesting for me?","With which software can I process them?", ...). For that reason, the concept of metadata is closely linked to _data publication_. Importantly, because published data should not change (just like a published paper also should not change), the current view is that also metadata should not change. However, there are a few situations in which it is very useful to have attributes that could change while the data themselves do not. For example, over time, a given published data set may be used in an increasing number of publications. All these publications are highly relevant attributes of that data set, even though technically they cannot be called "metadata".
 
-In this protocol, a distinction is made between _metadata_ and _attributes_: metadata are a special class of attributes that have the distinguishing that feature they are communicated to potential users of published data. Because the current view is that metadata should not change if the published data don't change, the metadata of a closed collection (see further down, for a description of "collection closure") cannot be modified. However, this collection can have other attributes (technically, not metadata) that _can_ be modified after closure.
+In this protocol, a distinction is made between _metadata_ and _attributes_: metadata are a special class of attributes that have the distinguishing feature that they are communicated to potential users of published data. Because the current view is that metadata should not change if the published data don't change, the metadata of a closed collection (see further down, for a description of "collection closure") cannot be modified. However, this collection can have other attributes (technically, not metadata) that _can_ be modified after closure.
 
 
 ##	6 Accessing the Repository
@@ -64,7 +64,7 @@ After a successful authentication, a repository user still cannot read or write 
 3.	 A _trusted registered user_ authenticates him/herself against a trusted authentication service (e.g., SURFconext, EDUgain). This user type can be added as a contributor or viewer to all collection types (which also includes _Data Acquisition_ and _Research Documentation Collections_, DACs and SICs; see further). A contributor cannot only view but also modify a collection's files.
 4.	A _DCX employee_ authenticates him/herself against the RU or RUMCN authentication service _and_ is registered by a center’s research administrator as an employee of that center. In the Donders Institute, we distinguish between four centers: DCC, DCCN, DCN_S (DCN Science Faculty), and DCN_M (DCN Medical Faculty), jointly denoted as DCX. This user type can be added as a _manager_ to all collections of his center.
 
-In principle, the same physical person can be represented as multiple users in the repository. This can happen if that person has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. If a user authenticates him/herself using multiple digital identities, then he/she will also be represented in the repository with multiple internal accounts, each of which is likely to have different authorizations. In some situations, it is highly desirable to migrate an internal account, and a center’s research administrator can do this for its members as well as external collaborators (see the DI RDM Protocol for Research Administrators). For example, when a user leaves the RU (and thus loses his access to the RU identity provider) and becomes an employee of another University that participates in a trusted federated authentication infrastructure, that user may want to keep his authorizations for the collections in the Donders repository. Under certain constraints (see the _DI RDM Protocol for Research Administrators_), this is also possible.
+In principle, the same physical person can be represented as multiple users in the repository. This can happen if that person has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. If a user authenticates him/herself using multiple digital identities, then he/she will also be represented in the repository with multiple internal accounts, each of which is likely to have different authorizations. In some situations, it is highly desirable to migrate an internal account, and a center’s research administrator can do this for its members as well as external collaborators (see the _DI RDM Protocol for Research Administrators_). For example, when a user leaves the RU (and thus loses his access to the RU identity provider) and becomes an employee of another University that participates in a trusted federated authentication infrastructure, that user may want to keep his authorizations for the collections in the Donders repository. Under certain constraints (see the _DI RDM Protocol for Research Administrators_), this is also possible.
 
 ## 7	Up- and Downloading Files
 
@@ -72,7 +72,7 @@ A web interface (more precisely, the HTTP protocol) does not allow for a conveni
 
 Up- and downloading files is only possible after authenticating oneself at the website of the repository. Via the website, one can then obtain a _data access password_ that can be used in combination with one's _data access username_ to up- and download files. This data access username is _not_ the username with which one authenticates oneself at the website of the repository (for RU and RUMCN employees, their U- or Z-number). The data access username and password are used in combination with the WebDAV client.  
 
-It is also possible to up- and download files using a command-line interface. However, this file transfer is only possible to and from a few dedicated computers, which are typically located in the labs. This file transfer is intended for large volumes, and the dedicated computers will only be operated by support staff and a limited number of experienced users.    
+It is also possible to up- and download files using a command-line interface. However, this file transfer is only possible to and from a few dedicated computers, which are typically located in the labs. This file transfer is intended for large volumes of data, and the dedicated computers will only be operated by support staff and a limited number of experienced users.    
 
 ##	8. Preservation – Data Acquisition Collection
 
@@ -96,13 +96,19 @@ Data must be archived in their original form. Here, original means the following
 
 The DAC must be annotated in two ways: (1) by providing collection attributes (see further), and (2) by adding one or more human-readable documents in which the data are annotated.
 
-#### 8.2.3	Location
+A DAC has one or more managers, and these can add other users to the DAC, thereby giving them access. During data collection, only members of the research team that performs the data acquisition can be added to the DAC. After DAC closure (see 8.2.9), other members of the DI may be added to the DAC, allowing them to re-use the  data. Users that are not a member of DI may not be added to a closed DAC. These non-DI users can only get access to the data via a closed _Data Sharing Collection_ (DSC, see further).
 
-The researcher should specify where the data were collected. Typically, this is the location of a research institute. In case this is the DI, the center (DCC, DCCN, DCN_S, DCN_M) has to be specified. The location may also be geographically distributed, as when data are collected using mobile phones or computers connected to the internet.
+#### 8.2.3	DAC annotation
 
+The DAC annotation is a set of one or more documents that is uploaded to the collection. It contains information that is necessary to properly interpret and (re-)analyze the data. This information involves three parts: (1) a description of the type of data that was acquired, (2) the organization of the files and the folders and its relation to the design of the study/experiment, and (3) experimental information that is written into the datasets by the data acquisition system.
 
-TBD: I propose to drop the location attribute because the relevant information for most collections is already provided by the Research Administrator in the OrganizationalUnit attribute. Moreover, for the exception cases (data collected outside of the DI), the information provided by this attribute does not seem to be important from the perspective of findability.
+Describing the type of data can usually be short, but might include details on the equipment used and the location where the data was recorded.
 
+The description of the organization of the data is essential for a study in which participants participate in multiple recording sessions, as well as for an experiment in which different types of data are acquired. The DAC annotation must include a description of the different sessions and data types, and how these are mapped onto the experimental conditions.
+
+The  experimental information written by the data acquisition system refers for example to stimulus events that are relevant for the analysis of the data, or to behaviour (e.g., button presses, eye movements). This information is often present in the form of experimental log files or as trigger or annotation channels. As a part of the DAC annotation, researchers should include a description of the codes that are used for these stimulus and behavioral events (i.e., a table associating the events to their meaning).
+
+The DAC annotation should be provided in a format that is easily accessible to present and future colleagues, for example, .docx, .txt, .pdf, .xlsx. The annotation should be written such that someone with domain specific skills can reuse the data. It is required to specify details that vary between studies, such as the mapping of trigger codes on experimental parameters. It is not required to explain details that can be considered commonly shared knowledge.
 
 #### 8.2.4	Conformity with laws and regulations
 
@@ -110,16 +116,10 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 
 ##### 8.2.4.1	Human data
 
-1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethical Review Board of the Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
-2.	The researcher must archive the signed informed consent forms (i.e., the paper forms). These forms must allow for the de-identified data to be shared via a data sharing collection (DSC). If the researcher plans to share the data of this DAC together with data of the same participants in other DACs, then the signed informed consent forms must mention this linked sharing.
-... The precise archiving protocol for the signed informed consent forms (where to hand in the forms, where they will be archived, ...) differs according to DI center, and the center management is responsible for communicating this protocol.
-3.	The researcher must upload to the DAC the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants. For findability, the researcher should use the folder name "PIB" for organizing the PIBs.
+1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Committee Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
+2.	The signed informed consent forms must allow for the de-identified data to be shared via a data sharing collection (DSC). If the researcher plans to share the data of this DAC together with data of the same participants in other DACs, then the signed informed consent forms must mention this linked sharing.
+3.	The researcher must upload a copy of the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants.
 ... There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethical review board.
-
-TBD1: I propose to also add the following documents to this Github-hosted wiki: guidelines for deciding about the appropriate ethical review board, the template informed consent forms, the template information brochures. When realized, we can refer to these documements from inside the wiki. This must also be discussed with Sabine K and Miriam K, because they must be comfortable working with it.  
-
-TBD2: As you can read, I propose to document the PIBs by uploading them to the DAC. Agree?
-
 
 ##### 8.2.4.2	Animal data
 
@@ -132,9 +132,7 @@ Whenever possible, digital datasets must be added to the DAC immediately after a
 
 In case of human data, the name of the files/folders in which a participant’s data are stored may not contain information that allows this participant to be identified in a direct way (e.g., by including the participant’s name as a part of the file/folder name).  Instead, this file or folder name should contain a code that uniquely identifies the participant in the project. The naming scheme for file/folder names is described further down.
 
-The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept in the DAC. Instead, this key must be kept in a locked room on a medium that cannot be accessed via the intra- or the internet (e.g., on paper). The DI centers determine where and on which medium the key is kept.
-
-TBD: This last paragraph is subject to change following discussions involving TG1 and the Security Officer.
+The key that relates the participant identification code and the participant’s personal information (name, address, telephone number,…) may not be kept in the DAC. The DI centers determine where and on which medium this so-called _pseudonimization key_ is kept.
 
 Digital datasets can be uploaded in two ways: (1) manually by the researcher (as described in 7), and (2) by an automatic upload procedure that is controlled by the lab manager or ICT group. The DI centers decide which upload process is to be followed for which lab and for which study type.
 
@@ -145,7 +143,7 @@ Non-digital data cannot be stored in the repository. Their location has to be sp
 
 Typically, within a room, the non-digital data of multiple DACs are stored at a location that can be further specified by referring to a cabinet (e.g., nr. 2), a shelf (e.g., shelf A), a freezer (e.g., freezer B, rack 2), etc. These location indicators must be provided in one or more files that are organized in a folder named “DataLocation”. The format of these files must be easily accessible, for example, .docx, .txt, .pdf, .xlsx. In case the non-digital data are relocated, these files must be updated.
 
-TBD: We still need an attributes for the location of the non-digital data. I propose to add a repeatable free-text attribute: locationNonDigitalRoom.
+**To-Be-Discussed: We still need an attributes for the location of the non-digital data. I propose to add a repeatable free-text attribute: locationNonDigitalRoom.**
 
 Typically, parameters of non-digital data will be converted to digital format. All digital data that are obtained in this way must be added to the DAC. Storing non-digital data in the archive after conversion to digital format does not automatically imply that the original non-digital data can be discarded.  This is because the conversion process can be selective, in the sense that not all parameters are extracted that are possibly of scientific value. For some non-digital data (e.g., questionnaires, psychological tests, handwritten text) the conversion to digital format involves little or no loss of scientific value. For other non-digital data (e.g., blood and other tissue samples), by performing an analysis (e.g., biochemical), only a few parameters (e.g., hormone levels) are converted to digital format.
 
@@ -154,7 +152,7 @@ In cases where the center director decides that the non-digital data (e.g., tiss
 
 #### 8.2.7	Data reduction
 
-For some data, the scientific usefulness is not substantially affected if the data are first reduced prior to archiving. Different scientific disciplines use different types of data reduction. For instance, spatial and/or temporal downsampling is common for high-density broadband biological signals, and compression (e.g., jpeg) is common for images and video. For this type of data, the reduced data may be stored on the repository. In this case, the data reduction algorithm must be described as a part of the DAC annotation (see further down).
+For some data, the scientific usefulness is not substantially affected if the data are first reduced prior to archiving. Different scientific disciplines use different types of data reduction. For instance, spatial and/or temporal downsampling is common for high-density broadband biological signals, and compression (e.g., jpeg) is common for images and video. For this type of data, the reduced data may be stored on the repository. In this case, the data reduction algorithm must be described as a part of the DAC annotation.
 
 
 #### 8.2.8	Pilot data
@@ -164,19 +162,7 @@ Pilot studies differ from regular studies in that it is not their intention to c
 1.	In case the center regulations and the ethical approval allow for pilot data being added to the DAC, then the pilot data must be added as soon as possible after initiation of the DAC.
 2.	It must be specified in the DAC annotation (see further down) which part of the data are pilot data.
 
-
-#### 8.2.9	DAC annotation
-
-The DAC annotation is a set of one or more documents that is uploaded to the collection. It contains information that is necessary to (re-)analyze the data. This information involves two parts: (1) the organization of the files and the folders and its relation to the design of the study/experiment, and (2) descriptive information that is written into the datasets by the data acquisition system. The first type of information is essential for a study in which participants participate in multiple recording sessions, as well as for an experiment in which different types of data are acquired. The DAC annotation must include a description of the different sessions and data types, and how these are mapped onto the experimental conditions. The second type of information (descriptive information written into the datasets by the data acquisition system) often pertains to stimulus events that are relevant for the analysis of the data, or to behaviour (e.g., button presses, eye movements) that are part of the data. As a part of the DAC annotation, researchers should include a description of these stimulus and behavioral events (i.e., a table associating the events to their meaning).
-
-The DAC annotation should be provided in a format that is easily accessible to present and future colleagues, for example, .docx, .txt, .pdf, .xlsx. The annotation should be written such that someone with domain specific skills can reuse the data. It is required to specify details that vary between studies, such as the mapping of trigger codes on experimental parameters. It is not required to explain details that can be considered commonly shared knowledge.
-
-For findability, the researcher should use the folder name "Annotation" for organizing the DAC annotation.
-
-TBD: Prescribe a folder name for the DAC annotation?
-
-
-#### 8.2.10	 DAC closure
+#### 8.2.9	 DAC closure
 
 A collection may only be closed when its content is in accordance with this protocol. Only a collection manager can close a collection, and he/she is thus responsible for the decision whether or not the collection is in accordance with this protocol.
 
@@ -189,13 +175,11 @@ A collection is closed in _two_ steps:
 
 There can be situations in which it is useful to make multiple collection snapshots. For instance, this may be the case when the DAC belongs to an ongoing study, and one wants to write a paper using the data collected until present. The identifier that is assigned to this collection then serves as a reference in other collections that make use of this DAC snapshot. This workflow is a form of versioning.
 
-#### 8.2.11	Data/study type specific
+#### 8.2.10	Data/study type specific
+
 To be provided.
 
-#### 8.2.12	 Centre specific - DCCN
-The researcher must specify the PPM number.
-
-TBD: I think the sentence above can be removed, because the research admin already specifies this number.
+#### 8.2.11	 Centre specific - DCCN
 
 The researcher must organize the data files and directories according to the DCCN standard:
 
@@ -203,10 +187,7 @@ The researcher must organize the data files and directories according to the DCC
 
 For example, 30123456.01_pethag_003_002. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
-#### 8.2.13	 Centre specific - DCC
-The researcher should specify the DCC project number.
-
-TBD: Remove above sentence (same reason as for the DCCN)?
+#### 8.2.12	 Centre specific - DCC
 
 The researcher must organize the data files and directories according to the DCC standard:
 
@@ -271,6 +252,8 @@ A RDC is initiated by the research administrator upon request by a researcher on
 
 A RDC pertains to the process that has led to a scientific publication. It contains the documents that may be relevant for evaluating good scientific practice. The core content of a RDC are files that document the scientific process in which data are converted into results (statistical tests, summary measures, figures, tables, etc.). For simplicity, in the following, this part of the scientific process will be denoted as the _scientific process_, without any qualification as to the specific result it contributes to the publication.
 
+An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the scientific process, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing processed data. 
+
 #### 9.2.3	Attributes
 
 The researcher must add the following information:
@@ -278,12 +261,7 @@ The researcher must add the following information:
 1.	Title of the manuscript
 2.	List of all co-authors
 
-Following publication, the researcher must add the following additional information:
-
-1.	A persistent identifier (PID) of the published manuscript (typically, a digital object identifier; DOI). (A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed.)
-2.	PubMed identifier (PMID) of the published manuscript
-
-TBD: Does the PMID add sufficient information if we also have a PID?
+Following publication, the researcher is required to add the DOI as the persistent identifier (PID) of the published manuscript. Besides the DOI, the researcher can also provide the Pubmed ID (PMID) or arXiv identifier.
 
 #### 9.2.4	Contributors to the publication
 
@@ -319,7 +297,7 @@ See 8.2.10.
 
 
 
-#### 9.2.8	Data/study type specific
+#### 9.2.9	Data/study type specific
 
 
 ### 9.3	Recommended
@@ -335,16 +313,13 @@ It is recommended that the complete scientific publication process is documented
 
 #### 9.3.3	Checking contributions
 
-As part of his/her final responsibility for a collection, it is recommended that a collection manager verify the contributions of all persons that have write access to this collection. For that purpose, a collection manager can make use of a reporting tool that produces a log of all the changes in the collection, specifying file uploads and modifications by the different collection contributors.
+As part of his/her final responsibility for a collection, it is recommended that a collection manager verifies the contributions of all persons that have write access to this collection. For that purpose, a collection manager can make use of a reporting tool that produces a log of all the changes in the collection, specifying file uploads and modifications by the different collection contributors.
 
 #### 9.3.4	Registered reports
 
 A registered report is a publication for which the experimental methods are pre-registered and reviewed before data are collected. The objective of registered reports is to neutralize a variety of inappropriate research practices, such as selective reporting of results, undisclosed analytic flexibility, and publication bias.
 
-If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website for collaboration such as the OSF) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
-
-TBD: I propose to remove 9.3.4. The pre-registration already is documented by the journal.
-
+If the study was conducted as a part of a registered report, then specify (1) the authority (e.g., a journal, a website such as https://osf.io, https://clinicaltrials.gov, or https://aspredicted.org) where the methods and proposed analyses were pre-registered and reviewed prior to the research being conducted, and (2) the identifier of this pre-registration.
 
 ## 10	Data Sharing Collection
 ### 10.1	Objectives
@@ -364,6 +339,8 @@ A _Data Sharing Collection_ (DSC) is initiated by the research administrator upo
 A DSC pertains to the reuse of the data that was used for a scientific publication. Every publication of which the results are based on data must have an associated DSC that contains all these data.
 
 A DSC contains (part of) the data of one or more DACs as well as additional files. These additional files contain relevant information, both for external researchers that want to reanalyze the data to extend the published results and those that only want to reproduce these results.
+
+A DSC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office.
 
 Contrary to DACs and RDCs, which are only for DI-internal use, DSCs are made available to the international scientific community. This does not imply that everyone can read and download the DSCs; access to a DSC requires authorization, and this can only be granted by the DSC manager.
 
@@ -418,28 +395,19 @@ It is highly unlikely that an external colleague would only want to reproduce th
 
 #### 10.2.8	Specifying the data use agreement
 
-Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. If a The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
+Every DSC requires a _Data Use Agreement_ (DUA) that specifies the conditions under which data is shared. The repository offers several standard DUAs, both for human and for non-human data. The DUA should adhere to the legal standards and the local policies. The DUA may also include details on specific intellectual property rights and limitations on the reuse of the data.
 
-The choice for a particular DUA must be based on the decision tree that part of the Donders RDM Information Package.
-
-TBD: I propose to replace the information package by a part of the Github-hosted wiki.
+The RDM documentation includes a decision tree to guide the choice for a particular DUA.
 
 When an authenticated external researcher agrees to the DUA corresponding to the DSC, he/she is automatically added as a viewer to the DSC, which gives him/her read access.
 
 #### 10.2.9	 Specifying the contact person
 
-The contact person for a DSC is a collection manager to whom the signed DUA must be sent and who can grant access.
-
-The contact person’s email address must be in the appropriate metadata field.
-
-TBD: Now that we have decided that external researchers, after agreeing with the DUA, are automatically added to a collection as a viewer, I think we do not need the contact person anymore. If external researchers have questions about the data, they may contact the corresponding author of the publication.
-
+One of the DSC managers must be identified as the contact person for this DSC. Being the contact person for a DSC implies that users (even anonymous users) can send an email to this person.
 
 #### 10.2.10	Associating to the RDC
 
-All publications of which the results depend on data are also represented in the repository as a RDC, and therefore every DSC is associated with a RDC. The DSC must be associated with this RDC by adding the RDC identification number as an attribute.
-
-TBD: Do we require that the RDC identification number to corresponds to a closed collection?
+All publications of which the results depend on data are also represented in the repository as a RDC, and therefore a DSC can be associated with one or multiple RDC. The DSC must be associated with the corresponding RDCs.
 
 
 #### 10.2.11	 DSC closure
@@ -456,7 +424,7 @@ If a closed DSC contains incorrect and/or insufficient information, a collection
 #### 10.2.12	 Data/study type specific
 ##### 10.2.12.1	Photo-, video-, and audio data
 
-It is technically impossible to de-identify photo-, video-, and audio data without compromising their scientific value. At the same time, it is unrealistic to expect that most candidate-participants for these studies would agree with their data being shared without de-identification. For these reasons, the DSC for a published study that involves photo-, video-, or audio data must not contain the identifiable data of those participants that have indicated on their informed consent form that they did not agreed with sharing. However, the DSC that corresponds to this study must contain the data of all participants in this study. In addition, if the published study also contained non-identifiable data (e.g., response times, electrophysiological data), then all those data must be shared (i.e., the non-identifiable data of all participants).
+It is technically impossible to de-identify photo-, video-, and audio data without compromising their scientific value. At the same time, it is unrealistic to expect that most candidate-participants for these studies would agree with their data being shared without de-identification. For these reasons, the DSC for a published study that involves photo-, video-, or audio data must not contain the identifiable data of those participants that have indicated on their informed consent form that they did not agreed with sharing. However, the DSC that corresponds to this study must contain the identifiable data of all participants that _did_ agree with sharing. In addition, if the published study also contained non-identifiable data (e.g., response times, electrophysiological data), then all those data must be shared (i.e., the non-identifiable data of all participants).
 
 ### 10.3	Recommended
 #### 10.3.1	Analysis scripts

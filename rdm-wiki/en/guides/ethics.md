@@ -1,9 +1,38 @@
+# Ethics and regulations
 
-## Ethics approval for research involving human subjects
+## 1. Guidelines for deciding about the ethical review board
+
+## 2. Ethics approval for research involving human subjects
+
+A lot of the research at the DI is covered by existing approvals. For the DCC you can find those [here](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/) and for the DCCN [here](https://intranet.donders.ru.nl/index.php?id=4519). 
+
+In case you need to apply for approval, please use the template informed consent forms and brochures below. These include the appropriate text for how we manage and share data.
+
+## 2.1. Template informed consent forms
+
+## 2.2. Template general information brochure
+
+[You can find the template general information brochure here.](templGenInfoBroch.md)
+
+## 2.3. Template information brochure for EEG studies
+
+## 2.4. Template information brochure for MRI and fMRI studies
+
+
+
+## 3. Ethics approval for research involving animals
+
+## 4. Appendix - overview of ethics review boards
+
+### Ethics Committee Faculty of Social Sciences (ECSS) 
+
+The Faculty of Social Sciences at the Radboud University has its own [Ethics Committee](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/).
+
+### Review boards for research involving human subjects (METC) 
 
 There are 23 accredited METCs in the Netherlands that review medical/scientific research proposals. The majority are linked to an institution such as an academic medical centre or a hospital.
 
-  |    | Naam Instelling/commissie                                                        | Korte naam           | Code |
+|    | Naam Instelling/commissie                                                        | Korte naam           | Code |
 |----|----------------------------------------------------------------------------------|----------------------|------|
 | 1  | Centrale Commissie Mensgebonden Onderzoek                                        | CCMO                 | 0    |
 | 2  | CME Leids Universitair Medisch Centrum                                           | CME LUMC             | 58   |
@@ -30,7 +59,7 @@ There are 23 accredited METCs in the Netherlands that review medical/scientific 
 | 23 | Toetsingscommissie Wetenschappelijk Onderzoek Rotterdam eo                       | TWOR                 | 101  |
 | 24 | Medical Research Ethics Committees United                                        | MEC-U                | 100  |
 
-## Ethics approval for research involving animals
+### Review boards for research involving animals (DEC) 
 
 There are 21 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Netherlands that review the applications for animal research. Historically there have been more, hence the list below is longer than 21 DECs.
 
@@ -68,7 +97,8 @@ There are 21 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Ne
 | 30 | DEC Wageningen Universiteit                                                                                    |            |
 | 31 | DEC WIL Research (tot 2012 Notox)                                                                              |            |
 
-## External links
+## 5. External links
   * http://www.ccmo.nl Centrale Commissie Mensgebonden Onderzoek
   * http://www.nvdec.nl Nederlandse Vereniging van Dierexperimentencommissies
   * http://dierproefinfo.nl/dec/dec.htm
+  * http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/

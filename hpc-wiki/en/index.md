@@ -23,7 +23,9 @@ The HPC cluster at DCCN consists of three groups of computer nodes, they are:
 
 The central storage provides a shared file system amongst the Windows desktops within DCCN and the computers in the HPC cluster.
 
-On the central storage, every user has a personal folder with a so-called office quota (20 gigabytes by default).  This personal folder is referred to as the `M:\` drive on the Windows desktops. On top of the office quota, additional space is granted accordingly for approved projects following the [project proposal meeting (PPM)](http://intranet.donders.ru.nl/index.php?id=442).
+On the central storage, every user has a personal folder with a so-called office quota (20 gigabytes by default).  This personal folder is referred to as the `M:\` drive on the Windows desktops.
+
+Storage spaces granted to research projects (following the [project proposal meeting(PPM)](http://intranet.donders.ru.nl/index.php?id=442)) are also provided by the central storage.  The project folders are organised under the directory `/project` which is referred to as the `P:\` drive on the Windows desktops.
 
 The central storage also hosts a set of commonly used software/tools for neuroimaging data processing and analysis.  This area in the storage is only accessible for computers in the HPC cluster as software/tools stored there require the Linux operating system.
 
