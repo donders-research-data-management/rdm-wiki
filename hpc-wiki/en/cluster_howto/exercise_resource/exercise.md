@@ -1,10 +1,12 @@
 # Exercise: obtaining resource requirements of jobs
 
-In this exercise, you will be confronted with an issue that the computer resource (in this case, the memory) allocated for your job is not sufficient to complete the computation. With few trials, you will find out a sufficient (but not overestimated) memory requirement to finish the job. 
+In this exercise, you will use two different ways to estimate the memory usage of a computing process running a "fake" application.
 
 ## Preparation
 
-To create such a situation, you are given a program which calculate the cube number of a given integer (i.e. `n^3`). Follow the commands below to download the program and run it locally:
+Download the "fake" applciation which performs memory allocaiton and random number generation.  At the end of the program, the cube number of a given integer (i.e. `n^3`) is printed.
+
+Follow the commands below to download the fake application and run it locally:
 
 ```bash
 $ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_resource/fake_app
@@ -15,9 +17,34 @@ compute for 303 seconds
 result: 27
 ```
 
-Although the result looks trivial, the program internally generates certain usage of CPU time and Memory.  Therefore, the result is not returned right away.
+Although the result looks trivial, the program internally generates certain usage of CPU time and Memory.  Therefore, the result is not returned right away.  The question here is the amount of memory needed for running this program.
 
-## Task
+## Task 1: with memory monitor
+
+In the first task, you will estimate the amount of memory required by the fake application, using a resource-utilisation monitor.
+
+1. Start a VNC session
+
+2. Submit an interactive job
+
+    ```bash
+    $ qsub -I -l walltime=00:30:00,mem=1gb
+    ```
+    
+    When the job starts, a small `JOBinfo` window pops up at the top-right corner. 
+
+3. Under the shell prompt of your interactive job, run the fake application again.
+
+    ```bash
+    $ ./fake_app 3 60
+    ```
+    
+    Keep your eyes on the `JOBinfo` window and see how the memory usage evolves. The `Max memory usage` indicates the amount of memory needed for the fake application.
+
+
+## Task 2: with job's STDOUT/ERR file
+
+In this task, you will be confronted with an issue that the computer resource (in this case, the memory) allocated for your job is not sufficient to complete the computation. With few trials, you will find out a sufficient (but not overestimated) memory requirement to finish the job. 
 
 1. Try to submit a job to the cluster using the following command.
 
