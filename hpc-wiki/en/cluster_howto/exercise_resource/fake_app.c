@@ -31,19 +31,20 @@ using namespace std::chrono;
 int main( int argc, char* args[] ) {
 
     char* buffer;
-    size_t memsize = 512 * 1024 * 1024; // 512 MiB
+    size_t max_memsize = 512 * 1024 * 1000; // 512 MB
 
-    if ( argc != 2 ) {
-        cerr << "usage: fake_app <input>" << endl;
-        exit(EXIT_FAILURE); 
+    if ( argc < 2 ) {
+        cerr << "usage: fake_app <input> [<duration>]" << endl;
+        exit(EXIT_FAILURE);
     } else {
 
-        // memory allocation
-        buffer = (char*) malloc(memsize);
+        int duration = 300;
 
-        // generate a random seconds between 300 and 360
+        if ( argc >= 3 ) duration = atol(args[2]);
+
+        // generate a random seconds between args[2] and args[2]+60
         srand(time(NULL));
-        int t_run = rand() % 60 + 300;
+        int t_run = rand() % 60 + duration;
         cout << "compute for " << t_run << " seconds" << endl;
 
         system_clock::time_point t_now = system_clock::now();
@@ -51,22 +52,31 @@ int main( int argc, char* args[] ) {
 
         // (re-)fill up the memory buffer with random character
         // for t_run seconds 
+        size_t memsize = 1024*1000;
         while ( t_now < t_end ) {
     
+            if ( memsize <= max_memsize/2 ) {
+                memsize = memsize * 2;
+            }
+
+            buffer = (char*) malloc(memsize);
+
+            cout << "filling " << memsize << " random characters ...";
             for (int i=0; i<memsize; i++ ) {
                 buffer[i] = rand()%26 + 'a';
             }
+            cout << " done, sleep 2 second" << endl;
 
-            sleep_for(seconds(1));
+            // sleep for 3 seconds before next iteration
+            sleep_for(seconds(2));
             t_now = system_clock::now();
+
+            free(buffer);
         }
 
         // calculate the cube number of the input argument
         long rslt = pow( atol(args[1]), 3 );
         cout << "result: " << rslt << endl;
-
-        // free memory
-        free(buffer);
     }
 
     return 0;
