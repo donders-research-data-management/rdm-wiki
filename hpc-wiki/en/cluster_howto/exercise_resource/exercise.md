@@ -1,6 +1,8 @@
-# Exercise: finding the memory requirement
+# Exercise: finding the resource requirement
 
-In this exercise, you will use two different ways to estimate the memory requirement of running a "fake" application. 
+In this exercise, you will use two different ways to estimate the resource requirement of running a "fake" application.
+
+We will focus on estimating the memory requirement, as it has significant impact on the resource utilisation efficiency of the cluster resources. 
 
 ## Preparation
 
