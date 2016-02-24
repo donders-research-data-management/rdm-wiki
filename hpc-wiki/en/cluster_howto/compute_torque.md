@@ -2,10 +2,10 @@
 
 ## What is the Torque cluster?
 
-The Torque cluster is a pool of high-end computers (also referred to as ___execute hosts___) managed by a resource manager called [___Torque___](http://www.adaptivecomputing.com/products/open-source/torque/) and a job scheduler called [___Moab___](http://www.adaptivecomputing.com/products/hpc-products/moab-hpc-basic-edition/).  Instead of allowing users to login to one computer and run computations freely, user ___submit___ their computations in forms of ___jobs___ to the Torque cluster.  A sketch in the picture below summarises how jobs are being managed by the Torque server and scheduled by its companion, the Moab server, to perform computations on the execute hosts in the cluster.
+The Torque cluster is a pool of high-end computers (also referred to as ___compute nodes___) managed by a resource manager called [___Torque___](http://www.adaptivecomputing.com/products/open-source/torque/) and a job scheduler called [___Moab___](http://www.adaptivecomputing.com/products/hpc-products/moab-hpc-basic-edition/).  Instead of allowing users to login to one computer and run computations freely, user ___submit___ their computations in forms of ___jobs___ to the Torque cluster.  A sketch in the picture below summarises how jobs are being managed by the Torque server and scheduled by its companion, the Moab server, to perform computations on the compute nodes in the cluster.
 
 ![](figures/torque_moab_arch.png)
-Every job is submitted to the Torque cluster with a set of resource requirement (e.g. duration of the computation, number of CPU cores, amount of RAM, etc.).  Based on the requirement, jobs are arranged internally in ___job queues___. The Moab scheduler is responsible for prioritising jobs and assign them accordingly to execute hosts on which the jobs' requirements are fulfilled. The system also guarantees dedicated resources for the computation. Thus, interference between different computations is minimised, resulting in more predictable job completion time.
+Every job is submitted to the Torque cluster with a set of resource requirement (e.g. duration of the computation, number of CPU cores, amount of RAM, etc.).  Based on the requirement, jobs are arranged internally in ___job queues___. The Moab scheduler is responsible for prioritising jobs and assign them accordingly to compute nodes on which the jobs' requirements are fulfilled. The system also guarantees dedicated resources for the computation. Thus, interference between different computations is minimised, resulting in more predictable job completion time.
 
 ## Resource sharing and job prioritisation 
 
@@ -80,7 +80,7 @@ The Torque system comes with a set of command-line tools for users to manage job
 
 ## Batch job submission
 
-The `qsub` command is used to submit jobs to the Torque job manager.  The first and simplest way of using `qsub` is pipelining a command-line string to it.  Assuming that we want to display the hostname of the execute host on which the job will run, we issue the following command:
+The `qsub` command is used to submit jobs to the Torque job manager.  The first and simplest way of using `qsub` is pipelining a command-line string to it.  Assuming that we want to display the hostname of the compute node on which the job will run, we issue the following command:
 
 ```bash
 $ echo '/bin/hostname -f' | qsub -l 'procs=1,mem=128mb,walltime=00:10:00'
@@ -112,7 +112,7 @@ Note: the command above for passing argument to script is actually a workaround 
 
 ## Interactive computation in text mode 
 
-It is possible to acquire a Linux shell of an execute host for running computations interactively.  It is done by submitting the so-called __interactive__ jobs.  To submit an interactive job, one adds an additional `-I` option of the `qsub` command:
+It is possible to acquire a Linux shell of an compute node for running computations interactively.  It is done by submitting the so-called __interactive__ jobs.  To submit an interactive job, one adds an additional `-I` option of the `qsub` command:
 
 ```bash
 $ qsub -I -l 'procs=1,mem=128mb,walltime=00:10:00,mem=128mb'
@@ -122,7 +122,7 @@ In few seconds, a message similar to the one below will show up in the terminal.
 
 [gimmick:gist](4527d1e00efd3b0348d9)
 
-The shell prompt on line 14 shows that you are now logged into an execute host (i.e. `dccn-c351`).  You can now run the computation interactively by typing a command after the prompt.
+The shell prompt on line 14 shows that you are now logged into an compute node (i.e. `dccn-c351`).  You can now run the computation interactively by typing a command after the prompt.
 
 Note: the resource usage of interactive job is also monitored by the Torque system. The job will be killed (i.e. you will be kicked out the shell) when the computation runs over the amount of the resources requested at the job submission time.
 
@@ -137,7 +137,7 @@ $ xhost +
 $ echo "export DISPLAY=${HOSTNAME}${DISPLAY}; fsl" | qsub -q interactive -l 'procs=1,mem=128mb,walltime=00:10:00'
 ```
 
-The first command allows graphic interfaces on any remote host to be displayed on the access node.  The second command submit a job to firstly set the execute host to forward graphic interfaces to the access node before launching the FSL executable.
+The first command allows graphic interfaces on any remote host to be displayed on the access node.  The second command submit a job to firstly set the compute node to forward graphic interfaces to the access node before launching the FSL executable.
 
 ## Checking job status
 
@@ -182,7 +182,7 @@ Note: you cannot cancel jobs in status exiting (__E__) or completed (__C__).
 
 ## Output streams of the job
 
-On the execute host, the job itself is executed as a process in the system.  The default `STDOUT` and `STDERR` streams of the process are redirected to files named as `<job_name>.o<job_id_digits>` and `<job_name>.e<job_id_digits>`, respectively.  After the job reachers the complete state, these two files will be produced on the file system.
+On the compute node, the job itself is executed as a process in the system.  The default `STDOUT` and `STDERR` streams of the process are redirected to files named as `<job_name>.o<job_id_digits>` and `<job_name>.e<job_id_digits>`, respectively.  After the job reachers the complete state, these two files will be produced on the file system.
 
 Tip: the `STDOUT` and `STDERR` files produced by job usually provide useful information for debugging issues with the job.  Always check them first when your job is failed or terminated unexpectedly.
 
@@ -227,7 +227,7 @@ A set of auxiliary scripts is developed to ease the job management works on the 
 | Command               | Functionality                |
 |:----------------------|:-----------------------------|
 | `checkjob`            | shows job status from the scheduler's perspective. It is useful for knowing why a job is not started. | 
-| `pbsnode`             | lists the execute hosts in the cluster. It is one of the Torque client tools. |
+| `pbsnode`             | lists the compute nodes in the cluster. It is one of the Torque client tools. |
 | `cluster-qstat`       | lists recently submitted jobs from all system users. |
 | `cluster-info`        | lists system utilisation metrics of the access nodes and the mentat compute nodes. |
 | `cluster-status`      | lists system utilisation metrics of the exectue hosts in the Torque cluster. |
