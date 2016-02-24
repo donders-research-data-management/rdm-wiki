@@ -130,7 +130,7 @@ Follow the steps below to establish the tunnel for VNC connection:
 
 ![](figures/start_putty.png)
 ![](figures/putty_ssh_tunnel_gateway_setup.png)
-![](figures/vncmanager_startvnc_success_26_note.png)
+![](figures/putty_ssh_tunnel_for_vnc.png)
 ![](figures/putty_ssh_tunnel_gateway_login.png)
 
 Keep the login window open and make VNC client connection to the local port as follows:
