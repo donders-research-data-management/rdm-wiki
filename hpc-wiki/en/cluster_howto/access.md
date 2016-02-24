@@ -59,10 +59,10 @@ In the screenshots above, we have started a VNC server associated with a display
 
 Screenshots of those steps are given below:
 
-![](figures/start_turboVNC.png)
-![](figures/turboVNC_connect.png)
-![](figures/turboVNC_auth.png)
-![](figures/turboVNC_success.png)
+![](figures/start_tigerVNC.png)
+![](figures/tigerVNC_connect.png)
+![](figures/tigerVNC_auth.png)
+![](figures/tigerVNC_success.png)
 
 ## Disconnect VNC server
 
