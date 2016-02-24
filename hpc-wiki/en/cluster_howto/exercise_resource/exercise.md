@@ -35,7 +35,7 @@ In the first task, you will estimate the amount of memory required by the fake a
     
     When the job starts, a small `JOBinfo` window pops up at the top-right corner. 
 
-3. Under the shell prompt of your interactive job, run the fake application again.
+3. Run the fake application under the shell prompt initiated by the interactive job
 
     ```bash
     $ ./fake_app 3 60
@@ -43,8 +43,7 @@ In the first task, you will estimate the amount of memory required by the fake a
     
     Keep your eyes on the `JOBinfo` window and see how the memory usage evolves. The `Max memory usage` indicates the amount of memory needed for the fake application.
     
-4. Quit the interactive job
-
+4. Terminate the interactive job
 
 ## Task 2: with job's STDOUT/ERR file
 
