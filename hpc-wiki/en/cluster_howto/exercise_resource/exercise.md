@@ -25,9 +25,9 @@ Although the result looks trivial, the program internally generates certain usag
 
 In the first task, you will estimate the amount of memory required by the fake application, using a resource-utilisation monitor.
 
-1. Start a VNC session
+1. Start a VNC session (skip this step if you are already in a VNC session)
 
-2. Submit an interactive job
+2. Submit an interactive job with the following command
 
     ```bash
     $ qsub -I -l walltime=00:30:00,mem=1gb
@@ -42,6 +42,8 @@ In the first task, you will estimate the amount of memory required by the fake a
     ```
     
     Keep your eyes on the `JOBinfo` window and see how the memory usage evolves. The `Max memory usage` indicates the amount of memory needed for the fake application.
+    
+4. Quit the interactive job
 
 
 ## Task 2: with job's STDOUT/ERR file
