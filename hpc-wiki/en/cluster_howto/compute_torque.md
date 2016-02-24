@@ -235,6 +235,7 @@ A set of auxiliary scripts is developed to ease the job management works on the 
 | `cluster-fairshare`   | displays the fairshare information used by the Moab scheduler in prioritising jobs. |
 | `cluster-meminfo`     | monitors the amount of memory has been consumed by the job. |
 | `cluster-walltimeinfo`| monitors the remaining walltime the job can still run. |
+| `cluster-yadjobinfo`  | graphical monitor of resource utilisation for interactive job. |
 | `cluster-matlab`      | displays the matlab license useage. |
 | `cluster-vncserver`   | lists all VNC servers running on the access nodes and the mentat compute nodes. |
 
