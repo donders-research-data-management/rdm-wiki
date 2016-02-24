@@ -1,6 +1,6 @@
-# Exercise: obtaining resource requirements of jobs
+# Exercise: finding the memory requirement
 
-In this exercise, you will use two different ways to estimate the memory usage of a computing process running a "fake" application.
+In this exercise, you will use two different ways to estimate the memory requirement of running a "fake" application. 
 
 ## Preparation
 
