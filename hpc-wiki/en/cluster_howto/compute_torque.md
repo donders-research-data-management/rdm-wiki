@@ -2,10 +2,10 @@
 
 ## What is the Torque cluster?
 
-The Torque cluster is a pool of high-end computers (also referred to as ___execute hosts___) managed by a resource manager called [___Torque___](http://www.adaptivecomputing.com/products/open-source/torque/) and a job scheduler called [___Moab___](http://www.adaptivecomputing.com/products/hpc-products/moab-hpc-basic-edition/).  Instead of allowing users to login to one computer and run computations freely, user ___submit___ their computations in forms of ___jobs___ to the Torque cluster.  A sketch in the picture below summarises how jobs are being managed by the Torque server and scheduled by its companion, the Maui server, to perform computations on the execute hosts in the cluster.
+The Torque cluster is a pool of high-end computers (also referred to as ___execute hosts___) managed by a resource manager called [___Torque___](http://www.adaptivecomputing.com/products/open-source/torque/) and a job scheduler called [___Moab___](http://www.adaptivecomputing.com/products/hpc-products/moab-hpc-basic-edition/).  Instead of allowing users to login to one computer and run computations freely, user ___submit___ their computations in forms of ___jobs___ to the Torque cluster.  A sketch in the picture below summarises how jobs are being managed by the Torque server and scheduled by its companion, the Moab server, to perform computations on the execute hosts in the cluster.
 
 ![](figures/torque_maui_arch.jpg)
-Every job is submitted to the Torque cluster with a set of resource requirement (e.g. duration of the computation, number of CPU cores, amount of RAM, etc.).  Based on the requirement, jobs are arranged internally in ___job queues___. The Maui scheduler is responsible for prioritising jobs and assign them accordingly to execute hosts on which the jobs' requirements are fulfilled. The system also guarantees dedicated resources for the computation. Thus, interference between different computations is minimised, resulting in more predictable job completion time.
+Every job is submitted to the Torque cluster with a set of resource requirement (e.g. duration of the computation, number of CPU cores, amount of RAM, etc.).  Based on the requirement, jobs are arranged internally in ___job queues___. The Moab scheduler is responsible for prioritising jobs and assign them accordingly to execute hosts on which the jobs' requirements are fulfilled. The system also guarantees dedicated resources for the computation. Thus, interference between different computations is minimised, resulting in more predictable job completion time.
 
 ## Resource sharing and job prioritisation 
 
@@ -61,7 +61,7 @@ It implies that if the resource utilisation of your current running jobs reaches
 
 #### __Job prioritisation__
 
-Job priority determines the order of waiting jobs to start in the cluster. Job priority is calculated by the Maui scheduler taking into account various factors.  In the cluster at DCCN, mainly the following three factors are considered.
+Job priority determines the order of waiting jobs to start in the cluster. Job priority is calculated by the Moab scheduler taking into account various factors.  In the cluster at DCCN, mainly the following three factors are considered.
 
 1. __The waiting time a job has spent in the queue__: this factor will add one additional priority point to jobs waiting for one additional minute in the queue. 
 
@@ -232,7 +232,7 @@ A set of auxiliary scripts is developed to ease the job management works on the 
 | `cluster-info`        | lists system utilisation metrics of the access nodes and the mentat compute nodes. |
 | `cluster-status`      | lists system utilisation metrics of the exectue hosts in the Torque cluster. |
 | `cluster-torqueconfig`| displays the cluster's settings. |
-| `cluster-fairshare`   | displays the fairshare information used by the Maui scheduler in prioritising jobs. |
+| `cluster-fairshare`   | displays the fairshare information used by the Moab scheduler in prioritising jobs. |
 | `cluster-meminfo`     | monitors the amount of memory has been consumed by the job. |
 | `cluster-walltimeinfo`| monitors the remaining walltime the job can still run. |
 | `cluster-matlab`      | displays the matlab license useage. |
