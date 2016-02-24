@@ -50,10 +50,10 @@ Follow the step-by-step instructions on the screen to initiate a VNC server. See
 ![](figures/vncmanager_startvnc_chosewm.png)
 ![](figures/vncmanager_startvnc_success.png)
 
-In the screenshots above, we have started a VNC server associated with a display endpoint `mentat002.dccn.nl:71`.  To connect to it, we use a VNC client called TurboVNC.  Follow the steps below to make the connection:
+In the screenshots above, we have started a VNC server associated with a display endpoint `mentat002.dccn.nl:56`.  To connect to it, we use a VNC client called TigerVNC Viewer.  Follow the steps below to make the connection:
 
-1. Open TurboVNC application 
-2. Enter the display endpoint (`mentat002.dccn.nl:71`) as the VNC server
+1. Open the TigerVNC Viewer (double-click the icon on the desktop)
+2. Enter the display endpoint (`mentat002.dccn.nl:56`) as the VNC server
 3. Enter the authentication password you set via the `vncpasswd` command
 4. Get the graphical desktop of the access node
 
@@ -66,7 +66,7 @@ Screenshots of those steps are given below:
 
 ## Disconnect VNC server
 
-To disconnect the VNC server, simply close the TurboVNC window in which the graphical desktop is displayed. The VNC server will remain available, and can be reused (re-connected) when you need to use the graphical desktop again in the future.
+To disconnect the VNC server, simply close the TigerVNC-viewer window in which the graphical desktop is displayed. The VNC server will remain available, and can be reused (re-connected) when you need to use the graphical desktop again in the future.
 
 Warning: __DO NOT__ logout the graphical desktop as it causes the VNC server become unaccessible afterwards.
 
