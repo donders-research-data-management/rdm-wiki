@@ -11,11 +11,13 @@ Follow the commands below to download the fake application and run it locally:
 ```bash
 $ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_resource/fake_app
 $ chmod +x fake_app
-$ ./fake_app 3
+$ ./fake_app 3 1
 
-compute for 303 seconds
+compute for 1 seconds
 result: 27
 ```
+
+The first argument (i.e. `3`) is the base of the cube number.  The second argument (i.e. `1`) specifies the duration of the computation in unit of second.
 
 Although the result looks trivial, the program internally generates certain usage of CPU time and Memory.  Therefore, the result is not returned right away.  The question here is the amount of memory needed for running this program.
 
@@ -46,12 +48,19 @@ In the first task, you will estimate the amount of memory required by the fake a
 
 In this task, you will be confronted with an issue that the computer resource (in this case, the memory) allocated for your job is not sufficient to complete the computation. With few trials, you will find out a sufficient (but not overestimated) memory requirement to finish the job. 
 
-1. Try to submit a job to the cluster using the following command.
+1. Download another fake application
+
+    ```bash
+    $ wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_resource/fake_app_2
+    $ chmod +x fake_app_2
+    ```
+
+3. Try to submit a job to the cluster using the following command.
 
     Attention: Remember to replace `<your_email>` with your actual email address.
 
     ```bash
-    $ echo "$PWD/fake_app 3" | qsub -N fake_app -M <your_email> -l walltime=600,mem=128mb
+    $ echo "$PWD/fake_app_2 3 300" | qsub -N fake_app_2 -M <your_email> -l walltime=600,mem=128mb
     ```
 
 2. Wait for the job to finish, and check the `STDOUT` and `STDERR` files of the job. Do you get the expected result in the `STDOUT` file?
@@ -60,7 +69,7 @@ In this task, you will be confronted with an issue that the computer resource (i
 
     ```bash
     PBS Job Id: 10086535.dccn-l029.dccn.nl
-    Job Name:   fake_app
+    Job Name:   fake_app_2
     Exec host:  dccn-c365.dccn.nl/0
     job deleted
     Job deleted at request of root@dccn-l029.dccn.nl
