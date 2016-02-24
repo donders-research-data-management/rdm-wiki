@@ -31,7 +31,7 @@ using namespace std::chrono;
 int main( int argc, char* args[] ) {
 
     char* buffer;
-    size_t max_memsize = 512 * 1024 * 1000; // 512 MB
+    size_t max_memsize = 2048 * 1024 * 1000; // 2gb
 
     if ( argc < 2 ) {
         cerr << "usage: fake_app <input> [<duration>]" << endl;
@@ -44,8 +44,7 @@ int main( int argc, char* args[] ) {
 
         // generate a random seconds between args[2] and args[2]+60
         srand(time(NULL));
-        //int t_run = rand() % 60 + duration;
-        int t_run = duration;
+        int t_run = rand() % 60 + duration;
         cout << "compute for " << t_run << " seconds" << endl;
 
         system_clock::time_point t_now = system_clock::now();
