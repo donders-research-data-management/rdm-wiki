@@ -23,7 +23,7 @@ The first argument (i.e. `3`) is the base of the cube number.  The second argume
 
 Although the result looks trivial, the program internally generates certain usage of CPU time and Memory.  Therefore, the result is not returned right away.  The question here is the amount of memory needed for running this program.
 
-## Task 1: with memory monitor
+## Task 1: with the JOBinfo monitor
 
 In the first task, you will estimate the amount of memory required by the fake application, using a resource-utilisation monitor.
 
