@@ -117,7 +117,7 @@ Keep the login window open and make another SSH connection to the local port as 
 ![](figures/putty_login_success.png)
 
 ### VNC via SSH tunnel
-In this example, we choose `Source port` to be `5926`.  We also assume that a VNC server has been started on `mentat002` with the display number `26`. The `Destination` referring to the VNC server should be ``mentat002:5926``.
+In this example, we choose `Source port` to be `5956`.  We also assume that a VNC server has been started on `mentat002` with the display number `56`. The `Destination` referring to the VNC server should be ``mentat002:5956``.
 
 Note: the network port number is always the display number plus 5900.
 
@@ -125,7 +125,7 @@ Follow the steps below to establish the tunnel for VNC connection:
 
 1. Start putty on the Windows desktop
 2. Configure putty for connecting to the SSH gateway `ssh.fcdonders.nl`
-3. Configure putty to initiate a local port `5926` for forwarding connections to `mentat002:5926` 
+3. Configure putty to initiate a local port `5956` for forwarding connections to `mentat002:5956` 
 4. Login the gateway with your username and password to establish the tunnel
 
 ![](figures/start_putty.png)
@@ -135,12 +135,12 @@ Follow the steps below to establish the tunnel for VNC connection:
 
 Keep the login window open and make VNC client connection to the local port as follows:
 
-1. Open TurboVNC application 
-2. Enter the display endpoint (`localhost:5926`) as the VNC server
+1. Open TigerVNC application 
+2. Enter the display endpoint (`localhost:5956`) as the VNC server
 3. Enter the authentication password you set via the `vncpasswd` command
 4. Get the graphical desktop of the access node
 
-![](figures/start_turboVNC.png)
-![](figures/turboVNC_via_tunnel.png)
-![](figures/turboVNC_auth_tunnel.png)
-![](figures/turboVNC_success.png)
+![](figures/start_tigerVNC.png)
+![](figures/tigerVNC_via_tunnel.png)
+![](figures/tigerVNC_auth.png)
+![](figures/tigerVNC_success.png)
