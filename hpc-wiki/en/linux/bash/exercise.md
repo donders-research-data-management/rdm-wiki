@@ -262,15 +262,16 @@ fi
 
 This will test if *both* conditions evaluate to true, and then run the command iff both are true. You could also create a comparison using logical or with _||_ 
 
+As a result, if the run time is less than 9 hours and greater than 0 hours, we will print the log and the run time to the screen. Good work!
 
 
 Note: For an even better solution, you can use what are called _unary operators_ These are detailed among the [agonies]( http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html) of this fairly exhasutive treatment. They test if variables are empty strings, if files exist, etc. Note that this guide uses the \[ \] form of _test_, but you can use everything described there with the \[\[ \]\] form as well.
 
 ### Debriefing
 
-This concludes the BASH scripting introduction exercise. Tred confidently forth into new uncharted errors. 
+This concludes the BASH scripting introduction exercise. Tread confidently forth into new uncharted errors. 
 
-If the run time is less than 9 hours, we will print the log and the run time to the screen.
+
 
 
 
