@@ -96,7 +96,7 @@ To accomplish this goal you will need to do the following:
     done
     ```
 
-Achtung! Always remember to include all the special keywords: `for` , `in` , `;` , `do` , and `done`. If you don't remember these, you might not get an error, but your loop definitely won't run.
+    Achtung! Always remember to include all the special keywords: `for` , `in` , `;` , `do` , and `done`. If you don't remember these, you might not get an error, but your loop definitely won't run.
 
 ## Task 3: Create a simple _if_-statement
 
@@ -174,8 +174,6 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
 
 3. Now we will perform string comparisons. The main purpose of this is to see if some variable is set to a certain value. Strings use different comparison operators than integers. For strings we use `==`, `>`, `<`, and `!=` By far the most common operators are `==` and `!=` meaning respectively equal and not equal.
 
-    Achtung! This one place where the difference between `[[ ]]` and `[ ]` becomes evident. With `[ ]` you will have to escape the `<` and `>` characters because they are special characters to the shell. With `[[ ]]` you don't have to worry about escaping anything. Recall in BASH that we use `\` to tell BASH to process the next character literally. 
-
 
     ```bash
     string=
@@ -185,6 +183,8 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
         echo "strings are not the same"
     fi
     ```
+
+    Achtung! This one place where the difference between `[[ ]]` and `[ ]` becomes evident. With `[ ]` you will have to escape the `<` and `>` characters because they are special characters to the shell. With `[[ ]]` you don't have to worry about escaping anything. Recall in BASH that we use `\` to tell BASH to process the next character literally. 
     
     Note: If a string has a space in it the space has to be escaped somehow. One way of doing this is by using either single or double quotes.
 
