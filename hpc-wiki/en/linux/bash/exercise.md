@@ -7,6 +7,7 @@ In this exercise we will be extending script.sh by adding some BASH flow control
 The exercise consists of Two main sections broken into subtasks. The two main sections focus respectively on `if` and `for`, and the subtasks are designed to introduce these tools and illustrate their utility.
 
 ## Task 1: Construct a simple _for_-loop
+------
 
 ### Background
 Now we will construct a simple `for`-loop to demonstrate how it works.
@@ -56,6 +57,7 @@ You can add as many commands as you like. BASH will loop through the commands in
     Hint: Notice the syntax. The first line ends in `do`, the next commands are indented, and `done`, the keyword which ends the loop, is at the same indentation level as the keyword `for`, which begins the loop. This is how all your for loops should look.
 
 ## Task 2: Using the _for_-loop to extend our script.
+------
 
 ### Background
 
@@ -100,6 +102,7 @@ To accomplish this goal you will need to do the following:
     Achtung! Always remember to include all the special keywords: `for` , `in` , `;` , `do` , and `done`. If you don't remember these, you might not get an error, but your loop definitely won't run.
 
 ## Task 3: Create a simple _if_-statement
+------
 
 ### Background
 
@@ -190,6 +193,7 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
     Note: If a string has a space in it the space has to be escaped somehow. One way of doing this is by using either single or double quotes.
 
 ## Task 5: Putting _if_ and _for_ together and doing something useful
+------
 
 ### Background
 
@@ -229,7 +233,6 @@ We will now return to our script with the `for`-loop and extend the functionalit
 
 4. Now add an `if`-statement to the body of the `for`-loop to create a comparison, testing if the value `grep` returned is less than 9. If the value is less than 9, we want to print the name of the logfile and the variable value to the screen. 
 
-
     ```bash
     for file in list; do
         var=$(MY-GREP-PIPELINE)
@@ -238,10 +241,9 @@ We will now return to our script with the `for`-loop and extend the functionalit
         fi
     done
     ```
-
-    If you've done this correctly, you may notice an odd result. Even if `$var` is empty, your comparison will always evaluate to less than 9?! If this odd outcome is the same as yours, check the [solution](placeholder) to 4 and then move onto 5! 
-
-
+    
+    If you've done this correctly, you may notice an odd result. Even if `$var` is empty, your comparison will always evaluate to less than 9?! If this odd outcome is the same as yours, check the [solution](placeholder) to 4 and then move onto 5!
+    
     Tip: An excellent trick is to `echo` the commands you will run before you run them. If, for example, you are (as you should be) worried that your search patterns are a bit too liberal, you can see what the loop will actually do by putting it in double-quotes and adding echo before it. Observe:
 
     ```bash
@@ -261,15 +263,15 @@ We will now return to our script with the `for`-loop and extend the functionalit
     for file in list; do
         var=$(MY-GREP-PIPELINE)
         if [[ $var INSERT-OPERATOR INSERT-VALUE && $var INSERT-OPERATOR INSERT-VALUE ]]; then
-	    DO SOMETHING
+            DO SOMETHING
         fi
     done
     ```
-
+    
     This will test if _both_ conditions evaluate to true, and then run the command iff both are true. You could also create a comparison using logical or with `||`. 
-
+    
     As a result, if the run time is less than 9 hours and greater than 0 hours, we will print the log and the run time to the screen. Good work!
-
+    
     Note: For an even better solution, you can use what are called _unary operators_.  These are detailed among the [agonies]( http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html) of this fairly exhasutive treatment. They test if variables are empty strings, if files exist, etc. Note that this guide uses the `[ ]` form of _test_, but you can use everything described there with the `[[ ]]` form as well.
 
 ### Debriefing
