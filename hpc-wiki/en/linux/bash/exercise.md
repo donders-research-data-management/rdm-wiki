@@ -276,11 +276,11 @@ We will now return to our script with the `for`-loop and extend the functionalit
     
     Note: For an even better solution, you can use what are called _unary operators_.  These are detailed among the [agonies]( http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html) of this fairly exhasutive treatment. They test if variables are empty strings, if files exist, etc. Note that this guide uses the `[ ]` form of _test_, but you can use everything described there with the `[[ ]]` form as well.
 
-### Debriefing
+## Debriefing
 
 This concludes the BASH scripting introduction exercise. Tread confidently forth into new uncharted errors. 
 
-### Solution 
+## Solution 
 
 ```bash
 for file in *log; do
