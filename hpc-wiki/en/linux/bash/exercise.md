@@ -206,10 +206,10 @@ We will now return to our script with the `for`-loop and extend the functionalit
 
     After correctly modifying grep and running the script,  you should have a bunch of lines output to the screen. They'll all be of the form:
 
-    ```bash
+    ```
     #@#%# recon-all-run-time-hours 5.525
-	#@#%# recon-all-run-time-hours 10.225
-	...
+    #@#%# recon-all-run-time-hours 10.225
+    ...
     ```
     
     If you get output like this, move on to 2.
