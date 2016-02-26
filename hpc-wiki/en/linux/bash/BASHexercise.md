@@ -8,8 +8,7 @@ In This task, we're going to create a script, set it as executable (make it so w
 
    Hint: Remember that `~` refers to your home directory.
    
-2. We're going to start making a scrpt that you will build on in the next exercse. Since a script is really just a text file, 
-open a text editor and then enter the following lines. This is the beginning of every BASH script with some useful commentary added. Comments in BASH are marked with the pound sign. 
+2. We're going to start making a scrpt that you will build on in the next exercse. Since a script is really just a text file, open a text editor and then enter the following lines. This is the beginning of every BASH script with some useful commentary added. Comments in BASH are marked with the pound sign. 
 
     ```bash
     #!/bin/bash
