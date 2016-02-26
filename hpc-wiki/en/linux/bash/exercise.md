@@ -215,10 +215,9 @@ We will now return to our script with the `for`-loop and extend the functionalit
     
     If you get output like this, move on to 2.
 
-2. Restrict this output to ONLY numbers less than 10. In other words, find a search pattern that is only sensitive to one digit followed by a decimal. Then find a way to restrict the output further so that the decimal is excluded. If you spend more than 5 minutes on this, look to the [solution](placeholder) and move on to 3! 
+2. Restrict this output to ONLY numbers less than 10. In other words, find a search pattern that is only sensitive to one digit followed by a decimal. Then find a way to restrict the output further so that the decimal is excluded. If you spend more than 5 minutes on this, look to the [solution](placeholder) and move on to 3!.
 
-
-Hint: You only need `grep` for this, not `if`. Think about piping multiple grep commands together and of using wildcards... The key to this question is getting the right wildcard expression. __Remember that "space" is a character__. You'll have to escape the dot character, if you use it, i.e `\`. Be careful not to accidentally get only the second digit of a two digit number.
+    Hint: You only need `grep` for this, not `if`. Think about piping multiple grep commands together and of using wildcards... The key to this question is getting the right wildcard expression. __Remember that "space" is a character__. You'll have to escape the dot character, if you use it, i.e `\`. Be careful not to accidentally get only the second digit of a two digit number.
 
 
 3. `grep` should be returning one digit numbers or nothing at all. This is what we want! In step 3, we will capture the output and save it to a variable. We will use this variable later for a numerical comparison involving `if`. Recall [command substitution](placeholder). If you want to save the output of a command as a variable use the syntax:
