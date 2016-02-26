@@ -55,7 +55,7 @@ You will also learn few useful _wildcard_ syntax to make things done quicker and
   $ cd $HOME/tutorial/labs
   ```
 
-8. Create multiple empty files (and list them) using wildcards.  Note the effect of the syntax `{1..5}` in the first command below.
+8. Create multiple empty files (and list them) using wildcards.  Note the syntax `{1..5}` in the first command below. It is taken by the Linux shell as a serious of sequencial integers from `1` to `5`. 
 
   ```bash
   $ touch subject_{1..5}.dat
@@ -70,7 +70,7 @@ You will also learn few useful _wildcard_ syntax to make things done quicker and
 
   Tip: the `touch` command is used for creating empty files.
 
-9. Remove multiple files using wildcards.  Note the effect of the syntax `*`.  It is taken as "any characters" by the Linux shell.
+9. Remove multiple files using wildcards.  Note the syntax `*`.  It is taken as "any characters" by the Linux shell.
 
   ```bash
   $ rm subject_*.dat
