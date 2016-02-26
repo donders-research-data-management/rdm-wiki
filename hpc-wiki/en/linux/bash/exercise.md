@@ -1,4 +1,4 @@
-# Exercise: scripting in bash
+# Exercise: _if_-statement and _for_-loop of BASH language
 
 ## Introduction
 
