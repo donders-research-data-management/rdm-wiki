@@ -1,4 +1,4 @@
-# Exercise: Putting Commands into a Script, and Setting the Script as Executable. 
+# Exercise: Putting Commands into a Script, and Setting the Script as Executable
 
 ## Task
 
@@ -8,12 +8,11 @@ In This task, we're going to create a script, set it as executable (make it so w
 
    Hint: Remember that `~` refers to your home directory.
    
-2. We're going to start making a scrpt that you will build on in the next exercse. Since a script is really just a text file, 
-open a text editor and then enter the following lines. This is the beginning of every BASH script with some useful commentary added. Comments in BASH are marked with the pound sign. 
+2. We're going to start making a scrpt that you will build on in the next exercse. Since a script is really just a text file, open a text editor and then enter the following lines. This is the beginning of every BASH script with some useful commentary added. Comments in BASH are marked with the pound sign. 
 
     ```bash
     #!/bin/bash
-
+    
     # Lines beginning with # are comments. These are not processed by BASH, except in one special case. 
     # At the beginning of a script, the first line is special. It tells Linux what interpreter to use, and is called the interpreter directive. 
     # If someone tries to execute a BASH script that does not have the #!/bin/bash line, and they are in a non-BASH shell, then the script
