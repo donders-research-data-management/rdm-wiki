@@ -1,4 +1,4 @@
-# Exercise: _if_-statement and _for_-loop of BASH language
+# Exercise: _if_-statement and _for_-loop of the BASH language
 
 ## Introduction
 
