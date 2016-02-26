@@ -5,6 +5,7 @@ In this exercise, we will get you familiar with the Linux file system.  Followin
 * browsing files and sub-directories within a directory,
 * creating and removing directory,
 * moving current working directory between directories,
+* changing access permission of a directory,
 * creating and deleting files.
 
 You will also learn few useful _wildcard_ syntax to make your work easier.
