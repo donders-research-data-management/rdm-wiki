@@ -68,7 +68,7 @@ We will extend the functionality of our current script with the `for`-loop. For 
 Start by downloading the log file's we'll be using. Move into a directory you'd like to work in and run this command to download and [untar](https://xkcd.com/1168/) the logfiles.
 
 ```bash
-$ wget ../../exercise/logs.tgz
+$ wget http://donders-institute.github.io/hpc-wiki/en/linux/exercise/logs.tgz
 $ tar xvf logs.tgz
 ```
 
@@ -192,6 +192,7 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
     
     Note: If a string has a space in it the space has to be escaped somehow. One way of doing this is by using either single or double quotes.
 
+
 ## Task 5: Putting _if_ and _for_ together and doing something useful
 ------
 
@@ -201,7 +202,7 @@ We will now return to our script with the `for`-loop and extend the functionalit
 
 ### Your Task 
 
-1. In each logfile the "run-time" is recorded. This is the amount of time the freesurfer script which generated the logfile ran. Open your scriptand modify the grep command to search for the "run-time" instead of the subject ID. You'll need to remove the `-o` flag now because we'll need the full line.
+1. In each logfile the "run-time" is recorded. This is the amount of time the freesurfer script which generated the logfile ran. Open your script and modify the grep command to search for the "run-time" instead of the subject ID. You'll need to remove the `-o` flag now because we'll need the full line.
 
     ```bash
     #an example
@@ -222,7 +223,7 @@ We will now return to our script with the `for`-loop and extend the functionalit
 
 2. Restrict this output to ONLY numbers less than 10. In other words, find a search pattern that is only sensitive to one digit followed by a decimal. Then find a way to restrict the output further so that the decimal is excluded. If you spend more than 5 minutes on this, look to the [solution](placeholder) and move on to 3!.
 
-    Hint: You only need `grep` for this, not `if`. Think about piping multiple grep commands together and of using wildcards... The key to this question is getting the right wildcard expression. __Remember that "space" is a character__. You'll have to escape the dot character, if you use it, i.e `\`. Be careful not to accidentally get only the second digit of a two digit number.
+    Hint: You only need `grep` for this, not `if`. Think about piping multiple grep commands together and of using wildcards... The key to this question is getting the right wildcard expression. __Remember that "space" is a character__. You'll have to escape the dot character, if you use it, i.e `\.` and not `.` Be careful not to accidentally return only the second digit of a two digit number.
 
 3. `grep` should be returning one digit numbers or nothing at all. This is what we want! In step 3, we will capture the output and save it to a variable. We will use this variable later for a numerical comparison involving `if`. Recall [command substitution](placeholder). If you want to save the output of a command as a variable use the syntax:
 
@@ -230,9 +231,9 @@ We will now return to our script with the `for`-loop and extend the functionalit
     var=$(MY-COMMANDS-HERE)
     ```
     
-    Insert your command into the parentheses and then insert this line in place of your current `grep` pipeline.
+    Insert your command into the parentheses and then insert that line in place of your current `grep` pipeline.
 
-4. Now add an `if`-statement to the body of the `for`-loop to create a comparison, testing if the value `grep` returned is less than 9. If the value is less than 9, we want to print the name of the logfile and the variable value to the screen. 
+4. Now add an `if`-statement to the body of the `for`-loop and create a comparison, testing if the value `grep` returned is less than 9. If the value is less than 9, we want to print the name of the logfile and the variable value to the screen. 
 
     ```bash
     for file in list; do
@@ -278,3 +279,14 @@ We will now return to our script with the `for`-loop and extend the functionalit
 ### Debriefing
 
 This concludes the BASH scripting introduction exercise. Tread confidently forth into new uncharted errors. 
+
+### Solution 
+
+```bash
+for file in *log; do
+	var=$(grep "run-time" $file | grep -o " [0-9]\." | grep -o [0-9])
+	if [[ $var -lt 9 && $var -gt 0 ]]; then 
+		echo "$file : $var"
+	fi	
+done
+```
