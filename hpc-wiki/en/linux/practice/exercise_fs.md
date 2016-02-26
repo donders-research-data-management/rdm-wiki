@@ -8,7 +8,7 @@ In this exercise, we will get you familiar with the Linux file system.  Followin
 * changing access permission of a directory,
 * creating and deleting files.
 
-You will also learn few useful _wildcard_ syntax to make your work easier.
+You will also learn few useful _wildcard_ syntax to make things done quicker and easier.
 
 ## Tasks
 
@@ -55,7 +55,7 @@ You will also learn few useful _wildcard_ syntax to make your work easier.
   $ cd $HOME/tutorial/labs
   ```
 
-8. Create multiple empty files (and list them) using wildcards
+8. Create multiple empty files (and list them) using wildcards.  Note the effect of the syntax `{1..5}` in the first command below.
 
   ```bash
   $ touch subject_{1..5}.dat
@@ -70,7 +70,7 @@ You will also learn few useful _wildcard_ syntax to make your work easier.
 
   Tip: the `touch` command is used for creating empty files.
 
-9. Remove multiple files using wildcards
+9. Remove multiple files using wildcards.  Note the effect of the syntax `*`.  It is taken as "any characters" by the Linux shell.
 
   ```bash
   $ rm subject_*.dat
