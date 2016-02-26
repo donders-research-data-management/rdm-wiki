@@ -221,7 +221,7 @@ We will now return to our script with the `for`-loop and extend the functionalit
     
     If you get output like this, move on to 2.
 
-2. Restrict this output to ONLY numbers less than 10. In other words, find a search pattern that is only sensitive to one digit followed by a decimal. Then find a way to restrict the output further so that the decimal is excluded. If you spend more than 5 minutes on this, look to the [solution](https://github.com/Donders-Institute/donders-institute.github.io/edit/master/hpc-wiki/en/linux/bash/exercise.md#"Solution to 2") and move on to 3!.
+2. Restrict this output to ONLY numbers less than 10. In other words, find a search pattern that is only sensitive to one digit followed by a decimal. Then find a way to restrict the output further so that the decimal is excluded. If you spend more than 5 minutes on this, look to the [solution](http://donders-institute.github.io/hpc-wiki/en/#!linux/bash/exercise.md#Solution_to_2) and move on to 3!.
 
     Hint: You only need `grep` for this, not `if`. Think about piping multiple grep commands together and of using wildcards... The key to this question is getting the right wildcard expression. __Remember that "space" is a character__. You'll have to escape the dot character, if you use it, i.e `\.` and not `.` Be careful not to accidentally return only the second digit of a two digit number. Finally, it's good practice in grep to put your search term in single quotes.
 
