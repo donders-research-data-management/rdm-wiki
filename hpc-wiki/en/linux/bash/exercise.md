@@ -68,7 +68,7 @@ We will extend the functionality of our current script with the `for`-loop. For 
 Start by downloading the log file's we'll be using. Move into a directory you'd like to work in and run this command to download and [untar](https://xkcd.com/1168/) the logfiles.
 
 ```bash
-$ wget /path/to/logs.tgz
+$ wget ../../exercise/logs.tgz
 $ tar xvf logs.tgz
 ```
 
