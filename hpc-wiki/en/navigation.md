@@ -9,13 +9,14 @@
   * [The file system](linux/practice/filesystem.md)
   * [Working with text (data) file](linux/practice/textdata.md)
   * [Text data processing](linux/practice/analysis.md)
-  * [Exercise](linux/practice/exercise.md)
+  * [Exercise 1: file system](linux/practice/exercise_fs.md)
+  * [Exercise 2: text data](linux/practice/exercise.md)
   - - - -
   * # Scripting in Bash
   * [Getting start](linux/bash/start.md)
   * [The bash language](linux/bash/language.md)
   * [Exercise 1](linux/bash/BASHexercise.md)
-  * [Exercise 2](linux/bash/exercise.md)
+  * [Exercise 2: if-statement and for-loop](linux/bash/exercise.md)
 
 [Cluster Guide]()
 
