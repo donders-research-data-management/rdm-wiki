@@ -200,6 +200,7 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
 We will now return to our script with the `for`-loop and extend the functionality by adding an `if`-statement inside of the `for`-loop. In this task, we will find the amount of time each script which generated each logfile ran. We will print the run time and the logfile name to the screen if the runtime is below 9 hours. I've broken this rather large task into small steps. Raise your hand if you get lost! This one's hard. 
 
 ### Your Task 
+
 1. In each logfile the "run-time" is recorded. This is the amount of time the freesurfer script which generated the logfile ran. Open your scriptand modify the grep command to search for the "run-time" instead of the subject ID. You'll need to remove the `-o` flag now because we'll need the full line.
 
     ```bash
@@ -208,10 +209,10 @@ We will now return to our script with the `for`-loop and extend the functionalit
         grep SEARCH-PATTERN $file
     done
     ```
-
+    
     After correctly modifying grep and running the script,  you should have a bunch of lines output to the screen. They'll all be of the form:
-
-    ```bash
+    
+    ```
     #@#%# recon-all-run-time-hours 5.525
     #@#%# recon-all-run-time-hours 10.225
     ...
