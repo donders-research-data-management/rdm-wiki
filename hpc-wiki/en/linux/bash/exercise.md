@@ -23,6 +23,7 @@ done
 You can add as many commands as you like. BASH will loop through the commands in the body of the loop as many times as there are items in your list. You can see [the wiki](language.md) for more information. 
 
 ### Your Task
+
 1. Add a list of items to this `for`-loop and see what happens. A list can be a list of files, strings, numbers, anything.
 
     ```bash
@@ -65,8 +66,8 @@ We will extend the functionality of our current script with the `for`-loop. For 
 Start by downloading the log file's we'll be using. Move into a directory you'd like to work in and run this command to download and [untar](https://xkcd.com/1168/) the logfiles.
 
 ```bash
-wget /path/to/logs.tgz
-tar xvf logs.tgz
+$ wget /path/to/logs.tgz
+$ tar xvf logs.tgz
 ```
 
 Now open `script.sh` and change your `grep` command to the one you see below. The `-o` option tells grep to print ONLY the matching pattern, and not the rest of the line around it. This will be useful later in the task and in general. 
@@ -174,7 +175,6 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
 
 3. Now we will perform string comparisons. The main purpose of this is to see if some variable is set to a certain value. Strings use different comparison operators than integers. For strings we use `==`, `>`, `<`, and `!=` By far the most common operators are `==` and `!=` meaning respectively equal and not equal.
 
-
     ```bash
     string=
     if [[ $string == "A String" ]]; then
@@ -183,7 +183,7 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
         echo "strings are not the same"
     fi
     ```
-
+    
     Achtung! This one place where the difference between `[[ ]]` and `[ ]` becomes evident. With `[ ]` you will have to escape the `<` and `>` characters because they are special characters to the shell. With `[[ ]]` you don't have to worry about escaping anything. Recall in BASH that we use `\` to tell BASH to process the next character literally. 
     
     Note: If a string has a space in it the space has to be escaped somehow. One way of doing this is by using either single or double quotes.
