@@ -185,7 +185,7 @@ Task 3 demonstrated how `if`-statements work, but their main use in scripting is
         echo "strings are not the same"
     fi
     ```
-
+    
     Note: If a string has a space in it the space has to be escaped somehow. One way of doing this is by using either single or double quotes.
 
 ## Task 5: Putting _if_ and _for_ together and doing something useful
