@@ -6,9 +6,9 @@ In this exercise we will be extending script.sh by adding some BASH flow control
 
 The exercise consists of Two main sections broken into subtasks. The two main sections focus respectively on _if_ and _for_, and the subtasks are designed to introduce these tools and illustrate their utility.
 
-### Task 1: Construct a simple for loop
+## Task 1: Construct a simple for loop
 
-#### Background
+### Background
 Now we will construct a simple for loop to demonstrate how it works.
 
 The for loop works by iterating over a list of items and executing all the commands in the body once for each item in the list. The general form is:
@@ -22,27 +22,27 @@ done
 
 You can add as many commands as you like. BASH will loop through the commands in the body of the loop as many times as there are items in your list. You can see [the wiki](language.md) for more information. 
 
-#### Your Task
+### Your Task
 1. Add a list of items to this _for-loop_ and see what happens. A list can be a list of files, strings, numbers, anything.
 
-	```bash
-	for i in INSERT-LIST-HERE; do
-		echo $i
-	done
-		```
-	See how it changes _i_ to the next item on the list each time it iterates?
+    ```bash
+    for i in INSERT-LIST-HERE; do
+        echo $i
+    done
+    ```
+    
+    See how it changes `i` to the next item on the list each time it iterates?
 
 2. In this next one, try to add any command you want to the body of the _for-loop_
 
-	```bash
-	for i in {01..10}; do
-		INSERT-COMMANDS-HERE
-		INSERT-MORE-COMMANDS-HERE-IF-YOU-LIKE
-	done
-```
+    ```bash
+    for i in {01..10}; do
+        INSERT-COMMANDS-HERE
+        INSERT-MORE-COMMANDS-HERE-IF-YOU-LIKE
+    done
+    ```
 
-Tip: Bash takes a range of items within {} and expands it before running any commands. For example, {01..05} will expand to 01 02 03 04 05. You can use letters or numbers. See [this link](placeholder) for more information.
-
+Tip: Bash takes a range of items within `{}` and expands it before running any commands. For example, `{01..05}` will expand to `01 02 03 04 05`. You can use letters or numbers. See [this link](placeholder) for more information.
 
 The main things to remember are that the variable name, list and commands are totally arbitrary and can be whatever you like as long as you keep the correct syntax. Also note that you can have any number of items in the list as you want, you can set the variable name to whatever you want, and you can use any commands you want. You don't even need to reference the variable in the body. For example, try running
 
@@ -52,14 +52,14 @@ for i in {01..05}; do
 done 
 ```
 
-Hint: Notice the syntax. The first line ends in _;do_, the next commands are indented, and _done_, the keyword which ends the loop, is at the same indentation level as the keyword _for_, which begins the loop. This is how all your for loops should look.
+Hint: Notice the syntax. The first line ends in `do`, the next commands are indented, and `done`, the keyword which ends the loop, is at the same indentation level as the keyword `for`, which begins the loop. This is how all your for loops should look.
 
+## Task 2: Using the for-loop to extend our script.
 
-### Task 2: Using the for-loop to extend our script.
-#### Background
+### Background
 We will extend the functionality of our current script with the _for-loop_. For this exercise, we deal with the common scenario of needing to search through a collection of log files for specific information. 
 
-#### Preparation
+### Preparation
 
 Start by downloading the log file's we'll be using. Move into a directory you'd like to work in and run this command to download and [untar](https://xkcd.com/1168/) the logfiles.
 
@@ -68,7 +68,7 @@ wget /path/to/logs.tgz
 tar xvf logs.tgz
 ```
 
- Now open script.sh and change your _grep_ command to the one you see below. The _-o_ option tells grep to print ONLY the matching pattern, and not the rest of the line around it. This will be useful later in the task and in general. 
+Now open `script.sh` and change your `grep` command to the one you see below. The `-o` option tells grep to print ONLY the matching pattern, and not the rest of the line around it. This will be useful later in the task and in general. 
 
 ```bash
 #!/bin/bash
@@ -79,7 +79,7 @@ tar xvf logs.tgz
 grep -o "Subject[0-9][0-9]" gcutError_recon-all.log | head -1
 ```
 
-#### Your task
+### Your task
 Using this command as a starting point, create a _for loop_ to grep the Subject ID of every log file we've downloaded.
 To accomplish this goal you will need to do the following:
 
@@ -95,14 +95,11 @@ for var in list-of-logs; do
 done
 ```
 
-Achtung! Always remember to include all the special keywords: _for_ , _in_ , _;_ , _do_ , and _done_. If you don't remember these, you might not get an error, but your loop definitely won't run.
+Achtung! Always remember to include all the special keywords: `for` , `in` , `;` , `do` , and `done`. If you don't remember these, you might not get an error, but your loop definitely won't run.
 
+## Task 3: Create a simple if statement
 
-## Goed Zo! On to Part II, the if-statement
-
-### Task 3: Create a simple if statement
-
-#### Background
+### Background
 Often in programming, you want your program or script to do something if certain conditions are met, and other things if the conditions are not met. In BASH, as well as many other languages, a very common way of exerting this type of control over your program is an _if statement_.
 
 The purpose of _if_ is to test if a command returns an exit status of 0 or non-0, and then run some commands if the exit staus is 0. You can also say to run commands if the exit status is not 0. This is what the keyword _else_ means. 
@@ -120,26 +117,27 @@ Any non-zero exit status would be not true, i.e false.
 
 Note: For the gory details, refer back to the slides, the wiki, or suffer the [agony]( http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_07_01.html) of this fairly exhasutive treatment.
 
-#### Your task
+### Your task
 
 1. Extend this simple if statement by inserting the command _true_. _true_ is a command which does nothing except return exit status 0, thus it always evaluates to true! The description in the man page is good for a chuckle. You'll want to make sure you put _true_ as the "command to evaluate." Remember to fill in the other commands too. The other commands can be whatever you like.
-```bash
-if INSERT-COMMAND-TO-EVALUATE; then
-	INSERT-COMMANDS-TO-RUN-IF-TRUE
-	INSERT-MORE-COMMANDS-TO-RUN-IF-TRUE
-else INSERT-COMMANDS-TO-RUN-IF-FALSE
-	INSERT-MORE-COMMANDS-TO-RUN-IF-FALSE
-fi
-```
 
-2. Now try using the command _false_ instead of _true_. Notice that now the else portion of the code will be evaluated while the part before the else keyword will not be evaluated. Use the same template _if-statement_ as you did in 1. 
+    ```bash
+    if INSERT-COMMAND-TO-EVALUATE; then
+	    INSERT-COMMANDS-TO-RUN-IF-TRUE
+	    INSERT-MORE-COMMANDS-TO-RUN-IF-TRUE
+    else INSERT-COMMANDS-TO-RUN-IF-FALSE
+	    INSERT-MORE-COMMANDS-TO-RUN-IF-FALSE
+    fi
+    ```
 
-### Task 4: Evaluating Comparitive Statements
+2. Now try using the command `false` instead of `true`. Notice that now the else portion of the code will be evaluated while the part before the else keyword will not be evaluated. Use the same template _if-statement_ as you did in 1. 
 
-#### Background
+## Task 4: Evaluating Comparitive Statements
+
+### Background
 
 In this task, you will extend the power of _if_ by using it with comparison operators. 
-*Task 3* demonstrated how _if-statements_ work, but their main use in scripting is testing if a comparison evaluates to true or false. This complicates the syntax. For comparisons, you need to use a separate command called _test_. In BASH, the most commonly seen form of _test_ is \[\[ things-to-compare  \]\]. You will also see the form \[ things-to-compare \], which is simply a less featured version of \[\[ \]\]. They are both versions of the command _test_. In general, you should always use the \[\[ \]\] form. You can look to [this guide](http://mywiki.wooledge.org/BashFAQ/031) for the a good explanation of _test_ \[ \] and \[\[ \]\]. 
+*Task 3* demonstrated how _if-statements_ work, but their main use in scripting is testing if a comparison evaluates to true or false. This complicates the syntax. For comparisons, you need to use a separate command called `test`. In BASH, the most commonly seen form of _test_ is `[[ things-to-compare ]]`. You will also see the form `[ things-to-compare ]`, which is simply a less featured version of `[[ ]]`. They are both versions of the command `test`. In general, you should always use the `[[ ]]` form. You can look to [this guide](http://mywiki.wooledge.org/BashFAQ/031) for the a good explanation of test `[ ]` and `[[ ]]`. 
 
 #### Your Task
 
@@ -182,13 +180,13 @@ fi
 
 Note: If a string has a space in it the space has to be escaped somehow. One way of doing this is by using either single or double quotes.
 
-### Task 5: Putting if and for together and doing something useful
+## Task 5: Putting if and for together and doing something useful
 
-#### Background
+### Background
 
 We will now return to our script with the _for-loop_ and extend the functionality by adding an _if-statement_ inside of the _for-loop_. In this task, we will find the amount of time each script which generated each logfile ran. We will print the run time and the logfile name to the screen if the runtime is below 9 hours. I've broken this rather large task into small steps. Raise your hand if you get lost! This one's hard. 
 
-#### Your Task 
+### Your Task 
 1. In each logfile the "run-time" is recorded. This is the amount of time the freesurfer script which generated the logfile ran. Open your scriptand modify the grep command to search for the "run-time" instead of the subject ID. You'll need to remove the -o flag now because we'll need the full line.
 
 
