@@ -138,6 +138,7 @@ Note: For the gory details, refer back to the slides, the wiki, or suffer the [a
 2. Now try using the command `false` instead of `true`. Notice that now the else portion of the code will be evaluated while the part before the else keyword will not be evaluated. Use the same template `if`-statement as you did in 1. 
 
 ## Task 4: Evaluating Comparitive Statements
+------
 
 ### Background
 
@@ -145,7 +146,7 @@ In this task, you will extend the power of `if` by using it with comparison oper
 
 Task 3 demonstrated how `if`-statements work, but their main use in scripting is testing if a comparison evaluates to true or false. This complicates the syntax. For comparisons, you need to use a separate command called _test_. In BASH, the most commonly seen form of _test_ is `[[ things-to-compare ]]`. You will also see the form `[ things-to-compare ]`, which is simply a less featured version of `[[ ]]`. They are both versions of the command _test_. In general, you should always use the `[[ ]]` form. You can look to [this guide](http://mywiki.wooledge.org/BashFAQ/031) for the a good explanation of test `[ ]` and `[[ ]]`. 
 
-#### Your Task
+### Your Task
 
 1. Modify this `if`-statement to test if the number on the left is less-than the number on the right. Numerical comparison operators to use with `[[ ]]` are `-lt`, `-gt`, `-ge`, `-le`, `-eq`, and `-ne`. They mean, less-than, greater-than, greater-or-equal, etc.
 
