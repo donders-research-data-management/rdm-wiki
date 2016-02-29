@@ -4,8 +4,8 @@ For the development of the RDM system, a set of DTAP (development-testing-accept
 
 Due to space limitation, the domain names of servers in the following table are assumed to always be `uci.ru.nl`. Thus they are ignored in the table.
 
-| Environment  | Service endpoints | Application server | iCAT server | iCAT zone | resource servers |
-| -------------| ----------------- | ------------------ | ----------- | --------- | ---------------- |
+| Environment  | Service endpoints | webapp server | iCAT server | iCAT zone | resource servers |
+| -------------| ----------------- | ------------- | ----------- | --------- | ---------------- |
 | Production   | https://data.donders.ru.nl (CMS) <br/> https://webdav.data.donders.ru.nl (WebDAV) |  nonvlinder (CMS) <br/> meeltor (WebDAV) | nummervlinder | rdm | kanaaljuffer <br/> kerstbalgal |
 | Acceptance   | https://rdmappacc.uci.ru.nl (CMS) <br/> https://webdav.rdmappacc.uci.ru.nl (WebDAV) |  klampkever (CMS) <br/> klokjesdikpoot (WebDAV) | kaswittevlieg | rdmacc | kanaaljuffer <br/> kerstbalgal |
 | Development  | https://localhost:8443/rdm-web-client (CMS) | -  | _tobedefined_ | rdmtst | - |
