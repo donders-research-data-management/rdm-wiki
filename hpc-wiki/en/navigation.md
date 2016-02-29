@@ -15,7 +15,7 @@
   * # Scripting in Bash
   * [Getting start](linux/bash/start.md)
   * [The bash language](linux/bash/language.md)
-  * [Exercise 1](linux/bash/BASHexercise.md)
+  * [Exercise 1: the first script](linux/bash/BASHexercise.md)
   * [Exercise 2: if-statement and for-loop](linux/bash/exercise.md)
 
 [Cluster Guide]()
