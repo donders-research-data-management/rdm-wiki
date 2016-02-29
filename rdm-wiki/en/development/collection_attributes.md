@@ -82,13 +82,11 @@ Note:
 
 ## Combinatory attributes
 
-Warning: this section is still under development.  How the value of a combinatory attribute is stored in iCAT is not well defined.  It requires further attention/design in iRODS rules to overcome potential issues on parsing the input/output arguments.  
+Combinatory attributes are those with value containing a data structure of key-value pairs. In this case, the value is stored as the string representation of a JSON object.
 
-Combinatory attributes are those with values to be presented as key-value pairs.  Values of combinatory attributes are stored in iRODS using the string representation of key-value pairs (i.e. `key1=val1%key2=val2...`).  When the value is returned to client in JSON format, the string representation is converted into a JSON object.
+The table summarises a list of combinatory collection attributes with examples of their values.
 
-A list of combinatory collection attributes is listed below:
-
-|   key of attribute           |  example value of attribute                                            | JSON representation |
-| ---------------------------- | ---------------------------------------------------------------------- | ------------------- |
-| associatedPublication        |    |    |
-| ethicalApprovalIdentifier    |  reviewBoard=METC Regio Arnhem-Nijmegen%approvalIdentifier=CMO2014/288 | `{ "reviewBoard": "METC Regio Arnhem-Nijmegen", "approvalIdentifier" : "CMO2014/288" }` |
+|   key of attribute           | JSON representation |
+| ---------------------------- | ------------------- |
+| associatedPublication        |                     |
+| ethicalApprovalIdentifier    | `{ "reviewBoard": "METC Regio Arnhem-Nijmegen", "approvalIdentifier" : "CMO2014/288" }` |
