@@ -10,7 +10,7 @@ Due to space limitation, the domain names of servers in the following table are 
 | Acceptance   | https://rdmappacc.uci.ru.nl (CMS) <br/> https://webdav.rdmappacc.uci.ru.nl (WebDAV) |  klampkever (CMS) <br/> klokjesdikpoot (WebDAV) | kaswittevlieg | rdmacc | kanaaljuffer <br/> kerstbalgal |
 | Development  | https://localhost:8443/rdm-web-client (CMS) | -  | _tobedefined_ | rdmtst | - |
 
-The CMS service endpoints are also recognised as _SP (Service Provider) ID_ of SURFConext.
+For SURFConext, the CMS service endpoint should also be recognised as the _SP (Service Provider) ID_.
 
 The __Production__ environment is exported to naive users with well-defined service URL's.  Persistency and availability of data and metadata uploaded/modified via the well-defined service URL's should be maintained.  It implies that any re-organisation of underlying servers should also take into account data migration.
 
