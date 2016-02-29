@@ -49,4 +49,4 @@ The table below provides a list of tested WebDAV clients that work smoothly with
 |   Platform    |     Software                                  |  GUI suppor   |
 | ------------- | --------------------------------------------- | ------------- |
 |   Liunx       | [Cadaver](http://www.webdav.org/cadaver/)     |      N        |
-|   Liunx       | [Thunar](http://thunar.xfce.org)              |      Y        |
+|   Liunx       | [Thunar](https://en.wikipedia.org/wiki/Thunar)|      Y        |
