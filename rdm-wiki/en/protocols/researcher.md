@@ -49,22 +49,36 @@ In this protocol, a distinction is made between _metadata_ and _attributes_: met
 
 ##	6 Accessing the Repository
 
+### 6.1 Authentication
+
 When visiting the website of the data repository, one can see the metadata of all _Data Sharing Collections_ (DSCs; see further). However, one cannot see any files, nor the metadata of the other collections. To access the files in the repository, and to see the metadata of the other (non-DSC) collections, one must first log in. This is also called _authentication_. There are three ways to authenticate :
 
 1.	Using a local identity provider (RU or RUMCN) and logging in with your RU or RUMCN credentials. This applies to RU and RUMCN employees (U-, resp., Z-number), for RU students (s-number), and for affiliated non-employees (E-number). It is possible that a person has multiple credentials (e.g., a U- and a Z-number). If you log in using multiple credentials, the system will treat as multiple users, mapped one-to-one on the different credentials.
 2.	Using a trusted federated authentication infrastructure (e.g., the Dutch SURFconext and the international eduGAIN) and logging in with the credentials provided by the researcher’s employer. This authentication option can be used by employees of the organizations that participate in the federated authentication infrastructure – so not necessarily RU or RUMCN.
-3.	Using a non-trusted authentication service such as Google, Facebook, or Twitter.
+3.	Using a non-trusted identity provider service such as Google, Facebook, or Twitter.
 
 One can only authenticate after _signing up_. By signing up, an internal account is generated, via which one can access files on the repository (after being authorized for access; see further). One needs this internal account to up- and download files using a client for file transfer (see further).
+
+### 6.2 Authorization levels
 
 After a successful authentication, a repository user still cannot read or write a collection’s files. To do this, a user must first be added to that collection in a particular role. The research administrator and collection manager can add a user to a collection. The collections to which a user is added in a particular role determines what that user can do in the repository. This is also called the user’s _authorizations_. Not every user can be added to an arbitrary collection in an arbitrary role. In fact, a user’s possible authorizations are determined by the way he/she has authenticated. To describe a user’s possible authorizations, a distinction is made between four different user types, ordered according to their authorization level (every next user type has the authorizations of the previous type plus some more):
 
 1.	An _anonymous user_ (also called, non-registered user or visitor) visits the website of the repository without authenticating him/herself. An anonymous user can view the metadata of all DSCs. However, he can be added to none of the collections, and therefore cannot read a single file.
-2.	A _non-trusted registered user_ authenticates him/herself against a non-trusted authentication service (e.g., Google, Facebook). This user type can be added as a viewer to a DSC.
+2.	A _non-trusted registered user_ authenticates him/herself against a non-trusted identity provider (e.g., Google, Facebook). This user type can be added as a viewer to a DSC.
 3.	 A _trusted registered user_ authenticates him/herself against a trusted authentication service (e.g., SURFconext, EDUgain). This user type can be added as a contributor or viewer to all collection types (which also includes _Data Acquisition_ and _Research Documentation Collections_, DACs and SICs; see further). A contributor cannot only view but also modify a collection's files.
-4.	A _DCX employee_ authenticates him/herself against the RU or RUMCN authentication service _and_ is registered by a center’s research administrator as an employee of that center. In the Donders Institute, we distinguish between four centers: DCC, DCCN, DCN_S (DCN Science Faculty), and DCN_M (DCN Medical Faculty), jointly denoted as DCX. This user type can be added as a _manager_ to all collections of his center.
+4.	A _DCX employee_ authenticates him/herself against the RU or RUMCN identity provider _and_ is registered by a center’s research administrator as an employee of that center. In the Donders Institute, we distinguish between four centers: DCC, DCCN, DCN_S (DCN Science Faculty), and DCN_M (DCN Medical Faculty), jointly denoted as DCX. This user type can be added as a _manager_ to all collections of his center.
+
+### 6.3 One physical person, multiple users
 
 In principle, the same physical person can be represented as multiple users in the repository. This can happen if that person has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. If a user authenticates him/herself using multiple digital identities, then he/she will also be represented in the repository with multiple internal accounts, each of which is likely to have different authorizations. 
+
+### 6.4 Loosing access to an identity provider
+
+Some identity providers belong to an organization that employs people (a university, a governmental organization, ...) and the membership of those organizations  changes with their employment. Because many users change organization, they also change identity provider. When a user signs up using the credentials (ID plus password) provided by an organization, an internal account is created specifically for this organization. 
+
+
+Importantly, when subsequently authenticating (logging in) using the credentials of his new organization, he cannot access the collections for which he is authorized if he authenticates against the identity provider of his old organization.
+
 
 ## 7	Up- and Downloading Files
 
