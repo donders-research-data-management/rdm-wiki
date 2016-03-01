@@ -86,12 +86,9 @@ The collection manager must be a _DCX employee_. Because a DCX employee must als
 
 When a user is no longer a DCX employee, he/she may no longer have the collection manager role. The typical situation in which a user stops being a DCX employee is when his contract with the RU/RUMCN ends. However, when a user is no longer a DCX employee, he/she can remain contributor or viewer if his/her involvement in the collection is continued. 
 
-Procedurally, when a research administrator revokes a user's authorization as a DCX employee, 
+Procedurally, when a research administrator revokes a user's authorization as a DCX employee, he/she must also revoke that user's manager role in all the relevant collections. 
 
-observes that a collection manager's contract has ended, he/she must revoke that role and instead give the user the role of collection contributor. This action must be perform _all_ collections in which that user has the role of collection manager. 
-
-It can happen that, after removing a collection manager, that collection has no collection manager anymore. In that case, in agreement with the center director, the research administrator must assign a new collection manager. Importantly, every collection must have at least one collection manager. 
-
+It can happen that, after removing a collection manager, that collection has no longer a collection. In that case, in agreement with the center director, the research administrator must assign a new collection manager. Importantly, every collection must have at least one collection manager. 
 
 ### 7.2.	Protocol Specific for Data Acquisition Collections
 
@@ -152,7 +149,7 @@ In case the data is not to be shared, the written request by the researcher and 
 This section is intentionally empty.
 
 
-## 8.	Managing and Migrating User Accounts
+## 8.	Managing User Accounts
 
 ### 8.1.	Managing User Accounts
 
@@ -160,13 +157,6 @@ In the default scenario, the research administrator is not involved in the creat
 
 In some cases it may be necessary for the research administrator to initiate accounts for new users that cannot use the IdP-based login procedure. This involves a procedure that lies largely outside the scope of this protocol and/or involves a procedure that is not yet part of it. This  is described in the [Frequently Asked Questions](rdm-wiki/en/faq/other.md). 
 
-
-
-TBD: the following is correct, but not appropriate in the context of this protocol. See https://github.com/Donders-Institute/donders-institute.github.io/issues/24
-
-To provide some context for this issue, one must know that DACs and RDCs can only be accessed if the user has signed up against the RU or RUMCN Identity Providers (IdP) or a so-called trusted federated authentication infrastructure (SurfConext, EduGain). Potential users may not (anymore) have access to one of these identity providers. To help these potential users, they can be given an account in the RU’s Relation Management System (Relatie Beheer Systeem). A so-called E-account can be created with limited administrative work, and seems the most useful account type for this purpose. The essential requirement is that the account should allow the owner to make use of the IdP service of the RU. The collection manager will ask the research administrator to give a potential user an account in the RU’s Relation Management System.
-
-At this moment, it is not possible to give access to potential users that do not have access to a trusted federated authentication infrastructure, neither via their employer nor via the RU’s Relation Management System. If this turns out to be a serious problem, it is in principle possible to allow the research administrator to create an internal account, involving a login ID and an initial password, thus bypassing IdP-based authentication. These self-created accounts have to be managed, and the requirements for this management are identical to the ones for the management of the E-accounts created by the RU’s Relation Management System. When this becomes necessary, this protocol will be updated with these requirements.
 
 
 ### 8.2.	Migrating User Accounts
