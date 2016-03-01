@@ -59,9 +59,9 @@ When visiting the website of the data repository, one can see the metadata of al
 
 One can only authenticate after _signing up_. By signing up, an internal account is generated, via which one can access files on the repository (after being authorized for access; see further). One needs this internal account to up- and download files using a client for file transfer (see further).
 
-### 6.2 Authorization levels
+### 6.2 Authorizations and authorization levels
 
-After a successful authentication, a repository user still cannot read or write a collection’s files. To do this, a user must first be added to that collection in a particular role. The research administrator and collection manager can add a user to a collection. The collections to which a user is added in a particular role determines what that user can do in the repository. This is also called the user’s _authorizations_. Not every user can be added to an arbitrary collection in an arbitrary role. In fact, a user’s possible authorizations are determined by the way he/she has authenticated. To describe a user’s possible authorizations, a distinction is made between four different user types, ordered according to their authorization level (every next user type has the authorizations of the previous type plus some more):
+After a successful authentication, a repository user still cannot read or write a collection’s files. To do this, a user must first be added to that collection in a particular role. The research administrator and collection manager can add a user to a collection. The collections to which a user is added in a particular role determines what that user can do in the repository. This is also called the user’s _authorizations_. Not every user can be added to an arbitrary collection in an arbitrary role. In fact, a user’s possible authorizations are determined by the way he/she has authenticated. To describe a user’s possible authorizations, a distinction is made between four different user types, ordered according to their authorization level. These four user types form a hierarchy in which every next user type has the authorizations of the previous type plus some more:
 
 1.	An _anonymous user_ (also called, non-registered user or visitor) visits the website of the repository without authenticating him/herself. An anonymous user can view the metadata of all DSCs. However, he can be added to none of the collections, and therefore cannot read a single file.
 2.	A _non-trusted registered user_ authenticates him/herself against a non-trusted identity provider (e.g., Google, Facebook). This user type can be added as a viewer to a DSC.
@@ -72,12 +72,16 @@ After a successful authentication, a repository user still cannot read or write 
 
 In principle, the same physical person can be represented as multiple users in the repository. This can happen if that person has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. If a user authenticates him/herself using multiple digital identities, then he/she will also be represented in the repository with multiple internal accounts, each of which is likely to have different authorizations. 
 
-### 6.4 Loosing access to an identity provider
+### 6.4 Authorizations linked to employers
 
-Some identity providers belong to an organization that employs people (a university, a governmental organization, ...) and the membership of those organizations  changes with their employment. Because many users change organization, they also change identity provider. When a user signs up using the credentials (ID plus password) provided by an organization, an internal account is created specifically for this organization. 
+Some identity providers belong to an organization that also acts as an employer (a university, a governmental organization, ...). The the membership of these organizations changes with employment. Because many users change organization, they also change identity provider. Importantly, when a user signs up using the credentials (ID plus password) provided by an organization, an internal account is created that is specific for this organization. Therefore, when a user becomes authorized (in a particular role) for some collection, that authorization is also linked to the organization where the user is employed, namely via that organization's identity provider. 
 
+As a consequence of authorizations being linked to an identity provider, these authorizations are no longer accessible when the user looses access to this identity provider. This happens when the identity provider belongs to an organization that also acts as an employer, and the user's employment stops. Some time after the last day of the user's contract (the exact time varies per organization), the user has no longer access to the organization's identity provider, and thereby also loses access to the collections for which he/she is authorized via this identity provider. To regain access to these collections, the user must do the following:
 
-Importantly, when subsequently authenticating (logging in) using the credentials of his new organization, he cannot access the collections for which he is authorized if he authenticates against the identity provider of his old organization.
+1. Find another identity provider (e.g., another employer with an identity provider) with which he/she can sign up and create an associated repository-internal account. 
+2. For the collections to which he/she wants to have access, ask the managers to be added with his/her new account.
+
+When a user, after a period of unemployment, returns to his/her old organization and regains access to that organization's identity provider, that user will also regain the authorizations that he had when he left the organization.  
 
 
 ## 7	Up- and Downloading Files
