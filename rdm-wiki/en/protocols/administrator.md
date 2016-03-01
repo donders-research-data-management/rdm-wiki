@@ -45,17 +45,15 @@ RDM users that are employed by the RU or the RUMCN are eligible for the role of 
 
 Users can only be authorized as a DCX employee if they have an account. Users can create their own account in a procedure that is known as _signing up_ and that is described in the _DI RDM Protocol for Researchers_. 
 
-Prior to authorizing a user as a DCX employee, the research administrator must check whether the user's account contains information that links him/her to the RU or the RUMCN (e.g., a U- or a Z-number). In addition, the center director must agree that this user is authorized as a DCX employee.
+Prior to authorizing a user as a DCX employee, the research administrator must check whether the user's account contains information that links him/her to the RU or the RUMCN (e.g., a U- or a Z-number). In addition, the center director must agree with this user being authorized as a DCX employee.
 
-A user can be a DCX employee in multiple centers. However, a research administrator can only add that user as a DCX employee of his/her own center.
+A user can be a DCX employee in multiple Donders centers. However, a research administrator can only add that user as a DCX employee of his/her own center.
 
 A user's authorization as a DCX employee may also be revoked, and the typical reason for this is the termination of that user's contract with the RU/RUMCN. Thus, when a DCX employee is no longer employed by the RU/RUMCN, his/her authorization as a DCX employee must be revoked. Because only a DCX employee can be a manager of the corresponding center's collections, also the user's manager role in must be revoked in all collections for which this is the case. We return to this point in 7.1.4.
 
 A user's authorization as a DCX employee may also be revoked although he/she remains to be employed by the RU/RUMCN. This can happen for instance if a DCX employee leaves the center but continues his/her work at the RU/RUMCN. Also in this case, that user can no longer be a manager of the corresponding center's collections.
 
-Note that upon termination of a contract the user account should not be deleted in the RDM system. The access to the RDM system will automatically be disabled by the IdP.
-
-TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/19 and see https://github.com/Donders-Institute/donders-institute.github.io/issues/23
+Note that upon termination of a contract, the user account should not be deleted in the RDM system. The access to the RDM system will automatically be disabled by the identity provider of the employer.
 
 ## 7.	Initiating and Managing Collections
 
@@ -80,7 +78,7 @@ The name of a collection can be chosen freely, subject to the following constrai
 
 The research administrator assigns at least one person in the role of collection manager. This role is described in the _DI RDM Protocol for Researchers_.
 
-The collection manager must be a _DCX employee_. Because a DCX employee must also be a RU/RUMCN employee, in case of contract or collaborative research, external collaborators cannot be a collection manager. This also holds for research in which the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
+The collection manager must be a _DCX employee_. Because a DCX employee must also be a RU/RUMCN employee, external collaborators cannot be a collection manager. This important in case of contract or collaborative research, even when the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
 
 ### 7.1.4. Revoking the Collection Manager Role
 
@@ -88,7 +86,8 @@ When a user is no longer a DCX employee, he/she may no longer have the collectio
 
 Procedurally, when a research administrator revokes a user's authorization as a DCX employee, he/she must also revoke that user's manager role in all the relevant collections. 
 
-It can happen that, after removing a collection manager, that collection has no longer a collection. In that case, in agreement with the center director, the research administrator must assign a new collection manager. Importantly, every collection must have at least one collection manager. 
+It can happen that, after removing a collection manager, a given collection no longer has a manager. In that case, in agreement with the center director, the research administrator must assign a new collection manager. Importantly, every collection must have at least one collection manager. 
+
 
 ### 7.2.	Protocol Specific for Data Acquisition Collections
 
@@ -151,19 +150,10 @@ This section is intentionally empty.
 
 ## 8.	Managing User Accounts
 
-### 8.1.	Managing User Accounts
-
 In the default scenario, the research administrator is not involved in the creation of user accounts, because they are created automatically in a sign-up procedure (see the _DI RDM Protocol for Researchers_). 
 
-In some cases it may be necessary for the research administrator to initiate accounts for new users that cannot use the IdP-based login procedure. This involves a procedure that lies largely outside the scope of this protocol and/or involves a procedure that is not yet part of it. This  is described in the [Frequently Asked Questions](rdm-wiki/en/faq/other.md). 
+In some cases it may be necessary for the research administrator to initiate accounts for new users that cannot sign up using a thrusted authentication service. This involves a procedure that lies largely outside the scope of this protocol and/or involves a procedure that is not yet part of it. This  is described in the [Frequently Asked Questions](rdm-wiki/en/faq/other.md). 
 
 
-
-### 8.2.	Migrating User Accounts
-
-TBD: the following is correct, but not appropriate in the context of this protocol. See https://github.com/Donders-Institute/donders-institute.github.io/issues/24
-
-Many users change organization and thereby also IdP. When a user signs up using the credentials (ID plus password) provided by this new organization, a new internal account is created specifically for his new organization. Importantly, when subsequently authenticating (logging in) using the credentials of his new organization, he cannot access the collections for which he is authorized if he authenticates against the IdP of his old organization. However, the research administrator can change his new internal account such that the user keeps his access to those collections also when authenticating against the IdP of his new organization. This change involves a migration of the old internal account such that it can be accessed via authenticating against the IdP of his new organization. For performing this migration, the research administrator has access to a portal in which he must change the value of the appropriate field.
-To prevent misunderstanding, migrating the old internal account of a former RU employee such that it can be accessed by authenticating against the IdP of his new organization, does not imply that this user can still be manager in any of his old collections: these authorizations have to be modified by another collection manager or the research administrator.
 
 
