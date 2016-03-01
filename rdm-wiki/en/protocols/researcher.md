@@ -53,11 +53,11 @@ In this protocol, a distinction is made between _metadata_ and _attributes_: met
 
 When visiting the website of the data repository, one can see the metadata of all _Data Sharing Collections_ (DSCs; see further). However, one cannot see any files, nor the metadata of the other collections. To access the files in the repository, and to see the metadata of the other (non-DSC) collections, one must first log in. This is also called _authentication_. There are three ways to authenticate :
 
-1.	Using a local identity provider (RU or RUMCN) and logging in with your RU or RUMCN credentials. This applies to RU and RUMCN employees (U-, resp., Z-number), for RU students (s-number), and for affiliated non-employees (E-number). It is possible that a person has multiple credentials (e.g., a U- and a Z-number). If you log in using multiple credentials, the system will treat as multiple users, mapped one-to-one on the different credentials.
-2.	Using a trusted federated authentication infrastructure (e.g., the Dutch SURFconext and the international eduGAIN) and logging in with the credentials provided by the researcher’s employer. This authentication option can be used by employees of the organizations that participate in the federated authentication infrastructure – so not necessarily RU or RUMCN.
-3.	Using a non-trusted identity provider service such as Google, Facebook, or Twitter.
+1.	Using a local identity provider (RU or RadboudUMC) and logging in with your RU or RadboudUMC credentials. This applies to RU and RadboudUMC employees (U-, resp., Z-number), for RU students (s-number), and for affiliated non-employees (E-number). It is possible that a person has multiple credentials (e.g., a U- and a Z-number). If you log in using multiple credentials, the system will treat as multiple users, mapped one-to-one on the different credentials.
+2.	Using a trusted federated authentication infrastructure (e.g., the Dutch SURFconext and the international eduGAIN) and logging in with the credentials provided by the researcher’s employer. This authentication option can be used by employees of the organizations that participate in the federated authentication infrastructure – so not necessarily RU or RadboudUMC.
+3.	Using a non-trusted identity provider service such as Linkedin, Google, Facebook, or Twitter.
 
-One can only authenticate after _signing up_. By signing up, an internal account is generated, via which one can access files on the repository (after being authorized for access; see further). One needs this internal account to up- and download files using a client for file transfer (see further).
+One can only authenticate after _signing up_. By signing up, an internal user profile is generated, via which one can access files on the repository (after being authorized for access; see further). One needs this internal user profile to up- and download files using a client for file transfer (see further).
 
 ### 6.2 Authorizations and authorization levels
 
@@ -68,21 +68,20 @@ After a successful authentication, a repository user still cannot read or write 
 3.	 A _trusted registered user_ authenticates him/herself against a trusted authentication service (e.g., SURFconext, EDUgain). This user type can be added as a contributor or viewer to all collection types (which also includes _Data Acquisition_ and _Research Documentation Collections_, DACs and SICs; see further). A contributor cannot only view but also modify a collection's files.
 4.	A _DCX employee_ authenticates him/herself against the RU or RUMCN identity provider _and_ is registered by a center’s research administrator as an employee of that center. In the Donders Institute, we distinguish between four centers: DCC, DCCN, DCN_S (DCN Science Faculty), and DCN_M (DCN Medical Faculty), jointly denoted as DCX. This user type can be added as a _manager_ to all collections of his center.
 
-### 6.3 One physical person, multiple users
+### 6.3 One physical person, multiple user profiles
 
-In principle, the same physical person can be represented as multiple users in the repository. This can happen if that person has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. If a user authenticates him/herself using multiple digital identities, then he/she will also be represented in the repository with multiple internal accounts, each of which is likely to have different authorizations. 
+In principle, the same physical person can be represented with multiple user profiles in the repository. This may happen if that person therefore has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. This would for example happen if that person is employed by multiple institutions (e.g. Radboud University and Max Planck). If that person authenticates him/herself using the different digital identities, then he/she will also be represented with multiple user profiles in the repository, each of which is likely to have different authorizations.
 
 ### 6.4 Authorizations linked to employers
 
-Some identity providers belong to an organization that also acts as an employer (a university, a governmental organization, ...). The the membership of these organizations changes with employment. Because many users change organization, they also change identity provider. Importantly, when a user signs up using the credentials (ID plus password) provided by an organization, an internal account is created that is specific for this organization. Therefore, when a user becomes authorized (in a particular role) for some collection, that authorization is also linked to the organization where the user is employed, namely via that organization's identity provider. 
+Some identity providers represent an organization that also acts as an employer (a university, a governmental organization, ...). The membership of these organizations changes with employment. Because employees in academia often change organization, they also change identity provider. Importantly, when a user signs up using the credentials (ID plus password) provided by an organization, an internal user profile is created that is specific for this organization. Therefore, when a user becomes authorized (in a particular role) for some collection, that authorization is linked to the organization where the user is employed, namely via that organization's identity provider.
 
-As a consequence of authorizations being linked to an identity provider, these authorizations are no longer accessible when the user looses access to this identity provider. This happens when the identity provider belongs to an organization that also acts as an employer, and the user's employment stops. Some time after the last day of the user's contract (the exact time varies per organization), the user has no longer access to the organization's identity provider, and thereby also loses access to the collections for which he/she is authorized via this identity provider. To regain access to these collections, the user must do the following:
+When a user looses access to this identity provider, e.g. by switching jobs, the authorizations granted to the user profile linked to that identity provider are no longer accessible. Consequently, he/she loses access to the collections for which he/she used to be authorized via this identity provider. To regain access to these collections, the user must do the following:
 
-1. Find another identity provider (e.g., another employer with an identity provider) with which he/she can sign up and create an associated repository-internal account. 
-2. For the collections to which he/she wants to have access, ask the managers to be added with his/her new account.
+1. Find another identity provider (e.g., another employer with an identity provider) with which he/she can sign up and create an associated user profile in the repository.
+2. For the collections to which he/she wants to have access, ask the managers to be added with the appropriate authorizations linked to his/her new user profile.
 
-When a user, after a period of unemployment, returns to his/her old organization and regains access to that organization's identity provider, that user will also regain the authorizations that he had when he left the organization.  
-
+When a user, after a period of unemployment, returns to his/her old organization and regains access to that organization's identity provider, that user will also regain the authorizations that he had prior to leaving the organization.
 
 ## 7	Up- and Downloading Files
 
@@ -285,7 +284,7 @@ Following publication, the researcher is required to add the DOI as the persiste
 
 #### 9.2.4	Contributors to the publication
 
-All coauthors to a publication share responsibility for good scientific practices and therefore must be contributor to the RDC. Consequently, all coauthors must be registered users in the repository. It is the responsibility of the RDC manager to invite co-authors external to the DI to create an account. Following registration of the user account, the RDC manager must add the co-author as contributor, thereby giving hin/her access to the files in the RDC.
+All coauthors to a publication share responsibility for good scientific practices and therefore must be contributor to the RDC. Consequently, all coauthors must be registered users in the repository. It is the responsibility of the RDC manager to invite co-authors external to the DI to create a user profile. Following registration of the user profile, the RDC manager must add the co-author as contributor, thereby giving him/her access to the files in the RDC.
 
 #### 9.2.5	Documenting the origin of the data
 
