@@ -106,4 +106,4 @@ Follow the steps below:
 
 3. try to run `magic_cal_2.R` as batch jobs as we did in the previous task.
 
-4. You probably noticed that the functions defined in `magic_cal_2.R` are so generic that they can be reused for different scripts.  That is right!  In fact, we have factored out those functions into `/opt/cluster/share/R` that you could make use in the future. In the script `magic_cal_3.R`, it shows you how to load those functions in your R scripts.  It also shows you how to construct the name of the RData file using the job information.
+4. You probably noticed that the functions defined in `magic_cal_2.R` are so generic that they can be reused for different scripts.  That is right!  In fact, we have factored out those functions into `/opt/cluster/share/R` so that you could easily make use of those functions in the future. In the script `magic_cal_3.R`, it shows you how to load those functions in your R scripts.  It also shows you how to construct the name of the RData file using the job information.
