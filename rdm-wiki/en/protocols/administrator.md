@@ -1,7 +1,7 @@
 # Protocol for Research Administrators
 
 ## 1.	Version
-Draft version, last update by Eric, February 8, 2016.
+Draft version, last update by Eric, February 29, 2016.
 
 ## 2.	Scope
 This protocol is in effect as of DD-MM-YYYY and replaces all previous versions of the DI-RDM protocol for research administrators .
@@ -26,110 +26,21 @@ The research administrator initiates data collections and manages their initial 
 Researchers and research administrators have different roles. The difference between the different researcher roles and that of a research administrator is in the way of interacting with the digital repository:
 
 1.	Researchers interact with the repository by creating, modifying, and viewing files and by providing collection attributes (see the DI RDM Protocol for Researchers).
-2.	Research administrators mainly interact with the repository by initiating and initializing collections, as described in this protocol. And besides this main task, research administrators also have a task in user administration.
+2.	Research administrators mainly interact with the repository by initiating and initializing collections, as described in this protocol. Besides this main task relating to collections, research administrators also have a task in authorizing users at level of the Donders center for which they are responsible (DCC, DCCN, DCN_s, or DCN_m; collectively denoted as DCX).
 
 Within the digital repository, the research administrator role is mainly defined in terms of rights with respect to particular collections of files. There are three types of collections: data acquisition collections (DACs), research documentation collections (RDCs), and data sharing collections (DSCs). Building these collections involves uploading files and providing collection attributes, as described in the _DI RDM Protocol for Researchers_.
 
-The collections are aggregated by Donders center (DCC, DCCN, DCN_s, and DCN_m). A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This organization of the collections in no way limits the access to these collections by members of other Donders centers or RU-external institutes. This because authorization for collection access is at the level of the collections rather than at the center level. Only the initial authorization for the collection manager role (see 6.1.3) is performed by a center's research administrator.
+The collections are aggregated by Donders center. A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This organization of the collections in no way limits the access to these collections by members of other Donders centers or RU-external institutes. This because authorization for collection access is at the level of the collections rather than at the center level. Only the initial authorization for the collection manager role (see 6.1.3) is performed by a center's research administrator.
 
 The rights and responsibilities of research administrators involve the following:
 
 1.	Initiating, initializing and managing collections.
 2.	Authorizing users at the center level.
-3.	Managing and linking user accounts.
 
-These three tasks are now described in more detail. For the description of the first task (initiating, initializing and managing collections), we have to make some distinctions between DACs, RDCs and DSCs.
-
-## 6.	Initiating, Initializing and Managing Collections
-
-### 6.1.	Common Protocol for all Collection Types
-
-#### 6.1.1.	Collection Initiation
-
-A collection is initiated by the research administrator following a request by a researcher that is formally approved by the center director (or that conforms to the criteria put forward by the center director).
-
-The research administrator configures the collection on the digital repository and specifies the disk space and the time period in which data can be added. The initial disk space and time period are based on center policies (see _Center Specific_). Increasing the allocated disk space and/or changing the time period can only be performed by the research administrator.
-
-#### 6.1.2.	Naming Convention
-
-The name of a collection can be chosen freely, subject to the following constraints:
-
-1.	All DACs have a name that starts with “DAC”.
-2.	All RDCs have a name that starts with “RDC”.
-3.	All DACs have a name that starts with “DSC”.
-4.	The name does not involve the following characters: /, >, <, |, :, and &.
-
-#### 6.1.3.	Assigning a Collection Manager
-
-The research administrator assigns at least one person in the role of collection manager. This role is described in the _DI RDM Protocol for Researchers_.
-
-The collection manager must be an employee of the university. This also holds if the collection is a part of contract or collaborative research in which the research question was put forward by the client/collaborator. In the latter case, the client/collaborator can (and is likely to be) a collection contributor. Collection contributors and viewers are added to the collection by the collection manager.
-
-If the contract of the collection manager ends, a new collection manager must be added to the collection. The original collection manager can remain contributor or viewer if the involvement in the collection is continued. If the research administrator notices that a collection manager's contract has ended, the following actions are required:
-
-1.	In case the old collection manager was the only one with this role, in agreement with the center director, add a new collection manager to the collection.
-2.	Give the old collection manager the role of collection viewer.
+These tasks are now described in more detail. For the description of the first task (initiating, initializing and managing collections), we have to make some distinctions between DACs, RDCs and DSCs.
 
 
-### 6.2.	Protocol Specific for Data Acquisition Collections
-
-##### 6.2.1. General
-
-Managing the initiation of Data Acquisition Collections is done at the center level.
-
-##### 6.2.2. Center specific - DCCN
-
-The DCCN manages the initiation of new DACs in the Project Proposal Meetings (PPMs). Preparation of a PPM as well as the procedure itself, are described on the following intranet page: https://intranet.donders.ru.nl/index.php?id=442.
-
-##### 6.2.3. Center specific - DCC
-
-The DCC manages the initiation of new DACs via a form that has to be completed by the researcher and which must be approved by the center director.
-
-The DAC collection name is constructed according to the following standard:
-
-DAC\_YYYYMMDD\_freename  ,
-
-in which YYYY is the year, MM the month, and DD the day at which the collection is initiated. The component <freename> should be an acronym for the study to which this collection belongs. For example: DAC_20150623_AttSelConMon.
-
-##### 6.2.4. Center specific - DCN_s
-
-TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/20
-
-##### 6.2.5. Center specific - DCN_m
-
-TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/20
-
-### 6.3.	Protocol Specific for Research Documentation Collections
-
-##### 6.3.1. General
-
-TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/21
-
-Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the RDC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
-
-An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing processed data. 
-
-##### 6.3.2. Center specific
-
-This section is intentionally empty.
-
-### 6.4.	Protocol Specific for Data Sharing Collections
-
-##### 6.4.1. General
-
-Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the DSC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
-
-A DSC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office.
-
-An embargo period of up to 2 years can be granted, provided the center director has approved in writing.
-
-In case the data is not to be shared, the written request by the researcher and the approval of the center director will be uploaded to the Data Sharing Collection.  
-
-##### 6.4.2. Center specific
-
-This section is intentionally empty.
-
-## 7.	Authorizing Users at the Center Level
+## 6.	Authorizing Users at the Center Level
 
 Besides administrative actions that pertain to individual collections, the research administrator must also authorizing a user in the role of DCX employee (with DCX representing DCC, DCCN, DCN_s, or DCN_m). Only DCX employees can be added as a manager to their center’s collections. Also, DCX employees can view the metadata of all of a center’s collections. For the research administrator there are two actions to consider:
 
@@ -139,6 +50,103 @@ Besides administrative actions that pertain to individual collections, the resea
 Note that upon termination of a contract the user account should not be deleted in the RDM system. The access to the RDM system will automatically be disabled by the IdP.
 
 TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/19 and see https://github.com/Donders-Institute/donders-institute.github.io/issues/23
+
+
+
+## 7.	Initiating, Initializing and Managing Collections
+
+### 7.1.	Common Protocol for all Collection Types
+
+#### 7.1.1.	Collection Initiation
+
+A collection is initiated by the research administrator following a request by a researcher that is formally approved by the center director (or that conforms to the criteria put forward by the center director).
+
+The research administrator configures the collection on the digital repository and specifies the disk space and the time period in which data can be added. The initial disk space and time period are based on center policies (see _Center Specific_). Increasing the allocated disk space and/or changing the time period can only be performed by the research administrator.
+
+#### 7.1.2.	Naming Convention
+
+The name of a collection can be chosen freely, subject to the following constraints:
+
+1.	All DACs have a name that starts with “DAC”.
+2.	All RDCs have a name that starts with “RDC”.
+3.	All DACs have a name that starts with “DSC”.
+4.	The name does not involve the following characters: /, >, <, |, :, and &.
+
+#### 7.1.3.	Assigning a Collection Manager
+
+The research administrator assigns at least one person in the role of collection manager. This role is described in the _DI RDM Protocol for Researchers_.
+
+The collection manager must be a _DCX employee_. Authorization for the role of DCX employee is described in section 7, but at this point it must already mentioned that a user can only be a DCX employee if that user is a RU/RUMCN employee. This implies for instance that, in case of contract or collaborative research, the latter cannot be a collection manager. This also holds for research in which the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
+
+### 7.1.4. Revoking the Collection Manager Role
+
+When a user is no longer a DCX employee, he/she may no longer have the collection manager role. The typical situation in which a user stops being a DCX employee is when his contract with the RU/RUMCN ends. However, when a user is no longer a DCX employee, he/she can remain contributor or viewer if his/her involvement in the collection is continued. Procedurally, when a research administrator 
+
+observes that a collection manager's contract has ended, he/she must revoke that role and instead give the user the role of collection contributor. This action must be perform _all_ collections in which that user has the role of collection manager. 
+
+It can happen that, after removing a collection manager, that collection has no collection manager anymore. In that case, in agreement with the center director, the research administrator must assign a new collection manager. Importantly, every collection must have at least one collection manager. 
+
+
+
+
+### 7.2.	Protocol Specific for Data Acquisition Collections
+
+##### 7.2.1. General
+
+Managing the initiation of Data Acquisition Collections is done at the center level.
+
+##### 7.2.2. Center specific - DCCN
+
+The DCCN manages the initiation of new DACs in the Project Proposal Meetings (PPMs). Preparation of a PPM as well as the procedure itself, are described on the following intranet page: https://intranet.donders.ru.nl/index.php?id=442.
+
+##### 7.2.3. Center specific - DCC
+
+The DCC manages the initiation of new DACs via a form that has to be completed by the researcher and which must be approved by the center director.
+
+The DAC collection name is constructed according to the following standard:
+
+DAC\_YYYYMMDD\_freename  ,
+
+in which YYYY is the year, MM the month, and DD the day at which the collection is initiated. The component <freename> should be an acronym for the study to which this collection belongs. For example: DAC_20150623_AttSelConMon.
+
+##### 7.2.4. Center specific - DCN_s
+
+TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/20
+
+##### 7.2.5. Center specific - DCN_m
+
+TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/20
+
+### 7.3.	Protocol Specific for Research Documentation Collections
+
+##### 7.3.1. General
+
+TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/21
+
+Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the RDC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
+
+An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing processed data. 
+
+##### 7.3.2. Center specific
+
+This section is intentionally empty.
+
+### 7.4.	Protocol Specific for Data Sharing Collections
+
+##### 7.4.1. General
+
+Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the DSC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
+
+A DSC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office.
+
+An embargo period of up to 2 years can be granted, provided the center director has approved in writing.
+
+In case the data is not to be shared, the written request by the researcher and the approval of the center director will be uploaded to the Data Sharing Collection.  
+
+##### 7.4.2. Center specific
+
+This section is intentionally empty.
+
 
 ## 8.	Managing and Migrating User Accounts
 
