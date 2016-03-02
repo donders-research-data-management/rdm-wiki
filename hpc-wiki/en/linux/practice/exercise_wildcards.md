@@ -33,7 +33,7 @@ s1_recon-all.log  s6_recon-all.log  s8_recon-all.log
 
 ```
 
-The [] wildcard has the most complex syntax because it is more flexible. When BASH sees the [] characters, it will try to match any of the characters it sees inside them in the order specified. For example:
+The [ ] wildcard has the most complex syntax because it is more flexible. When BASH sees the [ ] characters, it will try to match any of the characters it sees inside them in the order specified. For example:
 
 ```bash
 $ ls *
