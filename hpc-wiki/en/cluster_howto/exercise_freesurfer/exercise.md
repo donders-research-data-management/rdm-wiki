@@ -11,12 +11,12 @@ cd FSdata
 ```
 ## Create the script 
  1. Open a text editor and create the script runFreesurfer.sh
- ```bash
- #!/bin/bash
+  ```bash
+  #!/bin/bash
 
- export SUBJECTS_DIR=$(pwd)
- recon-all -subjid FreeSurfer -i MP2RAGE.nii -all
- ```
+  export SUBJECTS_DIR=$(pwd)
+  recon-all -subjid FreeSurfer -i MP2RAGE.nii -all
+  ```
  2. Set the script to be executable
  3. Run the qsub command
  ```bash
