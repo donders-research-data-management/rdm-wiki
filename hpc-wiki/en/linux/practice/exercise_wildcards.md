@@ -4,8 +4,7 @@ A handy way to refer to many items with a similar pattern is with _wildcards_. T
 
 	* Matches everything 
 	? matches any single character
-	[] matches any of the letters or numbers, or a range of letters or numbers inside the brackets. A range of characters is specified using the `-` character. Some legal patterns would be [0-9], [5-8], [A-Z], [a-z], [a-Z], or [ady1-3]. 
-	There are examples below to clarify usage.
+	[] matches any of the letters or numbers, or a range of letters or numbers inside the brackets
 
 With BASH, the shell itself expands the wildcards. This means that the commands usually don't see these special characters because BASH has already expanded them before the command is run. Try to get a feel for wild cards with the following examples
 
@@ -35,7 +34,7 @@ s1_recon-all.log  s6_recon-all.log  s8_recon-all.log
 
 Do you understand all of the patterns and how they returned what they did? 
 
-The [ ] wildcard has the most complex syntax because it is more flexible. When BASH sees the [ ] characters, it will try to match any of the characters it sees inside them. For example:
+The [ ] wildcard has the most complex syntax because it is more flexible. When BASH sees the [ ] characters, it will try to match any of the characters or a range of characters it sees inside them. A range of characters is specified by separating two search characters with the `-` character. Some legal patterns would be [0-9], [5-8], [A-Z], [a-z], [a-Z], or [ady1-3]. For example:
 
 ```bash
 $ ls * #Matches all strings
