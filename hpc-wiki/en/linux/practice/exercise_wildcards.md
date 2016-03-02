@@ -4,7 +4,7 @@ A handy way to refer to many items with a similar pattern is with _wildcards_. T
 
 	* Matches everything 
 	? matches any single character
-	[] matches any of the letters or numbers, or a range of letters or numbers inside the brackets. A range of characters is specified using the `-` character. Some legal patterns would be [0-9], [5-8], [A-Z] or [a-z], [a-Z], or [ady1-3]. 
+	[] matches any of the letters or numbers, or a range of letters or numbers inside the brackets. A range of characters is specified using the `-` character. Some legal patterns would be [0-9], [5-8], [A-Z], [a-z], [a-Z], or [ady1-3]. 
 	There are examples below to clarify usage.
 
 With BASH, the shell itself expands the wildcards. This means that the commands usually don't see these special characters because BASH has already expanded them before the command is run. Try to get a feel for wild cards with the following examples
