@@ -21,6 +21,7 @@ This data file is an example output file from a freesurfer command submitted to 
 
 ## Solutions
  1. Task 1
+   
    ```bash
   $ cat gcutError_recon-all.log | grep "Subject[0-9][0-9]"
   /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer 
@@ -34,6 +35,7 @@ This data file is an example output file from a freesurfer command submitted to 
   /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz
   cp /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/rawavg.mgz 
    ```
+  
   Hint: Note that you could also have run the command grep "Subject" gcutError_recon-all.log to get the same results. The traditional unix command line tools typically provide many ways of doing the same thing. It's up to the user to find the best way to accomplish each task. grep is an excellent tool. To learn more about what you can search, try man grep. You can also google for something like "cool stuff I can do with grep." 
 
 2. Task 2
