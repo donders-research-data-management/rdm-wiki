@@ -16,7 +16,6 @@ This data file is an example output file from a freesurfer command submitted to 
   Hint: 2. Think back on the exercise about the wildcards.
 
  2. If you completed Task 1, you were able to find the output you wanted, but there was much more output sent to the screen than you needed. Construct another pipeline to limit the output of _grep_ to only the first line.
-
   Hint: Think of a command that prints the first n lines of a file. You can always google the task if you can't think of the right tool for the job.
 
 ## Solutions
