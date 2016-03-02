@@ -33,17 +33,19 @@ s1_recon-all.log  s6_recon-all.log  s8_recon-all.log
 
 ```
 
-The [ ] wildcard has the most complex syntax because it is more flexible. When BASH sees the [ ] characters, it will try to match any of the characters it sees inside them in the order specified. For example:
+Do you understand all of the patterns and how they returned what they did? 
+
+The [ ] wildcard has the most complex syntax because it is more flexible. When BASH sees the [ ] characters, it will try to match any of the characters it sees inside them. For example:
 
 ```bash
-$ ls *
-afile bfile cfile 4file
-$ ls [a-c4]*
-afile bfile cfile 4file
-$ ls [4a-b]*
+$ ls * #Matches all strings
+4file afile bfile cfile
+$ ls [a-c4]* #Matches all strings starting with any of a range of letters from a to c, or the number 4.
+4file afile bfile cfile
+$ ls [4a-b]* #Matches all strings starting with any of a range of letters from a to b, or the number 4
 4file afile bfile
+$ ls [abc4]* #Matches all strings starting with a b c or 4. This is the same as [a-c4] or [4a-c]
 ```
-Do you understand all of the patterns and how they returned what they did? 
 
 ## Your Task
 
