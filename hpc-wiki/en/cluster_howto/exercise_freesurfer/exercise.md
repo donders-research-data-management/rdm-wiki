@@ -21,11 +21,11 @@ cd FSdata
  $ echo "cd $PWD; ./runFreesurfer.sh" | qsub walltime=00:10:00,mem=1GB 
  ```
  4. Verify the job is running with `qstat.` You should see something like:
- ```bash
+```bash
  Job ID                    Name             User            Time Use S Queue
  ------------------------- ---------------- --------------- -------- - -----
  11173851.dccn-l029         STDIN            dansha                 0 Q long
- ```
+```
 5. Because we don't really want to run the analysis but rather test a script, kill the job with qdel
  ```bash
  $ qdel <your-job-id>
