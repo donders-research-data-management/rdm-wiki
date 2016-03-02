@@ -13,7 +13,6 @@ cd FSdata
  1. Open a text editor and create the script runFreesurfer.sh
   ```bash
   #!/bin/bash
-
   export SUBJECTS_DIR=$(pwd)
   recon-all -subjid FreeSurfer -i MP2RAGE.nii -all
   ```
