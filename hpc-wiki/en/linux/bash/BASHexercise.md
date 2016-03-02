@@ -18,24 +18,24 @@ In This task, we're going to create a script, set it as executable (make it so w
     # If someone tries to execute a BASH script that does not have the #!/bin/bash line, and they are in a non-BASH shell, then the script
     # will not probably not work correctly because all the syntax of different shell languages is different. has different.
     # The syntax of the interpreter directive  is a  #! followed immediately by the absolute path of the interpreter you'd like to use.
-    # In most GNU/Linux systems, BASH is expected to live in the /bin folder, so it's full path is normally /bin/bash. To find the full path of a program that is already on your path, run the command
+    # In most GNU/Linux systems, BASH is expected to live in the /bin folder, so it's full path is normally /bin/bash. 
     ```
 
-3. So far this script will do nothing if run because it only contains an interpreter directive and commentary. Let's add some commands to the script to make it do something. Recall the first execise where you grep'd over the log file. If we want to save those commands to use again, a script is a very good way to do that. Add the following commands to your script following the commantary.
+3. So far this script will do nothing if run because it only contains an interpreter directive and commentary. Let's add some commands to the script to make it do something. Recall the previous execise where you grep'd over the log file. If we want to save those commands to use again, a script is a very good way to do that. Add the following commands to your script following the commantary.
 
     ```bash
-    cat gcutError_recon-all.log | grep "Subject05" | head -1
+    cat gcutError_recon-all.log | grep "Subject[0-9][0-9]" | head -1
     ```
 
-4.  Save this file as `~/Scripts/myScript.sh`
+4.  Save this file as `~/Scripts/logSearch.sh`
 
 5. Set the script as executable with the following command
 
     ```bash
-    $ chmod +x ~/Scripts/script.sh
+    $ chmod +x ~/Scripts/logSearch.sh
     ```
 
-   NB! This step is extrememly important. Your script will not run unless you tell linux that it can be run. This is a security thing. In the chmod (change mode) command, `+x` is an option meaning "plus executable," or set this file to have permission to execute for all users. For more and potentially confusing information, run the command 
+   Achtung: This step is extrememly important. Your script will not run unless you tell linux that it can be run. This is a security thing. In the chmod (change mode) command, `+x` is an option meaning "plus executable," or set this file to have permission to execute for all users. For more and potentially confusing information, run the command 
 
     ```bash
     $ man chmod
@@ -54,7 +54,7 @@ In This task, we're going to create a script, set it as executable (make it so w
     The take away from all this is that instead of typing 
 
     ```bash
-    $ cat gcutError_recon-all.log | grep "Subject05" | head -1
+    $ cat gcutError_recon-all.log | grep "Subject[0-9][0-9]" | head -1
     ```
 
     every time you want to run this command, you can just run this script.
