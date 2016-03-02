@@ -43,7 +43,7 @@ In This task, we're going to create a script, set it as executable (make it so w
     
 6. Next we will show how you can run your script. In unix like systems, executable files are treated fairly similary whether they are scripts of binary programs. To run an executable, you generally need to type it's name in, and it will execute. You only need to make sure BASH knows where to look for the executable you want to run. You can always run any executable by typing in the full path, the path relative to your current working directory, or you can add the location of the executable to your PATH. Try to run your script by first using the relative path, then the absolute path. Raise your hand, if you don't understand this instruction. 
 
-   Hint: The symbol . refers to your current directory. In BASH, you need to indicate you want to run an executable in your current directory by prefacing the command with ./ For example, if you want to executa a script, "myscript.sh" in your current directory, you would type ./myscript.sh
+   Hint: The character `.` refers to your current directory. In BASH, you need to indicate that you want to run an executable in your current directory by prefacing the command with ./ For example, if you want to executa a script, "myscript.sh" in your current directory, you would type ./myscript.sh
 
 7. Now that you've run your script using the absolute and relative paths, try to add `~/Scripts` to your PATH.
 
