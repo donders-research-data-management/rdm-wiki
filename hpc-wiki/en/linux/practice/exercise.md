@@ -20,7 +20,7 @@ This data file is an example output file from a freesurfer command submitted to 
  Hint: Think of a command that prints the first n lines of a file. You can always google the task if you can't think of the right tool for the job.
 
 ## Solutions
-  1. Task 1
+### Task 1
    
    ```bash
   $ cat gcutError_recon-all.log | grep "Subject[0-9][0-9]"
@@ -38,7 +38,7 @@ This data file is an example output file from a freesurfer command submitted to 
   
    Hint: Note that you could also have run the command grep "Subject" gcutError_recon-all.log to get the same results. The traditional unix command line tools typically provide many ways of doing the same thing. It's up to the user to find the best way to accomplish each task. grep is an excellent tool. To learn more about what you can search, try man grep. You can also google for something like "cool stuff I can do with grep." 
 
-  2. Task 2
+### Task 2
 
   ```bash
 $ grep "Subject[0-9][0-9]" gcutError_recon-all.log | head -1 /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
