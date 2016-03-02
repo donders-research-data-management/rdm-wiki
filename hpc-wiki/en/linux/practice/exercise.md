@@ -12,7 +12,7 @@ This data file is an example output file from a freesurfer command submitted to 
  
 1. Construct a Linux command pipeline to get the subject ID associated with the log file. The subejct ID is of the form Subject##, i.e Subject01, Subject02, Subject03, etc. Use one command to send input to grep, and then use grep to search for a pattern.
   
-  Hint: 1. Commands separated with a pipe, the | character, send the output of the command to the left of the pipe as input to   the command on the right of the pipe. 
+  Hint: 1. Commands separated with a pipe, the `|` character, send the output of the command to the left of the pipe as input to   the command on the right of the pipe. 
   Hint: 2. Think back on the exercise about the wildcards.
 
 2. If you completed Task 1, you were able to find the output you wanted, but there was much more output sent to the screen than you needed. Construct another pipeline to limit the output of _grep_ to only the first line.
@@ -21,7 +21,7 @@ This data file is an example output file from a freesurfer command submitted to 
 
 ## Solutions
  1. Task 1
-  ```bash
+   ```bash
   $ cat gcutError_recon-all.log | grep "Subject[0-9][0-9]"
   /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer 
   -subjid FreeSurfer -i /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii -all
@@ -33,14 +33,14 @@ This data file is an example output file from a freesurfer command submitted to 
   writing to /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz...
   /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz
   cp /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/rawavg.mgz 
-  ```
+   ```
   Hint: Note that you could also have run the command grep "Subject" gcutError_recon-all.log to get the same results. The traditional unix command line tools typically provide many ways of doing the same thing. It's up to the user to find the best way to accomplish each task. grep is an excellent tool. To learn more about what you can search, try man grep. You can also google for something like "cool stuff I can do with grep." 
 
 2. Task 2
 
-```bash
+  ```bash
 $ grep "Subject[0-9][0-9]" gcutError_recon-all.log | head -1 /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
-```
+  ```
   Note: You could have also done <br> grep -m 1 "Subject[0-9][0-9]" gcutError_recon-all.log <br> cat gcutError\_recon-all.log | grep "Subject[0-9][0-9]" | head -1 <br> cat gcutError_recon-all.log | grep -m 1 "Subject[0-9][0-9]" <br> There are usually many ways to do the same thing. Look up the -m option in the grep man page if you're curious! 
 
 ## Closing Remarks
