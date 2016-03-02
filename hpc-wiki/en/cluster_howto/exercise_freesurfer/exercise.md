@@ -19,7 +19,7 @@ cd FSdata
  3. Run the qsub command
  ```bash
  $ echo "cd $PWD; ./runFreesurfer.sh" | qsub walltime=00:10:00,mem=1GB 
- ```
+  ```
  4. Verify the job is running with `qstat.` You should see something like:
  ```bash
 Job ID                    Name             User            Time Use S Queue
