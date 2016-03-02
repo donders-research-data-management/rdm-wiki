@@ -17,24 +17,24 @@ This data file is an example output file from a freesurfer command submitted to 
 
  2. If you completed Task 1, you were able to find the output you wanted, but there was much more output sent to the screen than you needed. Construct another pipeline to limit the output of _grep_ to only the first line.
 
-Hint: Think of a command that prints the first n lines of a file. You can always google the task if you can't think of the right tool for the job.
+  Hint: Think of a command that prints the first n lines of a file. You can always google the task if you can't think of the right tool for the job.
 
 ## Solutions
-1. Task 1
+ 1. Task 1
  
-```bash
-$ cat gcutError_recon-all.log | grep "Subject[0-9][0-9]"
-/home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer 
--subjid FreeSurfer -i /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii -all
-setenv SUBJECTS_DIR /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05
-/home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
- mri_convert /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz 
-mri_convert /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz 
-reading from /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii...
-writing to /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz...
-/home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz
- cp /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/rawavg.mgz 
-```
+  ```bash
+  $ cat gcutError_recon-all.log | grep "Subject[0-9][0-9]"
+  /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer 
+  -subjid FreeSurfer -i /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii -all
+  setenv SUBJECTS_DIR /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05
+  /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
+  mri_convert /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz 
+  mri_convert /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz 
+  reading from /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii...
+  writing to /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz...
+  /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz
+  cp /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/rawavg.mgz 
+  ```
 
 Hint: Note that you could also have run the command grep "Subject" gcutError_recon-all.log to get the same results. The traditional unix command line tools typically provide many ways of doing the same thing. It's up to the user to find the best way to accomplish each task. grep is an excellent tool. To learn more about what you can search, try man grep. You can also google for something like "cool stuff I can do with grep." 
 
