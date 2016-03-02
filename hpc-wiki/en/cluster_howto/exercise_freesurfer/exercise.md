@@ -10,6 +10,7 @@ cd FSdata
 ## Create the script 
 
  1. Open a text editor and create the script runFreesurfer.sh
+ 
  ```bash
  #!/bin/bash
  export SUBJECTS_DIR=$(pwd)
