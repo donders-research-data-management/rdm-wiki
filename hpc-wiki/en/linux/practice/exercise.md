@@ -1,10 +1,10 @@
 # Exercise: Linux practise
 ## Preparation
-  Download [this data file](../exercise/gcutError_recon-all.log) using the following command:
+   Download [this data file](../exercise/gcutError_recon-all.log) using the following command:
 
-  ```bash
-  $ wget http://donders-institute.github.io/hpc-wiki/en/linux/exercise/gcutError_recon-all.log
-  ```
+   ```bash
+   $ wget http://donders-institute.github.io/hpc-wiki/en/linux/exercise/gcutError_recon-all.log
+   ```
 
   This data file is an example output file from a freesurfer command submitted to the cluster using qsub. In this simple task we are going to try to extract some information from it using a few commands.
 
@@ -46,4 +46,4 @@ $ grep "Subject[0-9][0-9]" gcutError_recon-all.log | head -1 /home/language/dans
   Note: You could have also done <br> grep -m 1 "Subject[0-9][0-9]" gcutError_recon-all.log <br> cat gcutError\_recon-all.log | grep "Subject[0-9][0-9]" | head -1 <br> cat gcutError_recon-all.log | grep -m 1 "Subject[0-9][0-9]" <br> There are usually many ways to do the same thing. Look up the -m option in the grep man page if you're curious! 
 
 ## Closing Remarks
-These are just simple examples. You see the real power of the unix command line tools when you add a little, soon to come, scripting know-how. A simple example of a more powerful way to use grep is in a case where you have 543 subject logs (not impossible!), and you need to search through all of them for subjects who participated in a version of your experiment with a bad stimuli list. grep is an excellent tool for this! 
+   These are just simple examples. You see the real power of the unix command line tools when you add a little, soon to come, scripting know-how. A simple example of a more powerful way to use grep is in a case where you have 543 subject logs (not impossible!), and you need to search through all of them for subjects who participated in a version of your experiment with a bad stimuli list. grep is an excellent tool for this! 
