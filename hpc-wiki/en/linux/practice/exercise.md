@@ -24,7 +24,7 @@ Hint: Think of a command that prints the first n lines of a file. You can always
  
 ```bash
 $ cat gcutError_recon-all.log | grep "Subject[0-9][0-9]"
-/home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
+/home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer 
 -subjid FreeSurfer -i /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/Scans/Anatomical/MP2RAGE/MP2RAGE.nii -all
 setenv SUBJECTS_DIR /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05
 /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
@@ -41,10 +41,9 @@ Hint: Note that you could also have run the command grep "Subject" gcutError_rec
 2. Task 2
 
 ```bash
-  $ grep "Subject[0-9][0-9]" gcutError_recon-all.log | head -1
-  /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
+$ grep "Subject[0-9][0-9]" gcutError_recon-all.log | head -1 /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
 ```
- Note: You could have also done <br> grep -m 1 "Subject[0-9][0-9]" gcutError_recon-all.log <br> cat gcutError\_recon-all.log | grep "Subject[0-9][0-9]" | head -1 <br> cat gcutError_recon-all.log | grep -m 1 "Subject[0-9][0-9]" <br> There are usually many ways to do the same thing. Look up the -m option in the grep man page if you're curious! 
+Note: You could have also done <br> grep -m 1 "Subject[0-9][0-9]" gcutError_recon-all.log <br> cat gcutError\_recon-all.log | grep "Subject[0-9][0-9]" | head -1 <br> cat gcutError_recon-all.log | grep -m 1 "Subject[0-9][0-9]" <br> There are usually many ways to do the same thing. Look up the -m option in the grep man page if you're curious! 
 
 ## Closing Remarks
 These are just simple examples. You see the real power of the unix command line tools when you add a little, soon to come, scripting know-how. A simple example of a more powerful way to use grep is in a case where you have 543 subject logs (not impossible!), and you need to search through all of them for subjects who participated in a version of your experiment with a bad stimuli list. grep is an excellent tool for this! 
