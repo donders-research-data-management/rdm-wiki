@@ -11,13 +11,13 @@ This data file is an example output file from a freesurfer command submitted to 
 ## Your Task
 1. Construct a Linux command pipeline to get the subject ID associated with the log file. The subejct ID is of the form Subject##, i.e Subject01, Subject02, Subject03, etc. Use one command to send input to grep, and then use grep to search for a pattern.
 
-  Hint: 1. Commands separated with a pipe, the | character, send the output of the command to the left of the pipe as input to   the command on the right of the pipe. 
+Hint: 1. Commands separated with a pipe, the | character, send the output of the command to the left of the pipe as input to   the command on the right of the pipe. 
 
- Hint: 2. Think back on the exercise about the wildcards.
+Hint: 2. Think back on the exercise about the wildcards.
 
 2. If you completed Task 1, you were able to find the output you wanted, but there was much more output sent to the screen than you needed. Construct another pipeline to limit the output of _grep_ to only the first line.
 
- Hint: Think of a command that prints the first n lines of a file. You can always google the task if you can't think of the right tool for the job.
+Hint: Think of a command that prints the first n lines of a file. You can always google the task if you can't think of the right tool for the job.
 
 ## Solutions
 1. Task 1
