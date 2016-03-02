@@ -1,21 +1,23 @@
 ## Exercise: Running FreeSurfer jobs on the cluster
-In this exercise we will construct a small script to run `freesurfer --recon-all` and use qsub to submit this script to the cluster for execution.
+In this exercise we will construct a small script to run FreeSurfer's `recon-all,` and use qsub to submit this script to the cluster for execution.
 
 ## Preparation
-Move into the directory you'd like to work in and download the necessary files for this exercise using this command:
+Move into the directory you'd like to work in and download the necessary files for the exercise using this command:
 
 ```bash
 wget http://donders-institute.github.io/hpc-wiki/en/cluster_howto/exercise_freesurfer/FSdata.tgz
+tar -xvf FSdata.tgz
+cd FSdata
 ```
 ## Create the script 
- 1. CD into FSdata/, open a text editor and create the script runFreesurfer.sh
+ 1. Open a text editor and create the script runFreesurfer.sh
 
-```bash
-#!/bin/bash
+ ```bash
+ #!/bin/bash
 
-export SUBJECTS_DIR=$(pwd)
-recon-all -subjid FreeSurfer -i MP2RAGE.nii -all
-```
+ export SUBJECTS_DIR=$(pwd)
+ recon-all -subjid FreeSurfer -i MP2RAGE.nii -all
+ ```
  
  2. Set the script to be executable
  
