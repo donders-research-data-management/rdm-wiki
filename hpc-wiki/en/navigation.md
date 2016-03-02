@@ -11,7 +11,8 @@
   * [Text data processing](linux/practice/analysis.md)
   * [Exercise 1: file system](linux/practice/exercise_fs.md)
   * [Exercise 2: text data](linux/practice/exercise.md)
-  - - - -
+  * [Exercise 3: wildcards](linux/practice/exercise.md)  
+- - - -
   * # Scripting in Bash
   * [Getting start](linux/bash/start.md)
   * [The bash language](linux/bash/language.md)
