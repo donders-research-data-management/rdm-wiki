@@ -35,14 +35,14 @@ This data file is an example output file from a freesurfer command submitted to 
   cp /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/orig/001.mgz /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer/mri/rawavg.mgz 
   ```
 
-Hint: Note that you could also have run the command grep "Subject" gcutError_recon-all.log to get the same results. The traditional unix command line tools typically provide many ways of doing the same thing. It's up to the user to find the best way to accomplish each task. grep is an excellent tool. To learn more about what you can search, try man grep. You can also google for something like "cool stuff I can do with grep." 
+  Hint: Note that you could also have run the command grep "Subject" gcutError_recon-all.log to get the same results. The traditional unix command line tools typically provide many ways of doing the same thing. It's up to the user to find the best way to accomplish each task. grep is an excellent tool. To learn more about what you can search, try man grep. You can also google for something like "cool stuff I can do with grep." 
 
 2. Task 2
 
 ```bash
 $ grep "Subject[0-9][0-9]" gcutError_recon-all.log | head -1 /home/language/dansha/Studies/LaminarWord/SubjectData/Subject05/FreeSurfer
 ```
-Note: You could have also done <br> grep -m 1 "Subject[0-9][0-9]" gcutError_recon-all.log <br> cat gcutError\_recon-all.log | grep "Subject[0-9][0-9]" | head -1 <br> cat gcutError_recon-all.log | grep -m 1 "Subject[0-9][0-9]" <br> There are usually many ways to do the same thing. Look up the -m option in the grep man page if you're curious! 
+  Note: You could have also done <br> grep -m 1 "Subject[0-9][0-9]" gcutError_recon-all.log <br> cat gcutError\_recon-all.log | grep "Subject[0-9][0-9]" | head -1 <br> cat gcutError_recon-all.log | grep -m 1 "Subject[0-9][0-9]" <br> There are usually many ways to do the same thing. Look up the -m option in the grep man page if you're curious! 
 
 ## Closing Remarks
 These are just simple examples. You see the real power of the unix command line tools when you add a little, soon to come, scripting know-how. A simple example of a more powerful way to use grep is in a case where you have 543 subject logs (not impossible!), and you need to search through all of them for subjects who participated in a version of your experiment with a bad stimuli list. grep is an excellent tool for this! 
