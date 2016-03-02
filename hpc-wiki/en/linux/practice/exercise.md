@@ -1,12 +1,12 @@
 # Exercise: Linux practise
 ## Preparation
-   Download [this data file](../exercise/gcutError_recon-all.log) using the following command:
+    Download [this data file](../exercise/gcutError_recon-all.log) using the following command:
 
-   ```bash
-   $ wget http://donders-institute.github.io/hpc-wiki/en/linux/exercise/gcutError_recon-all.log
-   ```
+    ```bash
+    $ wget http://donders-institute.github.io/hpc-wiki/en/linux/exercise/gcutError_recon-all.log
+    ```
 
-  This data file is an example output file from a freesurfer command submitted to the cluster using qsub. In this simple task we are going to try to extract some information from it using a few commands.
+    This data file is an example output file from a freesurfer command submitted to the cluster using qsub. In this simple task we are going to try to extract some information from it using a few commands.
 
 ## Your Task
  
