@@ -43,7 +43,7 @@ These tasks are now described in more detail. For the description of the second 
 
 RDM users that are employed by the RU or the RUMCN can be eligible for the role of _DCX employee_ (with DCX representing DCC, DCCN, DCN_s, or DCN_m). Only DCX employees can be added as a manager to their center’s collections. The center director decides which RU/RUMCN employees can be authorized as a DCX employee for their center.
 
-Users can only be authorized as a DCX employee if they have an user profile. Users can create their own user profile in a procedure that is known as _signing up_ and that is described in the _DI RDM Protocol for Researchers_.
+Users can only be authorized as a DCX employee if they have a user profile. Users can create their own user profile in a procedure that is known as _signing up_ and that is described in the _DI RDM Protocol for Researchers_.
 
 Prior to authorizing a user as a DCX employee, the research administrator must check whether the user's account is linked to the RU or the RUMCN (e.g., a U- or a Z-number). In addition, the center director must agree with this user being authorized as a DCX employee.
 
@@ -78,9 +78,9 @@ The name of a collection can be chosen freely, subject to the following constrai
 
 The research administrator assigns at least one person in the role of collection manager. This role is described in the _DI RDM Protocol for Researchers_.
 
-The collection manager must be a _DCX employee_. Because a DCX employee must also be a RU/RUMCN employee, external collaborators cannot be a collection manager. This important in case of contract or collaborative research, even when the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
+The collection manager must be a _DCX employee_. Because a DCX employee must also be a RU/RUMCN employee, external collaborators cannot be a collection manager. This important in case of contract or collaborative research, and it even holds when the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
 
-### 7.1.4. Revoking the Collection Manager Role
+#### 7.1.4. Revoking the Collection Manager Role
 
 When a user is no longer a DCX employee, he/she may no longer have the _collection manager_ role. The typical reason for this is the termination of that user's contract with the RU/RUMCN. He/she can remain a _contributor_ or _viewer_ if his/her involvement in the collection is continued.
 
