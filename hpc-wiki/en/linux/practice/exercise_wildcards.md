@@ -60,7 +60,7 @@ The `[ ]` wildcard has the most complex syntax because it is more flexible. When
     ```bash
     $ ls [a-c4]* 
     4file afile bfile cfile
-    ````
+    ```
 
 * matching all strings starting with any of a range of letters from `a` to `b`, or the number `4`
 
@@ -68,7 +68,7 @@ The `[ ]` wildcard has the most complex syntax because it is more flexible. When
     $ ls [4a-b]* 
     4file afile bfile
     ```
-    
+
 * matching all strings starting with `a`, `b`, `c` or `4`. This is the same as `[a-c4]` or `[4a-c]`
 
     ```bash
