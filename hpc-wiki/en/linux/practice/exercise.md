@@ -1,5 +1,7 @@
-# Exercise: Linux practise
+# Exercise: play with text-based data file 
+
 ## Preparation
+
 Download [this data file](../exercise/gcutError_recon-all.log) using the following command:
 
 ```bash
