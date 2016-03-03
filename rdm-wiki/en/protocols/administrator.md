@@ -30,7 +30,7 @@ Researcher administrators have different roles than researchers:
 
 Within the digital repository, the research administrator role is mainly defined in terms of rights with respect to particular collections of files. There are three types of collections: data acquisition collections (DACs), research documentation collections (RDCs), and data sharing collections (DSCs). Building these collections involves uploading files and providing collection attributes, as described in the _DI RDM Protocol for Researchers_.
 
-The collections are aggregated by Donders center. A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This organization of the collections in does not limits the access to the content of the collections by members of other Donders centers or RU-external institutes, but it does limit the responsibilities. The initial authorization for the collection manager role (see 7.1.3) is performed by a center's research administrator.
+The collections are aggregated by Donders center. A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This organization of the collections in does not limits the access to the content of the collections by members of other Donders centers or RU-external institutes, but it does limit the responsibilities. The initial authorization for the collection manager role (see 7.1.5) is performed by a center's research administrator.
 
 The rights and responsibilities of research administrators involve the following:
 
@@ -49,7 +49,7 @@ Prior to authorizing a user as a DCX employee, the research administrator must c
 
 A user can be a DCX employee in multiple Donders centers. However, a research administrator can only add a user as a DCX employee of his/her own center.
 
-A user's authorization as a DCX employee may also be revoked. The typical reason for this is the termination of that user's contract with the RU/RUMCN. Thus, when a DCX employee is no longer employed by the RU/RUMCN, his/her authorization as a DCX employee must be revoked. As only a DCX employee can have the responsibility as manager of the corresponding center's collections, also the user's manager role in must be revoked in all collections for which this is the case. We return to this point in 7.1.4.
+A user's authorization as a DCX employee may also be revoked. The typical reason for this is the termination of that user's contract with the RU/RUMCN. Thus, when a DCX employee is no longer employed by the RU/RUMCN, his/her authorization as a DCX employee must be revoked. As only a DCX employee can have the responsibility as manager of the corresponding center's collections, also the user's manager role in must be revoked in all collections for which this is the case. We return to this point in 7.1.6.
 
 A user's authorization as a DCX employee may also be revoked if he/she remains to be employed by the RU/RUMCN. This can happen for instance if a DCX employee leaves the center but continues his/her work elsewhere at the RU/RUMCN. Also in this case, that user can no longer be a manager of the corresponding center's collections.
 
@@ -101,7 +101,6 @@ When a user is no longer a DCX employee, he/she may no longer have the _collecti
 Procedurally, when a research administrator revokes a user's authorization as a DCX employee, he/she must also revoke that user's manager role in all the relevant collections.
 
 It can happen that, after removing a collection manager, a given collection no longer has a manager. In that case, in agreement with the center director, the research administrator must assign a new collection manager. Every collection must have at least one manager, i.e. a person that can be held responsible.
-
 
 
 ### 7.2.	Protocol Specific for Data Acquisition Collections
