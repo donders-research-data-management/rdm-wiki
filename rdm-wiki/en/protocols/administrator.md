@@ -65,7 +65,9 @@ A collection is initiated by the research administrator following a request by a
 
 The research administrator configures the collection on the digital repository and specifies the disk space and the time period in which data can be added. The initial disk space and time period are based on center policies (see _Center Specific_). Increasing the allocated disk space and/or changing the time period can only be performed by the research administrator.
 
-#### 7.1.2.	Naming Convention
+#### 7.1.2.	Collection Name and Title
+
+A collection has both a name and a title; the collection name determines how the collection appears in the underlying file system, the title is pure descriptive. A collection name cannot be changed anymore after collection initiaition, the title can be changed by the collection managers and contributors.
 
 The name of a collection can be chosen freely, subject to the following constraints:
 
@@ -74,19 +76,32 @@ The name of a collection can be chosen freely, subject to the following constrai
 3.	All DACs have a name that starts with “DSC”.
 4.	The name does not involve the following characters: /, >, <, |, :, and &.
 
-#### 7.1.3.	Assigning a Collection Manager
+The title of a collection is completely free.
+
+#### 7.1.3. Project Identifier
+
+The project identifier indicates the research project to this collection belongs. Importantly, a _research project_ only exists at the level of the center administration, and by having the project identifier as an attribute of a collection, a link is established between the center administration and the RDM repository. The centers are free to choose an administrative system with which they organize their research projects. 
+
+#### 7.1.4. Disk Quotum and Preservation Time
+
+The research administrator must set a disk quotum (the maximum size) and a preservation time for every collection. The disk quotum should be set on the basis of the center's experience with collections that contain a particular type of data (MRI, EEG, MEG, calcium imaging, eye movements, ...). 
+
+The preservation time should be set on the basis of requirements by stakeholders such as funding agencies and the Board of the University.
+
+#### 7.1.5.	Assigning a Collection Manager
 
 The research administrator assigns at least one person in the role of collection manager. This role is described in the _DI RDM Protocol for Researchers_.
 
 The collection manager must be a _DCX employee_. Because a DCX employee must also be a RU/RUMCN employee, external collaborators cannot be a collection manager. This important in case of contract or collaborative research, and it even holds when the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
 
-#### 7.1.4. Revoking the Collection Manager Role
+#### 7.1.6. Revoking the Collection Manager Role
 
 When a user is no longer a DCX employee, he/she may no longer have the _collection manager_ role. The typical reason for this is the termination of that user's contract with the RU/RUMCN. He/she can remain a _contributor_ or _viewer_ if his/her involvement in the collection is continued.
 
 Procedurally, when a research administrator revokes a user's authorization as a DCX employee, he/she must also revoke that user's manager role in all the relevant collections.
 
 It can happen that, after removing a collection manager, a given collection no longer has a manager. In that case, in agreement with the center director, the research administrator must assign a new collection manager. Every collection must have at least one manager, i.e. a person that can be held responsible.
+
 
 
 ### 7.2.	Protocol Specific for Data Acquisition Collections
@@ -123,9 +138,9 @@ TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues
 
 TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues/21
 
-Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the RDC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
+Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the RDC and add the senior author (if he/she is a DCX employee) or the first author as collection manager.
 
-An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing processed data.
+An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing all processed data that are generated as a part of the data analysis.
 
 ##### 7.3.2. Center specific
 
@@ -135,7 +150,7 @@ This section is intentionally empty.
 
 ##### 7.4.1. General
 
-Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the DSC and add the senior author (if he/she is a DCX employee) or the first author as collection manager. Granting all other authors access and managing the content of the collection is to be done by the collection manager.
+Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the DSC and add the senior author (if he/she is a DCX employee) or the first author as collection manager.
 
 A DSC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office.
 
