@@ -1,5 +1,5 @@
 ## Exercise: Running FreeSurfer jobs on the cluster
-In this exercise we will construct a small script to run FreeSurfer's `recon-all,` and use qsub to submit this script to the cluster for execution.
+In this exercise we will construct a small script to run FreeSurfer's `recon-all,` and use `qsub` to submit this script to the cluster for execution.
 
 ## Preparation
 Move into the directory you'd like to work in and download the necessary files for the exercise using this command:
