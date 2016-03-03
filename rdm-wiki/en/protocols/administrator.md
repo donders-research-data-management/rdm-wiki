@@ -140,7 +140,7 @@ TBD: see https://github.com/Donders-Institute/donders-institute.github.io/issues
 
 Researchers that plan to submit a manuscript for publication must inform the research administrator. The research administrator will initate the RDC and add the senior author (if he/she is a DCX employee) or the first author as collection manager.
 
-An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing all processed data that are generated as a part of the data analysis.
+An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the process that eventually results in a publication, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  The RDC is _not_ to be used for storing all processed data that are generated as a part of the data analysis. However, some processed data that have the status of a preliminary of a final result may be added to an RDC.
 
 ##### 7.3.2. Center specific
 
