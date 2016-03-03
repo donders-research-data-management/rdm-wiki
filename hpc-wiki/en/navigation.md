@@ -10,7 +10,7 @@
   * [Working with text (data) file](linux/practice/textdata.md)
   * [Text data processing](linux/practice/analysis.md)
   * [Exercise 1: file system](linux/practice/exercise_fs.md)
-  * [Exercise 2: text data](linux/practice/exercise.md)
+  * [Exercise 2: text data](linux/practice/exercise_textfile.md)
   * [Exercise 3: wildcards](linux/practice/exercise_wildcards.md)  
 - - - -
   * # Scripting in Bash
