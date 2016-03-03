@@ -53,7 +53,7 @@ A user's authorization as a DCX employee may also be revoked. The typical reason
 
 A user's authorization as a DCX employee may also be revoked if he/she remains to be employed by the RU/RUMCN. This can happen for instance if a DCX employee leaves the center but continues his/her work elsewhere at the RU/RUMCN. Also in this case, that user can no longer be a manager of the corresponding center's collections.
 
-Note that upon termination of a contract, the user account should not be deleted in the RDM system. The access to the RDM system will automatically be disabled by the identity provider of the employer.
+Note that upon termination of a contract, the user profile should not be deleted in the RDM system. The access to the RDM system will automatically be disabled by the identity provider of the employer.
 
 ## 7.	Initiating and Managing Collections
 
@@ -67,7 +67,7 @@ The research administrator configures the collection on the digital repository a
 
 #### 7.1.2.	Collection Name and Title
 
-A collection has both a name and a title; the collection name determines how the collection appears in the underlying file system, the title is pure descriptive. A collection name cannot be changed anymore after collection initiaition, the title can be changed by the collection managers and contributors.
+A collection has both a name and a title. The collection name determines how the collection appears in the underlying file system, the title is pure descriptive. A collection name cannot be changed anymore after collection initiaition, whereas the title can be changed by the collection managers and contributors.
 
 The name of a collection can be chosen freely, subject to the following constraints:
 
