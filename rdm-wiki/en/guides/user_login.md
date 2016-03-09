@@ -10,7 +10,7 @@ A list of SURFConext-supported IdP's can be looked up [here](https://www.surf.nl
 
 As long as you have a valid account issued by a SURFConext trusted identity provider (i.e. SURFConext IdP account), you can follow the instructions below to sign-up/in to the RDM CMS portal.
 
-1. Open the URL (https://rdmappacc.uci.ru.nl:8443/rdm-web-client) in your web browser.  You will see the homepage of the CMS portal.
+1. Open the URL (https://data.donders.ru.nl) in your web browser.  You will see the homepage of the CMS portal.
 
   ![](screenshots/cms_homepage.png)
 
