@@ -31,7 +31,7 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
   ![](screenshots/cyberduck_webdav_config.png)
 
-3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of your [data-access account](data_access_account.md) retrieved from the CMS portal.
+3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of your [data-access account](data_access_account.md) retrieved from the CMS portal. In the `Login` window, make sure you tick the option `Save password`.
 
   ![](screenshots/cyberduck_connect_via_bookmark.png)
   
@@ -42,6 +42,8 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
   ![](screenshots/cyberduck_file_browser.png)
 
 5. As a viewer of the collection, you are only allowed to download data content (files/directories) from a collection.  As a contributor or manager, you are also allowed to upload and modify data via the WebDAV client. 
+
+Note: If the client (i.e. the Cyberduck) is idle for two hours (e.g. no browsing or data transfer activities), you will be logged out automatically by the WebDAV server. In this case, you will have to login again with a fresh one-time password. 
 
 ## Alternative clients
 
