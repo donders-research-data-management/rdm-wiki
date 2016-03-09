@@ -23,10 +23,9 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 2. Configure the connection with the following parameters:
 
   * __WebDAV (HTTP/SSL)__
-  * Server: __rdmappacc.uci.ru.nl__
-  * Port: __8443__
+  * Server: __webdav.data.donders.ru.nl__
+  * Port: __443__
   * Username: __untick the `Anonymous Login` and set it to the _username_ of the [data-access account](data_access_account.md)__
-  * Path: __rdm-webdav__
   
   The configurations are saved to the bookmark on-the-fly.  Just close the configuration window when you are done with the configuration.
 
@@ -35,6 +34,8 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of your [data-access account](data_access_account.md) retrieved from the CMS portal.
 
   ![](screenshots/cyberduck_connect_via_bookmark.png)
+  
+  ![](screenshots/cyberduck_login_hotp.png)
 
 4. Once you loggin to the WebDAV service, you will see a filesystem-like structure with four directories, each pertains to a centre (or organisational-unit in case of DCN) of the Donders Institute. You may click into a directory and consequently see sub-directories referring to the RDM collections belong to a centre/organisational-unit. Within the directory of a RDM collection, you will see the data content in terms of files and directories.
 
