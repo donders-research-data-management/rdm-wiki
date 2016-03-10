@@ -18,11 +18,19 @@ In case you need to apply for approval, please use the template informed consent
 
 ## 2.3. Template information brochure for EEG studies
 
+[You can find the template EEG brochure here.](templEEGBroch.md)
+
 ## 2.4. Template information brochure for MRI and fMRI studies
+
+[You can find the template MRI and fMRI brochure here.](templMRIBroch.md)
 
 ## 2.5. Template information brochure for MEG studies
 
+[You can find the template MEG brochure here.](templMEGBroch.md)
+
 ## 2.6. Template information brochure for NIRS studies
+
+[You can find the template NIRS brochure here.](templNIRSBroch.md)
 
 ## 3. Ethics approval for research involving animals
 
