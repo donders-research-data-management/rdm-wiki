@@ -10,7 +10,7 @@ In case you need to apply for approval, please use the template informed consent
 
 ## 2.1. Template informed consent forms
 
-[You can find the informed consent forms here.](docs/Informed Consent_ENG_RDM_final.docx)
+[You can find the informed consent form here.](docs/Informed Consent_ENG_RDM_final.docx)
 
 ## 2.2. Template general information brochure
 
