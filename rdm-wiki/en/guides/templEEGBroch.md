@@ -19,6 +19,7 @@ Researchers at the DCC do not examine the data from a clinical perspective. Part
 ## 4. Preparation at home
 
 ![](docs/templEEGphoto.png)
+
 To make the EEG-measurement-procedure run more smoothly, it is advised to run through the following steps:
 
 -	Wash and dry your hair beforehand;
