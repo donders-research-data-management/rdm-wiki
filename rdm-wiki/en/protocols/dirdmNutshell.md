@@ -20,7 +20,7 @@ The data repository allows a researcher to archive digital data into collections
 
 These three collections are built at different stages of a research project, as illustrated here:
 
-  ![](CollectionTimeline.png)
+  ![](CollectionTimeLine.png)
   
 
 
