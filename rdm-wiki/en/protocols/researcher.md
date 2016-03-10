@@ -2,7 +2,7 @@
 
 ##	1 Version
 
-Draft, last update by Eric on March 1, 2016
+Draft, last update by Eric on March 9, 2016
 
 ##	2 Scope
 
@@ -29,6 +29,8 @@ The data repository allows a researcher to archive digital data into collections
 3. A _viewer_ can view the content of files.
 
 When a collection is initiated, a research administrator assigns a manager to the collection (see the _DI RDM Protocol for Research Administrators_). Typically, the collection manager is also the supervisor of the research project to which this collection belongs. A collection manager can add other users to the collection in the role of manager, and these then obtain the same rights.
+
+Jointly, managers and contributors are called the _authors_ of a collection.  When a collection is closed and shared with others, it is a publication (a _data_ publication), of which the authors are its managers and contributors.
 
 ##	5 Data, Metadata, and Attributes
 
