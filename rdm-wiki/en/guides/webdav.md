@@ -8,7 +8,7 @@ Attention: Although the native file browser of Windows (i.e. Explorer) and MacOS
 
 ## CyberDuck installation
 
-WARNING: Due to a [bug](https://trac.cyberduck.io/ticket/9358) in Cyberduck 4.8.x, a certificate verification error will be shown when connecting to the WebDAV via HTTPS protocol.  Please user version 4.7.3 until the issue is fixed.
+Warning: Due to a [bug](https://trac.cyberduck.io/ticket/9358) in Cyberduck 4.8.x, there will be an error when verifying the SSL certificate.  Please user version 4.7.3 until the issue is fixed.
 
 For Windows and MacOSX systems, the CyberDuck installation is graphical and self-explanatory. Simply download the installer from [the software's website](https://cyberduck.io) and follow instructions step-by-step while executing the installer. You will need the administrator's right to install CyberDuck software on your computer.
 
