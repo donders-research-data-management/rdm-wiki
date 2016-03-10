@@ -12,6 +12,8 @@ MRI stands for ‘Magnetic Resonance Imaging’. This method allows us to take i
 
 ## 3. Preparation
 
+![](docs/templMRIphoto.png)
+
 Metal objects are attracted to the magnet and/or disturb the measurement. Also there is a slight chance metal can warm-up. Therefore please take into account the following:
 
 - The clothing on your upper body may not contain any metal (e.g. zips, buttons, hooks, braces). This also applies to bras containing a metal brace wire. 
