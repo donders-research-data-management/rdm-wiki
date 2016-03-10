@@ -1,6 +1,7 @@
 # DI RDM in a Nutshell
 
 DI = Donders Institute for Brain, Cognition and Behaviour
+
 RDM = Research Data Management
 
 RDM at the DI serves three purposes:
@@ -17,7 +18,14 @@ The data repository allows a researcher to archive digital data into collections
 2. A _Research Documentation Collection_ (RDC) documents the process via which data are converted into published results. 
 3. A _Data Sharing Collection_ (DSC) contains the data that on which published results are based, allowing external researchers to extend scientific findings by reanalyzing data with new methods, and/or by addressing new research questions using these data.
 
-These three collections are built at different stages of a research project, as illustrated in 
+These three collections are built at different stages of a research project, as illustrated here:
+
+  ![](CollectionTimeline.png)
+  
+
+
+
+
 
 
 
