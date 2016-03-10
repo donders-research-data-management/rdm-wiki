@@ -1,4 +1,4 @@
-# DI RDM in a Nutshell
+# DI-RDM in a Nutshell
 
 DI = Donders Institute for Brain, Cognition and Behaviour
 
