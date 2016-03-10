@@ -22,22 +22,19 @@ These three collections are built at different stages of a research project, as 
 
   ![](CollectionTimeLine.png)
   
+Note that an empirical research project can start from existing DACs and/or DSCs, and therefore it is not required that new data have to be acquired for this project.
 
-
-
-
-
-
-
-
-
-Repository users can have different predefined roles in a collection. These roles differ in their rights with respect to the collection.
+Repository users can have different predefined roles in a collection. These roles differ in their rights with respect to the collection:
 
 1. A _manager_ can add and remove users to the collection, and can change the role of other users. A manager also has the rights of a contributor.
 2. A _contributor_ can add, modify and delete files. A contributor also has the rights of a viewer.
 3. A _viewer_ can view the content of files.
 
-When a collection is initiated, a research administrator assigns a manager to the collection (see the _DI RDM Protocol for Research Administrators_). Typically, the collection manager is also the supervisor of the research project to which this collection belongs. A collection manager can add other users to the collection in the role of manager, and these then obtain the same rights.
+Collection are always initiated by a _research administrator_, whos belongs to a center's administrative staff. 
+
+
+
+assigns a manager to the collection (see the _DI RDM Protocol for Research Administrators_). Typically, the collection manager is also the supervisor of the research project to which this collection belongs. A collection manager can add other users to the collection in the role of manager, and these then obtain the same rights.
 
 Jointly, managers and contributors are called the _authors_ of a collection.  When a collection is closed and shared with others, it is a publication (a _data_ publication), of which the authors are its managers and contributors.
 
