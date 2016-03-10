@@ -31,8 +31,6 @@ We want to emphasize that the researchers at the Donders Institute do not examin
 The risk associated with participation can be considered as negligible. No invasive procedures are involved. 
 You can NOT participate in a MRI-experiment if one of the following applies:
 
-If one of the below is applicable, please contact the researcher prior to the experiment.
-
 1. Metal parts, that cannot be removed, are present in or on your upper body, e.g. plates, screws, aneurysm clips, metal splinters, piercings or medical plasters. Dental fillings, crowns, a metal wire behind the teeth, tattoos and contraceptive coils are allowed. The researcher will additionally inform you. 
 2. Clothing on the upper body containing any metal e.g. zips, buttons, hooks, braces, metal yarn (LUREX). This also applies to bras containing a metal brace wire. 
 3. You have an active implant, a pacemaker, insulin pump, neurostimulator and/or ossicle prosthesis. 
