@@ -12,6 +12,7 @@ MEG is short for MagnetoEncephaloGraphy. This literally means “magnetic brain 
 
 ## 3. Preparation 
 
+![](docs/templMEGphoto.png)
 Metal objects can disturb the MEG measurement. Therefore, you will be asked to leave all metal objects outside of the shielded room. When deciding what to wear, keep in mind that the MEG measurement can be disturbed by metal objects for example zippers, metal buttons, hooks and bra’s with metal braces. Jewelry, piercings, hairclips, spectacles etc. with metal parts should also be removed. Because make-up sometimes contains metal particles you are requested not to use make-up before a MEG measurement. Metal correction wires behind the teeth are in principle allowed however should be reported before actual participation.
 
 ## 4. The experiment 
