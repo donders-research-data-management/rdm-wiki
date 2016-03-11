@@ -42,21 +42,21 @@ The Faculty of Social Sciences at the Radboud University has its own [Ethics Com
 
 ### Review boards for research involving human subjects (METC) 
 
-There are 23 accredited METCs in the Netherlands that review medical/scientific research proposals. The majority are linked to an institution such as an academic medical centre or a hospital.
+There are 23 [accredited METCs](http://www.ccmo.nl/en/accredited-mrecs) in the Netherlands that review medical/scientific research proposals. The majority are linked to an institution such as an academic medical centre or a hospital.
 
 |    | Naam Instelling/commissie                                                        | Korte naam           | Code |
 |----|----------------------------------------------------------------------------------|----------------------|------|
 | 1  | Centrale Commissie Mensgebonden Onderzoek                                        | CCMO                 | 0    |
 | 2  | CME Leids Universitair Medisch Centrum                                           | CME LUMC             | 58   |
 | 3  | Commissie Mensgebonden Onderzoek regio Arnhem-Nijmegen                           | CMO regio A-N        | 91   |
-| 4  | Institutional Review Board Nijmegen                                              | IRB Nijmegen         | 72   |
+| 4  | Independent Review Board Nijmegen                                                | IRB Nijmegen         | 72   |
 | 5  | MEC Academisch Medisch Centrum                                                   | MEC AMC              | 18   |
 | 6  | METC academisch ziekenhuis Maastricht / Universiteit Maastricht                  | METC azM/UM          | 68   |
 | 7  | METC Z (Zuyderland en Zuyd Hogeschool)                                           | METC Z               | 96   |
 | 8  | METC Brabant                                                                     | METC Brabant         | 28   |
 | 9  | METC Erasmus Medisch Centrum                                                     | Erasmus MC           | 78   |
 | 10 | METC Isala klinieken                                                             | METC Isala klinieken | 75   |
-| 11 | METC Ma_xima Medisch Centrum                                                     | METC MMC             | 15   |
+| 11 | METC Máxima Medisch Centrum                                                      | METC MMC             | 15   |
 | 12 | METC Noord-Holland                                                               | METC Noord- Holland  | 94   |
 | 13 | METC Twente                                                                      | METC Twente          | 44   |
 | 14 | METC Universitair Medisch Centrum Groningen                                      | METC UMCG            | 42   |
