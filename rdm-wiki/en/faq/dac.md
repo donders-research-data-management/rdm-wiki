@@ -25,15 +25,23 @@ On [www.toetsingsonline.nl](https://www.toetsingonline.nl) you can find details 
 
 More general aspects about the ethics procedures are explained in the [ethics guide](../guides/ethics.md).
 
-### ... additional for the DCC and DCN
+### ... additional for the DCN
+
+The Science Faculty makes use of the Ethics Committee Faculty of Social Sciences (ECSS). Approvals of the ECSS do not have a ABR number.
+
+### ... additional for the DCC
 
 Studies approved by the Ethics Committee Faculty of Social Sciences (ECSS) do not have a ABR number.
 
+If you are not sure which identifier to use for your study, please check with Miriam Kos.
+
 ### ... additional for the DCCN
 
-The identifier for the general approval of the DCCN adult protocol is "CMO regio A-N 2014/288" and has the ABR number "NL45659.091.14".
+The identifier for the general approval of the DCCN adult protocol is "CMO regio A-N 2014/288" and has the ABR number "NL45659.091.14". This approval applies from 01-10-2014 to 01-10-2017. If your study falls outside that range, please check with Sabine Kooijman.
 
-The identifier for the general approval of the DCCN baby protocol is "CMO regio A-N 2012/012".
+The identifier for the general approval of the DCCN baby protocol is "CMO regio A-N 2012/012" and has the ABR number "NL39352.091.12". This approval applies from 01-02-2012 onwards and allows the inclusion of 1000 individuals.
+
+If you are not sure which identifier to use for your study, please check with Sabine Kooijman.
 
 
 ## Where should I store personal information about the participants?
