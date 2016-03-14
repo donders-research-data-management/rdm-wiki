@@ -31,9 +31,9 @@ Studies approved by the Ethics Committee Faculty of Social Sciences (ECSS) do no
 
 ### ... additional for the DCCN
 
-The approval for the general DCCN adult protocol is "CMO regio A-N 2014/288".
+The identifier for the general approval of the DCCN adult protocol is "CMO regio A-N 2014/288" and has the ABR number "NL45659.091.14".
 
-The approval for the general DCCN baby protocol is "CMO regio A-N 2012/012".
+The identifier for the general approval of the DCCN baby protocol is "CMO regio A-N 2012/012".
 
 
 ## Where should I store personal information about the participants?
