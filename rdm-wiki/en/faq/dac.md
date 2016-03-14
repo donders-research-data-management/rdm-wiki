@@ -9,19 +9,19 @@ Depending on the ethics approval board, the format of the identifier is slightly
   - RUDEC 2013-180
   - IRBN 2014/005
 
-Besides the ethics board identifier, the ABR ("Algemeen Beoordeling en Registratie") number is relevant. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a [public database](https://www.toetsingonline.nl). The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of the ABR identifier
+Besides the ethics board identifier, the ABR ("Algemeen Beoordeling en Registratie") number is relevant. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database. The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of the ABR identifier
 
   - NL31285.091.10
   - NL19731.091.07
   - NL52498.091.15
 
-On [www.toetsingsonline.nl](https://www.toetsingonline.nl) you can find details of these studies and see that the respective titles are
+On [www.toetsingsonline.nl](https://www.toetsingonline.nl) you can find details of these example studies and see that the respective titles are
 
   - Gene-environment interactions in the brain
   - MRI-guided transcranial magnetic stimulation on artificial centre embedding grammars
   - Glutamatergic medication in the treatment of Obsessive Compulsive Disorder (OCD) and Autism Spectrum Disorder (ASD)
 
-More details about the ethics procedures are explained in the [ethics guide](../guides/ethics.md).
+More general aspects about the ethics procedures are explained in the [ethics guide](../guides/ethics.md).
 
 ### ... additional for the DCCN
 
