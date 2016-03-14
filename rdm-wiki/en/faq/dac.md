@@ -9,7 +9,7 @@ Depending on the ethics approval board, the format of the identifier is slightly
   - RUDEC 2013-180
   - IRBN 2014/005
 
-Besides the ethics board identifier, the ABR ("Algemeen Beoordeling en Registratie") number should be specified when available. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database.
+Besides the local ethics board identifier, the ABR ("Algemeen Beoordeling en Registratie") number should be specified when available. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database.
 
 The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of the ABR identifier
 
@@ -17,11 +17,7 @@ The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some example
   - NL19731.091.07
   - NL52498.091.15
 
-On [www.toetsingsonline.nl](https://www.toetsingonline.nl) you can find details of these example studies and see that the respective titles are
-
-  - "Gene-environment interactions in the brain"
-  - "MRI-guided transcranial magnetic stimulation on artificial centre embedding grammars"
-  - "Glutamatergic medication in the treatment of Obsessive Compulsive Disorder (OCD) and Autism Spectrum Disorder (ASD)""
+On [www.toetsingsonline.nl](https://www.toetsingonline.nl) you can find details of these example studies.
 
 More general aspects about the ethics procedures are explained in the [ethics guide](../guides/ethics.md).
 
@@ -43,16 +39,19 @@ The identifier for the general approval of the DCCN baby protocol is "CMO regio 
 
 If you are not sure which identifier to use for your study, please check with Sabine Kooijman.
 
-
 ## Where should I store personal information about the participants?
 
 ### For all centers ...
 
-For **data acquisition** you have to know who your participants are and you may need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the participant-specific subject identifier is called the "pseudonimization key". The pseudonimization key should be stored in an encrypted file of which the password is only known to the PI and the researchers involved in data acquisition. To be protected against brute-force attacks, the password should have a minimum length of 15 characters. The final responsibility for the safe storage of the pseudonimization key is with the PI.
+For **data acquisition** you have to know who your participants are and you may need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the participant-specific subject identifier is called the "pseudonimization key". The pseudonimization key should be stored in an encrypted file that is stored separately from the experimental data. The password of this file is only to be known to the PI and the researchers involved in data acquisition. To be protected against brute-force attacks, the password should have a minimum length of 15 characters.
+
+TBD:  The final responsibility for the safe storage of the pseudonimization key is with the PI.
 
 For **data analysis** you should never have the need to access the personal information and you should only use the  study-specific subject ID.
 
-The pseudonimization key should never be stored in the RDM repository. Instead it should be stored on a save storage location to which only researchers involved in the study have access. If the pseudonimization key has to be shared with researchers from other institutions, then it should be stored in SURFdrive. In that case, it is _required_ that the password of the encrypted file has a length of at least 15 characters.
+The pseudonimization key should never be stored in the RDM repository. Instead it should be stored on a save storage location to which only researchers involved in the study have access. If the pseudonimization key has to be shared with researchers from other institutions, then it should be stored in SURFdrive. 
+
+TBD: In that case, it is _required_ that the password of the encrypted file has a length of at least 15 characters.
 
 ### ... additional for the DCCN
 
@@ -124,6 +123,6 @@ Furthermore, you should add a text document (txt, MS Word, or pdf) that describe
 
 ## How should I annotate the data and the experimental conditions?
 
-You should add a text document (txt, csv, MS Word, MS Excel, or pdf) with a short description of the experiment and that annotates how the conditions, stimuli and responses are represented in the presentation log files and in the trigger channel.
+You should add a  document (txt, csv, tsv, pdf, MS Word or MS Excel) with a short description of the experiment and that annotates how the conditions, stimuli and responses are represented in the presentation log files and in the trigger channel.
 
 A PowerPoint presentation of the project proposal will contribute to the documentation of the experiment. Also the original presentation code (NBS Presentation, E-Prime, etc.) will contribute to the documentation.
