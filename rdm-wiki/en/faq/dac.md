@@ -1,6 +1,6 @@
 # Frequently asked questions about data acquisition
 
-## What should I specify in the ethics approval field?
+## How should I specify the "ethics approval identifier"?
 
 Depending on the ethics approval board, the format of the identifier is slightly different. The identifier always specifies the board that approved it, followed by the number at which it is known at that board. Here are some examples  
 
