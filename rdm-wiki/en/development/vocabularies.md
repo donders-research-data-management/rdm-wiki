@@ -37,7 +37,7 @@ Examples of the "fully qualified" ethical approval identifiers are provided [her
 - the ethical review board in terms of its `short-name` (see below), and
 - the identifier (the part consisting only `/`, `-`, and numerical digits)
 
-Therefore, the full ethical approval identifier is implemented as a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) of a DAC.
+Therefore, the full ethical approval identifier is implemented as a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) of the DAC.
 
 ### The ethics review board
 
