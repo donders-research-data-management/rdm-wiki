@@ -1,5 +1,35 @@
 # Frequently asked questions about data acquisition
 
+## What should I specify in the ethics approval field?
+
+Depending on the ethics approval board, the format of the identifier is slightly different. The identifier always specifies the board that approved it, followed by the number at which it is known at that board. Here are some examples  
+
+  - CMO regio A-N 2014/288
+  - ESCW 2013-0410-133
+  - RUDEC 2013-180
+  - IRBN 2014/005
+
+Besides the ethics board identifier, the ABR ("Algemeen Beoordeling en Registratie") number is relevant. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a [public database](https://www.toetsingonline.nl). The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of the ABR identifier
+
+  - NL31285.091.10
+  - NL19731.091.07
+  - NL52498.091.15
+
+On [www.toetsingsonline.nl](https://www.toetsingonline.nl) you can find details of these studies and see that the respective titles are
+
+  - Gene-environment interactions in the brain
+  - MRI-guided transcranial magnetic stimulation on artificial centre embedding grammars
+  - Glutamatergic medication in the treatment of Obsessive Compulsive Disorder (OCD) and Autism Spectrum Disorder (ASD)
+
+More details about the ethics procedures are explained in the [ethics guide](../guides/ethics.md).
+
+### ... additional for the DCCN
+
+The approval for the general DCCN adult protocol is "CMO regio A-N 2014/288".
+
+The approval for the general DCCN baby protocol is "CMO regio A-N 2012/012".
+
+
 ## Where should I store personal information about the participants?
 
 ### For all centers ...

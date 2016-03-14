@@ -80,11 +80,11 @@ The title of a collection is completely free.
 
 #### 7.1.3. Project Identifier
 
-The project identifier indicates the research project to this collection belongs. Importantly, a _research project_ only exists at the level of the center administration, and by having the project identifier as an attribute of a collection, a link is established between the center administration and the RDM repository. The centers are free to choose an administrative system with which they organize their research projects. 
+The project identifier indicates the research project to this collection belongs. Importantly, a _research project_ only exists at the level of the center administration, and by having the project identifier as an attribute of a collection, a link is established between the center administration and the RDM repository. The centers are free to choose an administrative system with which they organize their research projects.
 
 #### 7.1.4. Disk Quotum and Preservation Time
 
-The research administrator must set a disk quotum (the maximum size) and a preservation time for every collection. The disk quotum should be set on the basis of the center's experience with collections that contain a particular type of data (MRI, EEG, MEG, calcium imaging, eye movements, ...). 
+The research administrator must set a disk quotum (the maximum size) and a preservation time for every collection. The disk quotum should be set on the basis of the center's experience with collections that contain a particular type of data (MRI, EEG, MEG, calcium imaging, eye movements, ...).
 
 The preservation time should be set on the basis of requirements by stakeholders such as funding agencies and the Board of the University.
 

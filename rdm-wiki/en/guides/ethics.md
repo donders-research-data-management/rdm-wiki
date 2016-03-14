@@ -4,7 +4,7 @@
 
 ## 2. Ethics approval for research involving human subjects
 
-A lot of the research at the DI is covered by existing approvals. For the DCC you can find those [here](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/) and for the DCCN [here](https://intranet.donders.ru.nl/index.php?id=4519). 
+A lot of the research at the DI is covered by existing approvals. For the DCC you can find those [here](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/) and for the DCCN [here](https://intranet.donders.ru.nl/index.php?id=4519).
 
 In case you need to apply for approval, please use the template informed consent forms and brochures below. These include the appropriate text for how we manage and share data.
 
@@ -36,11 +36,11 @@ In case you need to apply for approval, please use the template informed consent
 
 ## 4. Appendix - overview of ethics review boards
 
-### Ethics Committee Faculty of Social Sciences (ECSS) 
+### Ethics Committee Faculty of Social Sciences (ECSS)
 
 The Faculty of Social Sciences at the Radboud University has its own [Ethics Committee](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/).
 
-### Review boards for research involving human subjects (METC) 
+### Review boards for research involving human subjects (METC)
 
 There are 23 [accredited METCs](http://www.ccmo.nl/en/accredited-mrecs) in the Netherlands that review medical/scientific research proposals. The majority are linked to an institution such as an academic medical centre or a hospital.
 
@@ -71,7 +71,7 @@ There are 23 [accredited METCs](http://www.ccmo.nl/en/accredited-mrecs) in the N
 | 23 | Toetsingscommissie Wetenschappelijk Onderzoek Rotterdam eo                       | TWOR                 | 101  |
 | 24 | Medical Research Ethics Committees United                                        | MEC-U                | 100  |
 
-### Review boards for research involving animals (DEC) 
+### Review boards for research involving animals (DEC)
 
 There are 21 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Netherlands that review the applications for animal research. Historically there have been more, hence the list below is longer than 21 DECs.
 
@@ -114,3 +114,4 @@ There are 21 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Ne
   * http://www.nvdec.nl Nederlandse Vereniging van Dierexperimentencommissies
   * http://dierproefinfo.nl/dec/dec.htm
   * http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/
+  * https://www.toetsingonline.nl
