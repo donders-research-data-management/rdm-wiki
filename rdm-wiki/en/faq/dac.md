@@ -45,8 +45,6 @@ If you are not sure which identifier to use for your study, please check with Sa
 
 For **data acquisition** you have to know who your participants are and you may need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the participant-specific subject identifier is called the "pseudonimization key". The pseudonimization key should be stored in an encrypted file that is stored separately from the experimental data. The password of this file is only to be known to the PI and the researchers involved in data acquisition. To be protected against brute-force attacks, the password should have a minimum length of 15 characters.
 
-TBD:  The final responsibility for the safe storage of the pseudonimization key is with the PI.
-
 For **data analysis** you should never have the need to access the personal information and you should only use the  study-specific subject ID.
 
 The pseudonimization key should never be stored in the RDM repository. Instead it should be stored on a save storage location to which only researchers involved in the study have access. If the pseudonimization key has to be shared with researchers from other institutions, then it should be stored in SURFdrive. 
