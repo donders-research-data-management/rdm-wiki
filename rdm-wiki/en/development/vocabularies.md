@@ -45,6 +45,6 @@ A list of ethics review boards are provided [here](../guides/ethics.md#4._Append
 
 ### The identifier
 
-The identifier here referrs to the part following the `short-name` of the ethics review board.  The value of it needs to be provided by researcher. 
+The identifier here refers to the part following the `short-name` of the ethics review board.  The value of it needs to be provided by researcher. 
 
 From the examples, it seems to have a common pattern: __a four-digit year and (3 or 4-digits) number separated by either `-` or `/`__, and the `-` and `/` may be interchangeable.  This common pattern may serve the purpose of validating the value provided by researchers.
