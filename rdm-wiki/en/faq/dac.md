@@ -19,9 +19,9 @@ The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some example
 
 On [www.toetsingsonline.nl](https://www.toetsingonline.nl) you can find details of these example studies and see that the respective titles are
 
-  - Gene-environment interactions in the brain
-  - MRI-guided transcranial magnetic stimulation on artificial centre embedding grammars
-  - Glutamatergic medication in the treatment of Obsessive Compulsive Disorder (OCD) and Autism Spectrum Disorder (ASD)
+  - "Gene-environment interactions in the brain"
+  - "MRI-guided transcranial magnetic stimulation on artificial centre embedding grammars"
+  - "Glutamatergic medication in the treatment of Obsessive Compulsive Disorder (OCD) and Autism Spectrum Disorder (ASD)""
 
 More general aspects about the ethics procedures are explained in the [ethics guide](../guides/ethics.md).
 
