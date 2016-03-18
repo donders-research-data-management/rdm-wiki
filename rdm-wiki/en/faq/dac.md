@@ -5,7 +5,7 @@
 Depending on the ethics approval board, the format of the identifier is slightly different. The identifier always specifies the board that approved it, followed by the number at which it is known at that board. Here are some examples  
 
   - CMO regio A-N 2014/288
-  - ESCW 2013-0410-133
+  - ECSW 2013-0410-133
   - RUDEC 2013-180
   - IRBN 2014/005
 
@@ -51,7 +51,7 @@ The pseudonimization key must never be stored in the RDM repository. Instead it 
 
 ### ... additional for the DCCN
 
-If only you need access to the personal details, you should store the pseudonimization key on your m-drive (i.e. your home directory on central storage). If also project collaborators with access to the DCCN computer system need access to the personal details, you should store it on the project directory on central storage. If collaborators outside the DCCN need access, you should store it on a SURFdrive folder that you share with them. 
+If only you need access to the personal details, you should store the pseudonimization key on your m-drive (i.e. your home directory on central storage). If also project collaborators with access to the DCCN computer system need access to the personal details, you should store it on the project directory on central storage. If collaborators outside the DCCN need access, you should store it on a SURFdrive folder that you share with them.
 In all cases the file itself should be password protected, and the password should only be known to the people that need to know. After completion of your study, you should give the pseudonimization key and the password to unlock it to Sabine Kooijman for long-term archival and you should remove the file from your m-drive, project directory and/or SURFdrive.
 
 ## Which data should I upload to a DAC?
