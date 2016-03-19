@@ -10,7 +10,7 @@ RDM at the DI serves three purposes:
 2. _Research documentation_ for increasing reproducibility
 3. _Data sharing_ with the external scientific community
 
-DI RDM involves a written protocol that describes how one must interact with a _digital data repository_. This data repository involves (1) a storage layer that is managed by an intelligent file system (iRODS), and (2) clients with which one can interact with this file systems. Two clients have a graphical user interface: (1) a web client (https://data.donders.ru.nl, also called _content management system_), and (2) a file transfer client (Cyberduck, which allows to transfer data using the Webdav protocol).
+DI RDM involves a written protocol that describes how one must interact with a _digital data repository_. This data repository involves (1) a storage layer that is managed by an intelligent file system (iRODS), and (2) clients with which one can interact with this file system. Two clients have a graphical user interface: (1) a web client (https://data.donders.ru.nl, also called _content management system_), and (2) a file transfer client (Cyberduck, which supports the Webdav protocol that is used by the repository).
 
 The data repository allows a researcher to archive digital data into collections. The repository contains separate collections for preservation, for research documentation and for sharing:
 
