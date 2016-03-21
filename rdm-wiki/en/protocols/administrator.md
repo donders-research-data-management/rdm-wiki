@@ -1,7 +1,7 @@
 # Protocol for Research Administrators
 
 ## 1.	Version
-Draft version, last update by Eric, February 29, 2016.
+Draft version, last update by Robert, March 14, 2016.
 
 ## 2.	Scope
 This protocol is in effect as of DD-MM-YYYY and replaces all previous versions of the DI-RDM protocol for research administrators .
