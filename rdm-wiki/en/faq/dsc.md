@@ -8,13 +8,31 @@ There might be reasons why you don't want to share your data immediately, e.g. i
 
 There might be reasons why you don't want to share your data with everyone, e.g. if it represents financial value. In those cases you should make a custom **data use agreement** under which the data is to be shared (which might e.g. contain a clause about paying for the data).
 
-There might be reasons related to the privacy of your subjects and where the data cannot be de-identified. In that case you still might be able to share processed results at the **group level** that allow other researchers to validate the claims in your paper.
+There might be reasons related to the privacy of your subjects and where the data cannot be de-identified. In that case you still might be able to share processed results at the **group level** that allow other researchers to validate the claims in your paper. Note that unprocessed imaging and MEG/EEG data can be shared after it has been de-identified and under the appropriate [data use agreement](../guides/sharing.md).
 
 ## Which data should I share?
 
 In principle any data that you are able to share and that is of potential value to other researchers. So not only the final data points that you use in the scatter-plot in your paper, but everything from the raw data onwards.
 
 However, you should only share data that has been de-identified and that cannot be traced back to the individual. The data use agreement for human data prohibits linking the data that you are sharing with other databases, so you should not necessarily worry on other research data that is out there from your subjects. The data that *you* share should not allow individuals to be identified.
+
+## How should I organize the data that I am sharing?
+
+At the Donders Institute we collect data of many different types and there is not a single standard how you should organize the data. To maximize the usefulness of the data for the researchers that will download it (the audience), you should consider whether certain standards exist that are commonly used by the particular audience.
+
+If you start with a standard organization of your data early on in your experimental and analysis pipeline, you will have much less work in re-organizing it for the data sharing collection.
+
+You should consider what data to share, in which file formats to share it, how to organize the data over (sub)directories, and how to annotate and document the data and the experimental conditions under which it was acquired.
+
+### Anatomical and functional MRI data
+
+We recommend the data in the collection to be organized according to the Brain Imaging Data Structure (BIDS, see [bioRxiv](http://dx.doi.org/10.1101/034561)). BIDS is a standard format and comprehensive protocol for organizing and describing MRI datasets. The BIDS protocol uses file formats compatible with existing software, unifies the majority of practices already common in the field, and captures the metadata necessary for most common data processing operations.
+
+### MEG data
+
+There is no standard for MEG data sharing yet, but there are currently efforts to extend the Brain Imaging Data Structure (BIDS) for MEG data. We therefore recommend the data in the collection to be organized in a structure that is comparable to BIDS, see  [bioRxiv](http://dx.doi.org/10.1101/034561)).
+
+You must share the unprocessed MEG data in the original CTF dataset format (i.e. *.ds directories). You should share the anatomical MRI of the MEG subjects in NIfTI format. You should [coregister](http://www.fieldtriptoolbox.org/faq/how_to_coregister_an_anatomical_mri_with_the_gradiometer_or_electrode_positions) the MRI first and subsequently [deface](http://www.fieldtriptoolbox.org/faq/how_can_i_anonimize_an_anatomical_mri) it, so that you can share sufficient anatomical details without identifying features.
 
 ## I don't have experimental data, but only simulations
 
