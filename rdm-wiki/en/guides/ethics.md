@@ -86,8 +86,7 @@ Historically there have been more, hence the list below is longer than 17 DECs.
 | 18 | DEC NOTOX bv (sinds 2012 heet deze DEC Wil Research)                                                           |                 |
 | 19 | DEC NV Organon (per 2011 overgenomen door DEC MSD Animal Health and Human Health)                              |                 |
 | 20 | DEC Pharming                                                                                                   |                 |
-| 21 | DEC Radboud Universiteit                                                                                       | DEC Radboud Universiteit
-|
+| 21 | DEC Radboud Universiteit                                                                                       | DEC Radboud Universiteit |
 | 22 | DEC Rijks Universiteit Groningen                                                                               | DEC RUG         |
 | 23 | DEC Sanquin                                                                                                    |                 |
 | 24 | DEC Solvay Pharmaceuticals                                                                                     |                 |
