@@ -12,7 +12,9 @@ Warning: Due to a [bug](https://trac.cyberduck.io/ticket/9358) in Cyberduck, you
 
 For Windows and MacOSX systems, the CyberDuck installation is graphical and self-explanatory. Simply download the installer from [the software's website](https://cyberduck.io) and follow instructions step-by-step while executing the installer. You will need the administrator's right to install CyberDuck software on your computer.
 
-For Linux users, CyberDuck is provided as a command-line tools called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
+For Linux users, CyberDuck is provided as a command-line tool called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
+
+Tips: For Linux users, you might want to consider [alternative clients](#Alternative_clients) for a beter user interface.
 
 ## CyberDuck setup
 
