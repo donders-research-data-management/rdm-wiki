@@ -8,6 +8,8 @@ Using controlled vocabularies for keywords provides an efficient (and less ambig
 
 The first two controlled vocabularies for keywords are `SFN2013` and `MeSH2015`. They are referred to as `keyword_SFN2013` and `keyword_MeSH2015` as repeatable collection attributes. The demand of supporting more controlled vocabularies is foreseeable.
 
+The JSON and CSV representations of these two list of keywords can be found [here](https://github.com/donders-research-data-management/rdm-ontology/tree/master/vocabulary/collection_keyword).
+
 ## Identifier systems for external content
 
 External contents are objects (e.g. data, publications) of which the contents are not stored in the RDM system.  Instead, they are referred by _identifiers_.
