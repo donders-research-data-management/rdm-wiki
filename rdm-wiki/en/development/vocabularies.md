@@ -8,7 +8,7 @@ Using controlled vocabularies for keywords provides an efficient (and less ambig
 
 The first two controlled vocabularies for keywords are `SFN2013` and `MeSH2015`. They are referred to as `keyword_SFN2013` and `keyword_MeSH2015` as repeatable collection attributes. The demand of supporting more controlled vocabularies is foreseeable.
 
-The JSON and CSV representations of these two list of keywords can be found [here](https://github.com/donders-research-data-management/rdm-ontology/tree/master/vocabulary/collection_keyword).
+The JSON and CSV representations of these two list of keywords can be found [here](https://github.com/donders-research-data-management/rdm-ontology/tree/master/vocabulary/collection_keyword). The JSON format is converted from the corresponding CSV file, using the `Makefile` in the same repository.
 
 ## Identifier systems for external content
 
