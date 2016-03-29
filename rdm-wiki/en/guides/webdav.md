@@ -14,7 +14,7 @@ For Windows and MacOSX systems, the CyberDuck installation is graphical and self
 
 For Linux users, CyberDuck is provided as a command-line tool called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
 
-Tips: For Linux users, you might want to consider [alternative clients](#Alternative_clients) for a beter user interface.
+Hint: For Linux users, you might want to consider [alternative clients](#Alternative_clients) for a beter user interface.
 
 ## CyberDuck setup
 
