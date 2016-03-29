@@ -1,6 +1,6 @@
 # Controlled vocabularies
 
-The controlled vocabularies refer to sets of well-defined words (or terms) used in the RDM system to provide user a more structured way in specifying certain collection attributes. Those vocabularies are organised and distributed via [this package](https://github.com/donders-research-data-management/rdm-control-vocabularies). Hereafter we summarise these vocabularies with respect to their usages in the collection attributes.
+The controlled vocabularies refer to sets of well-defined words (or terms) used in the RDM system to provide user a more structured way in specifying certain collection attributes. Those vocabularies are organised and distributed via [this package](https://github.com/donders-research-data-management/rdm-ontology). Hereafter we summarise these vocabularies with respect to their usages in the collection attributes.
 
 ## Collection keywords
 
@@ -34,17 +34,19 @@ External publications are linked to RDM collections via the `associatedPublicati
 
 Examples of the "fully qualified" ethical approval identifiers are provided [here](../faq/dac.md). In general, it consists of two parts:
 
-- the ethical review board in terms of its `short-name` (see below), and
+- the name of a ethical review board (from a controlled vocabulary, see below), and
 - the identifier (the part consisting only `/`, `-`, and numerical digits)
 
 Therefore, the full ethical approval identifier is implemented as a [_Combinatory Attribute_](collection_attributes.md#Combinatory_attributes) of the DAC.
 
 ### The ethics review board
 
-A list of ethics review boards are provided [here](../guides/ethics.md#4._Appendix_-_overview_of_ethics_review_boards).  From the two tables, only those with `short-name`'s are supported.  The `short-name`'s form a controlled vocabulary that is used by CMS and iRODS internally. On CMS, the display should use the `full-name`'s instead.
+A list of ethics review boards is provided as a controlled vocabulary.  A JSON representation of it can be found [here](https://github.com/donders-research-data-management/rdm-ontology/blob/master/vocabulary/ethics_review_board.json).
 
 ### The identifier
 
-The identifier here refers to the part following the `short-name` of the ethics review board.  The value of it needs to be provided by researcher. 
+The identifier here refers to the part following the name of the ethics review board.  The value of it needs to be provided by researcher.
 
-From the examples, it seems to have a common pattern: __a four-digit year and (3 or 4-digits) number separated by either `-` or `/`__, and the `-` and `/` may be interchangeable.  This common pattern may serve the purpose of validating the value provided by researchers.
+In the current implementation, the value is constrained to consist only numerical digits (`[0-9]`) and dash (`-`) separators.
+
+Note: The popular ethical approval identifiers used by DI researchers seem to have a common pattern: __a four-digit year and (3 or 4-digits) number separated by either `-` or `/`__, and the `-` and `/` may be interchangeable.  This common pattern may serve the purpose of validating the value provided by researchers.
