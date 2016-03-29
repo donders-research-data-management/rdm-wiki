@@ -30,6 +30,8 @@ External publications are linked to RDM collections via the `associatedPublicati
 |  ISBN             | International standard book number |                                              |
 |  URI              | Uniform Resource Identifier        |   as the identifier                          |
 
+A JSON representation can be found [here](https://github.com/donders-research-data-management/rdm-ontology/blob/master/vocabulary/publication_system.json).
+
 ## Ethics review boards for ethical approval identifier
 
 Examples of the "fully qualified" ethical approval identifiers are provided [here](../faq/dac.md). In general, it consists of two parts:
