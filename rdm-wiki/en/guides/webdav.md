@@ -8,11 +8,13 @@ Attention: Although the native file browser of Windows (i.e. Explorer) and MacOS
 
 ## CyberDuck installation
 
-Warning: Due to a [bug](https://trac.cyberduck.io/ticket/9358) in Cyberduck 4.8.x, there will be an error when verifying the SSL certificate.  Please user version 4.7.3 until the issue is fixed.
+Warning: Due to a [bug](https://trac.cyberduck.io/ticket/9358) in Cyberduck, you will encounter an error when verifying the SSL certificate if a version between 4.8.0 and 4.8.3 is used.  Please use either version 4.7.3 or a version >= 4.8.4.
 
 For Windows and MacOSX systems, the CyberDuck installation is graphical and self-explanatory. Simply download the installer from [the software's website](https://cyberduck.io) and follow instructions step-by-step while executing the installer. You will need the administrator's right to install CyberDuck software on your computer.
 
-For Linux users, CyberDuck is provided as a command-line tools called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
+For Linux users, CyberDuck is provided as a command-line tool called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
+
+Hint: For Linux users, you might want to consider [alternative clients](#Alternative_clients) for a beter user interface.
 
 ## CyberDuck setup
 

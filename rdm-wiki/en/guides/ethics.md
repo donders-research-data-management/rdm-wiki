@@ -41,7 +41,7 @@ There are 23 [accredited METCs](http://www.ccmo.nl/en/accredited-mrecs) in the N
 | 6  | METC academisch ziekenhuis Maastricht / Universiteit Maastricht                  | METC azM/UM          | 68   |
 | 7  | METC Z (Zuyderland en Zuyd Hogeschool)                                           | METC Z               | 96   |
 | 8  | METC Brabant                                                                     | METC Brabant         | 28   |
-| 9  | METC Erasmus Medisch Centrum                                                     | Erasmus MC           | 78   |
+| 9  | METC Erasmus Medisch Centrum                                                     | METC Erasmus MC       | 78   |
 | 10 | METC Isala klinieken                                                             | METC Isala klinieken | 75   |
 | 11 | METC Máxima Medisch Centrum                                                      | METC MMC             | 15   |
 | 12 | METC Noord-Holland                                                               | METC Noord- Holland  | 94   |
