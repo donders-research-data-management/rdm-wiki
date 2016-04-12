@@ -8,8 +8,6 @@
 
 [Users' Guide]()
 
-  - - - -
-  * # Accessing the RDM system
   * [Portal login](guides/user_login.md)
   * [WebDav login](guides/webdav.md)
   * [Your RDM account](guides/account.md)
