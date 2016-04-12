@@ -8,14 +8,20 @@
 
 [Users' Guide]()
 
-  * # Planning
-  * [Ethics for data acquisition](guides/ethics.md)
   - - - -
-  * # Acquisition and analysis
+  * # Accessing the RDM system
   * [Portal login](guides/user_login.md)
   * [WebDav login](guides/webdav.md)
-  * [Data-access account](guides/data_access_account.md)
+  * [Your RDM account](guides/account.md)
   - - - -
+  * # Frequently asked questions
+  * [Data acquisition](faq/dac.md)
+  * [Research documentation](faq/rdc.md)
+  * [Data sharing](faq/dsc.md)
+  * [Other](faq/other.md)
+  - - - -
+  * # Planning
+  * [Ethics approval](guides/ethics.md)
   * # After publication
   * [Data sharing](guides/sharing.md)
 
@@ -28,13 +34,6 @@
   * [RDM collection attributes: full list](development/collection_attributes.md)
   * [RDM collection attributes: CMS display](development/cms_collection_attrs.md)
   * [Controlled vocabularies](development/vocabularies.md)
-
-[FAQ]()
-
-  * [Data acquisition](faq/dac.md)
-  * [Research documentation](faq/rdc.md)
-  * [Data sharing](faq/dsc.md)
-  * [Other](faq/other.md)
 
 
 [gimmick:theme (inverse: false)](cerulean)
