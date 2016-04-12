@@ -11,13 +11,16 @@
   * [Portal login](guides/user_login.md)
   * [WebDav login](guides/webdav.md)
   * [Your RDM account](guides/account.md)
+  - - - - -
   * # Frequently asked questions
   * [Data acquisition](faq/dac.md)
   * [Research documentation](faq/rdc.md)
   * [Data sharing](faq/dsc.md)
   * [Other](faq/other.md)
+  - - - - -
   * # Planning
   * [Ethics approval](guides/ethics.md)
+  - - - - -
   * # After publication
   * [Data sharing](guides/sharing.md)
 
