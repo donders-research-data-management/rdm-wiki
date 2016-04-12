@@ -1,4 +1,3 @@
-
 # Data Sharing
 
 ## 1. Data use agreements
@@ -48,4 +47,3 @@ Please follow the data sharing flowchart to guide your decisions with regards to
   * http://opendatacommons.org
   * http://opensource.org/licenses
   * http://choosealicense.com
-
