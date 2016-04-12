@@ -2,7 +2,7 @@
 
 [Protocols]()
 
-  * [In a nutshell](protocols/dirdmNutshell.md)
+  * [In a nutshell](protocols/nutshell.md)
   * [For researchers](protocols/researcher.md)
   * [For administrators](protocols/administrator.md)
 
