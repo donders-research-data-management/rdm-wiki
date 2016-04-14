@@ -44,7 +44,7 @@ Please follow the data sharing flowchart to guide your decisions with regards to
 
   * http://www.ru.nl/publish/pages/721701/universitair_beleid_opslag_en_management_onderzoeksdata_cvb_besluit_25-11-2013.pdf
   * http://creativecommons.org
+  * http://opendefinition.org
   * http://opendatacommons.org
   * http://opensource.org/licenses
   * http://choosealicense.com
-  * http://opendefinition.org/licenses/
