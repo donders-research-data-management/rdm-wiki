@@ -47,3 +47,4 @@ Please follow the data sharing flowchart to guide your decisions with regards to
   * http://opendatacommons.org
   * http://opensource.org/licenses
   * http://choosealicense.com
+  * http://opendefinition.org/licenses/
