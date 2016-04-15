@@ -4,17 +4,17 @@ The data content of a RDM collection consists of files and directories. To acces
 
 There are existing client tools for the WebDAV protocol.  However, concerning the best compatibility and cross-platform support, please use the recommanded tools:
 
- - [for Windows users](#Windows_User)
- - [for MacOSX users](#MacOSX_User)
- - [for Linux users](#Linux_User)
+ - [for Windows users](#Windows)
+ - [for MacOSX users](#MacOSX)
+ - [for Linux users](#Linux)
 
 Attention: Although the native file browser of Windows (i.e. Explorer) and MacOSX (i.e. Finder) works with WebDAV protocol, they are __NOT__ compatible with the RDM WebDAV service.  Please don't use them to access data in the RDM system.
 
-## Windows user
+## Windows
 
-## MacOSX user
+## MacOSX
 
-## Linux user
+## Linux
 
 ### Instruction for CyberDuck
 
