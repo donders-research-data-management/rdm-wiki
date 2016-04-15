@@ -22,7 +22,7 @@ For MacOSX user, the recommended WebDAV client with GUI support is [CyberDuck](#
 
 For Linux user, the [Thunar file manager](#Thunar) of XFCE is a recommended graphical WebDAV client.  Alternatively, [Duck](#Duck) and [Cadaver](#Cadaver) are good command-line tools for shell scripting.
 
-## Instructions for WebDAV clients
+## Instructions
 
 ### CyberDuck
 
@@ -71,6 +71,30 @@ Note: If the client (i.e. the Cyberduck) is idle for two hours (e.g. no browsing
 
 ### Duck
 
+For the example below, we use a collection with identifier `di.dccn.DAC_3010000.01_313`.
+
 ### Thunar
 
+In a Linux terminal, open the Thunar file manager with command
+
+```bash
+$ thunar
+```
+
+In the browser bar at the top, type the following address
+
+```bash
+davs://webdav.data.donders.ru.nl
+```
+
+You will be asked to provide the username and password to login.  Follow [this instruction](../account.md) to retrieve them from the CMS portal. 
+
 ### Cadaver
+
+In a Linux terminal, type the following command
+
+```bash
+$ cadaver https://webdav.data.donders.ru.nl
+```
+
+You will be asked to provide the username and password to login.  Follow [this instruction](../account.md) to retrieve them from the CMS portal.
