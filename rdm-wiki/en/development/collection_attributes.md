@@ -49,8 +49,8 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | preservationTimeYear         | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | ethicalApprovalIdentifier    | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
-| [keyword_MeSH2015](vocabularies.md)| word in MeSH 2015 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
-| [keyword_SFN2013](vocabularies.md)| word in SFN 2013 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_MeSH_2015](vocabularies.md)| word in MeSH 2015 vocab.     |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
+| [keyword_SFN_2013](vocabularies.md)| word in SFN 2013 vocab.      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | versionNumber                | numerical number             |          |  Y   |      |      |      |  C      |      |      |      |
 | latestVersionId              | internal iRODS coll. id      |          |  Y   |  Y   |  Y   |  Y   |         |      |      |      |
 | originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
@@ -78,7 +78,7 @@ The list does not include system-generated attributes (see the `sys` column in t
 | preservationTimeYear      |   Y   |   Y   |   Y   |
 
 Note:
-<sup>[1]</sup> For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH2015` and `keyword_SFN2013`).
+<sup>[1]</sup> For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH_2015` and `keyword_SFN_2013`).
 
 ## Combinatory attributes
 
