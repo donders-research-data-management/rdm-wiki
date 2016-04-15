@@ -12,11 +12,19 @@ Attention: Although the native file browser of Windows (i.e. Explorer) and MacOS
 
 ## Windows
 
+For Windows user, the recommended WebDAV client is [CyberDuck](#CyberDuck). 
+
 ## MacOSX
+
+For MacOSX user, the recommended WebDAV client with GUI support is [CyberDuck](#CyberDuck), or [Duck](#Duck) if a command-line tool is your preference.
 
 ## Linux
 
-### Instruction for CyberDuck
+For Linux user, the [Thunar file manager](#Thunar) of XFCE is a recommended graphical WebDAV client.  Alternatively, [Duck](#Duck) and [Cadaver](#Cadaver) are good command-line tools for shell scripting.
+
+## Instructions for WebDAV clients
+
+### CyberDuck
 
 #### installation
 
@@ -61,8 +69,8 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 Note: If the client (i.e. the Cyberduck) is idle for two hours (e.g. no browsing or data transfer activities), you will be logged out automatically by the WebDAV server. In this case, you will have to login again with a fresh one-time password. 
 
-### Instruction for Thunar
+### Duck
 
-### Instruction for Duck
+### Thunar
 
-### Instruction for Cadaver
+### Cadaver
