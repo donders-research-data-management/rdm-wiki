@@ -2,20 +2,23 @@
 
 The data content of a RDM collection consists of files and directories. To access the data content, one uses a HTTP-based file transfer protocol called [WebDAV](https://en.wikipedia.org/wiki/WebDAV).
 
-There are existing client tools for the WebDAV protocol.  However, concerning the best compatibility and cross-platform support, we recommend researchers to use the tools summarised in the table below:
+There are existing client tools for the WebDAV protocol.  However, concerning the best compatibility and cross-platform support, please use the recommanded tools:
 
-|                                                |  Windows                   |  MacOS X                   | Linux                   |
-| ---------------------------------------------- | -------------------------- | -------------------------- | ----------------------- | 
-| [CyberDuck](https://cyberduck.io)              | [instruction](#CyberDuck)  | [instruction](#CyberDuck)  |                         |
-| [Thunar](https://en.wikipedia.org/wiki/Thunar) |                            |                            | [instruction](#Thunar)  |
-| [duck.sh](https://duck.sh)                     | [instruction](#Duck)       | [instruction](#Duck)       | [instruction](#Duck)    |
-| [Cadaver](http://www.webdav.org/cadaver/)      |                            | [instruction](#Cadaver)    | [instruction](#Cadaver) |
+ - [for Windows users](#Windows_User)
+ - [for MacOSX users](#MacOSX_User)
+ - [for Linux users](#Linux_User)
 
 Attention: Although the native file browser of Windows (i.e. Explorer) and MacOSX (i.e. Finder) works with WebDAV protocol, they are __NOT__ compatible with the RDM WebDAV service.  Please don't use them to access data in the RDM system.
 
-## CyberDuck
+## Windows user
 
-### installation
+## MacOSX user
+
+## Linux user
+
+### Instruction for CyberDuck
+
+#### installation
 
 Warning: Due to a [bug](https://trac.cyberduck.io/ticket/9358) in Cyberduck, you will encounter an error when verifying the SSL certificate if a version between 4.8.0 and 4.8.3 is used.  Please use either version 4.7.3 or a version >= 4.8.4.
 
@@ -25,7 +28,7 @@ For Linux users, CyberDuck is provided as a command-line tool called [duck.sh](h
 
 Hint: For Linux users, you might want to consider [alternative clients](#Alternative_clients) for a beter user interface.
 
-### setup
+#### setup
 
 Note: This instruction convers only the graphical user interface of CyberDuck. For [duck.sh](https://duck.sh) user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
@@ -58,20 +61,8 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 Note: If the client (i.e. the Cyberduck) is idle for two hours (e.g. no browsing or data transfer activities), you will be logged out automatically by the WebDAV server. In this case, you will have to login again with a fresh one-time password. 
 
-## Thunar
+### Instruction for Thunar
 
-### installation
+### Instruction for Duck
 
-### usage
-
-## Duck
-
-### installation
-
-### usage
-
-## Cadaver
-
-### installation
-
-### usage
+### Instruction for Cadaver
