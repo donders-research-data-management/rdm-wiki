@@ -89,6 +89,8 @@ davs://webdav.data.donders.ru.nl
 
 You will be asked to provide the username and password to login.  Follow [this instruction](account.md) to retrieve them from the CMS portal.  Before you click the `Connect` button, make sure the item __Remember password until you logout__ is ticked.  A screenshot of this window is shown below:
 
+![](screenshots/Thunar_WebDAV_login.png)
+
 ### Cadaver
 
 In a Linux terminal, type the following command
