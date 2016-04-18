@@ -6,7 +6,7 @@ Due to space limitation, the domain names of servers in the following table are 
 
 | Environment  | Service endpoints | WebApp server | iCAT server | iCAT zone | resource servers |
 | -------------| ----------------- | ------------- | ----------- | --------- | ---------------- |
-| Production   | https://data.donders.ru.nl (CMS) <br/> https://webdav.data.donders.ru.nl (WebDAV) |  nonvlinder (CMS) <br/> meeltor (WebDAV) | nummervlinder | rdm | harsbij <br/> wolbij |
+| Production   | https://data.donders.ru.nl (CMS) <br/> https://webdav.data.donders.ru.nl (WebDAV) |  nonvlinder (CMS) <br/> meeltor (WebDAV) | icat.data.donders.ru.nl | rdm | harsbij <br/> wolbij |
 | Acceptance   | https://rdmappacc.uci.ru.nl (CMS) <br/> https://webdav.rdmappacc.uci.ru.nl (WebDAV) |  klampkever (CMS) <br/> klokjesdikpoot (WebDAV) | kaswittevlieg | rdmacc | kanaaljuffer <br/> kerstbalgal |
 | Development  | https://localhost:8443/rdm-web-client (CMS) | -  | metselbij | rdmtst | - |
 
