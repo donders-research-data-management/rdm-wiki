@@ -47,7 +47,7 @@ Please follow the data sharing flowchart to guide your decisions with regards to
 
 The rationale for providing a list of data use agreements to choose from is that there are different types of data and not all can be dealt with under a single license. The RU-DI-HD and RU-DI-NH template data use agreements will be able to cover many of the data sharing collections.
 
-If the are specific requirements for data sharing (e.g. due to requirements of the grant, or due to requirements of external collaborating partners in the project that generates the data), it is required to make a custom DUA. Aspects to be considered in the design of a new data use agreement are
+If a dataset has specific requirements for data sharing (e.g. due to the sensitivity of the shared material, due to requirements of the grant, or due to requirements of external collaborating partners in the project that generates the data), it is required to make a custom DUA. Aspects to be considered in the design of this data use agreement are
 
 1.	If applicable, the agreement must specify how to deal with subject confidentiality issues.
 2.	If applicable, the agreement must specify how to deal with ethical issues regarding animal research.
