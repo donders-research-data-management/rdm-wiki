@@ -45,8 +45,6 @@ Please follow the data sharing flowchart to guide your decisions with regards to
 
 ## 3. Non-standard data use agreements
 
-We want to reduce the amount of work for the responsible researchers in drafting an agreement, and the amount of work for the legal department for reviewing draft agreements. Furthermore, we want to reduce the risk of making errors in the data use agreements, such as inconsistencies with the Dutch law and regulations.
-
 The rationale for providing a list of data use agreements to choose from is that there are different types of data and not all can be dealt with under a single license. The RU-DI-HD and RU-DI-NH template data use agreements will be able to cover many of the data sharing collections.
 
 If the are specific requirements for data sharing (e.g. due to requirements of the grant, or due to requirements of external collaborating partners in the project that generates the data), it is required to make a custom DUA. Aspects to be considered in the design of a new data use agreement are
