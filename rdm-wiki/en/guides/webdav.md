@@ -2,13 +2,13 @@
 
 The data content of a RDM collection consists of files and directories. To access the data content, one uses a HTTP-based file transfer protocol called [WebDAV](https://en.wikipedia.org/wiki/WebDAV).
 
-There are existing client tools for the WebDAV protocol.  However, concerning the best compatibility and cross-platform support, please use the recommanded tools:
+There are existing client tools for the WebDAV protocol. However, concerning the best compatibility and cross-platform support, please use the recommended tools:
 
  - [for Windows users](#Windows)
  - [for MacOSX users](#MacOSX)
  - [for Linux users](#Linux)
 
-Attention: Although the native file browser of Windows (i.e. Explorer) and MacOSX (i.e. Finder) works with WebDAV protocol, they are __NOT__ compatible with the RDM WebDAV service.  Please don't use them to access data in the RDM system.
+Attention: Although the native file browser of Windows (i.e. Explorer) and MacOSX (i.e. Finder) works with the WebDAV protocol, they are __NOT__ compatible with the RDM WebDAV service. Please don't use them to access data in the RDM system.
 
 ## Windows
 
@@ -26,19 +26,19 @@ For Linux user, the [Thunar file manager](#Thunar) of XFCE is a recommended grap
 
 ### CyberDuck
 
-#### installation
+#### Installation
 
 Warning: Due to a [bug](https://trac.cyberduck.io/ticket/9358) in Cyberduck, you will encounter an error when verifying the SSL certificate if a version between 4.8.0 and 4.8.3 is used.  Please use either version 4.7.3 or a version >= 4.8.4.
 
 For Windows and MacOSX systems, the CyberDuck installation is graphical and self-explanatory. Simply download the installer from [the software's website](https://cyberduck.io) and follow instructions step-by-step while executing the installer. You will need the administrator's right to install CyberDuck software on your computer.
 
-For Linux users, CyberDuck is provided as a command-line tool called [duck.sh](https://duck.sh).  The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
+For Linux users, CyberDuck is provided as a command-line tool called [duck.sh](https://duck.sh). The installation instruction can be found [here](https://trac.cyberduck.io/wiki/help/en/howto/cli#Linux).
 
-Hint: For Linux users, you might want to consider [alternative clients](#Alternative_clients) for a beter user interface.
+Hint: For Linux users, you might want to consider alternative clients like [Duck](#Duck) or [Cadaver](#Cadaver) for a better user interface.
 
-#### setup
+#### Setup
 
-Note: This instruction convers only the graphical user interface of CyberDuck. For [duck.sh](https://duck.sh) user, please refer to [this general usage](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
+Note: This instruction convers only the graphical user interface of CyberDuck. For [duck.sh](https://duck.sh) user, please refer to [this general usage how-to](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
 1. Open the CyberDuck application, and create a new connection bookmark:
 
