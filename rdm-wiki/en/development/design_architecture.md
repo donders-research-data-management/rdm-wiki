@@ -61,7 +61,7 @@ Every collection snapshot also acquires an attribute for a global persistent ide
 
 ### Attributes and metadata
 
-In the RDM system, attributes are used to describe a user or a collection.  Those attributes are stored in key-value pairs in the iCAT database, along with the user and collection in question.  The defined user attributes are found [here](user_attributes.md); and [this page](collection_attributes.md) lists all collection attributes. 
+In the RDM system, attributes are used to describe a user or a collection.  Those attributes are stored in key-value pairs in the iCAT database, along with the user and collection in question.  The defined user attributes are found [here](user_attributes.md); and [this page](collection_attributes.md) lists all collection attributes.  Following the DI-RDM protocol, authorisation of attributes is implemented by [the DI-RDM iRODS rule-set](https://github.com/donders-research-data-management/rdm-irods-rules).
 
 Metadata only becomes relevant when there is an recipient involved. Given a metadata schema (e.g. DataCite), attributes are tramsformed into the metadata fields defined by the schema.
 
