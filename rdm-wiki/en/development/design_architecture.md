@@ -65,6 +65,14 @@ In the RDM system, attributes are used to describe a user or a collection.  Thos
 
 Metadata only becomes relevant when there is an recipient involved. Given a metadata schema (e.g. DataCite), attributes are tramsformed into the metadata fields defined by the schema.
 
+### Requesting data access to a published data-sharing collection
+
+Data access to a published data-sharing collection should be requested via the CMS portal. The workflow of requesting data access to a data-sharing collection is shown in the figure below:
+
+![](figures/workflow_request_viewer_role.png)
+
+Note the distinguish between the _collection landing page_ and the _collection detail page_.  The former does not require user authentication (and thus information is limited); while the later does. The _collection landing page_ is also published as the resource URL referred by an identifier of a global persistent identifier system (e.g. ePIC and/or DOI).
+
 ## Data storage
 
 ![](figures/resource_storage_mapping.png)
