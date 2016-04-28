@@ -5,6 +5,7 @@
   * [In a nutshell](protocols/nutshell.md)
   * [For researchers](protocols/researcher.md)
   * [For administrators](protocols/administrator.md)
+  * [Privacy Policy](protocols/privacy_policy.md)
 
 [Users' Guide]()
 
