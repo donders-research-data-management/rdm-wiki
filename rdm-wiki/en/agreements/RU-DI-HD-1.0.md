@@ -1,5 +1,5 @@
 Data use agreement for identifiable human data
-Version RU-DI-HD-1.0 (draft)
+Version RU-DI-HD-1.0
 
 I request access to the data collected in the digital repository of the Donders Institute for Brain, Cognition and Behaviour, part of the Radboud University, established at Nijmegen, the Netherlands (hereinafter referred to as the Donders Institute), and I agree to the following:
 
