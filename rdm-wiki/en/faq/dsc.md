@@ -37,3 +37,7 @@ You must share the unprocessed MEG data in the original CTF dataset format (i.e.
 ## I don't have experimental data, but only simulations
 
 In-silico experiments are as useful as in-vivo experiments and also warrant sharing with other researchers. In this case you should share the software scripts, settings and files that you used in your computer experiments.
+
+## How can external researchers get an account?
+
+External researchers that are interested in downloading data should sign up with their institutional identity provider (IdP) if possible. Since not all IdPs of all academic institutions are supported, and since not all external researchers are linked to an institution that provides federated IdP, external researchers can contact the [DI-RDM helpdesk](mailto:dirdm.helpdesk@gmail.com) with the request for an account.

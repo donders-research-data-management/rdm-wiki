@@ -123,3 +123,7 @@ Furthermore, you should add a text document (txt, MS Word, or pdf) that describe
 You should add a  document (txt, csv, tsv, pdf, MS Word or MS Excel) with a short description of the experiment and that annotates how the conditions, stimuli and responses are represented in the presentation log files and in the trigger channel.
 
 A PowerPoint presentation of the project proposal will contribute to the documentation of the experiment. Also the original presentation code (NBS Presentation, E-Prime, etc.) will contribute to the documentation.
+
+## Who should be coauthor on the data acquisition collections?
+
+All people involved in design and acquisition of the experiment should be included in the list of managers, contributors and/or viewers.
