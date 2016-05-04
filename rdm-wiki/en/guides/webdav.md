@@ -99,4 +99,4 @@ In a Linux terminal, type the following command
 $ cadaver https://webdav.data.donders.ru.nl
 ```
 
-You will be asked to provide the username and password to login.  Follow [this instruction](../account.md) to retrieve them from the CMS portal.
+You will be asked to provide the username and password to login.  Follow [this instruction](./account.md) to retrieve them from the CMS portal.
