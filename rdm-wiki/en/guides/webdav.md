@@ -69,10 +69,6 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 Note: If the client (i.e. the Cyberduck) is idle for two hours (e.g. no browsing or data transfer activities), you will be logged out automatically by the WebDAV server. In this case, you will have to login again with a fresh one-time password. 
 
-### Duck
-
-For the example below, we use a collection with identifier `di.dccn.DAC_3010000.01_313`.
-
 ### Thunar
 
 In a Linux terminal, open the Thunar file manager with command
@@ -100,3 +96,14 @@ $ cadaver https://webdav.data.donders.ru.nl
 ```
 
 You will be asked to provide the username and password to login.  Follow [this instruction](./account.md) to retrieve them from the CMS portal.
+
+### Duck
+
+In a Linux terminal, type the following command
+
+```bash
+$ duck davs://webdav.data.donders.ru.nl -u U505173-ru.nl
+```
+
+You will be asked to provide the and password to login.  Follow [this instruction](./account.md) to retrieve it from the CMS portal.
+
