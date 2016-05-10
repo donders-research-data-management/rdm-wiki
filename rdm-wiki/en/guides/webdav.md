@@ -63,6 +63,18 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 4. Once you loggin to the WebDAV service, you will see a filesystem-like structure with four directories, each pertains to a centre (or organisational-unit in case of DCN) of the Donders Institute. You may click into a directory and consequently see sub-directories referring to the RDM collections belong to a centre/organisational-unit. Within the directory of a RDM collection, you will see the data content in terms of files and directories.
 
+
+--> begin added by erimar
+
+In the subtree of a particular center, you can see the directories of all RDM collections of that center. By clicking on a directory, you can also enter it, but you can only see its files and subdirectories if you are authorised (i.e., if you are a viewer, contributor or manager of the corresponding collection). 
+
+After entering an RDM collection's directory, you can up- or download files by selecting from the drop-down list that you see when you click on the _Action_ button (4Hong: Could you show a screenshot for this operation?). If you try to upload files to a directory for which you are not authorised (i.e., you are not a contributor or manager of the corresponding collection), you will get an error message (4Hong: a screenshot?). 
+
+<-- end added by erimar
+
+
+
+
   ![](screenshots/cyberduck_file_browser.png)
 
 5. As a viewer of the collection, you are only allowed to download data content (files/directories) from a collection.  As a contributor or manager, you are also allowed to upload and modify data via the WebDAV client. 
