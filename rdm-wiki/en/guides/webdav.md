@@ -1,6 +1,7 @@
 # Accessing collection data using WebDAV client
 
 The data content of a RDM collection consists of files and directories. To access the data content, one uses a HTTP-based file transfer protocol called [WebDAV](https://en.wikipedia.org/wiki/WebDAV).
+You will be asked to provide the username and password to login.  Follow [this instruction](account.md#The_Webdav_Account) to retrieve them from the CMS portal.
 
 There are existing client tools for the WebDAV protocol. However, concerning the best compatibility and cross-platform support, please use the recommended tools:
 
@@ -55,7 +56,7 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
   ![](screenshots/cyberduck_webdav_config.png)
 
-3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of your [data-access account](data_access_account.md) retrieved from the CMS portal. In the `Login` window, make sure you tick the option `Save password`.
+3. Click on the saved bookmark to make connection.  You will be asked for a login password.  Please fill in the _one-time password_ of your [data-access account](account.md#The_Webdav_Account) retrieved from the CMS portal. In the `Login` window, make sure you tick the option `Save password`.
 
   ![](screenshots/cyberduck_connect_via_bookmark.png)
   
@@ -95,7 +96,7 @@ In the browser bar at the top, type the following address
 davs://webdav.data.donders.ru.nl
 ```
 
-You will be asked to provide the username and password to login.  Follow [this instruction](account.md) to retrieve them from the CMS portal.  Before you click the `Connect` button, make sure the item __Remember password until you logout__ is ticked.  A screenshot of this window is shown below:
+You will be asked to provide the username and password to login.  Follow [this instruction](account.md#The_Webdav_Account) to retrieve them from the CMS portal.  Before you click the `Connect` button, make sure the item __Remember password until you logout__ is ticked.  A screenshot of this window is shown below:
 
 ![](screenshots/Thunar_WebDAV_login.png)
 
@@ -107,7 +108,7 @@ In a Linux terminal, type the following command
 $ cadaver https://webdav.data.donders.ru.nl
 ```
 
-You will be asked to provide the username and password to login.  Follow [this instruction](./account.md) to retrieve them from the CMS portal.
+You will be asked to provide the username and password to login.  Follow [this instruction](account.md#The_Webdav_Account) to retrieve them from the CMS portal.
 
 ### Duck
 
