@@ -2,7 +2,7 @@
 
 ##	1 Version
 
-Draft, last update by Eric on March 18, 2016
+Draft, last update by Eric on May 10, 2016
 
 ##	2 Scope
 
@@ -135,7 +135,7 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 
 ##### 8.2.4.1	Human data
 
-1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Committee Faculty of Social Sciences) and the registered identifier of the approved application. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
+1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Committee Faculty of Social Sciences) and the registered identifier of the approved application. If approval was obtained from multiple ethical review boards (e.g., because the DAC contains data of multiple studies, which were evaluated separately), then all these ethical review boards must be indicated. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
 2.	The signed informed consent forms must allow for the de-identified data to be shared via a data sharing collection (DSC). If the researcher plans to share the data of this DAC together with data of the same participants in other DACs, then the signed informed consent forms must mention this linked sharing.
 3.	The researcher must upload a copy of the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants.
 ... There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethical review board.
@@ -158,7 +158,7 @@ Digital datasets can be uploaded in two ways: (1) manually by the researcher (as
 
 #### 8.2.6	Non-digital data
 
-Non-digital data (e.g., biological tissue samples, questionnaires on paper) cannot be stored in the repository. Their location has to be specified in the appropriate field, either by selection from a menu or by entering it as free text. The menu may contain labels (e.g., DCN Biological Tissue Bank, DCC Questionnaire and Psychological Test Archive) that do not specify a particular physical location but instead refer to a location that is commonly known in the respective center.
+Non-digital data (e.g., biological tissue samples, questionnaires on paper) cannot be stored in the repository. Their location has to be specified in the appropriate field, either by selection from a menu or by entering it as free text. The menu may contain labels (e.g., DCN Biological Tissue Bank) that do not specify a particular physical location but instead refer to a location that is commonly known in the respective center.
 
 **To-Be-Discussed: We still need an attributes for the location of the non-digital data. I propose to add a repeatable free-text attribute: locationNonDigitalRoom.**
 
@@ -214,6 +214,7 @@ The researcher must organize the data files and directories according to the DCC
 
 For example, DCC_2015_0978_piemed_004_001. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
+The DCC does not have a dedicated location for non-digital data. For psychological tests and questionnaires that were administered on paper, the DCC protocol is that the paper booklets are scanned and the resulting files are uploaded to the RDM repository.    
 
 ### 8.3	Recommended
 
@@ -293,7 +294,7 @@ All coauthors to a publication share responsibility for good scientific practice
 When the published results depend on data, the RDC must refer to them. There are two ways to document the data on which the published results depend:
 
 1.	If the data is represented in the repository as one or more DACs, the RDC must be associated with the corresponding DACs by specifying the DAC identification numbers. Only closed DACs can be associated with the RDC. A single closed DAC may be associated to  multiple RDCs.
-2.	If the data is not represented in the repository as one or more closed DACs, the researcher must add the data to the RDC or document the source of the data by means of a PID. This situation applies, for instance, when the DAC is not yet closed, or when the data were collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added tot the RDC.
+2.	If the data (as defined in _5 Data, Metadata, and Attributes_) is not represented in the repository as one or more closed DACs, the researcher must add the data to the RDC or document the source of the data by means of a PID. This situation applies, for instance, when the DAC is not yet closed, or when the data were collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added tot the RDC.
 
 If the data is represented in the repository, then the collaborators on the RDC must obtain the right to access the relevant data in the DACs. If collaborators on the RDC do not have this right, there are two ways for these collaborators to get access:
 
