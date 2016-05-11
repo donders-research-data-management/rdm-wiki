@@ -30,7 +30,7 @@ The data repository allows a researcher to archive digital data into collections
 
 When a collection is initiated, a research administrator assigns a manager to the collection (see the _DI RDM Protocol for Research Administrators_). Typically, the collection manager is also the supervisor of the research project to which this collection belongs. A collection manager can add other users to the collection in the role of manager, and these then obtain the same rights.
 
-Jointly, managers and contributors are called the _authors_ of a collection.  When a collection is closed and shared with others, it is a publication (a _data_ publication), of which the authors are its managers and contributors.
+Jointly, managers and contributors are called the _authors_ of a collection.  When a collection is closed and shared with others, it is a publication (a _data_ publication), of which the managers and contributors are the authors.
 
 ##	5 Data, Metadata, and Attributes
 
@@ -53,9 +53,9 @@ In this protocol, a distinction is made between _metadata_ and _attributes_: met
 
 ### 6.1 Authentication
 
-When visiting the website of the data repository, one can see the metadata of all _Data Sharing Collections_ (DSCs; see further). However, one cannot see any files, nor the metadata of the other collections. To access the files in the repository, and to see the metadata of the other (non-DSC) collections, one must first log in. This is also called _authentication_. There are three ways to authenticate :
+When visiting the website of the data repository, one can see the attributes of all closed _Data Sharing Collections_ (DSCs; see further). However, one cannot see any files, nor the attributes of the other collections. To access the files in the repository, and to see the metadata of the other (non-DSC) collections, one must first log in. This is also called _authentication_. There are three ways to authenticate :
 
-1.	Using a local identity provider (RU or RadboudUMC) and logging in with your RU or RadboudUMC credentials. This applies to RU and RadboudUMC employees (U-, resp., Z-number), for RU students (s-number), and for affiliated non-employees (E-number). It is possible that a person has multiple credentials (e.g., a U- and a Z-number). If you log in using multiple credentials, the system will treat as multiple users, mapped one-to-one on the different credentials.
+1.	Using a local identity provider (RU or RadboudUMC) and logging in with your RU or RadboudUMC credentials. This applies to RU and RadboudUMC employees (U-, resp., Z-number), for RU students (s-number), and for affiliated non-employees (E-number). It is possible that a person has multiple credentials (e.g., a U- and a Z-number). If a physical person logs in using multiple credentials, the system will treat that physical person as multiple users, mapped one-to-one on the different credentials.
 2.	Using a trusted federated authentication infrastructure (e.g., the Dutch SURFconext and the international eduGAIN) and logging in with the credentials provided by the researcher’s employer. This authentication option can be used by employees of the organizations that participate in the federated authentication infrastructure – so not necessarily RU or RadboudUMC.
 3.	Using a non-trusted identity provider service such as Linkedin, Google, Facebook, or Twitter.
 
@@ -65,14 +65,14 @@ One can only authenticate after _signing up_. By signing up, an internal user pr
 
 After a successful authentication, a repository user still cannot read or write a collection’s files. To do this, a user must first be added to that collection in a particular role. The research administrator and collection manager can add a user to a collection. The collections to which a user is added in a particular role determines what that user can do in the repository. This is also called the user’s _authorizations_. Not every user can be added to an arbitrary collection in an arbitrary role. In fact, a user’s possible authorizations are determined by the way he/she has authenticated. To describe a user’s possible authorizations, a distinction is made between four different user types, ordered according to their authorization level. These four user types form a hierarchy in which every next user type has the authorizations of the previous type plus some more:
 
-1.	An _anonymous user_ (also called, non-registered user or visitor) visits the website of the repository without authenticating him/herself. An anonymous user can view the metadata of all DSCs. However, he can be added to none of the collections, and therefore cannot read a single file.
-2.	A _non-trusted registered user_ authenticates him/herself against a non-trusted identity provider (e.g., Google, Facebook). This user type can be added as a viewer to a DSC.
-3.	 A _trusted registered user_ authenticates him/herself against a trusted authentication service (e.g., SURFconext, EDUgain). This user type can be added as a contributor or viewer to all collection types (which also includes _Data Acquisition_ and _Research Documentation Collections_, DACs and SICs; see further). A contributor cannot only view but also modify a collection's files.
+1.	An _anonymous user_ (also called, non-registered user or visitor) visits the website of the repository without authenticating him/herself. An anonymous user can view the attributes of all closed DSCs. However, he can be added to none of the collections, and therefore cannot read a single file.
+2.	A _non-trusted registered user_ authenticates him/herself against a non-trusted identity provider (e.g., Google, Facebook). This user type can be added as a viewer to a closed DSC.
+3.	 A _trusted registered user_ authenticates him/herself against a trusted authentication service (e.g., SURFconext, EDUgain). This user type can be added as a contributor or viewer to all collection types (including _Data Acquisition_ and _Research Documentation Collections_, DACs and SICs; see further). A contributor cannot only view but also modify a collection's files.
 4.	A _DCX employee_ authenticates him/herself against the RU or RUMCN identity provider _and_ is registered by a center’s research administrator as an employee of that center. In the Donders Institute, we distinguish between four centers: DCC, DCCN, DCN_S (DCN Science Faculty), and DCN_M (DCN Medical Faculty), jointly denoted as DCX. This user type can be added as a _manager_ to all collections of his center.
 
 ### 6.3 One physical person, multiple user profiles
 
-In principle, the same physical person can be represented with multiple user profiles in the repository. This may happen if that person therefore has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. This would for example happen if that person is employed by multiple institutions (e.g. Radboud University and Max Planck). If that person authenticates him/herself using the different digital identities, then he/she will also be represented with multiple user profiles in the repository, each of which is likely to have different authorizations.
+In principle, the same physical person can be represented with multiple user profiles in the repository. This may happen if that physical person has a digital identity (account) on multiple identity providers and/or multiple digital identities on a single identity provider. This would for example happen if that person is employed by multiple institutions (e.g. Radboud University and the Max Planck Institute). If that person authenticates him/herself using the different digital identities, then he/she will also be represented with multiple user profiles in the repository, each of which is likely to have different authorizations.
 
 ### 6.4 Authorizations linked to employers
 
@@ -87,7 +87,7 @@ When a user, after a period of unemployment, returns to his/her old organization
 
 ## 7	Up- and Downloading Files
 
-A web interface (more precisely, the HTTP protocol) does not allow for a convenient up- and download of large files and a large number of files. For that reason, the up- and download of files to and from the repository has to be performed by means of a so-called _WebDAV_ client (called after the protocol that is used to transfer files over the internet). A very good WebDAV client is Cyberduck, which can be downloaded for free.
+A web interface does not allow for a convenient up- and download of large files and a large number of files. For that reason, the up- and download of files to and from the repository has to be performed by means of a specialized client, such as a _WebDAV_ client (called after the protocol that is used to transfer files over the internet). A very good WebDAV client is Cyberduck, which can be downloaded for free.
 
 Up- and downloading files is only possible after authenticating oneself at the website of the repository. Via the website, one can then obtain a _data access password_ that can be used in combination with one's _data access username_ to up- and download files. This data access username is _not_ the username with which one authenticates oneself at the website of the repository (for RU and RUMCN employees, their U- or Z-number). The data access username and password are used in combination with the WebDAV client.  
 
@@ -125,7 +125,7 @@ Describing the type of data can usually be short, but might include details on t
 
 The description of the organization of the data is essential for a study in which participants participate in multiple recording sessions, as well as for an experiment in which different types of data are acquired. The DAC annotation must include a description of the different sessions and data types, and how these are mapped onto the experimental conditions.
 
-The  experimental information written by the data acquisition system refers for example to stimulus events that are relevant for the analysis of the data, or to behaviour (e.g., button presses, eye movements). This information is often present in the form of experimental log files or as trigger or annotation channels. As a part of the DAC annotation, researchers should include a description of the codes that are used for these stimulus and behavioral events (i.e., a table associating the events to their meaning).
+The experimental information written by the data acquisition system refers for example to stimulus events that are relevant for the analysis of the data, or to behaviour (e.g., button presses, eye movements). This information is often present in the form of experimental log files or as trigger or annotation channels. As a part of the DAC annotation, researchers should include a description of the codes that are used for these stimulus and behavioral events (i.e., a table associating the events to their meaning).
 
 The DAC annotation should be provided in a format that is easily accessible to present and future colleagues, for example, .docx, .txt, .pdf, .xlsx. The annotation should be written such that someone with domain specific skills can reuse the data. It is required to specify details that vary between studies, such as the mapping of trigger codes on experimental parameters. It is not required to explain details that can be considered commonly shared knowledge.
 
@@ -138,7 +138,7 @@ In a DAC, information will be collected that demonstrates conformity with valid 
 1.	The researcher must indicate whether approval was obtained from an accredited _Medical Ethical Reviewing Committee_ (MERC) or non-accredited local ethical reviewing committee and, if this is the case, specify the name of this committee (e.g., CMO Regio Arnhem-Nijmegen, Ethics Committee Faculty of Social Sciences) and the registered identifier of the approved application. If approval was obtained from multiple ethical review boards (e.g., because the DAC contains data of multiple studies, which were evaluated separately), then all these ethical review boards must be indicated. Guidelines for deciding about the appropriate ethical review board can be found in a separate document in the Donders RDM Information Package.
 2.	The signed informed consent forms must allow for the de-identified data to be shared via a data sharing collection (DSC). If the researcher plans to share the data of this DAC together with data of the same participants in other DACs, then the signed informed consent forms must mention this linked sharing.
 3.	The researcher must upload a copy of the _Participant Information Brochures_ (PIBs) that he/she has provided to the participants.
-... There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethical review board.
+There are three types of information brochures: general, method-specific (e.g., EEG, MEG, fMRI, audio/video), and study-specific. For the former two, template information brochures have been written specifically for use in combination with this protocol. Prior to being used, these template brochures, or modified versions thereof, must be submitted to the appropriate ethical review board.
 
 ##### 8.2.4.2	Animal data
 
@@ -185,7 +185,7 @@ Pilot studies differ from regular studies in that it is not their intention to c
 
 A collection may only be closed when its content is in accordance with this protocol. Only a collection manager can close a collection, and he/she is thus responsible for the decision whether or not the collection is in accordance with this protocol.
 
-When a collection is closed, a permanent read-only copy of this collection is created and a unique identifier is assigned to it. A collection manager can re-open a closed collection, but may only do so with a good reason, for example if the closed collection contains incorrect and/or insufficient information. Carefulness is required here, because closing a collection twice also requires twice the amount of storage (and thus costs twice as much). In fact, when a re-opened collection is modified and thereafter closed again, then a second permanent read-only copy of the collection is created, again with a unique identifier. All the read-only copies that are created at collection closure are thus snapshots of the collection at different time points.
+When a collection is closed, a permanent read-only copy of this collection is created and a persistent identifier is assigned to it. A collection manager can re-open a closed collection, but may only do so with a good reason, for example if the closed collection contains incorrect and/or insufficient information. Carefulness is required here, because closing a collection twice also requires twice the amount of storage (and thus costs twice as much). In fact, when a re-opened collection is modified and thereafter closed again, then a second permanent read-only copy of the collection is created, again with a unique identifier. All the read-only copies that are created at collection closure are thus snapshots of the collection at different time points.
 
 A collection is closed in _two_ steps:
 
@@ -258,7 +258,7 @@ If folders are used to organize files, then only the folder’s name must be in 
 1.	Document the process via which data are converted into published results.
 2.	Provide a digital platform for collaborators to contribute to and review good scientific practices.
 
-In a _Research Documentation Collection_ (RDC), information will be collected that may be relevant for evaluating good scientific practice. However, this protocol does not specify any scientific integrity rules, nor does it include measures to enforce conformity with such rules.
+In a _Research Documentation Collection_ (RDC), information will be collected that may be relevant for evaluating good scientific practices. However, this protocol does not specify any scientific integrity rules, nor does it include measures to enforce conformity with such rules.
 
 This protocol involves both required (9.2) and recommended (9.3) operating procedures.
 
@@ -270,11 +270,11 @@ A RDC is initiated by the research administrator upon request by a researcher on
 
 #### 9.2.2	General
 
-A RDC pertains to the process that has led to a scientific publication. It contains the documents that may be relevant for evaluating good scientific practice. The core content of a RDC are files that document the scientific process in which data are converted into results (statistical tests, summary measures, figures, tables, etc.). For simplicity, in the following, this part of the scientific process will be denoted as the _scientific process_, without any qualification as to the specific result it contributes to the publication.
+A RDC pertains to the process that has led to a scientific publication. It contains the documents that may be relevant for evaluating good scientific practices. The core content of a RDC are files that document the scientific process in which data are converted into results (statistical tests, summary measures, figures, tables, etc.). For simplicity, in the following, this part of the scientific process will be denoted as the _scientific process_, without any qualification as to the specific result it contributes to the publication.
 
 An RDC must be initiated before the proofs of the accepted journal article are sent back to the journal's editorial office. An RDC may also be initiated in a very early stage of the scientific process, for instance, at the start of the data analysis. This has the advantage that the RDC can be used to share all kinds of documents with the future co-authors (analysis scripts, figures of preliminary results, the different versions of the manuscript, ...).  
 
-The RDC is _not_ to be used for storing all the processed data that are generated as a part of the data analysis. For that purpose, typically, one should use the storage that is part of a computing environment (either a desktop or a server) to which most researchers have access. Processed data that can be added to the RDC should have the character of temporary or final results.   
+The RDC is _not_ to be used for storing all the processed data that are generated as a part of the data analysis. For that purpose, typically, one should use the storage that is part of a computing environment (either a desktop or a server) to which most researchers have access. Processed data that can be added to the RDC should have the character of results (temporary or final).   
 
 #### 9.2.3	Attributes
 
@@ -283,7 +283,7 @@ The researcher must add the following information:
 1.	Title of the manuscript
 2.	List of all co-authors
 
-Following publication, the researcher is required to add the DOI as the persistent identifier (PID) of the published manuscript. Besides the DOI, the researcher can also provide the Pubmed ID (PMID) or arXiv identifier.
+Following publication, the researcher is required to add the DOI (a persistent identifier) of the published manuscript. Besides the DOI, the researcher can also provide the Pubmed ID (PMID) or arXiv identifier (other persistent identifiers).
 
 #### 9.2.4	Contributors to the publication
 
@@ -294,7 +294,7 @@ All coauthors to a publication share responsibility for good scientific practice
 When the published results depend on data, the RDC must refer to them. There are two ways to document the data on which the published results depend:
 
 1.	If the data is represented in the repository as one or more DACs, the RDC must be associated with the corresponding DACs by specifying the DAC identification numbers. Only closed DACs can be associated with the RDC. A single closed DAC may be associated to  multiple RDCs.
-2.	If the data (as defined in _5 Data, Metadata, and Attributes_) is not represented in the repository as one or more closed DACs, the researcher must add the data to the RDC or document the source of the data by means of a PID. This situation applies, for instance, when the DAC is not yet closed, or when the data were collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added tot the RDC.
+2.	If the data (as defined in _5 Data, Metadata, and Attributes_) is not represented in the repository as one or more closed DACs, the researcher must add the data to the RDC or document the source of the data by means of a persistent identifier. This situation applies, for instance, when the DAC is not yet closed, or when the data were collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added tot the RDC.
 
 If the data is represented in the repository, then the collaborators on the RDC must obtain the right to access the relevant data in the DACs. If collaborators on the RDC do not have this right, there are two ways for these collaborators to get access:
 
@@ -310,7 +310,7 @@ Publications may differ substantially in the amount and detail of the informatio
 
 #### 9.2.7	Associating to the shared data
 
-For all publications of which the results depend on data, the data must be shared. These data can be shared as a Data Sharing Collection (DSC) in this DI repository, or as a collection in a DI-external repository. In both cases, after collection closure, the shared data can be identified by a PID. The RDC must be associated to the shared data by adding its PID as an attribute.
+For all publications of which the results depend on data, the data must be shared. These data can be shared as a Data Sharing Collection (DSC) in this DI repository, or as a collection in a DI-external repository. In both cases, after collection closure, the shared data can be identified by a persistent identifier. The RDC must be associated to the shared data by adding its persistent identifier as an attribute.
 
 
 #### 9.2.8	RDC closure
@@ -379,12 +379,12 @@ The researcher must add both general and neuroscience-specific attributes that a
 1.	Title of the publication
 2.	List of all co-authors
 3.	Journal in which the publication has appeared (will appear)
-4.	PID of the publication
+4.	Persisten identifier (e.g., a DOI) of the publication
 5.	PubMed identifier (PMID) of the publication
 
 There are two types of neuroscience-specific discovery attributes:
 
-1.	Free text metadata, of which there are two subtypes:
+1.	Free text attributes, of which there are two subtypes:
   1.	Keyword, like the keywords of a journal article.
   2.	Description, like the abstract of a journal article.  
 2.	Neuroscience terms that are selected from two controlled vocabularies: the topic list of the Society for Neuroscience (SFN), and the Medical Subject Headings (MESH; used by PubMed for indexing articles). When selecting terms from these controlled vocabularies, the following domains may serve as a guide: technique, topic, species, disorder, and brain area.
@@ -423,24 +423,20 @@ The RDM documentation includes a decision tree to guide the choice for a particu
 
 When an authenticated external researcher agrees to the DUA corresponding to the DSC, he/she is automatically added as a viewer to the DSC, which gives him/her read access.
 
-#### 10.2.9	 Specifying the contact person
-
-One of the DSC managers must be identified as the contact person for this DSC. Being the contact person for a DSC implies that users (even anonymous users) can send an email to this person.
-
-#### 10.2.10	Associating to the RDC
+#### 10.2.9	Associating to the RDC
 
 All publications of which the results depend on data are also represented in the repository as a RDC, and therefore a DSC can be associated with one or multiple RDC. The DSC must be associated with the corresponding RDCs.
 
 
-#### 10.2.11	 DSC closure
+#### 10.2.10	 DSC closure
 
 See 8.2.10.
 
-There is one important difference between the closure of, on the one hand, DACs and RDCs, and on the other hand, DSCs: after closure, the DAC and RDC snapshots are only assigned a unique _internal_ identifier, whereas a DSC snapshot is also assigned a unique _external_ identifier  that is exported to the web. This unique external identifier is a so-called _persistent identifier_ (PID), and is of the same type as the _digital object identifiers_ (DOIs) that are typically used to refer to published journal articles. A PID is a persistent and unique identifier that allows for direct access to the collection, even if the URL has changed.
+There is one important difference between the closure of, on the one hand, DSCs, and on the other hand, DACs and RDCs: after closure of a DSC, this collection is assigned a persistent identifier that is exported to the web and (after clicking on it) is resolved to its so-called _landing page_ (a special page on the repository's web interface); the persistent identifiers that are assigned to closed DACs and RDCs are not exported to the web and are not resolved to a special landing page.  A closed DSC's persistent identifier has the same status as the persistent identifiers that are typically used to refer to published journal articles, such as the _digital object identifiers_ (DOIs). A persistent identifier allows for direct access to a digital object, even if its URL has changed.
 
-As prerequisite for publication, several journals now request a PID of the shared data, which they publish in the footnote of the article. DI researchers can use the PID of the closed DSC for that purpose.  
+As prerequisite for publication, several journals now request a persistent identifier of the shared data, which they publish in the footnote of the article. DI researchers can use the PID of the closed DSC for that purpose.  
 
-If a closed DSC contains incorrect and/or insufficient information, a collection manager may re-open it, allowing for changes to be made. If this re-opened DSC is modified and thereafter closed again, then a second snapshot of the DSC is generated, with a unique PID.
+If a closed DSC contains incorrect and/or insufficient information, a collection manager may re-open it, allowing for changes to be made. If this re-opened DSC is modified and thereafter closed again, then a second snapshot of the DSC is generated, with a unique persistent identifier.
 
 
 #### 10.2.12	 Data/study type specific
@@ -456,3 +452,5 @@ Often, the process via which data are converted into published results is fully 
 #### 10.3.2	Checking contributions
 
 As a part of his/her final responsibility for a collection, it is recommended that a collection manager check the contributions of all persons that contribute to this collection. For that purpose, a collection manager can make use of a reporting tool that produces a log of all the changes in the collection, specifying who uploaded/modified which file at what time.
+
+
