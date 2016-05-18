@@ -1,14 +1,33 @@
-# Privacy Policy
+# Current Privacy Policy
 
-FIXME
+## Terms and Conditions ("Terms")
+
+Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the Donders-Institutute Research Data Managment Service (the "Service") operated by the Donders Institute, Radboud University ("us", "we", or "our"). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.Content
+
+### Content
+
+Our Service allows you to archive and share and otherwise make available certain information, text, graphics, videos, or other material ("Content"). You are responsible for the ...
+
+### Changes
+
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time.
+
+### Contact us
+
+If you have any questions about these Terms, please contact us.
+
+# Future Privacy Policy
+
 
 ## Minutes of a meeting on 28-4-2016 involving Robert & Eric
 
-From a legal perspective, we must distinguish between two types of personal data: 
+From a legal perspective, we must distinguish between two types of personal data:
 
 1. Information that was obtained from the user’s Identity Provider
-2. All other personal data. 
- 
+2. All other personal data.
+
 For the DI RDM Repository, this second category pertains to all identifiable information generated in interaction with the repository. Following the GEANT Data Protection Code of Conduct (https://wiki.surfnet.nl/pages/viewpage.action?pageId=46793534), the first category will be called user attributes.
 
 The following is enforced by the GEANT Data Protection Code of Conduct (GDPCC):
@@ -20,7 +39,7 @@ The following is enforced by the GEANT Data Protection Code of Conduct (GDPCC):
 Because the GDPCC does not provide clear guidelines with respect to personal data that are not user attributes, the DI has formulated its own guidelines:
 
 1. Actions that do not result in modification of collections and/or user attributes will not be logged. Examples of this type of information are authentications, search queries, and viewing collections. (To be discussed with the SO, because this rule would prevent us from tracing users in case of a data breach.)
-2. Information is not accessible unless this is required for the objectives of the RDM system (i.e., documenting the scientific process and enhancing the reproducibility of its results). 
+2. Information is not accessible unless this is required for the objectives of the RDM system (i.e., documenting the scientific process and enhancing the reproducibility of its results).
 3. It is not required that all information is accessible to all users. Instead, information must only be accessible to users that need this information to realise the objectives of the RDM system. This implies an authorisation policy w.r.t. the information that is displayed.
 
 For the implementation of these guidelines, we must distinguish between the different types of personal data that will be stored in the RDM repository:
@@ -29,7 +48,7 @@ For the implementation of these guidelines, we must distinguish between the diff
 2. The attributes of the iRODS collection objects stored in the iCAT catalogue.
 3. The dynamic/logging information about actions that pertain to specific collections (i.e., the information that is to be shown on the collection history pages).
 
-The GDPCC guidelines pertain to the first category and the DI guidelines pertain to the second and the third category. 
+The GDPCC guidelines pertain to the first category and the DI guidelines pertain to the second and the third category.
 
 The current implications of these guidelines are the following:
 
@@ -38,8 +57,7 @@ The current implications of these guidelines are the following:
 3. Communication about a closed DSC that involves other users than those mentioned in 2. requires a platform in which users can remain anonymous (e.g., a DSC-linked blog).   
 
 
-
-## Contributions by Robert
+## Suggestions by Robert
 
 This document should  provide to the End User, at least at first contact, in an easily, directly and permanently accessible way a Privacy Policy, containing at least the following information:
 a. the name, address and jurisdiction of the Service Provider;
@@ -51,5 +69,5 @@ f. the retention period of the Attributes;
 g. a reference to this Code of Conduct;
 
 
-# External links
+## External links
   * http://geant3plus.archive.geant.net//uri/dataprotection-code-of-conduct/V1/Documents/GEANT_DP_CoC_ver1.0.pdf
