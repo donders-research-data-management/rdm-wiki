@@ -68,9 +68,9 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
  In the subtree of a particular center, you will see the directories of all RDM collections of that center. By clicking on a directory, you can also enter it, but you can only see its files and subdirectories if you are authorised (i.e., if you are a viewer, contributor or manager of the corresponding collection). As a viewer of the collection, you are only allowed to download data content (files/directories) from a collection.  As a contributor or manager, you are also allowed to upload and modify data via the WebDAV client. 
 
-5. __Downloading files/directories:__ After entering an RDM collection's directory, as long as you see a file or directory, you may trigger the downloading process by selecting files (or directories) followed by clicking the _Action_ botton on the menu bar.  In the pull-down menu of the _Action_ botton, chose one of the downloading options and follow the dialog to save the file/directory locally.  See the screenshot below:
+5. __Downloading files/directories:__ After entering an RDM collection's directory, as long as you see a file or directory, you may trigger the downloading process by selecting files (or directories) followed by clicking the `Action` botton on the menu bar.  In the pull-down menu of the `Action` botton, chose one of the downloading options and follow the dialog to save the file/directory locally.  See the screenshot below:
 
-6. __Uploading files/directories:__ After entering an RDM collection's directory, you can upload the file by selecting the _Action_ botton on the menu bar.  A dialog will pop-up for you to select local files/directories to be involved in the uploading process.  See the screenshot below:
+6. __Uploading files/directories:__ After entering an RDM collection's directory, you can upload the file by selecting the `Action` botton on the menu bar.  A dialog will pop-up for you to select local files/directories to be involved in the uploading process.  See the screenshot below:
 
  If you try to upload files to a directory for which you are not authorised (i.e., you are not a contributor or manager of the corresponding collection), you will get an `Internal Server Error` message similar to the screenshot below.
 
