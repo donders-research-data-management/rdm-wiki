@@ -70,9 +70,15 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
 
 5. __Downloading files/directories:__ After entering an RDM collection's directory, as long as you see a file or directory, you may trigger the downloading process by selecting files (or directories) followed by clicking the `Action` botton on the menu bar.  In the pull-down menu of the `Action` botton, chose one of the downloading options and follow the dialog to save the file/directory locally.  See the screenshot below:
 
+  ![](screenshots/cyberduck_file_download.png)
+
 6. __Uploading files/directories:__ After entering an RDM collection's directory, you can upload the file by selecting the `Action` botton on the menu bar.  A dialog will pop-up for you to select local files/directories to be involved in the uploading process.  See the screenshot below:
 
+  ![](screenshots/cyberduck_file_upload.png)
+
  If you try to upload files to a directory for which you are not authorised (i.e., you are not a contributor or manager of the corresponding collection), you will get an `Internal Server Error` message similar to the screenshot below.
+ 
+ ![](screenshots/cyberduck_file_upload_error.png)
 
 Note: If the client (i.e. the Cyberduck) is idle for two hours (e.g. no browsing or data transfer activities), you will be logged out automatically by the WebDAV server. In this case, you will have to login again with a fresh one-time password. 
 
