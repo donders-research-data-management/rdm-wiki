@@ -1,73 +1,35 @@
-# Current Privacy Policy
+# Privacy Policy
 
-## Terms and Conditions ("Terms")
+This privacy policy describes how the Donders Institute (DI) Research Data Management (RDM) repository (in the following, called the _service_) processes and stores data about its users. The DI RDM repository stores, amongst others, human data, and for these human data, there also is a privacy policy. The latter policy is a part of the [Protocol for Researchers](#!protocols/researcher.md). The privacy policy outlined here pertains to the data the repository stores about its _users_. 
 
-Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the Donders-Institutute Research Data Managment Service (the "Service") operated by the Donders Institute, Radboud University ("us", "we", or "our"). Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+Please read this policy carefully before using the service. And in case you will upload data to the repository, you should also read the [Protocol for Researchers](#!protocols/researcher.md). Your access to and use of the service is conditioned on your acceptance of both this Privacy Policy and the Protocol for Researchers. If you disagree with any part of it, then you may not access the service.
 
-By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.Content
+The service is provided by the Donders Institute (DI) for Brain, Cognition and Behaviour (Kapittelweg 29, 6525 EN Nijmegen, The Netherlands), which belongs to the Radboud University.
 
-### Content
+The service has the following objectives:
+1. Data preservation for reuse within the DI
+2. Documentation of the research process to support the reproducibility of published results
+3. Data sharing with the scientific community outside the DI
 
-Our Service allows you to archive and share and otherwise make available certain information, text, graphics, videos, or other material ("Content"). You are responsible for the ...
+The service processes and stores two types of data about its users: (a) information obtained from the user’s identity provider (IdP) and (b) information pertaining to the user’s interaction with the service.
 
-### Changes
+The following data are obtained from the user’s IdP upon login:
+1. The user’s name (given name and surname)
+2. The name of the home organization of the user’s IdP
+3. The personal identifier assigned to the user by his/her IdP
+4. The email address assigned to the user by his/her IdP 
 
-We reserve the right, at our sole discretion, to modify or replace these Terms at any time.
+The following data are obtained from the user’s interaction with the service:
+1. The user’s roles in the system that allow him/her to access collections, and when changes in these roles were made
+2. The modifications that a user makes to a collection’s files and/or attributes
+3. The user’s access to a collection’s files and/or attributes
 
-### Contact us
+The personal data stored by the service are not accessible to other users of the service, unless this is required for the objectives of the service. The user’s contributions to collections are visible to the managers and other contributors of that collection. The user’s contributions to a data sharing collection as an author are treated as a publication and are publicly visible.
 
-If you have any questions about these Terms, please contact us.
+The personal data stored by the service are not shared with other services, unless required for the objectives of the service. 
+ 
+Personal data are stored for as long as is required for the objectives of the service. If collections are deleted, then also the personal data associated with those collections are deleted.
 
-# Future Privacy Policy
+This privacy policy is in agreement with the GÉANT Data Protection Code of Conduct (http://www.geant.net/uri/dataprotection-code-of-conduct/v1, Version 1.0, 14 June 2013) and with the Dutch law on the protection of personal data.
 
-
-## Minutes of a meeting on 28-4-2016 involving Robert & Eric
-
-From a legal perspective, we must distinguish between two types of personal data:
-
-1. Information that was obtained from the user’s Identity Provider
-2. All other personal data.
-
-For the DI RDM Repository, this second category pertains to all identifiable information generated in interaction with the repository. Following the GEANT Data Protection Code of Conduct (https://wiki.surfnet.nl/pages/viewpage.action?pageId=46793534), the first category will be called user attributes.
-
-The following is enforced by the GEANT Data Protection Code of Conduct (GDPCC):
-
-1. In the User Profile pages, the user name (i.e., the one obtained from the IdP) may not be shown.
-2. As a part of sign-up, the user must obtain information that is in accordance with the information duty towards the end user (point h in the GDPCC).
-3. The DI RDM website must contain a privacy policy document that is in accordance with the information duty towards the home organisation (point i in the GDPCC).
-
-Because the GDPCC does not provide clear guidelines with respect to personal data that are not user attributes, the DI has formulated its own guidelines:
-
-1. Actions that do not result in modification of collections and/or user attributes will not be logged. Examples of this type of information are authentications, search queries, and viewing collections. (To be discussed with the SO, because this rule would prevent us from tracing users in case of a data breach.)
-2. Information is not accessible unless this is required for the objectives of the RDM system (i.e., documenting the scientific process and enhancing the reproducibility of its results).
-3. It is not required that all information is accessible to all users. Instead, information must only be accessible to users that need this information to realise the objectives of the RDM system. This implies an authorisation policy w.r.t. the information that is displayed.
-
-For the implementation of these guidelines, we must distinguish between the different types of personal data that will be stored in the RDM repository:
-
-1. The attributes of the iRODS user objects stored in the iCAT catalogue.
-2. The attributes of the iRODS collection objects stored in the iCAT catalogue.
-3. The dynamic/logging information about actions that pertain to specific collections (i.e., the information that is to be shown on the collection history pages).
-
-The GDPCC guidelines pertain to the first category and the DI guidelines pertain to the second and the third category.
-
-The current implications of these guidelines are the following:
-
-1. The only actions that will be logged are those that have resulted in a modification of collections and/or user attributes.
-2. Information about users that obtained access to a closed DSC by agreeing with a DUA (both static and dynamic/logging information) can only be accessed by that collection’s manager as well as by users that have a OU-level role pertaining to the safeguarding of the repository’s objectives.
-3. Communication about a closed DSC that involves other users than those mentioned in 2. requires a platform in which users can remain anonymous (e.g., a DSC-linked blog).   
-
-
-## Suggestions by Robert
-
-This document should  provide to the End User, at least at first contact, in an easily, directly and permanently accessible way a Privacy Policy, containing at least the following information:
-a. the name, address and jurisdiction of the Service Provider;
-b. the purpose or purposes of the processing of the Attributes;
-c. a description of the Attributes being processed;
-d. the third party recipients or categories of third party recipient to whom the Attributes might be disclosed, and proposed transfers of Attributes to countries outside of the European Economic Area;
-e. the existence of the rights to access, rectify and delete the Attributes held about the End User;
-f. the retention period of the Attributes;
-g. a reference to this Code of Conduct;
-
-
-## External links
-  * http://geant3plus.archive.geant.net//uri/dataprotection-code-of-conduct/V1/Documents/GEANT_DP_CoC_ver1.0.pdf
+We reserve the right, at our sole discretion, to modify or replace this Privacy Policy. In case we do so, you will be informed about this on the next occasion you log in to the service.
