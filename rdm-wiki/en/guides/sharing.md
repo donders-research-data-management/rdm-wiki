@@ -6,11 +6,11 @@ To share data, analysis pipelines and/or software in a "data sharing collection"
 
 The following data use agreements can apply to collections that include potentially identifiable data from human subjects:
 
-  * [RU-DI-HD-1.0-draft](../agreements/RU-DI-HD-1.0-draft.md)  
+  * [RU-DI-HD-1.0](../agreements/RU-DI-HD-1.0.md)  
 
 The following data use agreement can apply to collections that only include data that cannot be identified in any way (e.g. only group results):
 
-  * [RU-DI-NH-1.0-draft](../agreements/RU-DI-NH-1.0-draft.md)
+  * [RU-DI-NH-1.0](../agreements/RU-DI-NH-1.0.md)
 
 Furthermore, the following data use agreements can be used in the case that the Donders Institute specific DUA does not meet the requirements.
 
