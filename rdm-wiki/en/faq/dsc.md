@@ -50,6 +50,7 @@ A pseudonimisation key allows a researcher to link research data (experimental, 
 For the protocol with respect to pseudonimization keys, a distinction has to be made between PKs that are used in course of ongoing studies, and those that have been used studies that are now completed (in the DI RDM terminology, for studies whose associated collections are open, respectively closed).
 
 The protocol with respect to pseudonimization keys of _ongoing studies_ is the following:
+
 1. The pseudonimization key is _not_ stored on the digital repository.
 2. Only the collection managers have access to the pseudonimization key.
 3. The collection managers must act in accordance with the regulations of the Radboud University about access to privacy-sensitive information.
@@ -57,11 +58,12 @@ The protocol with respect to pseudonimization keys of _ongoing studies_ is the f
 This protocol is outlined in the [general information brochure](http://donders-institute.github.io/rdm-wiki/en/#!guides/templGenInfoBroch.md).
 
 The current version of the DI RDM protocol does not involve a protocol for pseudonimization keys of completed studies. However, all members of the DI RDM legal task force agree that this is an important future extension, and they argue for the following functionality:
+
 1. The pseudonimization keys of all completed studies are stored on a medium that is separated from the data repository.
 2. These pseudonimization keys must be stored in encrypted way, and the encryption key is only known to the authorized staff that has access to this pseudonimization key repository. 
 
 When considering the usefulness of a pseudonimization key repository, one can think about the following:
-* When shared data must be withdrawn.
+* Withdrawal of shared data
 * To inform participants in case of incidental findings
 * To contact participants for a follow-up study
 * To link the data of participants that were part of multiple studies 
