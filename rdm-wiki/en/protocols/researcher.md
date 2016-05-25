@@ -194,16 +194,12 @@ A collection is closed in _two_ steps:
 
 There can be situations in which it is useful to make multiple collection snapshots. For instance, this may be the case when the DAC belongs to an ongoing study, and one wants to write a paper using the data collected until present. The identifier that is assigned to this collection then serves as a reference in other collections that make use of this DAC snapshot. This workflow is a form of versioning.
 
-#### 8.2.10	Data/study type specific
-
-To be provided.
-
-#### 8.2.11	 Centre specific - DCC
+#### 8.2.10	 Centre specific - DCC
 
 The DCC does not have a dedicated location for non-digital data. For psychological tests and questionnaires that were administered on paper, the DCC protocol is that the paper booklets are scanned and the resulting files are uploaded to the RDM repository.    
 
-### 8.3	Recommended
 
+### 8.3	Recommended
 
 #### 8.3.1	General
 
@@ -223,18 +219,6 @@ It is recommended to include stimulus presentation scripts, including software v
 
 As a part of his/her final responsibility for a collection, it is recommended that a collection manager checks the contributions of all persons that have write access to this collection. For that purpose, a collection manager can make use of a monitoring tool (available to all users) that produces a log of all the changes in the collection, specifying who uploaded/modified which file at what time (source verification).
 
-#### 8.3.6	Data/study type specific
-
-To be provided.
-
-
-#### 8.3.7	Centre specific DCN_S
-
-The following scheme is recommended for the names of the files/folders that contain a participant’s data:
-
->XXXX.
-
-If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
 
 
 ## 9	Research Documentation Collection
