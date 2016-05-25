@@ -39,7 +39,7 @@ Hint: For Linux users, you might want to consider alternative clients like [Duck
 
 #### Setup
 
-Note: This instruction convers only the graphical user interface of CyberDuck. For [duck.sh](https://duck.sh) user, please refer to [this general usage how-to](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
+Note: This instruction covers only the graphical user interface of CyberDuck. For [duck.sh](https://duck.sh) user, please refer to [this general usage how-to](https://trac.cyberduck.io/wiki/help/en/howto/cli#Usage).
 
 1. Open the CyberDuck application, and create a new connection bookmark:
 
@@ -62,7 +62,7 @@ Note: This instruction convers only the graphical user interface of CyberDuck. F
   
   ![](screenshots/cyberduck_login_hotp.png)
 
-4. Once you loggin to the WebDAV service, you will see a filesystem-like structure with four directories, each pertains to a centre (or organisational-unit in case of DCN) of the Donders Institute. You may click into a directory and consequently see sub-directories referring to the RDM collections belong to a centre/organisational-unit. Within the directory of a RDM collection, you will see the data content in terms of files and directories.
+4. Once you login to the WebDAV service, you will see a filesystem-like structure with four directories, each pertains to a centre (or organisational-unit in case of DCN) of the Donders Institute. You may click into a directory and consequently see sub-directories referring to the RDM collections belong to a centre/organisational-unit. Within the directory of a RDM collection, you will see the data content in terms of files and directories.
 
   ![](screenshots/cyberduck_file_browser.png)
 
