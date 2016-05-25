@@ -198,21 +198,7 @@ There can be situations in which it is useful to make multiple collection snapsh
 
 To be provided.
 
-#### 8.2.11	 Centre specific - DCCN
-
-The researcher must organize the data files and directories according to the DCCN standard:
-
-> projectnumber_userID_subjectnumber_sessionnumber
-
-For example, 30123456.01_pethag_003_002. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
-
-#### 8.2.12	 Centre specific - DCC
-
-The researcher must organize the data files and directories according to the DCC standard:
-
-> projectnumber_userID_subjectnumber_sessionnumber
-
-For example, DCC_2015_0978_piemed_004_001. If folders are used to organize files, then only the folder’s name must be in accordance with this scheme.
+#### 8.2.11	 Centre specific - DCC
 
 The DCC does not have a dedicated location for non-digital data. For psychological tests and questionnaires that were administered on paper, the DCC protocol is that the paper booklets are scanned and the resulting files are uploaded to the RDM repository.    
 
