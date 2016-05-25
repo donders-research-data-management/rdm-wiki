@@ -55,7 +55,7 @@ The protocol with respect to pseudonimization keys of _ongoing studies_ is the f
 2. Only the collection managers have access to the pseudonimization key.
 3. The collection managers must act in accordance with the regulations of the Radboud University about access to privacy-sensitive information.
 
-This protocol is outlined in the [general information brochure](http://donders-institute.github.io/rdm-wiki/en/#!guides/templGenInfoBroch.md#8. Privacy).
+This protocol is outlined in the [general information brochure](http://donders-institute.github.io/rdm-wiki/en/#!guides/templGenInfoBroch.md#Privacy).
 
 The current version of the DI RDM protocol does not involve a protocol for pseudonimization keys of completed studies. However, all members of the DI RDM legal task force agree that this is an important future extension, and they argue for the following functionality:
 
