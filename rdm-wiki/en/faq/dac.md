@@ -95,6 +95,9 @@ In general, you should also upload a copy of the presentation code and stimulus 
 
 You should not upload any *directly* identifying data about your subjects, such as name, address, etc. This also means that you should not upload the informed consent form that is signed by the subject. Note that the DAC is allowed to contain *indirectly* identifying information, such as detailled questionaire results, photos, audio and video recordings or facial features in an anatomical MRI.
 
+You should *not* upload any data that can be obtained as the result of analyses that take other data (typically called _raw data_) as input. The former are typically called _processed data_. Documenting the data analysis is a part of the _Research Documentation Collection_ and, in the ideal scenario, involves the data analysis scripts with which the processed data were obtained.
+
+
 ## How should I organize the data in a DAC?
 
 This depends on the type of data and experimental details, but in general we recommend a structure such as
@@ -127,3 +130,28 @@ A PowerPoint presentation of the project proposal will contribute to the documen
 ## Who should be coauthor on the data acquisition collections?
 
 All people involved in design and acquisition of the experiment should be included in the list of managers, contributors and/or viewers.
+
+
+## Which files should I upload to a RDC?
+
+### Documenting the scientific process
+
+The core content of a RDC are files that document the scientific process in which raw data are converted into results (statistical tests, summary measures, figures, tables, etc.). In a common scenario, this conversion from raw data to results is partially or fully specified by analysis scripts that can be executed by software packages such as MATLAB, R, Python, SPSS, Bash+FSL, etc. The recommended way of documenting the scientific process is by providing these analysis scripts. In general, an RDC must contain all the information that a knowledgeable colleague needs to reproduce the results in this publication. 
+
+### Sharing preliminary results within the project team
+
+As a part of the scientific process, researchers often share preliminary results (in the form of figures, tables, powerpoint presentation, etc.). Besided the fact that an RDC is a convenient way to share these preliminary results, they also document the scientific process.
+
+###	The editorial and peer-review process
+
+It is recommended that the complete scientific publication process is documented in the RDC. The following files are part of this process: the files that are initially uploaded to a journal’s manuscript submission system, the reviews, the reply to the reviewers, the proofs, etc.
+
+### Data
+
+When the published results depend on data, the RDC must refer to them. There are two ways to document the data on which the published results depend, and only the second involves uploading files to the RDC:
+
+1.	If the data is represented in the repository as one or more DACs, the RDC must be associated with the corresponding DACs by specifying the DAC identification numbers. Only closed DACs can be associated with the RDC. A single closed DAC may be associated to  multiple RDCs.
+2.	If the data is not represented in the repository as one or more closed DACs, the researcher must add the data to the RDC or document the source of the data by means of a persistent identifier. This situation applies, for instance, when the DAC is not yet closed, or when the data were collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added to the RDC.
+
+
+
