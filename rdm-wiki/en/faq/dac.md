@@ -1,5 +1,10 @@
 # Frequently asked questions about data acquisition
 
+## How should I organize my data in a single or multiple DACs?
+
+The researcher is free to organize his/her data in a single or multiple DACs. It is advised have a single DAC contain the data that is sufficient for a publication. This does not imply that a publication should only be based on a single DAC. Rather, it means that a DAC should not contain so few data that it will never be sufficient for a publication.  
+
+
 ## How should I specify the "ethics approval identifier"?
 
 Depending on the ethics approval board, the format of the identifier is slightly different. The identifier always specifies the board that approved it, followed by the number at which it is known at that board. Here are some examples  
