@@ -50,7 +50,7 @@ Note: This instruction covers only the graphical user interface of CyberDuck. Fo
   * __WebDAV (HTTP/SSL)__
   * Server: __webdav.data.donders.ru.nl__
   * Port: __443__
-  * Username: __untick the `Anonymous Login` and set it to the _username_ of the [data-access account](data_access_account.md)__
+  * Username: __untick the `Anonymous Login` and set it to the _username_ of the [data-access account](account.md#The_Webdav_Account)__
   
   The configurations are saved to the bookmark on-the-fly.  Just close the configuration window when you are done with the configuration.
 
