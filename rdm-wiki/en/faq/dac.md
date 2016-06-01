@@ -56,10 +56,18 @@ In all cases the file itself should be password protected, and the password shou
 
 ## Which data should I upload to a DAC?
 
-In principle all raw data plus a description that would allow a colleague of you to make sense of the data. Of course this triggers the question *"What is raw data?"*. This is not always clear, but some examples might help:
+In principle all raw data plus a description that would allow a colleague of you to make sense of the data. Of course this triggers the question *"What is data, and when is it raw?"*.
+
+For the purpose of this repository, we define data as all information that is (1) generated as a part of the research process and (2) on which a scientific report is/will be based. This definition does not only include empirical data, but also simulated data, computer scripts for analysis and simulations, stimuli presented in experiments and the computer scripts for presenting them, etc.
+
+By _raw_, we mean _without any manipulations that limit future analyses of these data_. In other words, _raw data_ are _original data_.
+
+Some examples may also help:
 
 ### behavioural experiments
-  * presentation log files
+  * stimulus files
+  * computer scripts for presenting the stimuli (to be run by Presentation of PsychoPy)
+  * experiment log files
 
 ### anatomical MRI experiments
   * dicom files
@@ -67,11 +75,11 @@ In principle all raw data plus a description that would allow a colleague of you
 
 ### functional MRI experiments
   * dicom files
-  * presentation log files
   * eye tracker data that was recorded along
   * video files that were recorded along
   * ExG files that were recorded along
   * individual subject questionaires (but not the informed consent form)
+  * (if applicable) the files specified under "behavioural experiments" 
 
 ### EEG experiments
   * EEG files (vhdr/vmrk/dat)
@@ -79,6 +87,7 @@ In principle all raw data plus a description that would allow a colleague of you
   * possibly eye tracker data that was recorded along
   * possibly video and audio files that were recorded along with the EEG
   * individual subject questionaires (but not the informed consent form)
+  * (if applicable) the files specified under "behavioural experiments" 
 
 ### MEG experiments
   * MEG datasets
@@ -86,6 +95,8 @@ In principle all raw data plus a description that would allow a colleague of you
   * possibly eye tracker data that was recorded along
   * possibly video and audio files that were recorded along with the EEG
   * individual subject questionaires (but not the informed consent form)
+  * (if applicable) the files specified under "behavioural experiments" 
+
 
 Besides these types of data, you might also have to upload individual subject questionaires. Note that you should not upload the informed consent form to the RDM system.
 
