@@ -111,6 +111,8 @@ A _Data Acquisition Collection_ (DAC) is initiated by the research administrator
 
 #### 8.2.2	General
 
+By _data_, we mean _all information that is (1) generated as a part of the research process and (2) on which a scientific report is/will be based_. This does not only include empirical data, but also simulated data, computer scripts for analysis and simulations, stimuli presented in experiments and the computer scripts for presenting them, etc.
+
 Data must be archived in their original form. Here, original means the following: without any manipulations that limit future analyses of these data.
 
 The DAC must be annotated in two ways: (1) by providing collection attributes (see further), and (2) by adding one or more human-readable documents in which the data are annotated.
