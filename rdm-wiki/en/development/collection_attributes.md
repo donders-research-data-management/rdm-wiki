@@ -34,7 +34,6 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | contributor                  | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | creatorList                  | ordered(manager+contributors)|          |      |      |      |      |  Y      |      |  Y   |      |
-| contactPerson                | one of the managers          |          |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | creationDateTime             | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
 | publicationDateTime          | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |      |      |      |  Y      |      |      |      |
 | lastClosedDateTime           | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
@@ -69,7 +68,6 @@ The list does not include system-generated attributes (see the `sys` column in t
 | type                      |   Y   |   Y   |   Y   |
 | projectId                 |   Y   |   Y   |   Y   |
 | creatorList               |   Y   |   Y   |   Y   |
-| contactPerson             |       |       |   Y   |
 | descriptionAbstract       |       |       |   Y   |
 | keyword_*<sup>[1]</sup>   |       |       |   Y   |
 | ethicalApprovalIdentifier |   Y   |       |       |
