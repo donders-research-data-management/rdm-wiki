@@ -137,13 +137,15 @@ etc.
 
 Furthermore, you should add a text document (txt, MS Word, or pdf) that describes the organization of the data over the files and directories.
 
+If you organize your DAC in a standard way (such as [BIDS](http://bids.neuroimaging.io/)), it will be much easier to share the data at a later point in time. See for example [here](http://blog.chrisgorgolewski.org/2016/06/how-to-meet-new-data-sharing.html).
+
 ## How should I annotate the data and the experimental conditions?
 
 You should add a  document (txt, csv, tsv, pdf, MS Word or MS Excel) with a short description of the experiment and that annotates how the conditions, stimuli and responses are represented in the presentation log files and in the trigger channel.
 
 A PowerPoint presentation of the project proposal will contribute to the documentation of the experiment. Also the original presentation code (NBS Presentation, E-Prime, etc.) will contribute to the documentation.
 
-## Who should be coauthor on the data acquisition collections?
+## Who should have access to the data acquisition collection?
 
 All people involved in design and acquisition of the experiment should be included in the list of managers, contributors and/or viewers.
 
