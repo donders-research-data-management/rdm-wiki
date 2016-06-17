@@ -1,18 +1,18 @@
-# The Portal Account
+# The Web Portal Account
 
-The account for the web portal is linked to your institutional account. For researchers at the Radboud University it is the u-number, for researchers from the UMCN it is the z-number.
+The account for the web portal is the same as your institutional account. For researchers at the Radboud University it is the u-number, for researchers from the UMCN it is the z-number.
 
 # The Webdav Account
 
-Accessing the data is not done through the web portal, but through a [WebDav interface](webdav.md) client. The data-access account consists of a _username_ and a _password_.
+The data is not accessed through the web interface, but through a [WebDav interface](webdav.md) client. This requires a WebDav client, such as [Cyberduck](cyberduck.io), and a data-access username and password.
 
-For a registered RDM user, the _username_ part of the data-access account is a fixed value.  It is a string combining the user's id and home organisation provided by the identity provider (IdP) through which the user signed in/up to the CMS portal.
+Your WebDav account is created during registering on the RDM portal. The WebDav _user name_ is a combination of the user-id and the home organisation. These are both provided by the identity provider (IdP) through you signed up.
 
-The _password_ part is the so-called [One-time password](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm).  It is generated dynamically on the fly, and can only be used once for user authentication in initialising a data-access session.  
+The WebDav _password_ is a [One-time password](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm).  It is generated dynamically on the fly, and can only be used once for initialising a data-access session.  
 
-## Retrieve the Webdav account
+## Retrieve the Webdav user name and password
 
-After [logging to the web portal](user_login.md), the data-access account may be retrieved following the instructions below:
+After [logging to the web portal](user_login.md), you should:
 
 1. Click on your display name at the top-right corner of the web portal to toggle a pull-down manual, and select the item `Data Access Password`:
 
@@ -20,7 +20,7 @@ After [logging to the web portal](user_login.md), the data-access account may be
 
 2. Informaton of a valid data-access account (the _username_ and the _one-time password_) is displayed on the overlay page. You may copy the information and use it in the [data-access client](webdav.md).
 
-  Warning: for security reason, close the overlay page as soon as you have copied the account information.
+  Warning: for security you should close the overlay page as soon as you have copied the account information.
 
   ![](screenshots/cms_show_hotp.png)
 

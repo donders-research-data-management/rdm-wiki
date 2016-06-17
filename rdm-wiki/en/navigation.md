@@ -5,13 +5,13 @@
   * [In a nutshell](protocols/nutshell.md)
   * [For researchers](protocols/researcher.md)
   * [For administrators](protocols/administrator.md)
-  * [Privacy Policy](protocols/privacy_policy.md)
+  * [Privacy policy](protocols/privacy_policy.md)
 
 [Users' Guide]()
 
   * [Portal login](guides/user_login.md)
   * [WebDav login](guides/webdav.md)
-  * [Your RDM account](guides/account.md)
+  * [Your user account](guides/account.md)
   - - - - -
   * # Frequently asked questions
   * [Data acquisition](faq/dac.md)

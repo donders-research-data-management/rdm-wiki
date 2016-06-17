@@ -1,8 +1,8 @@
 # Frequently asked questions about data acquisition
 
-## How should I organize my data in a single or multiple DACs?
+## How should I organize my data over multiple DACs?
 
-The researcher is free to organize his/her data in a single or multiple DACs. It is advised have a single DAC contain the data that is sufficient for a publication. This does not imply that a publication should only be based on a single DAC. Rather, it means that a DAC should not contain so few data that it will never be sufficient for a publication.  
+The researcher is free to organize his/her data in a single or multiple DACs. It is advised to have a single DAC contain all data that is sufficient for a single publication. This does not imply that a publication should only be based on a single DAC. Rather, it means that a DAC should not contain so few data that it will never be sufficient for a publication.  
 
 
 ## How should I specify the "ethics approval identifier"?
@@ -84,7 +84,7 @@ Some examples may also help:
   * video files that were recorded along
   * ExG files that were recorded along
   * individual subject questionaires (but not the informed consent form)
-  * (if applicable) the files specified under "behavioural experiments" 
+  * (if applicable) the files specified under "behavioural experiments"
 
 ### EEG experiments
   * EEG files (vhdr/vmrk/dat)
@@ -92,7 +92,7 @@ Some examples may also help:
   * possibly eye tracker data that was recorded along
   * possibly video and audio files that were recorded along with the EEG
   * individual subject questionaires (but not the informed consent form)
-  * (if applicable) the files specified under "behavioural experiments" 
+  * (if applicable) the files specified under "behavioural experiments"
 
 ### MEG experiments
   * MEG datasets
@@ -100,7 +100,7 @@ Some examples may also help:
   * possibly eye tracker data that was recorded along
   * possibly video and audio files that were recorded along with the EEG
   * individual subject questionaires (but not the informed consent form)
-  * (if applicable) the files specified under "behavioural experiments" 
+  * (if applicable) the files specified under "behavioural experiments"
 
 
 Besides these types of data, you might also have to upload individual subject questionaires. Note that you should not upload the informed consent form to the RDM system.
@@ -148,5 +148,3 @@ A PowerPoint presentation of the project proposal will contribute to the documen
 ## Who should have access to the data acquisition collection?
 
 All people involved in design and acquisition of the experiment should be included in the list of managers, contributors and/or viewers.
-
-
