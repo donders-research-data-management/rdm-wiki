@@ -147,4 +147,4 @@ A PowerPoint presentation of the project proposal will contribute to the documen
 
 ## Who should have access to the data acquisition collection?
 
-All people involved in design and acquisition of the experiment should be included in the list of managers, contributors and/or viewers.
+All people involved in design and acquisition of the experiment should be included in the list of managers, contributors and/or viewers. Collaborating researchers that only analyze the data can be added as viewers.

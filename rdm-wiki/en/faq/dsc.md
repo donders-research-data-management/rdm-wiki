@@ -2,7 +2,7 @@
 
 ## Should I always share the data of my publication?
 
-Yes! Our funding agencies, such as NWO and EU, require it either explicitly in the grant on basis of which you carried out the work, or implicitly in their general regulations. The Radboud University has made open access science its policy. The Donders Institute requires it.
+Yes! Our funding agencies, such as NWO and EU, require it either explicitly in the grant on basis of which you carried out the work, or implicitly in their general regulations. The Radboud University has made open access its policy. The Donders Institute requires it.
 
 There might be reasons why you don't want to share your data immediately, e.g. if you are still working on follow up publications based on the same data. In those cases you should share the data under an **embargo** of a certain time.
 
@@ -60,12 +60,10 @@ This protocol is outlined in the [general information brochure](http://donders-i
 The current version of the DI RDM protocol does not involve a protocol for pseudonimization keys of completed studies. However, all members of the DI RDM legal task force agree that this is an important future extension, and they argue for the following functionality:
 
 1. The pseudonimization keys of all completed studies are stored on a medium that is separated from the data repository.
-2. These pseudonimization keys must be stored in encrypted way, and the encryption key is only known to the authorized staff that has access to this pseudonimization key repository. 
+2. These pseudonimization keys must be stored in encrypted way, and the encryption key is only known to the authorized staff that has access to this pseudonimization key repository.
 
 When considering the usefulness of a pseudonimization key repository, one can think about the following:
 * Withdrawal of shared data
 * To inform participants in case of incidental findings
 * To contact participants for a follow-up study
-* To link the data of participants that were part of multiple studies 
-
-
+* To link the data of participants that were part of multiple studies
