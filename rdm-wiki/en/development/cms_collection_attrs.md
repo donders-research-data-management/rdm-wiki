@@ -4,10 +4,8 @@ This page summarises the RDM collection attributes that are "visible" on the CMS
 
 The table below summarise the mapping between the "visible" collection attributes and their display names on the CMS portal.
 
-erimar : descriptionAbstract is missing
 
-
-| attribute key        | CMS display name            |  Remark on CMS display value |
+| attribute key        | description                 |  Remark on CMS display value |
 | -------------------- | --------------------------- | ---------------------------- |
 | identifierEPIC       | EPIC Identifier             |    link to EPIC catalogue    |
 | identifierDOI        | DOI Identifier              |    link to DOI catalogue     |
@@ -35,8 +33,9 @@ erimar : descriptionAbstract is missing
 | associatedPublication| References to journal publications |  link to the journal publications |
 | ethicalApprovalIdentifier.reviewBoard | Ethics review board | [_see combinatory attributes_](collection_attributes.md#combinatory-attributes) |
 | ethicalApprovalIdentifier.approvalIdentifier | Ethical Approval Identifier | [_see combinatory attributes_](collection_attributes.md#combinatory-attributes) |
-| quotaInMegaBytes     | Storage quota (GB)          |                               |
-| sizeInMegaBytes      | Data size (GB)              |                               |
+| quotaInBytes         | Storage quota in bytes      |                               |
+| sizeInBytes          | Size of collection data in bytes       |                               |
+| numberOfFiles        | Number of files in the collection |                               |
 | preservationTimeYear | Preservation Time (Year)    |                               |
 | dataUseAgreement     | Data Use Agreement          | link to display context of the DUA |
 | keyword_freetext     | Free-text keywords          |                                |
