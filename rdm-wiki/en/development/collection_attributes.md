@@ -43,8 +43,9 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | associatedRDC                | internal iRODS coll. id      |    Y     |      |      |      |  Y   |  C      |      |  Y   |  Y   |
 | associatedDSC                | internal iRODS coll. id      |    Y     |      |      |  Y   |      |  C      |      |  Y   |  Y   |
 | associatedPublication        | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |  Y   |
-| quotaInMegaBytes             | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
-| sizeInMegaBytes              | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| quotaInBytes                 | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
+| sizeInBytes                  | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
+| numberOfFiles                | numerical number             |          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | preservationTimeYear         | numerical number             |          |      |  Y   |  Y   |  Y   |  C      |  Y   |      |      |
 | ethicalApprovalIdentifier    | [_see combinatory attributes_](#combinatory-attributes) |    Y     |      |  Y   |      |      |  C      |      |  Y   |  Y   |
 | [dataUseAgreement](../guides/sharing.md) | valid DUA identifier         |          |      |      |      |  Y   |  C      |      |  Y   |      |
