@@ -34,6 +34,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | contributor                  | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | creatorList                  | ordered(manager+contributors)|          |      |      |      |      |  Y      |      |  Y   |      |
+| locationNonDigitalRoom       | free text                    |    Y     |      |  Y   |      |      |  M      |      |  Y   |  Y   |  
 | creationDateTime             | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
 | publicationDateTime          | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |      |      |      |  Y      |      |      |      |
 | lastClosedDateTime           | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
