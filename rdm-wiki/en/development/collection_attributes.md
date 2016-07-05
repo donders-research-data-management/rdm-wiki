@@ -59,7 +59,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 
 Note:
-<sup>[1]</sup> The creator's displayName can be either retrieved from existing [user profile](../user_attributes.md); or provided by user as a free-text input.
+<sup>[1]</sup> The creator's displayName can be either retrieved from existing [user profile](user_attributes.md); or provided by user as a free-text input.
 
 ## Mandatory attributes for collection closure
 
