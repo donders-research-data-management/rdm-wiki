@@ -33,7 +33,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | manager                      | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |      |
 | contributor                  | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
 | viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
-| creatorList                  | ordered(manager+contributors)|          |      |      |      |      |  Y      |      |  Y   |      |
+| creatorList                  | ordered(displayName's)<sup>[1]</sup>|          |      |      |      |      |  Y      |      |  Y   |      |
 | locationNonDigitalRoom       | free text                    |    Y     |      |  Y   |      |      |  M      |      |  Y   |  Y   |  
 | creationDateTime             | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
 | publicationDateTime          | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |      |      |      |  Y      |      |      |      |
@@ -57,6 +57,9 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | originalVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 | perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
+
+Note:
+<sup>[1]</sup> The creator's displayName can be either retrieved from existing [user profile](../user_attributes.md); or provided by user as a free-text input.
 
 ## Mandatory attributes for collection closure
 
