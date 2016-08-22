@@ -30,7 +30,7 @@ Researcher administrators have different roles than researchers:
 
 Within the digital repository, the research administrator role is mainly defined in terms of rights with respect to particular collections of files. There are three types of collections: data acquisition collections (DACs), research documentation collections (RDCs), and data sharing collections (DSCs). Building these collections involves uploading files and providing collection attributes, as described in the _DI RDM Protocol for Researchers_.
 
-The collections are aggregated by Donders center. A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This organization of the collections in does not limits the access to the content of the collections by members of other Donders centers or RU-external institutes, but it does limit the responsibilities. The initial authorization for the collection manager role (see 7.1.5) is performed by a center's research administrator.
+The collections are aggregated by Donders center. A collection is assigned to one of the centers if it is initiated by that center’s research administrator. This aggregation of the collections by Donders center does not limit the access to the collections by members of other Donders centers or RU-external institutes. However, it does limit the responsibilities. Specifically, the initial authorization for the collection manager role (see 7.1.5) is performed by a center's research administrator.
 
 The rights and responsibilities of research administrators involve the following:
 
@@ -49,7 +49,7 @@ Prior to authorizing a user as a DCX employee, the research administrator must c
 
 A user can be a DCX employee in multiple Donders centers. However, a research administrator can only add a user as a DCX employee of his/her own center.
 
-A user's authorization as a DCX employee may also be revoked. The typical reason for this is the termination of that user's contract with the RU/RUMCN. Thus, when a DCX employee is no longer employed by the RU/RUMCN, his/her authorization as a DCX employee must be revoked. As only a DCX employee can have the responsibility as manager of the corresponding center's collections, also the user's manager role in must be revoked in all collections for which this is the case. We return to this point in 7.1.6.
+A user's authorization as a DCX employee may also be revoked. The typical reason for this is the termination of that user's contract with the RU/RUMCN. Thus, when a DCX employee is no longer employed by the RU/RUMCN, his/her authorization as a DCX employee must be revoked. As only a DCX employee can have the responsibility as manager of the corresponding center's collections, the user's manager role must be revoked in all collections for which this is the case. We return to this point in 7.1.6.
 
 A user's authorization as a DCX employee may also be revoked if he/she remains to be employed by the RU/RUMCN. This can happen for instance if a DCX employee leaves the center but continues his/her work elsewhere at the RU/RUMCN. Also in this case, that user can no longer be a manager of the corresponding center's collections.
 
@@ -92,7 +92,7 @@ The preservation time should be set on the basis of requirements by stakeholders
 
 The research administrator assigns at least one person in the role of collection manager. This role is described in the _DI RDM Protocol for Researchers_.
 
-The collection manager must be a _DCX employee_. Because a DCX employee must also be a RU/RUMCN employee, external collaborators cannot be a collection manager. This important in case of contract or collaborative research, and it even holds when the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
+The collection manager must be a _DCX employee_. Because a DCX employee must also be a RU/RUMCN employee, external collaborators cannot be a collection manager. This is important in case of contract or collaborative research, and it even holds when the research question was put forward by the client or external collaborator. However, that client/external collaborator is likely to have the collection contributor role. Collection contributors and viewers are added to the collection by the collection manager.
 
 #### 7.1.6. Revoking the Collection Manager Role
 
@@ -167,3 +167,4 @@ This section is intentionally empty.
 In the default scenario, the research administrator is not involved in the creation of user accounts, because they are created automatically in a sign-up procedure (see the _DI RDM Protocol for Researchers_).
 
 In some cases it may be necessary for the research administrator to initiate accounts for users that cannot sign up using a thrusted authentication service. This involves a procedure that falls outside the scope of this protocol. More details are described in the [Frequently Asked Questions](rdm-wiki/en/faq/other.md).
+
