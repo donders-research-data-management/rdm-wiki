@@ -18,4 +18,6 @@ The __Acceptance__ environment is used for demonstrating new functionalities (e.
 
 The __Development__ environment is used for developing new functionalities, and for developers to test newer version of software/tools/operating systems.  Therefore, it's a rather floating system.  In the __Development__ environment, developers will use their own desktop/laptop to run the CMS service, but connect to an iCAT server dedicated for developing iRODS rules and microservices.  On this same iCAT server runs also the iRODS resource server.
 
+## Deployment diagram with Docker containers
 
+![](figures/rdm-deployment-diagram.png)
