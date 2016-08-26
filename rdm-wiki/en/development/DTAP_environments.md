@@ -20,4 +20,6 @@ The __Development__ environment is used for developing new functionalities, and 
 
 ## Deployment diagram with Docker containers
 
+The docker deployment model is, for the moment, only applied to the development environment.
+
 ![](figures/rdm-deployment-diagram.png)
