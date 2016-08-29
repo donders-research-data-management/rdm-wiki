@@ -67,3 +67,9 @@ When considering the usefulness of a pseudonimization key repository, one can th
 * To inform participants in case of incidental findings
 * To contact participants for a follow-up study
 * To link the data of participants that were part of multiple studies
+
+## Who should have access to the data sharing collection?
+
+All people involved in creating the data sharing collection should have access (as manager, contributor or viewer). In principle this should include all authors of the published data.
+
+Following collection closure and, if applicable, an embargo period, external researchers can request access to the data in the collection. This requires them to agree to the collection-specific "Data Use Agreement", after which they will be automatically added as a viewer of the collection.
