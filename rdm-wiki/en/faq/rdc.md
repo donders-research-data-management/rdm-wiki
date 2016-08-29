@@ -21,9 +21,8 @@ When the published results depend on data, the RDC must refer to them. There are
 1.	If the data is represented in the repository as one or more DACs, the RDC must be associated with the corresponding DACs by specifying the DAC identification numbers. Only closed DACs can be associated with the RDC. A single closed DAC may be associated to  multiple RDCs.
 2.	If the data is not represented in the repository as one or more closed DACs, the researcher must add the data to the RDC or document the source of the data by means of a persistent identifier. This situation applies, for instance, when the DAC is not yet closed, or when the data were collected at another institute. It also applies when the published results only depend on computer scripts (as in modeling work), in which case these scripts must be added to the RDC.
 
-## Who should be coauthor on the research documentation collections?
+## Who should have access to the research documentation collections?
 
-**FIXME this should be removed**
+**FIXME this should be updated**
 
 All people that share scientific responsibility for the work should be included in the list of managers, contributors and/or viewers. All co-authors of a publication should be capable of verifying the scientific work that is described in the publication, and therefore should be able to access the RDC. External (outside of the RU/UMCN) co-authors should be invited to sign up with their IdP and institutional account if possible, or should be invited to get an account in the DI-RDM system.
- 
