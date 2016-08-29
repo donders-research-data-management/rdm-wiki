@@ -2,7 +2,7 @@
 
 ## Whom should I contact with questions?
 
-During the pilot phase you can contact the [DI-RDM helpdesk](mailto:dirdm.helpdesk@gmail.com), [Hurng-Chun (Hong) Lee](mailto:h.lee@donders.ru.nl), [Eric Maris](mailto:e.maris@donders.ru.nl) and [Robert Oostenveld](mailto:robert.oostenveld@donders.ru.nl) with all questions that you might have and that are not addressed here. Once the local research administration, ICT and lab support staff has been trained on using the RDM, they should be able to answer most of your questions.
+During the pilot phase you can contact the [DI-RDM helpdesk](mailto:dirdm.helpdesk@gmail.com) - consisting of [Hurng-Chun (Hong) Lee](mailto:h.lee@donders.ru.nl), [Eric Maris](mailto:e.maris@donders.ru.nl) and [Robert Oostenveld](mailto:robert.oostenveld@donders.ru.nl) - with all questions that you might have and that are not addressed here. Once the local research administration, ICT and lab support staff has been trained on using the RDM, they should be able to answer most of your questions.
 
 ## How can I create a user account?
 
@@ -18,4 +18,4 @@ External collaborators to the Donders research should use their institutional id
 
 The role of collection manager can only be assigned to an account that is linked to the RU-IdP *and* that is marked in the RDM system (by the DI research administration) as member of the institute.
 
-FIXME: are there restrictions on social network accounts?
+**FIXME: are there restrictions on social network accounts?**
