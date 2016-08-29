@@ -13,3 +13,9 @@ DACs and RDCs can only be accessed if the user has signed up against the RU or R
 ## How can external researchers get an account?
 
 External collaborators to the Donders research should use their institutional identity provider (IdP) if possible. Since not all IdPs of all academic institutions that we collaborate with are supported yet, external collaborators can contact the [DI-RDM helpdesk](mailto:dirdm.helpdesk@gmail.com) with the request for an account.  
+
+## What are the restrictions on the different accounts?
+
+The role of collection manager can only be assigned to an account that is linked to the RU-IdP *and* that is marked in the RDM system (by the DI research administration) as member of the institute.
+
+FIXME: are there restrictions on social network accounts?
