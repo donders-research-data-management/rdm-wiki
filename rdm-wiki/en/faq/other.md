@@ -8,7 +8,7 @@ During the pilot phase you can contact the [DI-RDM helpdesk](mailto:helpdesk@fcd
 
 In the default scenario, the research administrator is not involved in the creation of user accounts, because they are created automatically in a sign-up procedure as described in the [DI-RDM Protocol for Researchers](protocols/researcher.md). However, in some cases it may be necessary for the research administrator to initiate accounts for new users that cannot use the login procedure based on the user's organizational Identity Provider (IdP).
 
-DACs and RDCs can only be accessed if the user has signed up against the RU or RUMCN IdP or a so-called trusted federated authentication infrastructure (SurfConext, EduGain). Not all potential users may have access to one of these identity providers. To help these users, they can be given a so-called E-account in the RU’s Relation Management System (Relatie Beheer Systeem). The collection manager should contact the [DI-RDM helpdesk](mailto:dirdm.helpdesk@gmail.com) for creating such an account.
+DACs and RDCs can only be accessed if the user has signed up against the RU or RUMCN IdP or a so-called trusted federated authentication infrastructure (SurfConext, EduGain). Not all potential users may have access to one of these identity providers. To help these users, they can be given a so-called E-account in the RU’s Relation Management System (Relatie Beheer Systeem). The collection manager should contact the [DI-RDM helpdesk](mailto:helpdesk@fcdonders.ru.nl) for creating such an account.
 
 ## How can external researchers get an account?
 
