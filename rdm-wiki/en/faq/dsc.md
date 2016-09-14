@@ -40,7 +40,7 @@ In-silico experiments are as useful as in-vivo experiments and also warrant shar
 
 ## How can external researchers get an account?
 
-External researchers that are interested in downloading data should sign up with their institutional identity provider (IdP) if possible. Since not all IdPs of all academic institutions are supported, and since not all external researchers are linked to an institution that provides federated IdP, external researchers can contact the [DI-RDM helpdesk](mailto:helpdesk@fcdonders.ru.nl) with the request for an account.
+External researchers that are interested in downloading data should sign up with their institutional identity provider (IdP) if possible. Since not all IdPs of all academic institutions are supported, and since not all external researchers are linked to an institution that provides federated IdP, external researchers can contact the [helpdesk](mailto:helpdesk@fcdonders.ru.nl) with the request for an account.
 
 
 ## Where should I keep my pseudonimisation key?
