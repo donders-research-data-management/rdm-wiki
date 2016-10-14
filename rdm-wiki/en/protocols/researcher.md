@@ -2,7 +2,7 @@
 
 ##	1 Version
 
-Draft, last update by Eric on May 10, 2016
+Draft, last update by Eric on October 14, 2016
 
 ##	2 Scope
 
@@ -379,11 +379,11 @@ One must distinguish between the situation in which all data in the DAC can be s
 
 See 8.2.9.
 
-#### 10.2.7	Extending on the published results
+#### 10.2.7	Reproducing and extending on the published results
 
-The DSC must contain all the information that a knowledgeable colleague needs to extend on the published results. In a first step, this typically involves that the published results are reproduced. Publications may differ substantially in the amount and detail of the information that is required for reproducing the results. Collaborators on a collection are expected to demonstrate scholarship in providing the required information.
+The DSC must contain all the information that a knowledgeable colleague needs to reproduced and extend on the published results. The first step of a reanalysis typically involves that the published results are reproduced. Publications may differ substantially in the amount and detail of the information that is required for reproducing the results. Collaborators on a collection are expected to demonstrate scholarship in providing the required information.
 
-It is highly unlikely that an external colleague would only want to reproduce the published results using exactly the same computer scripts that were also used by the authors. Instead, it is much more likely that such a colleague would want to investigate related effects, or modulations of the published effects by variables that are present in the data. Collaborators on a collection are expected to provide the information that allows external colleagues to perform such analyses, amongst others by providing inline comments in their analysis scripts.
+It is highly unlikely that an external colleague would only want to reproduce the published results using exactly the same computer scripts that were also used by the authors. Instead, it is much more likely that such a colleague would want to investigate related effects, or modulations of the published effects by variables that are present in the data. This typically constitutes the second step of a reanalysis. Collaborators on a collection are expected to provide the information that allows external colleagues to perform such analyses, amongst others by providing inline comments in their analysis scripts.
 
 #### 10.2.8	Specifying the data use agreement
 
