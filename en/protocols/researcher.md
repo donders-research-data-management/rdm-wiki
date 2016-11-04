@@ -30,8 +30,6 @@ The data repository allows a researcher to archive digital data into collections
 
 When a collection is initiated, a research administrator assigns a manager to the collection (see the _DI RDM Protocol for Research Administrators_). Typically, the collection manager is also the supervisor of the research project to which this collection belongs. A collection manager can add other users to the collection in the role of manager, and these then obtain the same rights.
 
-Jointly, managers and contributors are called the _authors_ of a collection.  When a collection is closed and shared with others, it is a publication (a _data_ publication), of which the managers and contributors are the authors.
-
 ##	5 Data, Metadata, and Attributes
 
 There exist several definitions of data. For the purpose of this protocol, we focus on _research data_, which we define as follows:
