@@ -1,12 +1,5 @@
 
-
-# The Webdav Account
-
-The data is not accessed through the web interface, but through a [WebDav interface](webdav.md) client. This requires a WebDav client, such as [Cyberduck](cyberduck.io), and a data-access username and password.
-
-Your WebDav account is created during registering on the RDM portal. The WebDav _user name_ is a combination of the user-id and the home organisation. These are both provided by the identity provider (IdP) through you signed up.
-
-The WebDav _password_ is a [One-time password](https://en.wikipedia.org/wiki/HMAC-based_One-time_Password_Algorithm).  It is generated dynamically on the fly, and can only be used once for initialising a data-access session.  
+  
 
 ## Retrieve the Webdav user name and password
 
