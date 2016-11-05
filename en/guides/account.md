@@ -1,6 +1,4 @@
-# The Web Portal Account
 
-The account for the web portal is the same as your institutional account. For researchers at the Radboud University it is the u-number, for researchers from the UMCN it is the z-number.
 
 # The Webdav Account
 
