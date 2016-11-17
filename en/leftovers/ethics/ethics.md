@@ -6,7 +6,7 @@ A lot of the research at the DI is covered by existing approvals. For the DCC yo
 
 There are 23 [accredited METCs](http://www.ccmo.nl/en/accredited-mrecs) in the Netherlands that review medical/scientific research proposals that involve human subjects. The majority are linked to an institution such as an academic medical centre or a hospital.
 
-The Faculty of Social Sciences at the Radboud University has its own [Ethics Committee](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/).
+The Faculty of Social Sciences at the Radboud University has its own [Ethics Committee](http://www.ru.nl/socialsciences/ethics-committee/ethics-committee/) that is referred to as "ECSW". The Faculty of Humanities at the Radboud University has its own [Ethics Committee](http://www.ru.nl/eac-humanities/) that is referred to as "EACH".
 
 In case you need to apply for approval, please use these template informed consent forms and brochures. These include the appropriate text for how we manage and share data.
 
