@@ -1,5 +1,9 @@
 # DI-RDM wiki
 
+[System Administrators' Guide]()
+
+  * [Updating static content](administration/static_content.md)
+
 [Developers' Guide]()
 
   * [Generic Terms and Conditions](development/service_generic_terms_conditions.md)
