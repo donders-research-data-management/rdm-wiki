@@ -45,7 +45,7 @@ __Objects__ are resources to be accessed. In DR, the following objects are ident
 
 ### for access to the User object
 
-- Allow user can read their own profile:
+- Allow user to read the attibutes of their own profile:
 
 ```
 Allow access to resource User
