@@ -24,8 +24,8 @@ __Actions__ are possible access operations that can take place withint the syste
 
 1. __read__ is an action that a subject retrieves attributes of a resource object.
 1. __write__ is an action that a subject updates attributes of a resource object.
-1. __manage__ is an action that a subject updates administrative attributes of a resource object.
-1. __acquire__ is an action that a subject tries to gain his/her access right of one or multiple resource objects.
+1. __manageAccess__ is an action that a subject updates the access right of a resource object.
+1. __acquireAccess__ is an action that a subject tries to gain his/her access right of one or multiple resource objects.
 1. __create__ is an action that a subject initiates a new resource object.
 1. __close__ is an action that a subject disables future updates on attributes of a resource object. 
 1. __open__ is an action that a subject enables future updates on attributes of a resource object.
@@ -39,13 +39,21 @@ __Objects__ are resources to be accessed. In DR, the following objects are ident
 1. __Collection__: a DR collection
 1. __CollectionAttribute__: an attribute of a DR collection
 1. __Organisation__: The organisation
-1. __OrganisationalUnit: The organisational unit
+1. __OrganisationalUnit__: The organisational unit
 
 ## Policies
 
 ### for access to the User object
 
+Any user can read their user profile:
 
+```
+Allow access to resource User 
+    if Subject.irodsUserName match User.irodsUserName 
+    and Action is read
+```
+
+Allow access to resource __UserAttribute__
 
 ### for access to the Collection object
 
