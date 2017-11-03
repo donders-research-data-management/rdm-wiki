@@ -49,30 +49,50 @@ __Objects__ are resources to be accessed. In DR, the following objects are ident
 
 ```
 Allow access to resource User
-    if Subject is User 
+    if Subject is User
     and Action is read
 ```
 
-- Allow access to displayName of any users
+- Allow user to modify certain set of attributes on his own profile:
 
 ```
-Allow access to UserAttribute
+Allow access to resource User
+    if Subject is User
+    and User.attributes in ['researcherId', 'displayName', 'ORCHID']
+    and Action is write
+```
+
+- Allow user to read the displayName of any users
+
+```
+Allow access to resource User
     if Action is read
-    and if UserAttribute.key in ['surName', 'givenName', 'displayName',
-                                 'email', 'homeOrganisation', 'organisationalUnit',
-                                 'researcherId', 'ORCHID' ]
+    and User.attribute in ['surName', 'givenName', 'displayName',
+                           'email', 'homeOrganisation', 'organisationalUnit',
+                           'researcherId', 'ORCHID' ]
 ```
 
-- Allow access to givenName, surName, email, displayName of any users if the user is a collection manager, or OU admin
+- Allow collection manager and OU admin to read a certain set of attributes from all users:
 
 ```
-Allow access to UserAttribute
+Allow access to resource User
     if Action is read
-    and if typeOf(Subject.roles) in [CollectionManager, OUAdmin]
-    and if UserAttribute.key in ['surName', 'givenName', 'displayName', 'email']
+    and typeOf(Subject.roles) in [CollectionManager, OUAdmin]
+    and User.attribute in ['surName', 'givenName', 'displayName', 'email']
+```
+
+- Allow OU admin to add a user into an OU
+
+```
+Allow access to resource User
+    if Action is write
+    and User.attribute is 'organisationalUnit'
+    and typeOf(Subject.roles) in [OUAdmin]
 ```
 
 ### for access to the Collection object
+
+- Allow 
 
 ### for access to the Organisation object
 
