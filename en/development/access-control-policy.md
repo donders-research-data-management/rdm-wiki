@@ -45,15 +45,32 @@ __Objects__ are resources to be accessed. In DR, the following objects are ident
 
 ### for access to the User object
 
-Any user can read their user profile:
+- Allow user can read their own profile:
 
 ```
-Allow access to resource User 
-    if Subject.irodsUserName match User.irodsUserName 
+Allow access to resource User
+    if Subject is User 
     and Action is read
 ```
 
-Allow access to resource __UserAttribute__
+- Allow access to displayName of any users
+
+```
+Allow access to UserAttribute
+    if Action is read
+    and if UserAttribute.key in ['surName', 'givenName', 'displayName',
+                                 'email', 'homeOrganisation', 'organisationalUnit',
+                                 'researcherId', 'ORCHID' ]
+```
+
+- Allow access to givenName, surName, email, displayName of any users if the user is a collection manager, or OU admin
+
+```
+Allow access to UserAttribute
+    if Action is read
+    and if typeOf(Subject.roles) in [CollectionManager, OUAdmin]
+    and if UserAttribute.key in ['surName', 'givenName', 'displayName', 'email']
+```
 
 ### for access to the Collection object
 
