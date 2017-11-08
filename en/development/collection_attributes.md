@@ -59,10 +59,8 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 
-Note:
 <sup>[1]</sup> The __creator__ attribute is used internally to store the detail of each individual author in a JSON string. The JSON string "must" contains an identifier, the "id", to identify the author in the collection scope. The order of the authors is maintained by the _creatorList_ attribute.
 
-Note:
 <sup>[2]</sup> The __creatorList__ attribute stores a JSON list of _creator_ ids, and thus the order of the authors is maintained. Detail of authors are stored in the corresponding _creator_ attributes referred by the id.
 
 ## Mandatory attributes for collection closure
@@ -84,7 +82,6 @@ The list does not include system-generated attributes (see the `sys` column in t
 | embargoUntilDateTime      |       |       |   Y   |
 | preservationTimeYear      |   Y   |   Y   |   Y   |
 
-Note:
 <sup>[1]</sup> For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH_2015` and `keyword_SFN_2013`).
 
 ## Combinatory attributes
