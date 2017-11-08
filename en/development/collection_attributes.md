@@ -62,6 +62,7 @@ The RDM collection attributes are implemented as key-value pairs associated with
 Note:
 <sup>[1]</sup> The __creator__ attribute is used internally to store the detail of each individual author in a JSON string. The JSON string "must" contains an identifier, the "id", to identify the author in the collection scope. The order of the authors is maintained by the _creatorList_ attribute.
 
+Note:
 <sup>[2]</sup> The __creatorList__ attribute stores a JSON list of _creator_ ids, and thus the order of the authors is maintained. Detail of authors are stored in the corresponding _creator_ attributes referred by the id.
 
 ## Mandatory attributes for collection closure
