@@ -60,7 +60,8 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 
 Note:
-<sup>[1]</sup> The creator's displayName can be either retrieved from existing [user profile](user_attributes.md); or provided by user as a free-text input.
+<sup>[1]</sup> The __creator__ attribute is used internally to store the detail of each individual author in a JSON string. The JSON string "must" contains an identifier, the "id", to identify the author in the collection scope. The order of the authors is maintained by the _creatorList_ attribute.
+<sup>[2]</sup> The __creatorList__ attribute stores a JSON list of _creator_ ids, and thus the order of the authors. Detail of authors are stored in multiple _creator_ attributes.
 
 ## Mandatory attributes for collection closure
 
