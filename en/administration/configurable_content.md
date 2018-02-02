@@ -2,19 +2,18 @@
 
 This is the repository for managing DI-specific controlled vocabularies, naming schemes and references to external resources that map terms and names onto meanings and definitions.
 
-In the implementation of the Donders Repository portal, configurable contents are decoupled from the codes.  This allows content managers (e.g. the data stewards) to modify informations on the portal, such as policy, links to documentations, without the need of developers updating the code.  It also provides certain level of customise-ability of the portal for different research institutions.
+In the implementation of the Donders Repository portal, configurable contents are decoupled from the codes.  This allows content editors (e.g. the data stewards) to modify informations on the portal, such as policy, links to documentations, without the need of developers updating the code.  It also provides certain level of customise-ability of the portal for different research institutions.
 
 This repository has two branches, the _master_ and the _release_.  They serve different purposes in the following workflow from editing the contents to applying changes online.
 
 ## The workflow
 
-Two roles are involved in the workflow: the _content manager_ which is responsible for updating the contents; and _system administrator_ which brings the update online.
+Two roles are involved in the workflow: the _content editor_ which is responsible for updating the contents; and the _content manager_ which brings the update online.  Hereafter is the workflow:
 
-1. The content manager edits contents on the master branch.
-1. The content manager tests changes on the master branch.
-1. The content manager informs system administrator to update the system with the changes.
-1. The system administrator merge changes in the master branch into the release branch.
-1. The system administrator/content manager receive a notification about the deployment process.
+1. The _content editor_ modifies contents on the _master_ branch.
+1. The _content editor_ informs the _content manager_ to apply changes to the Donders Repository portal.
+1. The _content manager_ merges changes in the _master_ branch into the _release_ branch.  Whenever changes are made in the _release_ branch, an automatic process will pick them up and apply them on the portal.
+1. The _content manager_ receives a notification from the automatic process about the result of the process.
 
 ## Content editing
 
