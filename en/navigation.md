@@ -2,7 +2,7 @@
 
 [System Administrators' Guide]()
 
-  * [Updating static content](administration/static_content.md)
+  * [Updating configurable content](administration/configurable_content.md)
 
 [Developers' Guide]()
 
