@@ -32,8 +32,9 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | publisher                    | `Radboud University, Donders Institute for Brain, Cognition and Behaviour`|          |  Y   |  Y   |  Y   |  Y   |  C      |      |      |      |
 | manager                      | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |  Y   |  Y   |      |
 | contributor                  | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
-| viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      |
-| creatorList                  | ordered(displayName's)<sup>[1]</sup>|          |      |      |      |      |  Y      |      |  Y   |      |
+| viewer                       | internal iRODS user id       |    Y     |      |  Y   |  Y   |  Y   |  C      |      |  Y   |      
+| creator                      | author object<sup>[1]</sup>  |     Y    |      |      |      |      |  Y      |      |  Y   |      
+| creatorList                  | ordered(ids of authors)<sup>[2]</sup>|          |      |      |      |      |  Y      |      |  Y   |      |
 | locationNonDigitalRoom       | free text                    |    Y     |      |  Y   |      |      |  M      |      |  Y   |  Y   |  
 | creationDateTime             | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |  Y   |  Y   |  Y   |  Y      |      |      |      |
 | publicationDateTime          | YYYY-MM-DDTHH:MM:SS (UTC)    |          |  Y   |      |      |      |  Y      |      |      |      |
@@ -58,8 +59,9 @@ The RDM collection attributes are implemented as key-value pairs associated with
 | perviousVersionId            | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 | nextVersionId                | internal iRODS coll. id      |          |  Y   |      |      |      |  Y      |      |      |      |
 
-Note:
-<sup>[1]</sup> The creator's displayName can be either retrieved from existing [user profile](user_attributes.md); or provided by user as a free-text input.
+<sup>[1]</sup> The __creator__ attribute is used internally to store the detail of each individual author in a JSON string. The JSON string "must" contains an identifier, the "id", to identify the author in the collection scope. The order of the authors is maintained by the _creatorList_ attribute.
+
+<sup>[2]</sup> The __creatorList__ attribute stores a JSON list of _creator_ ids, and thus the order of the authors is maintained. Detail of authors are stored in the corresponding _creator_ attributes referred by the id.
 
 ## Mandatory attributes for collection closure
 
@@ -80,7 +82,6 @@ The list does not include system-generated attributes (see the `sys` column in t
 | embargoUntilDateTime      |       |       |   Y   |
 | preservationTimeYear      |   Y   |   Y   |   Y   |
 
-Note:
 <sup>[1]</sup> For closing a DSC, at-least one keyword must be specified.  The specification can be done via freetext keyword (i.e. `keyword_freetext`), or keyword provided by controlled vocabularies (i.e. `keyword_MeSH_2015` and `keyword_SFN_2013`).
 
 ## Combinatory attributes

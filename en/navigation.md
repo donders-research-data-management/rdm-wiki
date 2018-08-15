@@ -2,11 +2,10 @@
 
 [System Administrators' Guide]()
 
-  * [Updating static content](administration/static_content.md)
+  * [Updating configurable content](administration/configurable_content.md)
 
 [Developers' Guide]()
 
-  * [Generic Terms and Conditions](development/service_generic_terms_conditions.md)
   * [System design and architecture](development/design_architecture.md)
   * [DTAP environments](development//DTAP_environments.md)
   * [RDM user attributes](development/user_attributes.md)

@@ -7,7 +7,7 @@ Due to space limitation, the domain names of servers in the following table are 
 | Environment  | Service endpoints | WebApp server | iCAT server | iCAT zone | resource servers |
 | -------------| ----------------- | ------------- | ----------- | --------- | ---------------- |
 | Production   | https://data.donders.ru.nl (CMS) <br/> https://webdav.data.donders.ru.nl (WebDAV) |  nonvlinder (CMS) <br/> meeltor (WebDAV) | icat.data.donders.ru.nl | rdm | harsbij <br/> wolbij |
-| Acceptance   | https://rdmappacc.uci.ru.nl (CMS) <br/> https://webdav.rdmappacc.uci.ru.nl (WebDAV) |  klampkever (CMS) <br/> klokjesdikpoot (WebDAV) | kaswittevlieg | rdmacc | kanaaljuffer <br/> kerstbalgal |
+| Acceptance   | https://data-acc.donders.ru.nl (CMS) <br/> https://webdav.data-acc.donders.ru.nl (WebDAV) |  agaatvlinder (CMS) <br/> apollovlinder (WebDAV) | argusvlinder | rdmacc | rouwbij <br/> tubebij |
 | Development  | https://localhost:8443/rdm-web-client (CMS) | -  | metselbij | rdmtst | - |
 
 For SURFConext, the CMS service endpoint should also be recognised as the _Service Provider (SP) ID_.
