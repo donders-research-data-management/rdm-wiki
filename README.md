@@ -1,6 +1,6 @@
 # Donders Repository Wiki
 
-**Note: tThis wiki does not contain any documentation any more**
+**Note: the documentation of this wiki has been migrated elsewhere**
 
 The repository can be accessed at http://data.donders.ru.nl/
 
